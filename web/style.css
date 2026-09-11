@@ -47,7 +47,11 @@ body {
   gap: 0.75rem;
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 0.5rem 0.9rem;
+  padding: 0.9rem 0.9rem;
+  /* negative left margin cancels .site-header's left padding so this box
+     lines up with the event list below, which is flush against the left
+     edge (see main's padding-left:0) */
+  margin: 1rem 0 1.5rem -1.5rem;
 }
 
 .search-bar input {
