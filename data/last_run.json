@@ -1,48 +1,7 @@
 {
-  "ran_at": "2026-09-11T14:04:15+00:00",
-  "total_events": 221,
-  "new_count": 5,
-  "removed_count": 1,
-  "new_events": [
-    {
-      "id": "fd70dc752aac6a1a",
-      "author": "Raphaëlle Red",
-      "book_title": "La Grande Librairie",
-      "date": "2024-09-07",
-      "venue": "Haus der Berliner Festspiele",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "509eb6932f4a09da",
-      "author": "Raphaëlle Red",
-      "book_title": "La Grande Librairie",
-      "date": "2024-10-09",
-      "venue": "Literaturforum im Brecht-Haus",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "af4eef44a14a6b5a",
-      "author": "Raphaëlle Red",
-      "book_title": "La Grande Librairie",
-      "date": "2024-10-31",
-      "venue": "Buchhändlerkeller",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "1b2805ff845eb7cb",
-      "author": "Raphaëlle Red",
-      "book_title": "La Grande Librairie",
-      "date": "2025-02-12",
-      "venue": "Institut français Berlin",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "664481458ca469bd",
-      "author": "Heinz Strunk",
-      "book_title": "Heinz Strunk und Kaleb Erdmann",
-      "date": "2026-08-31",
-      "venue": "Literarisches Colloquium Berlin",
-      "publisher": "Rowohlt Verlag"
-    }
-  ]
+  "ran_at": "2026-09-11T14:07:24+00:00",
+  "total_events": 215,
+  "new_count": 0,
+  "removed_count": 6,
+  "new_events": []
 }

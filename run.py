@@ -27,6 +27,7 @@ import importlib
 import json
 import sys
 import traceback
+from datetime import date
 from pathlib import Path
 
 from scrapers.base import Event, authors_overlap, is_berlin, venues_match
@@ -148,6 +149,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--publisher", nargs="*", choices=list(SCRAPERS), help="Only run these scrapers, ignoring sources.json (default: whatever's enabled there)")
     parser.add_argument("--all-cities", action="store_true", help="Keep events from all cities, not just Berlin")
+    parser.add_argument("--include-past", action="store_true", help="Keep events dated before today (default: dropped)")
     parser.add_argument("--format", choices=["json", "csv", "both"], default="json")
     args = parser.parse_args()
 
@@ -162,6 +164,18 @@ def main():
         before = len(all_events)
         all_events = [e for e in all_events if is_berlin(e.city, e.venue, e.address, e.raw_text)]
         print(f"Filtered to Berlin: {len(all_events)}/{before} events")
+
+    if not args.include_past:
+        # Some sources (Rowohlt's sitemap in particular) leave old event
+        # pages up long after the date has passed. This is an events-you-
+        # can-still-attend app, not an archive, so drop anything dated
+        # before today -- keep events with an unparseable/missing date
+        # rather than risk silently losing a real upcoming one.
+        before = len(all_events)
+        today_iso = date.today().isoformat()
+        all_events = [e for e in all_events if not e.date or e.date >= today_iso]
+        if len(all_events) != before:
+            print(f"Filtered out past-dated events: {len(all_events)}/{before} remain")
 
     all_events = dedupe(all_events)
 
