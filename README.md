@@ -26,28 +26,32 @@ Re-run `python run.py` whenever you want to refresh the data the page reads.
 
 ## Community suggestions
 
-This is a static site (GitHub Pages) with no server or database, so
-suggestions can't be stored server-side. Instead:
+This is a static site (GitHub Pages) with no server or database, so a
+visitor's browser can't safely write anywhere on its own — any write
+credential placed in client-side JS would be visible to anyone who views
+the page source. Submissions go through **[Formspree](https://formspree.io)**
+instead, a third-party form backend built for exactly this:
 
-1. The **+** button opens a form ([web/index.html](web/index.html)); submitting
-   it builds a pre-filled GitHub "new issue" link (label `event-suggestion`)
-   and opens it in a new tab. The visitor needs a (free) GitHub account to
-   actually post it — that's the trade-off for having no backend.
-2. **[web/admin.html](web/admin.html)** is a read-only admin view: it fetches
-   open `event-suggestion` issues straight from GitHub's public REST API (no
-   auth needed, no secrets in the client) and displays them parsed into
-   fields, each with a link back to the issue on GitHub.
-3. To approve one, add the **`approved`** label to its issue on GitHub (both
-   labels already exist on the repo). Then run:
+1. The **+** button opens a form ([web/index.html](web/index.html));
+   submitting it POSTs directly to a Formspree endpoint. No account needed
+   for the visitor, no secrets exposed (the endpoint is a public-safe
+   submission target, not a credential).
+2. You review submissions in your [Formspree dashboard](https://formspree.io/login)
+   (or the email notification it sends per submission) — see
+   **[web/admin.html](web/admin.html)** for the exact steps.
+3. Export the ones you want to keep as CSV from Formspree, then run:
    ```bash
-   .venv/bin/python scripts/import_suggestions.py            # imports + closes approved issues
-   .venv/bin/python scripts/import_suggestions.py --dry-run  # preview only
+   .venv/bin/python scripts/import_formspree_submissions.py submissions.csv            # import
+   .venv/bin/python scripts/import_formspree_submissions.py submissions.csv --dry-run  # preview only
    ```
-   This needs the `gh` CLI authenticated with write access to the repo (unlike
-   the admin page, which only ever reads public data). It appends approved
-   suggestions to `data/events.json`/`.csv`, closes each imported issue with a
-   confirmation comment, and reminds you to commit + push so the live site
-   picks up the change.
+   There's no separate "approve" step in the tooling — the CSV you export
+   *is* the approval; just delete rows you don't want before running it. The
+   script appends new events to `data/events.json`/`.csv`; commit + push to
+   publish.
+
+**Setup required:** `FORMSPREE_ENDPOINT` in [web/app.js](web/app.js) is a
+placeholder until a real Formspree form is created and its endpoint pasted
+in — the form shows a clear error instead of failing silently until then.
 
 ## Setup
 

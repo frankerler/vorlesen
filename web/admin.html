@@ -12,22 +12,34 @@
   <header class="site-header">
     <h1>Vorgeschlagene Lesungen</h1>
     <p class="admin-subtitle">
-      Offene Vorschläge aus dem
-      <a href="https://github.com/frankerler/vorlesen/issues?q=is%3Aissue+is%3Aopen+label%3Aevent-suggestion" target="_blank" rel="noopener noreferrer">GitHub-Issue-Tracker</a>
-      (Label <code>event-suggestion</code>). Diese Seite liest nur öffentliche Daten — Freigeben/Ablehnen passiert auf GitHub selbst.
+      Visitor-Vorschläge laufen über <a href="https://formspree.io/login" target="_blank" rel="noopener noreferrer">Formspree</a> —
+      dort siehst du jede Einreichung live (und bekommst sie per E-Mail), keine eigene Anmeldung für Besucher:innen nötig.
     </p>
   </header>
 
   <main>
-    <div id="admin-list" class="admin-list"></div>
-    <p id="admin-empty" class="empty-state" hidden>Keine offenen Vorschläge.</p>
-    <p id="admin-error" class="empty-state" hidden></p>
+    <div class="suggestion-card">
+      <h3>So übernimmst du einen Vorschlag in die Liste</h3>
+      <ol class="admin-steps">
+        <li>Prüfe neue Einreichungen im <a href="https://formspree.io/login" target="_blank" rel="noopener noreferrer">Formspree-Dashboard</a> (oder in der Benachrichtigungs-E-Mail).</li>
+        <li>Exportiere die Einreichungen, die du übernehmen willst, als CSV (Formspree: Form → Submissions → Export).</li>
+        <li>Lege die CSV irgendwo lokal ab und führe aus:
+          <pre><code>.venv/bin/python scripts/import_formspree_submissions.py pfad/zur/submissions.csv --dry-run
+.venv/bin/python scripts/import_formspree_submissions.py pfad/zur/submissions.csv</code></pre>
+        </li>
+        <li>Das Skript hängt neue Einträge an <code>data/events.json</code>/<code>.csv</code> an. Danach committen und pushen:
+          <pre><code>git add data/ &amp;&amp; git commit -m "Add community-suggested reading(s)" &amp;&amp; git push</code></pre>
+        </li>
+      </ol>
+      <p class="admin-note">
+        Einreichungen, die du nicht willst, lässt du einfach in der CSV weg (Zeile löschen)
+        oder markierst sie in Formspree als gelesen/archiviert — sie werden dann nicht importiert.
+      </p>
+    </div>
   </main>
 
   <footer class="site-footer">
     <p><a href="index.html">← Zurück zur Übersicht</a></p>
   </footer>
-
-  <script src="admin.js"></script>
 </body>
 </html>

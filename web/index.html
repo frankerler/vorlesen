@@ -15,6 +15,12 @@
       <input type="search" id="search" placeholder="Suche nach Autor, Titel, Ort oder Verlag …" autocomplete="off">
       <span id="result-count" class="result-count"></span>
     </div>
+    <nav class="quick-filters" id="quick-filters">
+      <a href="?when=today" data-when="today">Heute</a>
+      <a href="?when=week" data-when="week">Nächste Woche</a>
+      <a href="?when=month" data-when="month">Nächster Monat</a>
+      <a href="?when=all" data-when="all">Alle</a>
+    </nav>
   </header>
 
   <main>
@@ -34,9 +40,8 @@
       <button id="close-suggest" class="close-btn" aria-label="Schließen">&times;</button>
       <h2>Lesung vorschlagen</h2>
       <p class="suggest-intro">
-        Fehlt eine Lesung? Trag sie hier ein — dein Vorschlag wird als
-        <a href="https://github.com/frankerler/vorlesen/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
-        angelegt und nach Prüfung in die Liste aufgenommen. Du brauchst dafür einen (kostenlosen) GitHub-Account.
+        Fehlt eine Lesung? Trag sie hier ein — wir prüfen deinen Vorschlag und
+        nehmen ihn dann in die Liste auf. Kein Account nötig.
       </p>
       <form id="suggest-form">
         <label>Autor *<input type="text" name="author" required></label>
@@ -49,7 +54,8 @@
         </div>
         <label>Link zur Veranstaltung<input type="url" name="url" placeholder="https://…"></label>
         <label>Anmerkungen<textarea name="notes" rows="3" placeholder="Verlag, Quelle, sonstige Hinweise …"></textarea></label>
-        <button type="submit" class="detail-link suggest-submit">Auf GitHub vorschlagen →</button>
+        <button type="submit" class="detail-link suggest-submit">Vorschlag absenden →</button>
+        <p id="suggest-status" class="suggest-status" hidden></p>
       </form>
     </div>
   </div>

@@ -10,12 +10,20 @@
   const detailContentEl = document.getElementById("detail-content");
   const closeBtn = document.getElementById("close-detail");
 
+  const quickFiltersEl = document.getElementById("quick-filters");
+
   const suggestBtn = document.getElementById("suggest-btn");
   const suggestOverlayEl = document.getElementById("suggest-overlay");
   const closeSuggestBtn = document.getElementById("close-suggest");
   const suggestFormEl = document.getElementById("suggest-form");
+  const suggestStatusEl = document.getElementById("suggest-status");
+  const suggestSubmitBtn = suggestFormEl ? suggestFormEl.querySelector(".suggest-submit") : null;
 
-  const GITHUB_REPO = "frankerler/vorlesen";
+  // TODO: replace with your real Formspree form endpoint (formspree.io ->
+  // create a form -> copy the URL it gives you, looks like
+  // "https://formspree.io/f/xxxxxxxx"). Submissions won't go anywhere until
+  // this is set.
+  const FORMSPREE_ENDPOINT = "https://formspree.io/f/REPLACE_ME";
 
   const WEEKDAYS = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
   const MONTHS = [
@@ -34,6 +42,52 @@
     const [y, m, d] = iso.split("-").map(Number);
     if (!y || !m || !d) return null;
     return new Date(y, m - 1, d);
+  }
+
+  function toIso(dt) {
+    return `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, "0")}-${String(dt.getDate()).padStart(2, "0")}`;
+  }
+
+  function todayIso() {
+    return toIso(new Date());
+  }
+
+  function addDaysIso(iso, days) {
+    const dt = parseDate(iso);
+    dt.setDate(dt.getDate() + days);
+    return toIso(dt);
+  }
+
+  // --- Quick date-range links (?when=today|week|month|all) ---------------
+  //
+  // "Nächste Woche"/"Nächster Monat" are rolling windows from today (today
+  // + 6 / + 29 days), not calendar-aligned week/month boundaries -- for an
+  // events list, "what's coming up in the next week" reads more usefully
+  // than "next Mon-Sun" (which would exclude anything between now and the
+  // following Monday).
+  const VALID_WHEN = ["today", "week", "month", "all"];
+
+  function getWhenFromUrl() {
+    const value = new URLSearchParams(location.search).get("when");
+    return VALID_WHEN.includes(value) ? value : "all";
+  }
+
+  let activeWhen = getWhenFromUrl();
+
+  function matchesWhen(ev) {
+    if (activeWhen === "all") return true;
+    if (!ev.date) return false;
+    const today = todayIso();
+    if (activeWhen === "today") return ev.date === today;
+    if (activeWhen === "week") return ev.date >= today && ev.date <= addDaysIso(today, 6);
+    if (activeWhen === "month") return ev.date >= today && ev.date <= addDaysIso(today, 29);
+    return true;
+  }
+
+  function highlightActiveQuickFilter() {
+    quickFiltersEl.querySelectorAll("a").forEach((a) => {
+      a.classList.toggle("active", a.dataset.when === activeWhen);
+    });
   }
 
   function formatDateHeading(iso) {
@@ -150,14 +204,15 @@
 
   // --- Suggest-a-reading form -------------------------------------------
   //
-  // This is a static site with no backend, so a suggestion can't be stored
-  // server-side. Instead, submitting builds a pre-filled GitHub "new issue"
-  // link and opens it in a new tab; the visitor (who needs a GitHub account)
-  // completes the submission there. Approved suggestions get folded into
-  // data/events.json later (see scripts/import_suggestions.py) -- the admin
-  // view at web/admin.html reads open suggestions straight from GitHub.
+  // This is a static site with no backend of its own, so submissions POST
+  // directly to Formspree (a third-party form backend) -- no account needed
+  // for the visitor, no secrets exposed client-side (the endpoint below is
+  // a public-safe submission target, not a credential). Formspree emails you
+  // each submission and keeps a dashboard; approved ones get folded into
+  // data/events.json via scripts/import_formspree_submissions.py.
 
   function openSuggest() {
+    suggestStatusEl.hidden = true;
     suggestOverlayEl.hidden = false;
     document.body.style.overflow = "hidden";
   }
@@ -179,48 +234,49 @@
     else if (!overlayEl.hidden) closeDetail();
   });
 
-  function buildIssueBody(fields) {
-    const lines = [
-      `**Autor:** ${fields.author}`,
-      `**Buchtitel:** ${fields.book_title}`,
-      `**Veranstaltungsort:** ${fields.venue}`,
-      `**Adresse:** ${fields.address || "–"}`,
-      `**Datum:** ${fields.date}`,
-      `**Uhrzeit:** ${fields.time || "–"}`,
-      `**Link:** ${fields.url || "–"}`,
-      `**Anmerkungen:** ${fields.notes || "–"}`,
-      "",
-      "_Über das \"Lesung vorschlagen\"-Formular eingereicht._",
-    ];
-    return lines.join("\n");
+  function showSuggestStatus(message, isError) {
+    suggestStatusEl.textContent = message;
+    suggestStatusEl.className = "suggest-status" + (isError ? " suggest-status--error" : " suggest-status--ok");
+    suggestStatusEl.hidden = false;
   }
 
   suggestFormEl.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    if (FORMSPREE_ENDPOINT.includes("REPLACE_ME")) {
+      showSuggestStatus("Das Formular ist noch nicht angeschlossen (fehlender Formspree-Endpoint).", true);
+      return;
+    }
+
     const data = new FormData(suggestFormEl);
-    const fields = Object.fromEntries(data.entries());
+    suggestSubmitBtn.disabled = true;
+    suggestSubmitBtn.textContent = "Wird gesendet …";
 
-    const title = `Vorschlag: ${fields.author} – ${fields.book_title}`;
-    const body = buildIssueBody(fields);
-    const params = new URLSearchParams({
-      title,
-      body,
-      labels: "event-suggestion",
-    });
-    const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
-
-    window.open(issueUrl, "_blank", "noopener,noreferrer");
-    suggestFormEl.reset();
-    closeSuggest();
+    fetch(FORMSPREE_ENDPOINT, {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    })
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        showSuggestStatus("Danke! Dein Vorschlag wurde übermittelt und wird geprüft.", false);
+        suggestFormEl.reset();
+        setTimeout(closeSuggest, 1800);
+      })
+      .catch(() => {
+        showSuggestStatus("Senden fehlgeschlagen. Bitte versuch es gleich noch einmal.", true);
+      })
+      .finally(() => {
+        suggestSubmitBtn.disabled = false;
+        suggestSubmitBtn.textContent = "Vorschlag absenden →";
+      });
   });
 
   function applyFilter() {
     const q = searchEl.value.trim().toLowerCase();
-    if (!q) {
-      renderList(allEvents);
-      return;
-    }
     const filtered = allEvents.filter((ev) => {
+      if (!matchesWhen(ev)) return false;
+      if (!q) return true;
       const haystack = [ev.author, ev.title, ev.venue, ev.city, ev.publisher, ev.address]
         .filter(Boolean)
         .join(" ")
@@ -231,6 +287,30 @@
   }
 
   searchEl.addEventListener("input", applyFilter);
+
+  // Intercept clicks so switching ranges doesn't reload the page/re-fetch
+  // data, but the URL still updates (pushState) -- so each range stays a
+  // real, shareable/bookmarkable link (e.g. index.html?when=week).
+  quickFiltersEl.addEventListener("click", (e) => {
+    const link = e.target.closest("a[data-when]");
+    if (!link) return;
+    e.preventDefault();
+    activeWhen = link.dataset.when;
+    const url = new URL(location.href);
+    if (activeWhen === "all") url.searchParams.delete("when");
+    else url.searchParams.set("when", activeWhen);
+    history.pushState({}, "", url);
+    highlightActiveQuickFilter();
+    applyFilter();
+  });
+
+  window.addEventListener("popstate", () => {
+    activeWhen = getWhenFromUrl();
+    highlightActiveQuickFilter();
+    applyFilter();
+  });
+
+  highlightActiveQuickFilter();
 
   // Relative (not root-absolute) so this works both from a local server at
   // the project root and from a GitHub Pages project site served under a
@@ -243,7 +323,7 @@
     .then((data) => {
       allEvents = data;
       footerCountEl.textContent = `${data.length} Veranstaltungen`;
-      renderList(allEvents);
+      applyFilter();
     })
     .catch((err) => {
       listEl.innerHTML = `<p class="empty-state">Konnte Daten nicht laden: ${escapeHtml(err.message)}. Lief die Seite über einen lokalen Server (z. B. <code>python3 -m http.server</code>) und wurde <code>run.py</code> schon ausgeführt?</p>`;
