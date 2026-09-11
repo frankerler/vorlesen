@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Scrape all configured publisher sites and write Berlin reading events to disk.
+"""Scrape all enabled sites (see sources.json) and write Berlin reading events to disk.
 
 Usage:
-    python run.py                  # scrape everything, write data/events.json
-    python run.py --publisher rowohlt hanser   # only run specific scrapers
+    python run.py                  # scrape everything enabled in sources.json
+    python run.py --publisher rowohlt hanser   # only run specific scrapers, ignoring sources.json
     python run.py --all-cities     # don't filter to Berlin, keep every city
     python run.py --format csv     # also/instead write data/events.csv
 
@@ -11,6 +11,12 @@ Each scraper module in scrapers/ exposes scrape() -> list[Event] with the
 *raw* events it found (any city). This script merges them, filters for
 Berlin (unless --all-cities), de-duplicates, sorts by date, and persists
 the result as JSON (and optionally CSV).
+
+Which scrapers actually run is controlled by sources.json at the repo root
+(edited by hand, or through web/admin.html) -- each entry there needs a
+matching scrapers/<id>.py module (see SCRAPERS below) to actually do
+anything; sources.json only toggles it on/off, it can't invent a scraper
+for a brand new site on its own.
 """
 from __future__ import annotations
 
@@ -26,9 +32,11 @@ from pathlib import Path
 from scrapers.base import Event, authors_overlap, is_berlin, venues_match
 
 DATA_DIR = Path(__file__).parent / "data"
+SOURCES_CONFIG_PATH = Path(__file__).parent / "sources.json"
 
-# Registry of available scrapers: module name -> human label.
-# Add new publishers/venues here once scrapers/<module>.py implements scrape().
+# Registry of *implemented* scrapers: module name -> human label. This is the
+# ground truth for what CAN run; sources.json (see load_enabled_sources)
+# controls what actually DOES run on a given invocation.
 SCRAPERS = {
     # Publishers
     "suhrkamp": "Suhrkamp Verlag",
@@ -45,6 +53,27 @@ SCRAPERS = {
     "literaturhaus": "Literaturhaus Berlin",
     "lettretage": "Lettrétage",
 }
+
+
+def load_enabled_sources() -> list[str]:
+    """Reads sources.json for the list of enabled + implemented scraper ids.
+
+    Falls back to every scraper in SCRAPERS if sources.json is missing or
+    unreadable, so a fresh checkout without that file still works.
+    """
+    if not SOURCES_CONFIG_PATH.exists():
+        return list(SCRAPERS)
+    try:
+        config = json.loads(SOURCES_CONFIG_PATH.read_text(encoding="utf-8"))
+    except (ValueError, OSError) as exc:
+        print(f"Warning: couldn't read {SOURCES_CONFIG_PATH} ({exc}); running all scrapers.", file=sys.stderr)
+        return list(SCRAPERS)
+
+    enabled = [
+        s["id"] for s in config.get("sources", [])
+        if s.get("enabled") and s.get("implemented", True) and s.get("id") in SCRAPERS
+    ]
+    return enabled or list(SCRAPERS)
 
 
 def run_scraper(name: str) -> list[Event]:
@@ -117,12 +146,12 @@ def merge_cross_source_duplicates(events: list[Event]) -> list[Event]:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--publisher", nargs="*", choices=list(SCRAPERS), help="Only run these scrapers (default: all)")
+    parser.add_argument("--publisher", nargs="*", choices=list(SCRAPERS), help="Only run these scrapers, ignoring sources.json (default: whatever's enabled there)")
     parser.add_argument("--all-cities", action="store_true", help="Keep events from all cities, not just Berlin")
     parser.add_argument("--format", choices=["json", "csv", "both"], default="json")
     args = parser.parse_args()
 
-    targets = args.publisher or list(SCRAPERS)
+    targets = args.publisher or load_enabled_sources()
 
     print(f"Running {len(targets)} scraper(s): {', '.join(targets)}")
     all_events: list[Event] = []

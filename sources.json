@@ -1,0 +1,15 @@
+{
+  "sources": [
+    { "id": "suhrkamp", "label": "Suhrkamp Verlag", "type": "publisher", "enabled": true, "implemented": true },
+    { "id": "hanser", "label": "Carl Hanser Verlag", "type": "publisher", "enabled": true, "implemented": true },
+    { "id": "rowohlt", "label": "Rowohlt Verlag", "type": "publisher", "enabled": true, "implemented": true },
+    { "id": "fischer", "label": "S. Fischer Verlage", "type": "publisher", "enabled": true, "implemented": true },
+    { "id": "piper", "label": "Piper Verlag", "type": "publisher", "enabled": true, "implemented": true },
+    { "id": "dtv", "label": "dtv Verlag", "type": "publisher", "enabled": true, "implemented": true },
+    { "id": "kiwi", "label": "Kiepenheuer & Witsch", "type": "publisher", "enabled": true, "implemented": true },
+    { "id": "ullstein", "label": "Ullstein Verlag", "type": "publisher", "enabled": true, "implemented": true },
+    { "id": "lcb", "label": "Literarisches Colloquium Berlin", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "literaturhaus", "label": "Literaturhaus Berlin", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "lettretage", "label": "Lettrétage", "type": "venue", "enabled": true, "implemented": true }
+  ]
+}

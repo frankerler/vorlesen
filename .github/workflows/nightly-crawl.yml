@@ -1,0 +1,46 @@
+name: Nightly crawl
+
+"on":
+  schedule:
+    # 02:00 UTC = 03:00 CET / 04:00 CEST -- solidly nighttime in Berlin
+    # either side of the DST switch (a single cron can't track DST exactly).
+    - cron: "0 2 * * *"
+  workflow_dispatch: {} # lets the admin page (or you) trigger a run on demand
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Snapshot current data (for diffing new events afterwards)
+        run: cp data/events.json /tmp/before_events.json
+
+      - name: Run scrapers (only sources enabled in sources.json)
+        run: python run.py --format both
+
+      - name: Diff against last snapshot
+        run: python scripts/diff_events.py /tmp/before_events.json data/events.json
+
+      - name: Commit + push if anything changed
+        run: |
+          git config user.name "vorlesen-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/events.json data/events.csv data/last_run.json
+          if git diff --cached --quiet; then
+            echo "No changes, nothing to commit."
+            exit 0
+          fi
+          NEW_COUNT=$(python -c "import json; print(json.load(open('data/last_run.json'))['new_count'])")
+          git commit -m "Nightly crawl: ${NEW_COUNT} new event(s) [skip ci]"
+          git push

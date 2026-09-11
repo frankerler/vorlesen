@@ -4,42 +4,119 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Admin · Vorgeschlagene Lesungen</title>
+<title>Admin · Laut vorlesen in Berlin</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="admin.css">
 </head>
 <body class="admin-body">
   <header class="site-header">
-    <h1>Vorgeschlagene Lesungen</h1>
+    <h1>Admin</h1>
     <p class="admin-subtitle">
-      Visitor-Vorschläge laufen über <a href="https://formspree.io/login" target="_blank" rel="noopener noreferrer">Formspree</a> —
-      dort siehst du jede Einreichung live (und bekommst sie per E-Mail), keine eigene Anmeldung für Besucher:innen nötig.
+      Diese Seite schreibt direkt auf GitHub, mit einem Token, das <strong>nur in deinem eigenen Browser</strong>
+      gespeichert wird (localStorage) — nie im Code, nie für andere Besucher:innen sichtbar.
     </p>
   </header>
 
   <main>
-    <div class="suggestion-card">
-      <h3>So übernimmst du einen Vorschlag in die Liste</h3>
-      <ol class="admin-steps">
-        <li>Prüfe neue Einreichungen im <a href="https://formspree.io/login" target="_blank" rel="noopener noreferrer">Formspree-Dashboard</a> (oder in der Benachrichtigungs-E-Mail).</li>
-        <li>Exportiere die Einreichungen, die du übernehmen willst, als CSV (Formspree: Form → Submissions → Export).</li>
-        <li>Lege die CSV irgendwo lokal ab und führe aus:
-          <pre><code>.venv/bin/python scripts/import_formspree_submissions.py pfad/zur/submissions.csv --dry-run
-.venv/bin/python scripts/import_formspree_submissions.py pfad/zur/submissions.csv</code></pre>
-        </li>
-        <li>Das Skript hängt neue Einträge an <code>data/events.json</code>/<code>.csv</code> an. Danach committen und pushen:
-          <pre><code>git add data/ &amp;&amp; git commit -m "Add community-suggested reading(s)" &amp;&amp; git push</code></pre>
-        </li>
-      </ol>
-      <p class="admin-note">
-        Einreichungen, die du nicht willst, lässt du einfach in der CSV weg (Zeile löschen)
-        oder markierst sie in Formspree als gelesen/archiviert — sie werden dann nicht importiert.
-      </p>
-    </div>
+    <!-- Connection -->
+    <section class="admin-section" id="connect-section">
+      <h2>Verbindung</h2>
+      <div id="connect-disconnected">
+        <p class="admin-note">
+          Erstelle ein <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Fine-grained Personal Access Token</a>,
+          nur für das Repo <code>frankerler/vorlesen</code>, mit Berechtigungen
+          <strong>Contents: Read and write</strong> und <strong>Actions: Read and write</strong>. Füge es hier ein:
+        </p>
+        <div class="connect-row">
+          <input type="password" id="token-input" placeholder="github_pat_…" autocomplete="off">
+          <button id="connect-btn" class="detail-link">Verbinden</button>
+        </div>
+      </div>
+      <div id="connect-connected" hidden>
+        <p class="admin-note">✅ Verbunden als <strong id="connected-user"></strong>. <button id="disconnect-btn" class="link-btn">Trennen</button></p>
+      </div>
+      <p id="connect-error" class="suggest-status suggest-status--error" hidden></p>
+    </section>
+
+    <!-- Last crawl / new events -->
+    <section class="admin-section">
+      <h2>Letzter Crawl</h2>
+      <div id="last-run-info" class="admin-note">Lade …</div>
+      <button id="crawl-now-btn" class="detail-link" disabled title="Verbinde dich zuerst mit GitHub">Jetzt crawlen</button>
+      <p id="crawl-status" class="suggest-status" hidden></p>
+    </section>
+
+    <!-- Sources -->
+    <section class="admin-section">
+      <h2>Quellen</h2>
+      <table class="admin-table" id="sources-table">
+        <thead><tr><th>Aktiv</th><th>Name</th><th>Typ</th><th>Status</th><th></th></tr></thead>
+        <tbody id="sources-tbody"></tbody>
+      </table>
+      <details class="admin-add-form">
+        <summary>+ Neue Quelle vormerken</summary>
+        <p class="admin-note">
+          Neue Quellen brauchen erst einen eigenen Scraper (jede Website ist anders aufgebaut) — hier trägst
+          du sie nur als Wunsch/Vormerkung ein; sie crawlt noch nichts, bis der Scraper gebaut ist.
+        </p>
+        <form id="add-source-form">
+          <label>ID (kurz, z. B. <code>aufbau</code>)<input type="text" name="id" required pattern="[a-z0-9_-]+"></label>
+          <label>Name<input type="text" name="label" required></label>
+          <label>Typ
+            <select name="type"><option value="publisher">Verlag</option><option value="venue">Veranstaltungsort</option></select>
+          </label>
+          <label>URL<input type="url" name="url" placeholder="https://…"></label>
+          <button type="submit" class="detail-link">Vormerken</button>
+        </form>
+      </details>
+      <button id="save-sources-btn" class="detail-link" disabled title="Verbinde dich zuerst mit GitHub">Quellen-Änderungen speichern</button>
+      <p id="sources-status" class="suggest-status" hidden></p>
+    </section>
+
+    <!-- Events CRUD -->
+    <section class="admin-section">
+      <h2>Veranstaltungen (<span id="events-count">0</span>)</h2>
+      <div class="admin-toolbar">
+        <input type="search" id="events-search" placeholder="Suchen …">
+        <button id="add-event-btn" class="detail-link">+ Neue Veranstaltung</button>
+      </div>
+      <table class="admin-table" id="events-table">
+        <thead><tr><th>Datum</th><th>Autor</th><th>Buchtitel</th><th>Ort</th><th>Quelle</th><th></th></tr></thead>
+        <tbody id="events-tbody"></tbody>
+      </table>
+      <button id="save-events-btn" class="detail-link" disabled title="Verbinde dich zuerst mit GitHub">
+        Änderungen speichern (<span id="pending-changes">0</span>)
+      </button>
+      <p id="events-status" class="suggest-status" hidden></p>
+    </section>
   </main>
+
+  <div id="event-overlay" class="overlay" hidden>
+    <div class="detail-panel" role="dialog" aria-modal="true">
+      <button id="close-event-form" class="close-btn" aria-label="Schließen">&times;</button>
+      <h2 id="event-form-title">Veranstaltung bearbeiten</h2>
+      <form id="event-form">
+        <input type="hidden" name="id">
+        <label>Autor *<input type="text" name="author" required></label>
+        <label>Buchtitel *<input type="text" name="book_title" required></label>
+        <div class="suggest-form-row">
+          <label>Datum *<input type="date" name="date" required></label>
+          <label>Uhrzeit<input type="time" name="time"></label>
+        </div>
+        <label>Veranstaltungsort<input type="text" name="venue"></label>
+        <label>Adresse<input type="text" name="address" placeholder="Straße, PLZ Berlin"></label>
+        <label>Quelle / Verlag<input type="text" name="publisher"></label>
+        <label>Link<input type="url" name="url" placeholder="https://…"></label>
+        <label>Cover-Bild-URL<input type="url" name="cover_image" placeholder="https://…"></label>
+        <button type="submit" class="detail-link suggest-submit">Übernehmen</button>
+      </form>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <p><a href="index.html">← Zurück zur Übersicht</a></p>
   </footer>
+
+  <script src="admin.js"></script>
 </body>
 </html>

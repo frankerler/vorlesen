@@ -53,6 +53,64 @@ instead, a third-party form backend built for exactly this:
 placeholder until a real Formspree form is created and its endpoint pasted
 in — the form shows a clear error instead of failing silently until then.
 
+## Admin page — CRUD, sources, and the nightly crawl
+
+**[web/admin.html](web/admin.html)** is a real admin tool: edit/add/delete
+individual events, enable/disable/add sources, trigger a crawl on demand,
+and see what the last crawl found. It's a static page like the rest of the
+site — reachable by anyone — but *reads* are already public repo data
+anyway, and every *write* action requires a GitHub token pasted into the
+page first.
+
+**How the token works:** paste a
+[fine-grained personal access token](https://github.com/settings/personal-access-tokens/new)
+(scoped to just this repo, `Contents: Read and write` + `Actions: Read and write`)
+into the connection box. It's stored only in **your own browser's**
+localStorage — never committed, never sent anywhere but `api.github.com` —
+so this is safe for a single trusted admin (you) even though the page
+itself is publicly reachable. Hit "Trennen" to remove it from that browser.
+
+Once connected:
+
+- **Veranstaltungen** — a searchable table of every event. "Bearbeiten" opens
+  an edit form; "Löschen" removes it (with confirmation); "+ Neue
+  Veranstaltung" adds one from scratch. Nothing is written to GitHub until
+  you click **"Änderungen speichern"**, which commits the whole updated
+  `data/events.json`/`.csv` in one go (so a batch of edits is one commit,
+  not one per field).
+- **Quellen** — lists every entry in [sources.json](sources.json) (which
+  scrapers run) with an enable/disable checkbox and a delete button, plus a
+  form to note down a *wanted* new source. Adding a source here only
+  registers the idea (`implemented: false`) — a brand new website still
+  needs an actual scraper written for it (each site has its own layout;
+  see "Adding another publisher or venue" below), it's not something the
+  admin page can conjure on its own. "Quellen-Änderungen speichern" commits
+  `sources.json`.
+- **Letzter Crawl** — reads `data/last_run.json` (written by the nightly
+  workflow below) and shows when it last ran, how many events total, and a
+  list of anything new since the previous run. "Jetzt crawlen" triggers an
+  on-demand run instead of waiting for the schedule.
+
+### Nightly automated crawl
+
+[.github/workflows/nightly-crawl.yml](.github/workflows/nightly-crawl.yml)
+runs on GitHub's own infrastructure (not something you or I have to keep
+running) once a day at 02:00 UTC (≈ 3–4am Berlin time, thereabouts —
+a single cron can't track the DST switch exactly) via a scheduled GitHub
+Action, plus on demand via the admin page's "Jetzt crawlen" button or
+manually with:
+```bash
+gh workflow run nightly-crawl.yml
+```
+Each run: installs dependencies, snapshots the current `data/events.json`,
+runs `python run.py --format both` (respecting `sources.json`'s
+enabled/disabled toggles), diffs the before/after with
+[scripts/diff_events.py](scripts/diff_events.py) to produce
+`data/last_run.json`, and — only if anything actually changed — commits and
+pushes the result using the Action's own built-in token (no personal PAT
+needed for the scheduled run itself, only for the admin page's manual
+edits/triggers).
+
 ## Setup
 
 ```bash
@@ -183,14 +241,17 @@ real cover image, address, etc.) instead of listing both.
    shared `Event` dataclass and helpers).
 3. Run `.venv/bin/python -m scrapers.module_name` directly to test it in
    isolation before wiring it into the full pipeline.
-4. For a venue (rather than a publisher), reuse the `publisher` field for
+4. Add (or flip `implemented`/`enabled` to `true` on) its entry in
+   [sources.json](sources.json) — this is what actually turns it on for
+   `run.py` and the nightly crawl. The admin page's "Quellen" section can
+   toggle this too once the module exists.
+5. For a venue (rather than a publisher), reuse the `publisher` field for
    the venue's own name — `merge_cross_source_duplicates()` in `run.py`
    already handles collapsing it against a matching publisher-sourced event.
 
 ## Next steps (not built yet)
 
 - A map view (the current frontend is list-only).
-- Scheduling (cron/GitHub Actions) to keep the data fresh.
 - More publishers (Aufbau, C.H. Beck, Klett-Cotta, Hoffmann und Campe, DVA,
   Blessing, Luchterhand, ...) and more venues (independent bookshops,
   Pfefferberg Theater, Urania, Deutsches Theater, ...) for better coverage.
