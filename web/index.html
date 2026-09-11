@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesungen in Berlin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Laut vorlesen in Berlin</h1>
+    <div class="search-bar">
+      <input type="search" id="search" placeholder="Suche nach Autor, Titel, Ort oder Verlag …" autocomplete="off">
+      <span id="result-count" class="result-count"></span>
+    </div>
+  </header>
+
+  <main>
+    <div id="list" class="event-list"></div>
+    <p id="empty-state" class="empty-state" hidden>Keine Veranstaltungen gefunden.</p>
+  </main>
+
+  <div id="overlay" class="overlay" hidden>
+    <div class="detail-panel" role="dialog" aria-modal="true">
+      <button id="close-detail" class="close-btn" aria-label="Schließen">&times;</button>
+      <div id="detail-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>Daten automatisch von Verlagswebsites gesammelt · <span id="footer-count"></span></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
