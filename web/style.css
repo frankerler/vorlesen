@@ -354,13 +354,15 @@ main {
 }
 .suggest-intro a { color: var(--accent); }
 
-#suggest-form {
+#suggest-form,
+#event-form {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
 }
 
-#suggest-form label {
+#suggest-form label,
+#event-form label {
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
@@ -370,7 +372,9 @@ main {
 }
 
 #suggest-form input,
-#suggest-form textarea {
+#suggest-form textarea,
+#event-form input,
+#event-form textarea {
   font: inherit;
   font-weight: 400;
   color: var(--ink);
@@ -381,7 +385,9 @@ main {
 }
 
 #suggest-form input:focus,
-#suggest-form textarea:focus {
+#suggest-form textarea:focus,
+#event-form input:focus,
+#event-form textarea:focus {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
