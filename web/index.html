@@ -21,11 +21,13 @@
       <a href="?when=month" data-when="month">Nächster Monat</a>
       <a href="?when=all" data-when="all">Alle</a>
     </nav>
-    <div class="view-toggle" id="view-toggle">
-      <button type="button" data-view="list" class="active">Liste</button>
-      <button type="button" data-view="swipe">Swipe</button>
-    </div>
   </header>
+
+  <!-- Fixed so it stays visible in both list and swipe view (mobile only, see CSS) -->
+  <div class="view-toggle" id="view-toggle">
+    <button type="button" data-view="list" class="active">Liste</button>
+    <button type="button" data-view="swipe">Swipe</button>
+  </div>
 
   <main>
     <div id="list" class="event-list"></div>
@@ -33,10 +35,8 @@
   </main>
 
   <div id="swipe-view" class="swipe-view" hidden>
-    <button id="swipe-close" class="close-btn swipe-close-btn" aria-label="Zur Liste">&times;</button>
     <div id="swipe-date-label" class="swipe-date-label"></div>
     <div id="swipe-slide" class="swipe-slide"></div>
-    <p id="swipe-empty" class="swipe-empty" hidden>Keine Veranstaltungen in dieser Ansicht.</p>
   </div>
 
   <div id="overlay" class="overlay" hidden>

@@ -15,8 +15,6 @@
   const swipeViewEl = document.getElementById("swipe-view");
   const swipeSlideEl = document.getElementById("swipe-slide");
   const swipeDateLabelEl = document.getElementById("swipe-date-label");
-  const swipeCloseBtn = document.getElementById("swipe-close");
-  const swipeEmptyEl = document.getElementById("swipe-empty");
 
   const suggestBtn = document.getElementById("suggest-btn");
   const suggestOverlayEl = document.getElementById("suggest-overlay");
@@ -250,7 +248,6 @@
 
   function renderSwipeSlideContent() {
     const ev = swipeEvents[swipeIndex];
-    swipeEmptyEl.hidden = !!ev;
     if (!ev) {
       swipeSlideEl.style.backgroundImage = "none";
       swipeSlideEl.innerHTML = "";
@@ -314,8 +311,6 @@
     const btn = e.target.closest("button[data-view]");
     if (btn) setActiveView(btn.dataset.view);
   });
-
-  swipeCloseBtn.addEventListener("click", () => setActiveView("list"));
 
   let swipeTouchStartY = null;
   swipeViewEl.addEventListener(
