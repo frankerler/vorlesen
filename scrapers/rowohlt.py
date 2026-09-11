@@ -93,7 +93,10 @@ def _parse_detail(url: str) -> Event | None:
                 address=address,
                 url=offer_url or organizer_url or url,
                 source_url=url,
-                raw_text=event_type,
+                # event_type ("Lesung"/"Premiere"/...) is too short to be a
+                # useful description on its own; the free-text blurb is much
+                # more informative for the detail view.
+                raw_text=clean_text(item.get("description")) or event_type,
                 cover_image=item.get("image") or None,
                 book_title=book_title,
             )

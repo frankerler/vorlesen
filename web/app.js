@@ -162,14 +162,33 @@
     listEl.appendChild(frag);
   }
 
+  // A handful of sources put a short event-type tag ("Lesung", "Premiere",
+  // "Moderiertes Gespräch", ...) or a plain date/time string in raw_text
+  // instead of real descriptive text -- both are always well under this
+  // length, so this cutoff reliably separates "actual description" from
+  // "not worth showing again" without a source-specific tag list.
+  const MIN_DESCRIPTION_LENGTH = 40;
+
+  function descriptionParts(ev) {
+    const parts = [];
+    const title = headline(ev);
+    // The fuller original event text, when it adds information beyond the
+    // (now book-title-only) headline above it.
+    if (ev.title && ev.title !== title) parts.push(ev.title);
+    if (ev.raw_text && ev.raw_text.length >= MIN_DESCRIPTION_LENGTH && !parts.includes(ev.raw_text)) {
+      parts.push(ev.raw_text);
+    }
+    return parts;
+  }
+
   function openDetail(ev) {
     const dt = parseDate(ev.date);
     const dateStr = dt ? `${WEEKDAYS[dt.getDay()]}, ${dt.getDate()}. ${MONTHS[dt.getMonth()]} ${dt.getFullYear()}` : "Datum unbekannt";
 
     const title = headline(ev);
-    // Show the fuller original event text as body copy when it adds
-    // information beyond the (now book-title-only) headline above it.
-    const longText = ev.title && ev.title !== title ? ev.title : null;
+    const description = descriptionParts(ev)
+      .map((p) => `<p class="detail-description">${escapeHtml(p)}</p>`)
+      .join("");
 
     detailContentEl.innerHTML = `
       <div class="detail-header">
@@ -185,7 +204,7 @@
         <dt>Ort</dt><dd>${escapeHtml(ev.venue || "–")}</dd>
         <dt>Adresse</dt><dd>${escapeHtml(ev.address || "–")}</dd>
       </dl>
-      ${longText ? `<p class="detail-description">${escapeHtml(longText)}</p>` : ""}
+      ${description}
       ${ev.url ? `<a class="detail-link" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer">Zur Veranstaltung / Tickets →</a>` : ""}
     `;
     overlayEl.hidden = false;

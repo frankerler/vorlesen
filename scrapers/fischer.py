@@ -94,7 +94,7 @@ def _parse_detail(url: str) -> Event | None:
                 address=address,
                 url=organizer_url or offer_url or url,
                 source_url=url,
-                raw_text=start,
+                raw_text=clean_text(item.get("description")),
                 cover_image=item.get("image") or None,
                 book_title=book_title,
             )
