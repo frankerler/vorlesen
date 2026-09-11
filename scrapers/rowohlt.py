@@ -19,7 +19,7 @@ import time
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, fetch
+from .base import Event, clean_text, extract_quoted_title, fetch
 
 SITEMAP_URL = "https://www.rowohlt.de/sitemap-events.xml"
 LISTING_URL = "https://www.rowohlt.de/veranstaltung"
@@ -77,6 +77,11 @@ def _parse_detail(url: str) -> Event | None:
             type_el = soup.select_one("strong.event-intro__main__type")
             event_type = clean_text(type_el.get_text()) if type_el else None
 
+            # No dedicated book-title field here; best-effort extraction from
+            # the free-text description (title itself is usually just the
+            # author's name, e.g. "Waslat Hasrat-Nazimi").
+            book_title = extract_quoted_title(item.get("description"))
+
             return Event(
                 publisher=PUBLISHER,
                 author=author,
@@ -90,6 +95,7 @@ def _parse_detail(url: str) -> Event | None:
                 source_url=url,
                 raw_text=event_type,
                 cover_image=item.get("image") or None,
+                book_title=book_title,
             )
     return None
 

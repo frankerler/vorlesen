@@ -38,16 +38,22 @@ def _venue_addresses() -> dict:
     return lookup
 
 
-def _split_author_title(headline: str | None) -> tuple[str | None, str | None]:
-    """Headlines are typically "<Author> »<Title>«" -- split on the guillemets."""
+def _split_author_title(headline: str | None) -> tuple[str | None, str | None, str | None]:
+    """Headlines are typically "<Author> »<Title>«" -- split on the guillemets.
+
+    Returns (author, book_title, display_title). book_title is only set when
+    the guillemet pattern actually matched (e.g. not for a festival headline
+    like "Homecoming & Jubiläum" with no book in it); display_title always
+    falls back to the raw headline so the UI has something to show.
+    """
     if not headline:
-        return None, None
+        return None, None, None
     m = re.match(r"^(.*?)\s*»(.+?)«\s*$", headline)
     if m:
         author = clean_text(m.group(1)) or None
-        title = clean_text(m.group(2)) or None
-        return author, title
-    return None, clean_text(headline)
+        book_title = clean_text(m.group(2)) or None
+        return author, book_title, book_title
+    return None, None, clean_text(headline)
 
 
 def scrape() -> list[Event]:
@@ -79,7 +85,7 @@ def scrape() -> list[Event]:
 
         headline_el = article.select_one("h3.headline a") or article.select_one("h3.headline")
         headline = clean_text(headline_el.get_text()) if headline_el else None
-        author, title = _split_author_title(headline)
+        author, book_title, display_title = _split_author_title(headline)
 
         subtitle_el = article.select_one(".short-description")
         subtitle = clean_text(subtitle_el.get_text()) if subtitle_el else None
@@ -91,7 +97,7 @@ def scrape() -> list[Event]:
             Event(
                 publisher=VENUE_ORG,
                 author=author,
-                title=title or headline,
+                title=display_title,
                 date=date_iso,
                 time=time_str,
                 venue=venue_name,
@@ -100,6 +106,7 @@ def scrape() -> list[Event]:
                 url=url,
                 source_url=LISTING_URL,
                 raw_text=subtitle,
+                book_title=book_title,
             )
         )
 

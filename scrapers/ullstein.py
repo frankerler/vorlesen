@@ -66,6 +66,8 @@ def _hit_to_event(hit: dict) -> Event:
     url = f"https://www.ullstein.de{uri}" if uri.startswith("/") else (uri or None)
 
     cover = (hit.get("cover") or {}).get("full")
+    book_titles = hit.get("productTitels") or []
+    book_title = clean_text(book_titles[0]) if book_titles else None
 
     return Event(
         publisher=PUBLISHER,
@@ -80,6 +82,7 @@ def _hit_to_event(hit: dict) -> Event:
         source_url=LISTING_URL,
         raw_text=f"{date_str} {hit.get('time') or ''}".strip(),
         cover_image=cover,
+        book_title=book_title,
     )
 
 

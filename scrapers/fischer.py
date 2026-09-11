@@ -14,7 +14,7 @@ import time
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, fetch
+from .base import Event, clean_text, extract_quoted_title, fetch
 
 LISTING_URL = "https://www.fischerverlage.de/veranstaltung"
 PUBLISHER = "S. Fischer Verlage"
@@ -79,6 +79,10 @@ def _parse_detail(url: str) -> Event | None:
                     offer_url = offer["url"]
                     break
 
+            # No dedicated book-title field; title itself is usually just
+            # "Lesung mit <Author>", so try the description for a quoted title.
+            book_title = extract_quoted_title(item.get("description"), title)
+
             return Event(
                 publisher=PUBLISHER,
                 author=author,
@@ -92,6 +96,7 @@ def _parse_detail(url: str) -> Event | None:
                 source_url=url,
                 raw_text=start,
                 cover_image=item.get("image") or None,
+                book_title=book_title,
             )
     return None
 

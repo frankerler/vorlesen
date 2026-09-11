@@ -55,6 +55,13 @@
     return [ev.venue, ev.city].filter(Boolean).join(", ");
   }
 
+  // Prefer just the book's title as the headline (what this app is about);
+  // fall back to the fuller event title/description when a clean book title
+  // couldn't be isolated for that source (see scrapers/*.py `book_title`).
+  function headline(ev) {
+    return ev.book_title || ev.title || ev.author || "Lesung";
+  }
+
   function renderList(events) {
     listEl.innerHTML = "";
     resultCountEl.textContent = `${events.length} von ${allEvents.length}`;
@@ -83,7 +90,7 @@
         </div>
         ${coverThumb(ev, "cover-thumb")}
         <div class="event-main">
-          <p class="event-title">${escapeHtml(ev.title || ev.author || "Lesung")}</p>
+          <p class="event-title">${escapeHtml(headline(ev))}</p>
           <p class="event-meta">${escapeHtml(ev.author || "")}<span class="sep">·</span>${escapeHtml(locationLine(ev))}${ev.time ? `<span class="sep">·</span>${escapeHtml(ev.time)} Uhr` : ""}</p>
         </div>
       `;
@@ -98,11 +105,16 @@
     const dt = parseDate(ev.date);
     const dateStr = dt ? `${WEEKDAYS[dt.getDay()]}, ${dt.getDate()}. ${MONTHS[dt.getMonth()]} ${dt.getFullYear()}` : "Datum unbekannt";
 
+    const title = headline(ev);
+    // Show the fuller original event text as body copy when it adds
+    // information beyond the (now book-title-only) headline above it.
+    const longText = ev.title && ev.title !== title ? ev.title : null;
+
     detailContentEl.innerHTML = `
       <div class="detail-header">
         ${coverThumb(ev, "detail-cover")}
         <div class="detail-heading">
-          <h2>${escapeHtml(ev.title || "Lesung")}</h2>
+          <h2>${escapeHtml(title)}</h2>
           ${ev.author ? `<p class="detail-author">${escapeHtml(ev.author)}</p>` : ""}
           <span class="publisher-tag">${escapeHtml(ev.publisher)}</span>
         </div>
@@ -112,6 +124,7 @@
         <dt>Ort</dt><dd>${escapeHtml(ev.venue || "–")}</dd>
         <dt>Adresse</dt><dd>${escapeHtml(ev.address || "–")}</dd>
       </dl>
+      ${longText ? `<p class="detail-description">${escapeHtml(longText)}</p>` : ""}
       ${ev.url ? `<a class="detail-link" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer">Zur Veranstaltung / Tickets →</a>` : ""}
     `;
     overlayEl.hidden = false;

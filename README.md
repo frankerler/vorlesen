@@ -53,6 +53,7 @@ Each event record looks like:
   "publisher": "Suhrkamp Verlag",
   "author": "Lutz Seiler",
   "title": "Lutz Seiler liest aus seinem neuen Roman Das tickende Herz ...",
+  "book_title": "Das tickende Herz",
   "date": "2026-10-14",
   "time": "20:00",
   "venue": "Pfefferberg Theater",
@@ -130,6 +131,15 @@ real cover image, address, etc.) instead of listing both.
 - LCB and Lettrétage often don't have a clean single "author" field on their
   own (a venue lists all participants/moderators, not just the book's
   author) — author is best-effort there and sometimes `null`.
+- `book_title` (used as the headline in the UI instead of the full event
+  description) is populated directly from clean source data where available
+  (Hanser, KiWi, Ullstein, Literaturhaus: 100% coverage), and by best-effort
+  extraction of a quoted/guillemet phrase from free text elsewhere. Overall
+  ~74% of current events have one; when it's `null` the UI falls back to
+  showing the full title. Rowohlt is the weakest source for this (its
+  description text is plot-summary blurb that never quotes the book's own
+  title) and Lettrétage/Literaturhaus-Berlin's one live event genuinely
+  aren't book readings, so `null` is expected there.
 - Literaturhaus Berlin's current listing ("Li-Be") only has one published
   event right now — the venue is mid-renovation and toured other locations
   under a different program until reopening; the scraper itself has no

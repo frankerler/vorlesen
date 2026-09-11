@@ -63,6 +63,7 @@ class Event:
     source_url: str
     raw_text: Optional[str] = None  # fallback: original snippet, for debugging/manual review
     cover_image: Optional[str] = None  # book cover URL, when the source page exposes one
+    book_title: Optional[str] = None  # just the book's title, when it can be isolated from `title`
 
     def id(self) -> str:
         """Stable dedupe key across scraper runs."""
@@ -168,6 +169,34 @@ def clean_text(s: Optional[str]) -> Optional[str]:
     if s is None:
         return None
     return re.sub(r"\s+", " ", s).strip() or None
+
+
+# Sources that don't expose a clean, separate "book title" field usually still
+# have it quoted/set off somewhere in their free-text title or description --
+# German »guillemets« and ›single guillemets‹ are the most common, but plain
+# and curly quotes show up too. We take the *longest* quoted match across all
+# given texts, on the theory that a short quoted aside is rarely the title
+# but a book title usually is the longest quoted phrase in the sentence.
+_QUOTE_PATTERNS = [
+    re.compile(r"»([^»«]{3,140})«"),
+    re.compile(r"›([^›‹]{3,140})‹"),
+    re.compile(r"„([^„“]{3,140})“"),
+    re.compile(r'"([^"]{3,140})"'),
+]
+
+
+def extract_quoted_title(*texts: Optional[str]) -> Optional[str]:
+    """Best-effort extraction of a book title quoted inside free text."""
+    best = None
+    for text in texts:
+        if not text:
+            continue
+        for pattern in _QUOTE_PATTERNS:
+            for m in pattern.finditer(text):
+                candidate = clean_text(m.group(1))
+                if candidate and (best is None or len(candidate) > len(best)):
+                    best = candidate
+    return best
 
 
 # --- Cross-source fuzzy matching -------------------------------------------

@@ -10,7 +10,7 @@ import re
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, fetch
+from .base import Event, clean_text, extract_quoted_title, fetch
 
 BASE_URL = "https://www.dtv.de/events"
 PUBLISHER = "dtv Verlag"
@@ -96,6 +96,7 @@ def _parse_page(html: str, source_url: str) -> list[Event]:
                 source_url=source_url,
                 raw_text=" / ".join(filter(None, [date_text, time_text])),
                 cover_image=cover,
+                book_title=extract_quoted_title(title),
             )
         )
 

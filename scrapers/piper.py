@@ -17,7 +17,7 @@ import time
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, fetch, parse_german_date
+from .base import Event, clean_text, extract_quoted_title, fetch, parse_german_date
 
 LISTING_URL = "https://www.piper.de/autoren/veranstaltungen"
 PUBLISHER = "Piper Verlag"
@@ -116,6 +116,7 @@ def scrape() -> list[Event]:
             url=detail_url,
             source_url=LISTING_URL,
             raw_text=date_text,
+            book_title=extract_quoted_title(title),
         )
 
         # Only worth the extra request (venue/time/ticket link) for Berlin events.

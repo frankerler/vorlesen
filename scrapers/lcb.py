@@ -12,7 +12,7 @@ import re
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, fetch, parse_german_date
+from .base import Event, clean_text, extract_quoted_title, fetch, parse_german_date
 
 LISTING_URL = "https://lcb.de/category/veranstaltungen/"
 VENUE = "Literarisches Colloquium Berlin"
@@ -61,6 +61,18 @@ def _parse_detail(url: str) -> Event | None:
 
     title_el = soup.select_one(".grid-cell-6 h1")
     title = clean_text(title_el.get_text()) if title_el else None
+
+    # No dedicated book-title field; the description paragraphs often bold
+    # the book's title (e.g. "... aus ihrem Roman <strong>Titel</strong>"),
+    # which is a better signal here than trying to quote-match the headline.
+    book_title = None
+    for strong in soup.select(".grid-cell-6 p strong"):
+        candidate = clean_text(strong.get_text())
+        if candidate and len(candidate) >= 3:
+            book_title = candidate
+            break
+    if not book_title:
+        book_title = extract_quoted_title(title)
 
     text_div = soup.select_one(".grid-cell-2 .text") or soup.select_one(".grid-cell-2.pl-30 .text")
     if not text_div:
@@ -112,6 +124,7 @@ def _parse_detail(url: str) -> Event | None:
         url=url,
         source_url=LISTING_URL,
         raw_text=None,
+        book_title=book_title,
     )
 
 

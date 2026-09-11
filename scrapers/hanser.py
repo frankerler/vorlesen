@@ -89,6 +89,8 @@ def _doc_to_event(doc: dict) -> Event:
     if not cover and authors:
         cover = authors[0].get("image")
 
+    book_title = clean_text(books[0].get("fullname")) if books else None
+
     return Event(
         publisher=PUBLISHER,
         author=author,
@@ -102,6 +104,7 @@ def _doc_to_event(doc: dict) -> Event:
         source_url=LISTING_URL,
         raw_text=clean_text(doc.get("categoryTxt")),
         cover_image=cover,
+        book_title=book_title,
     )
 
 

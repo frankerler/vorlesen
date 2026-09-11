@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, fetch
+from .base import Event, clean_text, extract_quoted_title, fetch
 
 BASE_URL = "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113"
 PUBLISHER = "Suhrkamp Verlag"
@@ -45,6 +45,20 @@ def _strip_html(text: str | None) -> str | None:
     return clean_text(BeautifulSoup(text, "html.parser").get_text(separator=" "))
 
 
+def _book_title_from_html(*html_fragments: str | None) -> str | None:
+    """Suhrkamp wraps the book title in <em> (e.g. "liest aus <em>Titel</em>"),
+    which is a cleaner signal than regexing the already-stripped text."""
+    for html in html_fragments:
+        if not html:
+            continue
+        soup = BeautifulSoup(html, "html.parser")
+        em_texts = [clean_text(em.get_text()) for em in soup.find_all("em")]
+        em_texts = [t for t in em_texts if t]
+        if em_texts:
+            return max(em_texts, key=len)
+    return None
+
+
 def _parse_utc(value: str | None) -> datetime | None:
     if not value:
         return None
@@ -69,6 +83,9 @@ def _item_to_event(item: dict) -> Event:
     url = f"https://www.suhrkamp.de{link}" if link and link.startswith("/") else link
 
     description = _strip_html(item.get("details") or item.get("description"))
+    book_title = _book_title_from_html(item.get("details"), item.get("description"))
+    if not book_title:
+        book_title = extract_quoted_title(description)
 
     return Event(
         publisher=PUBLISHER,
@@ -82,6 +99,7 @@ def _item_to_event(item: dict) -> Event:
         url=url,
         source_url=BASE_URL,
         raw_text=item.get("type"),
+        book_title=book_title,
     )
 
 

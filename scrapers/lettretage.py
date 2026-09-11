@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, fetch
+from .base import Event, clean_text, extract_quoted_title, fetch
 
 LISTING_URL = "https://www.lettretage.de/programm"
 VENUE = "Lettrétage"
@@ -110,6 +110,9 @@ def _parse_detail(title: str, url: str) -> Event | None:
     body_el = soup.select_one("div.rich-text-detail-page-1")
     description = clean_text(body_el.get_text(" ")) if body_el else None
     author = _guess_author(description)
+    # Best-effort only: many Lettrétage events (workshops, performances) have
+    # no single book at all, so this is often None -- that's expected here.
+    book_title = extract_quoted_title(title, description)
 
     return Event(
         publisher=VENUE,
@@ -124,6 +127,7 @@ def _parse_detail(title: str, url: str) -> Event | None:
         source_url=LISTING_URL,
         raw_text=description,
         cover_image=cover,
+        book_title=book_title,
     )
 
 

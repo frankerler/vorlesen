@@ -82,6 +82,7 @@ def _hit_events(hit: dict) -> list[Event]:
             cover = contributors[0].get("imageLink")
 
         description = clean_text(BeautifulSoup(hit.get("description") or "", "html.parser").get_text(" "))
+        book_title = clean_text(products[0].get("title")) if products else None
 
         out.append(
             Event(
@@ -97,6 +98,7 @@ def _hit_events(hit: dict) -> list[Event]:
                 source_url=LISTING_URL,
                 raw_text=ev.get("type"),
                 cover_image=cover,
+                book_title=book_title,
             )
         )
     return out
