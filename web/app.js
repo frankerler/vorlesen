@@ -10,6 +10,13 @@
   const detailContentEl = document.getElementById("detail-content");
   const closeBtn = document.getElementById("close-detail");
 
+  const suggestBtn = document.getElementById("suggest-btn");
+  const suggestOverlayEl = document.getElementById("suggest-overlay");
+  const closeSuggestBtn = document.getElementById("close-suggest");
+  const suggestFormEl = document.getElementById("suggest-form");
+
+  const GITHUB_REPO = "frankerler/vorlesen";
+
   const WEEKDAYS = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
   const MONTHS = [
     "Januar", "Februar", "März", "April", "Mai", "Juni",
@@ -140,8 +147,71 @@
   overlayEl.addEventListener("click", (e) => {
     if (e.target === overlayEl) closeDetail();
   });
+
+  // --- Suggest-a-reading form -------------------------------------------
+  //
+  // This is a static site with no backend, so a suggestion can't be stored
+  // server-side. Instead, submitting builds a pre-filled GitHub "new issue"
+  // link and opens it in a new tab; the visitor (who needs a GitHub account)
+  // completes the submission there. Approved suggestions get folded into
+  // data/events.json later (see scripts/import_suggestions.py) -- the admin
+  // view at web/admin.html reads open suggestions straight from GitHub.
+
+  function openSuggest() {
+    suggestOverlayEl.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeSuggest() {
+    suggestOverlayEl.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  suggestBtn.addEventListener("click", openSuggest);
+  closeSuggestBtn.addEventListener("click", closeSuggest);
+  suggestOverlayEl.addEventListener("click", (e) => {
+    if (e.target === suggestOverlayEl) closeSuggest();
+  });
+
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !overlayEl.hidden) closeDetail();
+    if (e.key !== "Escape") return;
+    if (!suggestOverlayEl.hidden) closeSuggest();
+    else if (!overlayEl.hidden) closeDetail();
+  });
+
+  function buildIssueBody(fields) {
+    const lines = [
+      `**Autor:** ${fields.author}`,
+      `**Buchtitel:** ${fields.book_title}`,
+      `**Veranstaltungsort:** ${fields.venue}`,
+      `**Adresse:** ${fields.address || "–"}`,
+      `**Datum:** ${fields.date}`,
+      `**Uhrzeit:** ${fields.time || "–"}`,
+      `**Link:** ${fields.url || "–"}`,
+      `**Anmerkungen:** ${fields.notes || "–"}`,
+      "",
+      "_Über das \"Lesung vorschlagen\"-Formular eingereicht._",
+    ];
+    return lines.join("\n");
+  }
+
+  suggestFormEl.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const data = new FormData(suggestFormEl);
+    const fields = Object.fromEntries(data.entries());
+
+    const title = `Vorschlag: ${fields.author} – ${fields.book_title}`;
+    const body = buildIssueBody(fields);
+    const params = new URLSearchParams({
+      title,
+      body,
+      labels: "event-suggestion",
+    });
+    const issueUrl = `https://github.com/${GITHUB_REPO}/issues/new?${params.toString()}`;
+
+    window.open(issueUrl, "_blank", "noopener,noreferrer");
+    suggestFormEl.reset();
+    closeSuggest();
   });
 
   function applyFilter() {

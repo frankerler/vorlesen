@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin · Vorgeschlagene Lesungen</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+  <header class="site-header">
+    <h1>Vorgeschlagene Lesungen</h1>
+    <p class="admin-subtitle">
+      Offene Vorschläge aus dem
+      <a href="https://github.com/frankerler/vorlesen/issues?q=is%3Aissue+is%3Aopen+label%3Aevent-suggestion" target="_blank" rel="noopener noreferrer">GitHub-Issue-Tracker</a>
+      (Label <code>event-suggestion</code>). Diese Seite liest nur öffentliche Daten — Freigeben/Ablehnen passiert auf GitHub selbst.
+    </p>
+  </header>
+
+  <main>
+    <div id="admin-list" class="admin-list"></div>
+    <p id="admin-empty" class="empty-state" hidden>Keine offenen Vorschläge.</p>
+    <p id="admin-error" class="empty-state" hidden></p>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">← Zurück zur Übersicht</a></p>
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -7,6 +7,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <button id="suggest-btn" class="fab-add" title="Lesung vorschlagen" aria-label="Lesung vorschlagen">+</button>
+
   <header class="site-header">
     <h1>Laut vorlesen in Berlin</h1>
     <div class="search-bar">
@@ -27,8 +29,33 @@
     </div>
   </div>
 
+  <div id="suggest-overlay" class="overlay" hidden>
+    <div class="detail-panel" role="dialog" aria-modal="true">
+      <button id="close-suggest" class="close-btn" aria-label="Schließen">&times;</button>
+      <h2>Lesung vorschlagen</h2>
+      <p class="suggest-intro">
+        Fehlt eine Lesung? Trag sie hier ein — dein Vorschlag wird als
+        <a href="https://github.com/frankerler/vorlesen/issues" target="_blank" rel="noopener noreferrer">GitHub Issue</a>
+        angelegt und nach Prüfung in die Liste aufgenommen. Du brauchst dafür einen (kostenlosen) GitHub-Account.
+      </p>
+      <form id="suggest-form">
+        <label>Autor *<input type="text" name="author" required></label>
+        <label>Buchtitel *<input type="text" name="book_title" required></label>
+        <label>Veranstaltungsort *<input type="text" name="venue" required placeholder="z. B. Buchhandlung XY"></label>
+        <label>Adresse<input type="text" name="address" placeholder="Straße, PLZ Berlin"></label>
+        <div class="suggest-form-row">
+          <label>Datum *<input type="date" name="date" required></label>
+          <label>Uhrzeit<input type="time" name="time"></label>
+        </div>
+        <label>Link zur Veranstaltung<input type="url" name="url" placeholder="https://…"></label>
+        <label>Anmerkungen<textarea name="notes" rows="3" placeholder="Verlag, Quelle, sonstige Hinweise …"></textarea></label>
+        <button type="submit" class="detail-link suggest-submit">Auf GitHub vorschlagen →</button>
+      </form>
+    </div>
+  </div>
+
   <footer class="site-footer">
-    <p>Daten automatisch von Verlagswebsites gesammelt · <span id="footer-count"></span></p>
+    <p>Daten automatisch von Verlagswebsites gesammelt · <span id="footer-count"></span> · <a href="admin.html">Admin</a></p>
   </footer>
 
   <script src="app.js"></script>

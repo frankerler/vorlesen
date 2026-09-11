@@ -20,8 +20,34 @@ Then open **http://localhost:8000/web/index.html** in your browser. It shows:
 - clicking an entry opens a detail view with the full description, date/time,
   venue/address, a book cover image (where the source site has one), and a
   link to the original event/ticket page
+- a **+** button (top right) for visitors to suggest a reading that's missing
 
 Re-run `python run.py` whenever you want to refresh the data the page reads.
+
+## Community suggestions
+
+This is a static site (GitHub Pages) with no server or database, so
+suggestions can't be stored server-side. Instead:
+
+1. The **+** button opens a form ([web/index.html](web/index.html)); submitting
+   it builds a pre-filled GitHub "new issue" link (label `event-suggestion`)
+   and opens it in a new tab. The visitor needs a (free) GitHub account to
+   actually post it — that's the trade-off for having no backend.
+2. **[web/admin.html](web/admin.html)** is a read-only admin view: it fetches
+   open `event-suggestion` issues straight from GitHub's public REST API (no
+   auth needed, no secrets in the client) and displays them parsed into
+   fields, each with a link back to the issue on GitHub.
+3. To approve one, add the **`approved`** label to its issue on GitHub (both
+   labels already exist on the repo). Then run:
+   ```bash
+   .venv/bin/python scripts/import_suggestions.py            # imports + closes approved issues
+   .venv/bin/python scripts/import_suggestions.py --dry-run  # preview only
+   ```
+   This needs the `gh` CLI authenticated with write access to the repo (unlike
+   the admin page, which only ever reads public data). It appends approved
+   suggestions to `data/events.json`/`.csv`, closes each imported issue with a
+   confirmation comment, and reminds you to commit + push so the live site
+   picks up the change.
 
 ## Setup
 
