@@ -5,7 +5,6 @@
   const emptyEl = document.getElementById("empty-state");
   const searchEl = document.getElementById("search");
   const resultCountEl = document.getElementById("result-count");
-  const footerCountEl = document.getElementById("footer-count");
   const overlayEl = document.getElementById("overlay");
   const detailContentEl = document.getElementById("detail-content");
   const closeBtn = document.getElementById("close-detail");
@@ -341,7 +340,6 @@
     })
     .then((data) => {
       allEvents = data;
-      footerCountEl.textContent = `${data.length} Veranstaltungen`;
       applyFilter();
     })
     .catch((err) => {
