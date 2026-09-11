@@ -21,12 +21,23 @@
       <a href="?when=month" data-when="month">Nächster Monat</a>
       <a href="?when=all" data-when="all">Alle</a>
     </nav>
+    <div class="view-toggle" id="view-toggle">
+      <button type="button" data-view="list" class="active">Liste</button>
+      <button type="button" data-view="swipe">Swipe</button>
+    </div>
   </header>
 
   <main>
     <div id="list" class="event-list"></div>
     <p id="empty-state" class="empty-state" hidden>Keine Veranstaltungen gefunden.</p>
   </main>
+
+  <div id="swipe-view" class="swipe-view" hidden>
+    <button id="swipe-close" class="close-btn swipe-close-btn" aria-label="Zur Liste">&times;</button>
+    <div id="swipe-date-label" class="swipe-date-label"></div>
+    <div id="swipe-slide" class="swipe-slide"></div>
+    <p id="swipe-empty" class="swipe-empty" hidden>Keine Veranstaltungen in dieser Ansicht.</p>
+  </div>
 
   <div id="overlay" class="overlay" hidden>
     <div class="detail-panel" role="dialog" aria-modal="true">
