@@ -170,16 +170,6 @@ main {
   transform: translateY(-1px);
 }
 
-.event-card .date-badge {
-  flex: 0 0 auto;
-  width: 2.2rem;
-  text-align: left;
-  color: var(--ink);
-}
-
-.date-badge .day { display: block; font-size: 1.3rem; font-weight: 700; line-height: 1.1; }
-.date-badge .mon { display: block; font-size: 0.72rem; text-transform: uppercase; color: var(--ink-soft); letter-spacing: 0.03em; }
-
 .event-card .cover-thumb {
   flex: 0 0 auto;
   width: 40px;
