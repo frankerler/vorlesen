@@ -28,6 +28,7 @@ body {
 }
 
 .site-header {
+  position: relative;
   padding: 2.5rem 20px 0.5rem;
   max-width: 780px;
   margin: 0 auto;
@@ -442,7 +443,7 @@ main {
 /* --- Suggest-a-reading FAB + form --- */
 
 .fab-add {
-  position: fixed;
+  position: absolute;
   top: 20px;
   right: 20px;
   width: 32px;
@@ -455,7 +456,7 @@ main {
   font-weight: 300;
   line-height: 1;
   cursor: pointer;
-  z-index: 40;
+  z-index: 2;
   transition: color 0.15s ease, transform 0.15s ease;
 }
 .fab-add:hover { color: var(--accent); transform: scale(1.1); }
