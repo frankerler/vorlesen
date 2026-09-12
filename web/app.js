@@ -11,11 +11,6 @@
 
   const quickFiltersEl = document.getElementById("quick-filters");
 
-  const viewToggleEl = document.getElementById("view-toggle");
-  const swipeViewEl = document.getElementById("swipe-view");
-  const swipeSlideEl = document.getElementById("swipe-slide");
-  const swipeDateLabelEl = document.getElementById("swipe-date-label");
-
   const suggestBtn = document.getElementById("suggest-btn");
   const suggestOverlayEl = document.getElementById("suggest-overlay");
   const closeSuggestBtn = document.getElementById("close-suggest");
@@ -120,6 +115,13 @@
     return [ev.venue, ev.city].filter(Boolean).join(", ");
   }
 
+  // Venue name + street address together geocode more reliably than the
+  // address alone (e.g. a bare "Kurfürstendamm 12" is ambiguous city-wide).
+  function googleMapsUrl(ev) {
+    const query = [ev.venue, ev.address].filter(Boolean).join(", ");
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+  }
+
   // Prefer just the book's title as the headline (what this app is about);
   // fall back to the fuller event title/description when a clean book title
   // couldn't be isolated for that source (see scrapers/*.py `book_title`).
@@ -212,7 +214,7 @@
       <dl class="detail-facts">
         <dt>Datum</dt><dd>${escapeHtml(dateStr)}${ev.time ? ` · ${escapeHtml(ev.time)} Uhr` : ""}</dd>
         <dt>Ort</dt><dd>${escapeHtml(ev.venue || "–")}</dd>
-        <dt>Adresse</dt><dd>${escapeHtml(ev.address || "–")}</dd>
+        <dt>Adresse</dt><dd>${ev.address ? `<a href="${escapeHtml(googleMapsUrl(ev))}" target="_blank" rel="noopener noreferrer">${escapeHtml(ev.address)}</a>` : "–"}</dd>
       </dl>
       ${description}
       ${ev.url ? `<a class="detail-link" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer">Zur Veranstaltung / Tickets →</a>` : ""}
@@ -271,117 +273,6 @@
   document.addEventListener("keydown", (e) => {
     if (overlayEl.hidden) return;
     if (e.key === "ArrowUp") goToNextDetailEvent();
-  });
-
-  // --- Swipe-through view (mobile only) -----------------------------------
-  //
-  // A story-style full-screen view of the currently filtered/searched event
-  // list: one event fills the screen, swiping up goes to the next, swiping
-  // down goes back. A pill label at the top shows "Heute" for today's event
-  // or the actual date otherwise, updating as you move between events.
-
-  let swipeEvents = [];
-  let swipeIndex = 0;
-
-  function swipeDateLabel(iso) {
-    if (!iso) return "Datum unbekannt";
-    return iso === todayIso() ? "Heute" : formatDateHeading(iso);
-  }
-
-  function loadSwipeEvents() {
-    swipeEvents = currentFilteredEvents;
-    swipeIndex = Math.min(swipeIndex, Math.max(0, swipeEvents.length - 1));
-    renderSwipeSlideContent();
-  }
-
-  function renderSwipeSlideContent() {
-    const ev = swipeEvents[swipeIndex];
-    if (!ev) {
-      swipeSlideEl.style.backgroundImage = "none";
-      swipeSlideEl.innerHTML = "";
-      swipeDateLabelEl.textContent = "";
-      return;
-    }
-
-    swipeSlideEl.style.backgroundImage = ev.cover_image ? `url("${ev.cover_image}")` : "none";
-    swipeDateLabelEl.textContent = swipeDateLabel(ev.date);
-    swipeSlideEl.innerHTML = `
-      ${ev.author ? `<p class="swipe-author">${escapeHtml(ev.author)}</p>` : ""}
-      <h2 class="swipe-title">${escapeHtml(headline(ev))}</h2>
-      <p class="swipe-meta">${escapeHtml(locationLine(ev))}</p>
-      ${ev.time ? `<p class="swipe-meta">${escapeHtml(ev.time)} Uhr</p>` : ""}
-      ${ev.url ? `<a class="swipe-cta" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer">Zur Veranstaltung / Tickets →</a>` : ""}
-      <p class="swipe-hint">${swipeIndex + 1} / ${swipeEvents.length} · hoch/runter wischen</p>
-    `;
-  }
-
-  function goToSwipeSlide(step) {
-    const nextIndex = swipeIndex + step;
-    if (nextIndex < 0 || nextIndex >= swipeEvents.length) return; // no-op at either end
-
-    const leaveClass = step > 0 ? "leaving-up" : "leaving-down";
-    const enterClass = step > 0 ? "entering-from-down" : "entering-from-up";
-
-    swipeSlideEl.classList.add(leaveClass);
-    setTimeout(() => {
-      swipeIndex = nextIndex;
-      renderSwipeSlideContent();
-      swipeSlideEl.classList.remove(leaveClass);
-      swipeSlideEl.classList.add(enterClass);
-      // Force layout so the browser registers the "entering" position before
-      // we remove it and let the transition animate back to translateY(0).
-      void swipeSlideEl.offsetHeight;
-      swipeSlideEl.classList.remove(enterClass);
-    }, 180);
-  }
-
-  function openSwipeView() {
-    swipeIndex = 0;
-    loadSwipeEvents();
-    swipeViewEl.hidden = false;
-    document.body.style.overflow = "hidden";
-  }
-
-  function closeSwipeView() {
-    swipeViewEl.hidden = true;
-    document.body.style.overflow = "";
-  }
-
-  function setActiveView(view) {
-    viewToggleEl.querySelectorAll("button[data-view]").forEach((btn) => {
-      btn.classList.toggle("active", btn.dataset.view === view);
-    });
-    if (view === "swipe") openSwipeView();
-    else closeSwipeView();
-  }
-
-  viewToggleEl.addEventListener("click", (e) => {
-    const btn = e.target.closest("button[data-view]");
-    if (btn) setActiveView(btn.dataset.view);
-  });
-
-  let swipeTouchStartY = null;
-  swipeViewEl.addEventListener(
-    "touchstart",
-    (e) => {
-      swipeTouchStartY = e.touches[0].clientY;
-    },
-    { passive: true }
-  );
-  swipeViewEl.addEventListener("touchend", (e) => {
-    if (swipeTouchStartY == null) return;
-    const deltaY = e.changedTouches[0].clientY - swipeTouchStartY;
-    swipeTouchStartY = null;
-    const SWIPE_THRESHOLD = 50;
-    if (deltaY < -SWIPE_THRESHOLD) goToSwipeSlide(1); // swiped up -> next
-    else if (deltaY > SWIPE_THRESHOLD) goToSwipeSlide(-1); // swiped down -> previous
-  });
-
-  document.addEventListener("keydown", (e) => {
-    if (swipeViewEl.hidden) return;
-    if (e.key === "ArrowUp") goToSwipeSlide(1);
-    else if (e.key === "ArrowDown") goToSwipeSlide(-1);
-    else if (e.key === "Escape") setActiveView("list");
   });
 
   // --- Suggest-a-reading form -------------------------------------------
@@ -469,7 +360,6 @@
     });
     currentFilteredEvents = filtered;
     renderList(filtered);
-    if (!swipeViewEl.hidden) loadSwipeEvents(); // keep swipe view in sync if search/filter changes while it's open
   }
 
   searchEl.addEventListener("input", applyFilter);
