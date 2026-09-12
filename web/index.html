@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lesungen in Berlin</title>
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
   <button id="suggest-btn" class="fab-add" title="Lesung vorschlagen" aria-label="Lesung vorschlagen">+</button>
@@ -23,21 +23,10 @@
     </nav>
   </header>
 
-  <!-- Fixed so it stays visible in both list and swipe view (mobile only, see CSS) -->
-  <div class="view-toggle" id="view-toggle">
-    <button type="button" data-view="list" class="active">Liste</button>
-    <button type="button" data-view="swipe">Swipe</button>
-  </div>
-
   <main>
     <div id="list" class="event-list"></div>
     <p id="empty-state" class="empty-state" hidden>Keine Veranstaltungen gefunden.</p>
   </main>
-
-  <div id="swipe-view" class="swipe-view" hidden>
-    <div id="swipe-date-label" class="swipe-date-label"></div>
-    <div id="swipe-slide" class="swipe-slide"></div>
-  </div>
 
   <div id="overlay" class="overlay detail-overlay" hidden>
     <div class="detail-panel" role="dialog" aria-modal="true">
