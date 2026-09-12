@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lesungen in Berlin</title>
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
   <button id="suggest-btn" class="fab-add" title="Lesung vorschlagen" aria-label="Lesung vorschlagen">+</button>
@@ -39,9 +39,9 @@
     <div id="swipe-slide" class="swipe-slide"></div>
   </div>
 
-  <div id="overlay" class="overlay" hidden>
+  <div id="overlay" class="overlay detail-overlay" hidden>
     <div class="detail-panel" role="dialog" aria-modal="true">
-      <button id="close-detail" class="close-btn" aria-label="Schließen">&times;</button>
+      <button id="close-detail" class="back-btn" aria-label="Zurück">←</button>
       <div id="detail-content"></div>
     </div>
   </div>
