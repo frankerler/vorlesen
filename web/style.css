@@ -134,7 +134,8 @@ body {
 @media (max-width: 640px) {
   .view-toggle { display: inline-flex; }
 
-  .event-title {
+  .event-title,
+  .event-meta {
     white-space: normal;
     overflow: visible;
     text-overflow: clip;
