@@ -217,7 +217,7 @@ main {
 
 .event-title {
   font-family: var(--font-sans);
-  font-weight: 600;
+  font-weight: 300;
   font-size: 0.98rem;
   margin: 0 0 0.15rem;
   color: var(--accent);
