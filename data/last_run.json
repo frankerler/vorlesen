@@ -1,24 +1,32 @@
 {
-  "ran_at": "2026-09-11T14:19:18+00:00",
-  "total_events": 217,
-  "new_count": 2,
-  "removed_count": 0,
+  "ran_at": "2026-09-12T06:46:35+00:00",
+  "total_events": 214,
+  "new_count": 3,
+  "removed_count": 6,
   "new_events": [
     {
-      "id": "5ea5938906069015",
-      "author": "Judith Hermann",
-      "book_title": "Da wohnt ein junges Mädchen in mir, das nicht sterben will",
+      "id": "6f26c0a27681d848",
+      "author": "Engin Çatık",
+      "book_title": "Engin Çatık im Gespräch mit Hadnet Tesfai",
       "date": "2026-09-15",
-      "venue": "Petri Kirche Herford",
+      "venue": "Urania Berlin",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "6781505d165dd32d",
-      "author": "Valeria Gordeev",
-      "book_title": "Lesung und Gespräch mit Valeria Gordeev",
-      "date": "2026-09-15",
-      "venue": "Alte Schmiede",
-      "publisher": "S. Fischer Verlage"
+      "id": "310731f2826ee292",
+      "author": "Richard Hemmer|Daniel Meßner",
+      "book_title": "Richard Hemmer und Daniel Meßner sprechen über «Mehr Geschichten aus der Geschichte» in Berlin",
+      "date": "2026-11-08",
+      "venue": "Haus der Kulturen der Welt",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "6d363fa659db1c57",
+      "author": "Lutz Seiler",
+      "book_title": "Das tickende Herz",
+      "date": "2026-11-24",
+      "venue": "Georg Büchner Buchladen",
+      "publisher": "Suhrkamp Verlag"
     }
   ]
 }
