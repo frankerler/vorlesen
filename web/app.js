@@ -104,6 +104,64 @@
       .replace(/"/g, "&quot;");
   }
 
+  // Recognized social/media hosts get a short, friendly label instead of the
+  // raw URL; anything else falls back to its bare domain -- either way this
+  // keeps a scraped description from being dominated by a long link.
+  const LINK_LABELS = {
+    "instagram.com": "Instagram",
+    "facebook.com": "Facebook",
+    "twitter.com": "Twitter/X",
+    "x.com": "Twitter/X",
+    "youtube.com": "YouTube",
+    "youtu.be": "YouTube",
+    "tiktok.com": "TikTok",
+  };
+
+  function linkLabel(url) {
+    let host;
+    try {
+      host = new URL(url).hostname.replace(/^www\./, "");
+    } catch {
+      return "Link";
+    }
+    for (const domain in LINK_LABELS) {
+      if (host === domain || host.endsWith(`.${domain}`)) return LINK_LABELS[domain];
+    }
+    return host;
+  }
+
+  // Turns bare "https://…" URLs inside plain text into short clickable
+  // labels (e.g. a long Instagram link becomes just "Instagram") instead of
+  // wrapping the raw URL across several lines. Everything else is escaped
+  // as usual, so this is a safe drop-in replacement for escapeHtml() on
+  // free-text fields that might contain a URL.
+  const URL_RE = /https?:\/\/[^\s<>"]+/g;
+
+  function linkifyText(text) {
+    if (text == null) return "";
+    const s = String(text);
+    let out = "";
+    let lastIndex = 0;
+    let match;
+    while ((match = URL_RE.exec(s))) {
+      let url = match[0];
+      // Strip trailing punctuation a naive URL match tends to swallow
+      // (e.g. the period ending a sentence, or a closing bracket).
+      let trail = "";
+      while (url && /[.,;:!?)\]]$/.test(url)) {
+        trail = url.slice(-1) + trail;
+        url = url.slice(0, -1);
+      }
+      if (!url) continue;
+      out += escapeHtml(s.slice(lastIndex, match.index));
+      out += `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(linkLabel(url))}</a>`;
+      out += escapeHtml(trail);
+      lastIndex = match.index + match[0].length;
+    }
+    out += escapeHtml(s.slice(lastIndex));
+    return out;
+  }
+
   function coverThumb(ev, className) {
     if (ev.cover_image) {
       return `<img class="${className}" src="${escapeHtml(ev.cover_image)}" alt="" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'${className} placeholder',innerHTML:'📖'}))">`;
@@ -199,7 +257,7 @@
 
     const title = headline(ev);
     const description = descriptionParts(ev)
-      .map((p) => `<p class="detail-description">${escapeHtml(p)}</p>`)
+      .map((p) => `<p class="detail-description">${linkifyText(p)}</p>`)
       .join("");
 
     detailContentEl.innerHTML = `
