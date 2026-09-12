@@ -29,10 +29,6 @@
     "Januar", "Februar", "März", "April", "Mai", "Juni",
     "Juli", "August", "September", "Oktober", "November", "Dezember",
   ];
-  const MONTHS_SHORT = [
-    "Jan", "Feb", "Mär", "Apr", "Mai", "Jun",
-    "Jul", "Aug", "Sep", "Okt", "Nov", "Dez",
-  ];
 
   let allEvents = [];
 
@@ -204,15 +200,10 @@
         frag.appendChild(heading);
       }
 
-      const dt = parseDate(ev.date);
       const card = document.createElement("button");
       card.type = "button";
       card.className = "event-card";
       card.innerHTML = `
-        <div class="date-badge">
-          <span class="day">${dt ? dt.getDate() : "?"}</span>
-          <span class="mon">${dt ? MONTHS_SHORT[dt.getMonth()] : ""}</span>
-        </div>
         ${coverThumb(ev, "cover-thumb")}
         <div class="event-main">
           <p class="event-title">${escapeHtml(headline(ev))}</p>
