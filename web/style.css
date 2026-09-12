@@ -395,6 +395,7 @@ main {
   white-space: pre-line;
   margin: 1rem 0;
 }
+.detail-description a { color: var(--accent); }
 
 .detail-link {
   display: inline-block;
