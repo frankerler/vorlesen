@@ -133,6 +133,12 @@ body {
 
 @media (max-width: 640px) {
   .view-toggle { display: inline-flex; }
+
+  .event-title {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
 }
 
 main {
