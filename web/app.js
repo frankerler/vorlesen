@@ -10,6 +10,7 @@
   const closeBtn = document.getElementById("close-detail");
 
   const quickFiltersEl = document.getElementById("quick-filters");
+  const controlsBarEl = document.getElementById("controls-bar");
 
   const suggestBtn = document.getElementById("suggest-btn");
   const suggestOverlayEl = document.getElementById("suggest-overlay");
@@ -436,6 +437,47 @@
   });
 
   highlightActiveQuickFilter();
+
+  // --- Sticky controls bar: hide on scroll down, reveal on scroll up -----
+  //
+  // .controls-bar is `position: sticky`, so it only actually starts
+  // sticking to the top once the page has scrolled past its natural
+  // position (roughly the title's height). Below that point it's still
+  // part of normal flow and should always stay visible; sliding it away
+  // with a transform before then would just leave a blank gap where it
+  // used to be. controlsStickyOffset tracks that threshold.
+  let controlsStickyOffset = controlsBarEl.offsetTop;
+  window.addEventListener("resize", () => {
+    controlsStickyOffset = controlsBarEl.offsetTop;
+  });
+
+  let lastScrollY = window.scrollY;
+  let scrollTicking = false;
+  const SCROLL_DELTA_THRESHOLD = 4; // ignore sub-pixel/jitter scroll events
+
+  function updateControlsBarVisibility() {
+    const currentY = window.scrollY;
+    const delta = currentY - lastScrollY;
+    if (currentY <= controlsStickyOffset) {
+      controlsBarEl.classList.remove("controls-hidden");
+    } else if (delta > SCROLL_DELTA_THRESHOLD) {
+      controlsBarEl.classList.add("controls-hidden"); // scrolling down -> hide
+    } else if (delta < -SCROLL_DELTA_THRESHOLD) {
+      controlsBarEl.classList.remove("controls-hidden"); // scrolling up -> reveal
+    }
+    lastScrollY = currentY;
+    scrollTicking = false;
+  }
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (scrollTicking) return;
+      scrollTicking = true;
+      window.requestAnimationFrame(updateControlsBarVisibility);
+    },
+    { passive: true }
+  );
 
   // Relative (not root-absolute) so this works both from a local server at
   // the project root and from a GitHub Pages project site served under a

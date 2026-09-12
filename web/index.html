@@ -4,13 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lesungen in Berlin</title>
-<link rel="stylesheet" href="style.css?v=9">
+<link rel="stylesheet" href="style.css?v=10">
 </head>
 <body>
   <button id="suggest-btn" class="fab-add" title="Lesung vorschlagen" aria-label="Lesung vorschlagen">+</button>
 
   <header class="site-header">
     <h1><span class="title-sans">Laut vorlesen</span><span class="title-serif">in Berlin</span></h1>
+  </header>
+
+  <div class="controls-bar" id="controls-bar">
     <div class="search-bar">
       <input type="search" id="search" placeholder="Suche nach Autor, Titel, Ort oder Verlag …" autocomplete="off">
       <span id="result-count" class="result-count"></span>
@@ -21,7 +24,7 @@
       <a href="?when=week" data-when="week">Nächste Woche</a>
       <a href="?when=month" data-when="month">Nächster Monat</a>
     </nav>
-  </header>
+  </div>
 
   <main>
     <div id="list" class="event-list"></div>
@@ -60,6 +63,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=9"></script>
+  <script src="app.js?v=10"></script>
 </body>
 </html>
