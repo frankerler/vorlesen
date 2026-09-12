@@ -215,6 +215,7 @@ main {
 .event-main { flex: 1; min-width: 0; }
 
 .event-title {
+  font-family: var(--font-sans);
   font-weight: 600;
   font-size: 0.98rem;
   margin: 0 0 0.15rem;
@@ -225,6 +226,7 @@ main {
 }
 
 .event-meta {
+  font-family: var(--font-serif);
   font-size: 0.84rem;
   color: var(--ink-soft);
   white-space: nowrap;
@@ -381,6 +383,7 @@ main {
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1.2;
+  color: var(--accent);
 }
 
 .detail-heading .detail-author {
