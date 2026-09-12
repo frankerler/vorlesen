@@ -377,8 +377,10 @@ main {
 
 .detail-heading h2 {
   margin: 0 0 0.35rem;
-  font-size: 1.35rem;
-  line-height: 1.25;
+  font-family: var(--font-serif);
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1.2;
 }
 
 .detail-heading .detail-author {
@@ -405,7 +407,9 @@ main {
 .detail-facts a { color: var(--accent); }
 
 .detail-description {
+  font-family: var(--font-sans);
   font-size: 0.95rem;
+  line-height: 1.6;
   color: var(--ink);
   white-space: pre-line;
   margin: 1rem 0;
