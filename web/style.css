@@ -377,7 +377,7 @@ main {
 
 .detail-heading h2 {
   margin: 0 0 0.35rem;
-  font-family: var(--font-serif);
+  font-family: var(--font-sans);
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1.2;
@@ -407,7 +407,7 @@ main {
 .detail-facts a { color: var(--accent); }
 
 .detail-description {
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--ink);
