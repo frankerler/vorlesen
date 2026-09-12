@@ -239,6 +239,7 @@ main {
   font-weight: 600;
   font-size: 0.98rem;
   margin: 0 0 0.15rem;
+  color: var(--accent);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -322,6 +323,53 @@ main {
   cursor: pointer;
 }
 .close-btn:hover { background: #e6d3c4; }
+
+/* --- Full-screen event detail (not a centered modal) -- back arrow top
+   left is the standard mobile "drill-in" pattern, and leaves room for
+   swipe-up-for-next-event without a dialog box getting in the way. --- */
+
+.detail-overlay {
+  background: var(--bg);
+  padding: 0;
+}
+
+.detail-overlay .detail-panel {
+  max-width: none;
+  width: 100%;
+  min-height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 4.5rem 20px 3rem;
+}
+
+/* Transition lives on #detail-content, a sibling of .back-btn, not an
+   ancestor of it -- transforming an ancestor of a position:fixed element
+   would reset that element's containing block and make it jump. */
+.detail-overlay #detail-content {
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.detail-overlay #detail-content.detail-leaving {
+  opacity: 0;
+  transform: translateY(-16px);
+}
+
+.back-btn {
+  position: fixed;
+  top: max(16px, env(safe-area-inset-top));
+  left: 16px;
+  border: none;
+  background: var(--accent-soft);
+  color: var(--ink);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 60;
+}
+.back-btn:hover { background: #e6d3c4; }
 
 .detail-header {
   display: flex;

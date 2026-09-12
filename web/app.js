@@ -185,7 +185,13 @@
     return parts;
   }
 
-  function openDetail(ev) {
+  // The list the currently open detail view is paging through, and the open
+  // event's position in it -- so swiping up can step to "the next event in
+  // the row" without needing to re-derive what that row was.
+  let detailEvents = [];
+  let detailIndex = -1;
+
+  function renderDetailContent(ev) {
     const dt = parseDate(ev.date);
     const dateStr = dt ? `${WEEKDAYS[dt.getDay()]}, ${dt.getDate()}. ${MONTHS[dt.getMonth()]} ${dt.getFullYear()}` : "Datum unbekannt";
 
@@ -211,6 +217,13 @@
       ${description}
       ${ev.url ? `<a class="detail-link" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener noreferrer">Zur Veranstaltung / Tickets →</a>` : ""}
     `;
+    overlayEl.scrollTop = 0;
+  }
+
+  function openDetail(ev) {
+    detailEvents = currentFilteredEvents;
+    detailIndex = detailEvents.indexOf(ev);
+    renderDetailContent(ev);
     overlayEl.hidden = false;
     document.body.style.overflow = "hidden";
   }
@@ -220,9 +233,44 @@
     document.body.style.overflow = "";
   }
 
+  // Swiping up steps to the next event in the same list the user opened this
+  // one from -- but only from a scroll position at (or very near) the top,
+  // so it doesn't hijack an ordinary scroll gesture while reading a long
+  // description further down the page.
+  function goToNextDetailEvent() {
+    if (detailIndex < 0 || detailIndex + 1 >= detailEvents.length) return;
+    detailContentEl.classList.add("detail-leaving");
+    setTimeout(() => {
+      detailIndex += 1;
+      renderDetailContent(detailEvents[detailIndex]);
+      detailContentEl.classList.remove("detail-leaving");
+    }, 160);
+  }
+
   closeBtn.addEventListener("click", closeDetail);
   overlayEl.addEventListener("click", (e) => {
     if (e.target === overlayEl) closeDetail();
+  });
+
+  let detailTouchStartY = null;
+  overlayEl.addEventListener(
+    "touchstart",
+    (e) => {
+      detailTouchStartY = e.touches[0].clientY;
+    },
+    { passive: true }
+  );
+  overlayEl.addEventListener("touchend", (e) => {
+    if (detailTouchStartY == null) return;
+    const deltaY = e.changedTouches[0].clientY - detailTouchStartY;
+    detailTouchStartY = null;
+    const SWIPE_THRESHOLD = 50;
+    if (deltaY < -SWIPE_THRESHOLD && overlayEl.scrollTop <= 4) goToNextDetailEvent();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (overlayEl.hidden) return;
+    if (e.key === "ArrowUp") goToNextDetailEvent();
   });
 
   // --- Swipe-through view (mobile only) -----------------------------------
