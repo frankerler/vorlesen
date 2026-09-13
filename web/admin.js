@@ -467,6 +467,32 @@
   }
 
   // ---------------------------------------------------------------------
+  // Newsletter subscribers (read-only -- see scripts/import_newsletter_subscribers.py)
+  // ---------------------------------------------------------------------
+
+  const subscribersCountEl = document.getElementById("subscribers-count");
+  const subscribersTbodyEl = document.getElementById("subscribers-tbody");
+
+  function renderSubscribers(subscribers) {
+    subscribersCountEl.textContent = String(subscribers.length);
+    subscribersTbodyEl.innerHTML = subscribers
+      .map((s) => {
+        const when = s.subscribed_at
+          ? new Date(s.subscribed_at).toLocaleDateString("de-DE", { dateStyle: "medium" })
+          : "–";
+        return `<tr><td>${escapeHtml(s.email)}</td><td>${escapeHtml(when)}</td></tr>`;
+      })
+      .join("");
+  }
+
+  function loadSubscribers() {
+    fetch("../data/subscribers.json")
+      .then((r) => (r.ok ? r.json() : []))
+      .then(renderSubscribers)
+      .catch(() => renderSubscribers([]));
+  }
+
+  // ---------------------------------------------------------------------
   // Init
   // ---------------------------------------------------------------------
 
@@ -479,4 +505,5 @@
 
   loadSources();
   loadEvents();
+  loadSubscribers();
 })();

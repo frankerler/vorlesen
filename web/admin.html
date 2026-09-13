@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
 <title>Admin · Laut vorlesen in Berlin</title>
-<link rel="stylesheet" href="style.css?v=21">
-<link rel="stylesheet" href="admin.css?v=21">
+<link rel="stylesheet" href="style.css?v=22">
+<link rel="stylesheet" href="admin.css?v=22">
 </head>
 <body class="admin-body">
   <header class="site-header">
@@ -89,6 +89,22 @@
       </button>
       <p id="events-status" class="suggest-status" hidden></p>
     </section>
+
+    <!-- Newsletter subscribers -->
+    <section class="admin-section">
+      <h2>Newsletter-Abonnenten (<span id="subscribers-count">0</span>)</h2>
+      <p class="admin-note">
+        Anmeldungen kommen über das Newsletter-Formular auf der Startseite direkt bei
+        <a href="https://formspree.io/login" target="_blank" rel="noopener noreferrer">Formspree</a> an (Betreff
+        „Newsletter-Anmeldung“). Exportiere sie dort als CSV und führe
+        <code>scripts/import_newsletter_subscribers.py</code> aus, um neue Adressen in
+        <code>data/subscribers.json</code> zu übernehmen — diese Liste hier liest nur diese Datei.
+      </p>
+      <table class="admin-table" id="subscribers-table">
+        <thead><tr><th>E-Mail</th><th>Angemeldet am</th></tr></thead>
+        <tbody id="subscribers-tbody"></tbody>
+      </table>
+    </section>
   </main>
 
   <div id="event-overlay" class="overlay" hidden>
@@ -115,6 +131,6 @@
     <p><a href="index.html">← Zurück zur Übersicht</a></p>
   </footer>
 
-  <script src="admin.js?v=21"></script>
+  <script src="admin.js?v=22"></script>
 </body>
 </html>

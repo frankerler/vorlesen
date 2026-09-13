@@ -53,6 +53,28 @@ instead, a third-party form backend built for exactly this:
 placeholder until a real Formspree form is created and its endpoint pasted
 in — the form shows a clear error instead of failing silently until then.
 
+## Newsletter signups
+
+Same no-backend approach as community suggestions above, reusing the same
+Formspree endpoint (most Formspree plans only allow one form) — a hidden
+`_subject` field ("Newsletter-Anmeldung") on the newsletter form keeps the
+two distinguishable in your inbox/dashboard even though they share an
+endpoint.
+
+1. The envelope button (top left) opens a one-field email form
+   ([web/index.html](web/index.html)); submitting it POSTs to Formspree.
+2. Review/export signups the same way as suggestions — see your
+   [Formspree dashboard](https://formspree.io/login).
+3. Export as CSV, then run:
+   ```bash
+   .venv/bin/python scripts/import_newsletter_subscribers.py subscribers.csv            # import
+   .venv/bin/python scripts/import_newsletter_subscribers.py subscribers.csv --dry-run  # preview only
+   ```
+   Appends new addresses (de-duplicated, case-insensitive) to
+   `data/subscribers.json`; commit + push to publish. **[web/admin.html](web/admin.html)**
+   reads that file and lists who's subscribed — this list is read-only in
+   the admin UI for now, the file is only ever written by the import script.
+
 ## Admin page — CRUD, sources, and the nightly crawl
 
 **[web/admin.html](web/admin.html)** is a real admin tool: edit/add/delete
