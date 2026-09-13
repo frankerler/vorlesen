@@ -8,6 +8,8 @@
   const overlayEl = document.getElementById("overlay");
   const detailContentEl = document.getElementById("detail-content");
   const closeBtn = document.getElementById("close-detail");
+  const shareBtn = document.getElementById("share-detail");
+  const shareFeedbackEl = document.getElementById("share-feedback");
 
   const quickFiltersEl = document.getElementById("quick-filters");
   const controlsBarEl = document.getElementById("controls-bar");
@@ -78,6 +80,28 @@
     if (activeWhen === "week") return ev.date >= today && ev.date <= addDaysIso(today, 6);
     if (activeWhen === "month") return ev.date >= today && ev.date <= addDaysIso(today, 29);
     return true;
+  }
+
+  // --- Shareable per-event links (?event=<id>) ---------------------------
+  //
+  // Lets the share button hand out a link that reopens this exact event
+  // (rather than just the homepage), and lets the browser's own back/
+  // forward navigation open/close the detail view in sync with the URL.
+
+  function getEventIdFromUrl() {
+    return new URLSearchParams(location.search).get("event");
+  }
+
+  function findEventById(id) {
+    return allEvents.find((ev) => ev.id === id) || null;
+  }
+
+  function setEventInUrl(id, { replace = false } = {}) {
+    const url = new URL(location.href);
+    if (id) url.searchParams.set("event", id);
+    else url.searchParams.delete("event");
+    if (replace) history.replaceState({}, "", url);
+    else history.pushState({}, "", url);
   }
 
   function highlightActiveQuickFilter() {
@@ -272,17 +296,27 @@
     overlayEl.scrollTop = 0;
   }
 
-  function openDetail(ev) {
+  function openDetail(ev, { skipUrlUpdate = false } = {}) {
     detailEvents = currentFilteredEvents;
     detailIndex = detailEvents.indexOf(ev);
+    if (detailIndex === -1) {
+      // A shared/deep-linked event might not be in the currently
+      // filtered/searched list (e.g. it doesn't match the active quick
+      // filter) -- fall back to a single-item list so swipe-to-next has
+      // nothing to do, rather than breaking the view.
+      detailEvents = [ev];
+      detailIndex = 0;
+    }
     renderDetailContent(ev);
     overlayEl.hidden = false;
     document.body.style.overflow = "hidden";
+    if (!skipUrlUpdate) setEventInUrl(ev.id);
   }
 
-  function closeDetail() {
+  function closeDetail({ skipUrlUpdate = false } = {}) {
     overlayEl.hidden = true;
     document.body.style.overflow = "";
+    if (!skipUrlUpdate) setEventInUrl(null);
   }
 
   // Swiping up steps to the next event in the same list the user opened this
@@ -294,15 +328,73 @@
     detailContentEl.classList.add("detail-leaving");
     setTimeout(() => {
       detailIndex += 1;
-      renderDetailContent(detailEvents[detailIndex]);
+      const ev = detailEvents[detailIndex];
+      renderDetailContent(ev);
       detailContentEl.classList.remove("detail-leaving");
+      // Replace, not push -- so swiping through several events doesn't
+      // pile up a back-stack entry per step, but the URL still reflects
+      // whichever event is currently on screen for sharing/reloading.
+      setEventInUrl(ev.id, { replace: true });
     }, 160);
   }
 
-  closeBtn.addEventListener("click", closeDetail);
+  closeBtn.addEventListener("click", () => closeDetail());
   overlayEl.addEventListener("click", (e) => {
     if (e.target === overlayEl) closeDetail();
   });
+
+  // --- Share button: hand off to the OS/browser's native share sheet
+  // (copy link, Messages, WhatsApp, Mail, ...) where available, falling
+  // back to copying the link to the clipboard everywhere else (most
+  // desktop browsers don't implement navigator.share).
+
+  function eventShareUrl(ev) {
+    const url = new URL(location.href);
+    url.search = "";
+    url.searchParams.set("event", ev.id);
+    return url.toString();
+  }
+
+  let shareFeedbackTimeout = null;
+
+  function showShareFeedback(message) {
+    shareFeedbackEl.textContent = message;
+    shareFeedbackEl.hidden = false;
+    clearTimeout(shareFeedbackTimeout);
+    shareFeedbackTimeout = setTimeout(() => {
+      shareFeedbackEl.hidden = true;
+    }, 2200);
+  }
+
+  function copyShareLink(url) {
+    if (!navigator.clipboard || !navigator.clipboard.writeText) {
+      showShareFeedback("Kopieren nicht möglich");
+      return;
+    }
+    navigator.clipboard
+      .writeText(url)
+      .then(() => showShareFeedback("Link kopiert"))
+      .catch(() => showShareFeedback("Kopieren fehlgeschlagen"));
+  }
+
+  function shareCurrentDetailEvent() {
+    const ev = detailEvents[detailIndex];
+    if (!ev) return;
+    const url = eventShareUrl(ev);
+
+    if (navigator.share) {
+      const text = [ev.author, locationLine(ev)].filter(Boolean).join(" · ");
+      navigator.share({ title: headline(ev), text, url }).catch((err) => {
+        // AbortError just means the user closed the share sheet without
+        // picking anything -- not worth reporting or falling back for.
+        if (err && err.name !== "AbortError") copyShareLink(url);
+      });
+    } else {
+      copyShareLink(url);
+    }
+  }
+
+  shareBtn.addEventListener("click", shareCurrentDetailEvent);
 
   let detailTouchStartY = null;
   overlayEl.addEventListener(
@@ -434,6 +526,13 @@
     activeWhen = getWhenFromUrl();
     highlightActiveQuickFilter();
     applyFilter();
+
+    // Keep the detail view in sync with browser back/forward, without
+    // re-pushing the history entry that got us here in the first place.
+    const id = getEventIdFromUrl();
+    const ev = id ? findEventById(id) : null;
+    if (ev) openDetail(ev, { skipUrlUpdate: true });
+    else closeDetail({ skipUrlUpdate: true });
   });
 
   highlightActiveQuickFilter();
@@ -490,6 +589,11 @@
     .then((data) => {
       allEvents = data;
       applyFilter();
+
+      // Open straight to a shared/bookmarked event, if the URL names one.
+      const deepLinkId = getEventIdFromUrl();
+      const deepLinkEvent = deepLinkId ? findEventById(deepLinkId) : null;
+      if (deepLinkEvent) openDetail(deepLinkEvent, { skipUrlUpdate: true });
     })
     .catch((err) => {
       listEl.innerHTML = `<p class="empty-state">Konnte Daten nicht laden: ${escapeHtml(err.message)}. Lief die Seite über einen lokalen Server (z. B. <code>python3 -m http.server</code>) und wurde <code>run.py</code> schon ausgeführt?</p>`;
