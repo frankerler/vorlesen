@@ -75,6 +75,33 @@ endpoint.
    reads that file and lists who's subscribed — this list is read-only in
    the admin UI for now, the file is only ever written by the import script.
 
+## Besucherzähler (visitor counter)
+
+A static site has no server to log visits itself, so this uses
+[GoatCounter](https://www.goatcounter.com/) — free (for non-commercial use),
+no cookies, no personal data collected, no account needed by visitors. One
+free account for *you* (the site owner) is required, though:
+
+1. Sign up for free at [goatcounter.com](https://www.goatcounter.com/) and
+   create a site — you'll get a site code (`https://YOURCODE.goatcounter.com`).
+2. In that site's settings, enable **"Make this site public"** — this turns
+   on the public `/counter/*.json` endpoint the admin page reads, no login
+   required for that one read-only number (your full dashboard stays private
+   either way).
+3. Replace `REPLACE_ME` with your site code in two places:
+   - [web/index.html](web/index.html)'s `<script data-goatcounter="...">` tag
+     (this is what actually counts each visit).
+   - `GOATCOUNTER_CODE` near the top of [web/admin.js](web/admin.js) (this is
+     what displays the total on the admin page).
+4. **[web/admin.html](web/admin.html)** shows the total under "Besucher" —
+   until you've done step 3 it just says "Noch nicht eingerichtet".
+
+GoatCounter counts a "visit" using a same-day, rotating hashed
+fingerprint — no persistent cookie or ID — which is the standard
+privacy-preserving stand-in for "unique visitors" that tools like this use.
+The number is a reasonable real-world approximation, not a millimeter-exact
+headcount.
+
 ## Admin page — CRUD, sources, and the nightly crawl
 
 **[web/admin.html](web/admin.html)** is a real admin tool: edit/add/delete

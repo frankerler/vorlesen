@@ -7,6 +7,12 @@
   const WORKFLOW_FILE = "nightly-crawl.yml";
   const TOKEN_KEY = "vorlesen_admin_token";
 
+  // Same GoatCounter site code as the <script data-goatcounter="..."> tag in
+  // index.html -- see README.md for how to set this up. Its public "counter"
+  // endpoint (must be enabled as public in the GoatCounter site settings)
+  // needs no auth, so this is a plain fetch, not a GitHub API call.
+  const GOATCOUNTER_CODE = "REPLACE_ME";
+
   const API = `https://api.github.com/repos/${OWNER}/${REPO}`;
 
   // ---------------------------------------------------------------------
@@ -494,6 +500,31 @@
   }
 
   // ---------------------------------------------------------------------
+  // Visitor counter (GoatCounter's public "counter" endpoint -- shows
+  // roughly "unique visits" without cookies or personal data; see README)
+  // ---------------------------------------------------------------------
+
+  const visitorCountInfoEl = document.getElementById("visitor-count-info");
+
+  function loadVisitorCount() {
+    if (GOATCOUNTER_CODE === "REPLACE_ME") {
+      visitorCountInfoEl.textContent = "Noch nicht eingerichtet -- siehe README.md (Abschnitt \"Besucherzähler\").";
+      return;
+    }
+    fetch(`https://${GOATCOUNTER_CODE}.goatcounter.com/counter/TOTAL.json`)
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(`HTTP ${r.status}`))))
+      .then((data) => {
+        visitorCountInfoEl.innerHTML = `
+          <strong>${escapeHtml(data.count || "0")}</strong> Besuche insgesamt ·
+          <a href="https://${GOATCOUNTER_CODE}.goatcounter.com" target="_blank" rel="noopener noreferrer">Details auf GoatCounter →</a>
+        `;
+      })
+      .catch(() => {
+        visitorCountInfoEl.textContent = "Zähler konnte nicht geladen werden (ist \"Public\" in den GoatCounter-Einstellungen aktiviert?).";
+      });
+  }
+
+  // ---------------------------------------------------------------------
   // Init
   // ---------------------------------------------------------------------
 
@@ -507,4 +538,5 @@
   loadSources();
   loadEvents();
   loadSubscribers();
+  loadVisitorCount();
 })();
