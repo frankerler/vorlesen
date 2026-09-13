@@ -366,13 +366,21 @@
     }, 2200);
   }
 
-  function copyShareLink(url) {
+  // A short, generic invite text to go along with the link -- shown in the
+  // native share sheet's message preview, and prepended to the clipboard
+  // fallback so pasting it somewhere brings the text along, not just the
+  // bare URL.
+  function shareMessage(ev) {
+    return `Hier eine interessante Lesung: ${headline(ev)}`;
+  }
+
+  function copyShareLink(text, url) {
     if (!navigator.clipboard || !navigator.clipboard.writeText) {
       showShareFeedback("Kopieren nicht möglich");
       return;
     }
     navigator.clipboard
-      .writeText(url)
+      .writeText(`${text}\n${url}`)
       .then(() => showShareFeedback("Link kopiert"))
       .catch(() => showShareFeedback("Kopieren fehlgeschlagen"));
   }
@@ -381,16 +389,16 @@
     const ev = detailEvents[detailIndex];
     if (!ev) return;
     const url = eventShareUrl(ev);
+    const text = shareMessage(ev);
 
     if (navigator.share) {
-      const text = [ev.author, locationLine(ev)].filter(Boolean).join(" · ");
       navigator.share({ title: headline(ev), text, url }).catch((err) => {
         // AbortError just means the user closed the share sheet without
         // picking anything -- not worth reporting or falling back for.
-        if (err && err.name !== "AbortError") copyShareLink(url);
+        if (err && err.name !== "AbortError") copyShareLink(text, url);
       });
     } else {
-      copyShareLink(url);
+      copyShareLink(text, url);
     }
   }
 
