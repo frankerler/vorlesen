@@ -357,6 +357,38 @@ main {
 }
 .back-btn:hover { color: var(--accent); }
 
+.share-btn {
+  position: fixed;
+  top: max(16px, env(safe-area-inset-top));
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  color: var(--ink);
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.15s ease;
+}
+.share-btn:hover { color: var(--accent); }
+
+.share-feedback {
+  position: fixed;
+  top: max(58px, calc(env(safe-area-inset-top) + 42px));
+  right: 16px;
+  z-index: 2;
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 0.78rem;
+  font-family: var(--font-sans);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
 .detail-header {
   display: flex;
   gap: 1.25rem;

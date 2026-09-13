@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Lesungen in Berlin</title>
-<link rel="stylesheet" href="style.css?v=18">
+<link rel="stylesheet" href="style.css?v=19">
 </head>
 <body>
   <header class="site-header">
@@ -33,6 +33,14 @@
   <div id="overlay" class="overlay detail-overlay" hidden>
     <div class="detail-panel" role="dialog" aria-modal="true">
       <button id="close-detail" class="back-btn" aria-label="Zurück">←</button>
+      <button id="share-detail" class="share-btn" aria-label="Teilen" title="Teilen">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v13" />
+          <path d="M7 8l5-5 5 5" />
+          <path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" />
+        </svg>
+      </button>
+      <span id="share-feedback" class="share-feedback" role="status" aria-live="polite" hidden></span>
       <div id="detail-content"></div>
     </div>
   </div>
@@ -62,6 +70,6 @@
     </div>
   </div>
 
-  <script src="app.js?v=18"></script>
+  <script src="app.js?v=19"></script>
 </body>
 </html>
