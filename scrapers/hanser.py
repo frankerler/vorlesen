@@ -85,9 +85,17 @@ def _doc_to_event(doc: dict) -> Event:
         book_link = books[0]["link"]
         url = f"https://www.hanser-literaturverlage.de{book_link}" if book_link.startswith("/") else book_link
 
-    cover = books[0].get("image") if books else None
+    cover = credit = None
+    if books:
+        cover = books[0].get("image")
+        # Speculative: this internal search-index API isn't publicly
+        # documented, so these are a guess at plausible credit key names
+        # rather than something confirmed present -- harmless no-op (stays
+        # None) if absent.
+        credit = clean_text(books[0].get("imageCredit") or books[0].get("credit"))
     if not cover and authors:
         cover = authors[0].get("image")
+        credit = credit or clean_text(authors[0].get("imageCredit") or authors[0].get("credit"))
 
     book_title = clean_text(books[0].get("fullname")) if books else None
 
@@ -104,6 +112,7 @@ def _doc_to_event(doc: dict) -> Event:
         source_url=LISTING_URL,
         raw_text=clean_text(doc.get("categoryTxt")),
         cover_image=cover,
+        image_credit=credit,
         book_title=book_title,
     )
 

@@ -17,7 +17,7 @@ from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, extract_quoted_title, fetch
+from .base import Event, clean_text, extract_quoted_title, fetch, image_from_schema_org
 
 LISTING_URL = "https://www.lettretage.de/programm"
 VENUE = "Lettrétage"
@@ -74,7 +74,7 @@ def _parse_detail(title: str, url: str) -> Event | None:
         return None
     soup = BeautifulSoup(resp.text, "lxml")
 
-    date_part = time_part = venue = address = cover = None
+    date_part = time_part = venue = address = cover = credit = None
     for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
         try:
             data = json.loads(script.string or "")
@@ -104,7 +104,7 @@ def _parse_detail(title: str, url: str) -> Event | None:
             address = ", ".join(p for p in (street, " ".join(filter(None, [postal, city]))) if p) or None
             venue = VENUE
 
-            cover = item.get("image") or None
+            cover, credit = image_from_schema_org(item.get("image"))
             break
 
     body_el = soup.select_one("div.rich-text-detail-page-1")
@@ -127,6 +127,7 @@ def _parse_detail(title: str, url: str) -> Event | None:
         source_url=LISTING_URL,
         raw_text=description,
         cover_image=cover,
+        image_credit=credit,
         book_title=book_title,
     )
 

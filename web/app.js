@@ -285,9 +285,16 @@
       .map((p) => `<p class="detail-description">${linkifyText(p)}</p>`)
       .join("");
 
+    const coverCredit = ev.image_credit
+      ? `<p class="detail-cover-credit">© ${escapeHtml(ev.image_credit)}</p>`
+      : "";
+
     detailContentEl.innerHTML = `
       <div class="detail-header">
-        ${coverThumb(ev, "detail-cover")}
+        <div class="detail-cover-wrap">
+          ${coverThumb(ev, "detail-cover")}
+          ${coverCredit}
+        </div>
         <div class="detail-heading">
           <h2>${escapeHtml(title)}</h2>
           ${ev.author ? `<p class="detail-author">${escapeHtml(ev.author)}</p>` : ""}

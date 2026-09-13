@@ -10,7 +10,7 @@ import re
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, extract_quoted_title, fetch
+from .base import Event, clean_text, extract_image_credit, extract_quoted_title, fetch
 
 BASE_URL = "https://www.dtv.de/events"
 PUBLISHER = "dtv Verlag"
@@ -72,9 +72,10 @@ def _parse_page(html: str, source_url: str) -> list[Event]:
         author = _extract_author(title, author_link.get("href") if author_link else None)
 
         img_el = box.select_one("img.pondus-event-image, img")
-        cover = None
+        cover = credit = None
         if img_el:
             cover = img_el.get("src") or img_el.get("data-src")
+            credit = extract_image_credit(img_el.get("alt"), img_el.get("title"))
 
         link_el = box.select_one(".event-link a[itemprop='url']") or box.select_one(".event-link a")
         url = link_el.get("href") if link_el else None
@@ -96,6 +97,7 @@ def _parse_page(html: str, source_url: str) -> list[Event]:
                 source_url=source_url,
                 raw_text=" / ".join(filter(None, [date_text, time_text])),
                 cover_image=cover,
+                image_credit=credit,
                 book_title=extract_quoted_title(title),
             )
         )

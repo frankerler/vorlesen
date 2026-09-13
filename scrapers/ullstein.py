@@ -65,7 +65,12 @@ def _hit_to_event(hit: dict) -> Event:
     uri = hit.get("uri") or ""
     url = f"https://www.ullstein.de{uri}" if uri.startswith("/") else (uri or None)
 
-    cover = (hit.get("cover") or {}).get("full")
+    cover_obj = hit.get("cover") or {}
+    cover = cover_obj.get("full")
+    # Speculative: this internal search-index API isn't publicly documented,
+    # so this is a guess at a plausible credit key name rather than
+    # something confirmed present -- harmless no-op (stays None) if absent.
+    credit = clean_text(cover_obj.get("credit") or cover_obj.get("copyright"))
     book_titles = hit.get("productTitels") or []
     book_title = clean_text(book_titles[0]) if book_titles else None
 
@@ -82,6 +87,7 @@ def _hit_to_event(hit: dict) -> Event:
         source_url=LISTING_URL,
         raw_text=f"{date_str} {hit.get('time') or ''}".strip(),
         cover_image=cover,
+        image_credit=credit,
         book_title=book_title,
     )
 

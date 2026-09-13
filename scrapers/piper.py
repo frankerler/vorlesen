@@ -17,7 +17,7 @@ import time
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, extract_quoted_title, fetch, parse_german_date
+from .base import Event, clean_text, extract_image_credit, extract_quoted_title, fetch, parse_german_date
 
 LISTING_URL = "https://www.piper.de/autoren/veranstaltungen"
 PUBLISHER = "Piper Verlag"
@@ -49,6 +49,9 @@ def _parse_detail(url: str) -> dict:
     if img_el and img_el.get("src"):
         src = img_el["src"]
         out["cover_image"] = f"https://www.piper.de{src}" if src.startswith("/") else src
+        figcaption = img_el.find_parent("figure")
+        figcaption_text = figcaption.select_one("figcaption").get_text() if figcaption and figcaption.select_one("figcaption") else None
+        out["image_credit"] = extract_image_credit(img_el.get("alt"), img_el.get("title"), figcaption_text)
 
     for item in soup.select(".m-eventdetail__eventsnippet__item"):
         divs = item.find_all("div", recursive=False)
@@ -133,6 +136,7 @@ def scrape() -> list[Event]:
                 event.url = details["ticket_url"]
             if details.get("cover_image"):
                 event.cover_image = details["cover_image"]
+                event.image_credit = details.get("image_credit")
 
         events.append(event)
 

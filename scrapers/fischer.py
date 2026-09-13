@@ -14,7 +14,7 @@ import time
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, extract_quoted_title, fetch
+from .base import Event, clean_text, extract_quoted_title, fetch, image_from_schema_org
 
 LISTING_URL = "https://www.fischerverlage.de/veranstaltung"
 PUBLISHER = "S. Fischer Verlage"
@@ -82,6 +82,7 @@ def _parse_detail(url: str) -> Event | None:
             # No dedicated book-title field; title itself is usually just
             # "Lesung mit <Author>", so try the description for a quoted title.
             book_title = extract_quoted_title(item.get("description"), title)
+            cover, credit = image_from_schema_org(item.get("image"))
 
             return Event(
                 publisher=PUBLISHER,
@@ -95,7 +96,8 @@ def _parse_detail(url: str) -> Event | None:
                 url=organizer_url or offer_url or url,
                 source_url=url,
                 raw_text=clean_text(item.get("description")),
-                cover_image=item.get("image") or None,
+                cover_image=cover,
+                image_credit=credit,
                 book_title=book_title,
             )
     return None
