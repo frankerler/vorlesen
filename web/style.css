@@ -540,6 +540,7 @@ main {
   width: 100%;
   padding: 0.5rem 0.5rem 0.5rem 1rem;
 }
+.newsletter-form[hidden] { display: none; }
 
 .newsletter-email {
   flex: 1;
