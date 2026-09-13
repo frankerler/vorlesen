@@ -495,23 +495,105 @@ main {
 }
 .fab-add:hover { color: var(--accent); transform: scale(1.1); }
 
-.newsletter-btn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+/* --- Floating newsletter widget: a pill that morphs in place into a small
+   input tile, staying anchored at the bottom instead of opening a modal. --- */
+
+.newsletter-widget {
+  position: fixed;
+  left: 50%;
+  bottom: max(20px, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  z-index: 45;
+  display: flex;
+  align-items: center;
+  background: var(--accent);
+  color: white;
+  border-radius: 999px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  overflow: hidden;
+  transition: width 0.3s ease, border-radius 0.3s ease, background-color 0.3s ease;
+}
+
+.newsletter-widget.is-open {
+  background: var(--card-bg);
+  color: var(--ink);
+  border-radius: 20px;
+}
+
+.newsletter-toggle {
+  flex: 1;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  font-size: 0.92rem;
+  padding: 0.8rem 1.5rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.newsletter-email {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+.newsletter-email::placeholder { color: var(--ink-soft); }
+
+.newsletter-submit,
+.newsletter-close {
+  flex: 0 0 auto;
   width: 32px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
+  border-radius: 50%;
   background: none;
-  color: var(--ink);
+  color: var(--ink-soft);
+  font-size: 1rem;
+  line-height: 1;
   cursor: pointer;
-  z-index: 2;
-  transition: color 0.15s ease, transform 0.15s ease;
+  transition: color 0.15s ease, background-color 0.15s ease;
 }
-.newsletter-btn:hover { color: var(--accent); transform: scale(1.1); }
+.newsletter-submit {
+  background: var(--accent);
+  color: white;
+  font-size: 1.2rem;
+}
+.newsletter-submit:hover { background: var(--accent-dark); }
+.newsletter-close:hover { color: var(--accent); }
+
+.newsletter-status {
+  position: fixed;
+  left: 50%;
+  bottom: calc(max(20px, env(safe-area-inset-bottom)) + 56px);
+  transform: translateX(-50%);
+  z-index: 45;
+  max-width: min(92vw, 340px);
+  background: var(--ink);
+  color: var(--bg);
+  font-size: 0.82rem;
+  font-family: var(--font-sans);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 16px;
+}
+.newsletter-status--error { background: var(--accent); }
 
 .suggest-intro {
   font-size: 0.9rem;
