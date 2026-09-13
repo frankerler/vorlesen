@@ -29,21 +29,23 @@ body {
 
 /* Thin diagonal accent line, corner to corner across the whole page --
    fixed so it stays put while the list scrolls underneath it. Purely
-   decorative (pointer-events: none), sits above regular content but below
-   the sticky controls bar / overlays / floating widgets. */
+   decorative (pointer-events: none) and sits behind regular page content
+   (negative z-index paints before/below non-positioned in-flow content in
+   the same stacking context) -- only visible through the gaps between
+   text and cards, not overlapping them. */
 .diagonal-accent {
   position: fixed;
   inset: 0;
   width: 100%;
   height: 100%;
   pointer-events: none;
-  z-index: 5;
+  z-index: -1;
 }
 
 .diagonal-accent line {
   stroke: var(--ink-soft);
   stroke-width: 1;
-  opacity: 0.35;
+  opacity: 0.18;
   vector-effect: non-scaling-stroke;
 }
 
