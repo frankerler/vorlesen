@@ -167,9 +167,13 @@
   // free-text fields that might contain a URL.
   const URL_RE = /https?:\/\/[^\s<>"]+/g;
 
-  function linkifyText(text) {
-    if (text == null) return "";
-    const s = String(text);
+  // Some sources' description text embeds literal "<br />" markup (as
+  // plain text, not real HTML) to mark line breaks -- rendered verbatim
+  // that shows up as visible "<br />" instead of a break. Split on it here
+  // and turn it into a real <br>, one line at a time.
+  const BR_RE = /<br\s*\/?>/gi;
+
+  function linkifyLine(s) {
     let out = "";
     let lastIndex = 0;
     let match;
@@ -190,6 +194,12 @@
     }
     out += escapeHtml(s.slice(lastIndex));
     return out;
+  }
+
+  function linkifyText(text) {
+    if (text == null) return "";
+    const s = String(text);
+    return s.split(BR_RE).map(linkifyLine).join("<br>");
   }
 
   function coverThumb(ev, className) {
