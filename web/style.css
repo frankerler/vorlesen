@@ -63,6 +63,13 @@ body {
   line-height: 1.15;
 }
 
+/* Slight poster-style tilt on the actual site title (not the plain "Admin"
+   heading, which shares .site-header but shouldn't tilt). */
+.site-header h1.site-title {
+  display: inline-block;
+  transform: rotate(-2deg);
+}
+
 /* Mixed-type lockup, echoing a bold sans-serif statement paired with a
    lighter italic serif flourish underneath -- e.g. site title, "in Berlin". */
 .site-header h1 .title-sans {
