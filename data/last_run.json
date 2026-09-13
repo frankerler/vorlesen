@@ -1,32 +1,24 @@
 {
-  "ran_at": "2026-09-12T06:46:35+00:00",
-  "total_events": 214,
-  "new_count": 3,
-  "removed_count": 6,
+  "ran_at": "2026-09-13T07:03:37+00:00",
+  "total_events": 173,
+  "new_count": 2,
+  "removed_count": 43,
   "new_events": [
     {
-      "id": "6f26c0a27681d848",
-      "author": "Engin Çatık",
-      "book_title": "Engin Çatık im Gespräch mit Hadnet Tesfai",
-      "date": "2026-09-15",
-      "venue": "Urania Berlin",
-      "publisher": "S. Fischer Verlage"
-    },
-    {
-      "id": "310731f2826ee292",
-      "author": "Richard Hemmer|Daniel Meßner",
-      "book_title": "Richard Hemmer und Daniel Meßner sprechen über «Mehr Geschichten aus der Geschichte» in Berlin",
-      "date": "2026-11-08",
-      "venue": "Haus der Kulturen der Welt",
-      "publisher": "Piper Verlag"
-    },
-    {
-      "id": "6d363fa659db1c57",
-      "author": "Lutz Seiler",
+      "id": "db6bacdc180308e3",
+      "author": "Lutz Seiler, Sandra Kegel, Peter Richter, Maike Albath",
       "book_title": "Das tickende Herz",
-      "date": "2026-11-24",
-      "venue": "Georg Büchner Buchladen",
-      "publisher": "Suhrkamp Verlag"
+      "date": "2026-09-22",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "8ad92d2f16b46ecf",
+      "author": "Clemens J. Setz, Sophia Merwald, Wolfseule (Dorothea Studthoff)",
+      "book_title": "Sophia Merwald",
+      "date": "2026-09-29",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
     }
   ]
 }
