@@ -217,9 +217,9 @@ main {
 
 .event-title {
   font-family: var(--font-sans);
-  font-weight: 300;
-  font-size: 0.98rem;
-  margin: 0 0 0.15rem;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin: 0 0 0.05rem;
   color: var(--accent);
   white-space: nowrap;
   overflow: hidden;
