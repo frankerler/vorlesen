@@ -392,7 +392,14 @@
     const text = shareMessage(ev);
 
     if (navigator.share) {
-      navigator.share({ title: headline(ev), text, url }).catch((err) => {
+      // Deliberately not passing `url` as its own field: several share
+      // targets (iOS Messages among them) drop the custom `text` entirely
+      // and keep only the URL when both are given separately, generating
+      // their own link-preview card instead -- inconsistently, since other
+      // apps (Signal included) then show neither. Folding the link into
+      // `text` as one string guarantees it survives as literal message
+      // content everywhere, at the cost of some apps' auto-preview card.
+      navigator.share({ title: headline(ev), text: `${text}\n${url}` }).catch((err) => {
         // AbortError just means the user closed the share sheet without
         // picking anything -- not worth reporting or falling back for.
         if (err && err.name !== "AbortError") copyShareLink(text, url);
