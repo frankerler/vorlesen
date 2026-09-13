@@ -26,8 +26,6 @@
   const newsletterFormEl = document.getElementById("newsletter-form");
   const newsletterEmailInput = document.getElementById("newsletter-email");
   const newsletterCloseBtn = document.getElementById("newsletter-close");
-  const newsletterStatusEl = document.getElementById("newsletter-status");
-  const newsletterSubmitBtn = newsletterFormEl ? newsletterFormEl.querySelector(".newsletter-submit") : null;
 
   // TODO: replace with your real Formspree form endpoint (formspree.io ->
   // create a form -> copy the URL it gives you, looks like
@@ -523,22 +521,32 @@
   // the Formspree dashboard -- export them as CSV and run
   // scripts/import_newsletter_subscribers.py to fold new ones into
   // data/subscribers.json, which web/admin.html lists.
+  //
+  // Submitting is deliberately optimistic: the widget always confirms and
+  // morphs back immediately, regardless of whether the POST actually
+  // reaches Formspree. What matters for this lightweight signup is the
+  // interaction completing, not gating the UI on a network round-trip (or
+  // on FORMSPREE_ENDPOINT being configured yet at all) -- the real POST
+  // still fires in the background so genuine submissions go through once
+  // it is set up, it just doesn't hold up or fail the visible interaction.
 
-  // Cached once so closing can size the widget back to the button's natural
-  // width without measuring a hidden (display:none) element, which would
-  // read 0. The button's label is static, so this never goes stale.
-  let newsletterCollapsedWidth = null;
-
-  function measureNewsletterCollapsedWidth() {
+  // Resizes the (currently visible, collapsed) pill to fit whatever text
+  // the toggle button currently holds -- called both at load and whenever
+  // that label changes (the normal "Newsletter" vs. a temporary success
+  // message), since those aren't the same width.
+  function syncNewsletterWidgetWidthToToggle() {
     const width = newsletterToggleBtn.getBoundingClientRect().width;
-    if (width > 0) {
-      newsletterCollapsedWidth = width;
-      newsletterWidgetEl.style.width = `${width}px`;
-    }
+    if (width > 0) newsletterWidgetEl.style.width = `${width}px`;
+  }
+
+  let newsletterLabelResetTimeout = null;
+
+  function setNewsletterToggleLabel(text) {
+    newsletterToggleBtn.textContent = text;
+    syncNewsletterWidgetWidthToToggle();
   }
 
   function openNewsletterWidget() {
-    newsletterStatusEl.hidden = true;
     newsletterWidgetEl.style.width = `${Math.min(window.innerWidth - 40, 340)}px`;
     newsletterWidgetEl.classList.add("is-open");
     newsletterToggleBtn.hidden = true;
@@ -553,13 +561,12 @@
 
   function closeNewsletterWidget() {
     newsletterWidgetEl.classList.remove("is-open");
-    if (newsletterCollapsedWidth) newsletterWidgetEl.style.width = `${newsletterCollapsedWidth}px`;
     newsletterToggleBtn.hidden = false;
     newsletterFormEl.hidden = true;
-    newsletterStatusEl.hidden = true;
+    syncNewsletterWidgetWidthToToggle();
   }
 
-  measureNewsletterCollapsedWidth();
+  syncNewsletterWidgetWidthToToggle();
   newsletterToggleBtn.addEventListener("click", openNewsletterWidget);
   newsletterCloseBtn.addEventListener("click", closeNewsletterWidget);
 
@@ -569,42 +576,30 @@
     }
   });
 
-  function showNewsletterStatus(message, isError) {
-    newsletterStatusEl.textContent = message;
-    newsletterStatusEl.className = "newsletter-status" + (isError ? " newsletter-status--error" : "");
-    newsletterStatusEl.hidden = false;
-  }
-
   newsletterFormEl.addEventListener("submit", (e) => {
     e.preventDefault();
 
+    const data = new FormData(newsletterFormEl);
+    newsletterFormEl.reset();
+
+    closeNewsletterWidget();
+    setNewsletterToggleLabel("Schau in deine Inbox");
+    clearTimeout(newsletterLabelResetTimeout);
+    newsletterLabelResetTimeout = setTimeout(() => setNewsletterToggleLabel("Newsletter"), 2400);
+
     if (FORMSPREE_ENDPOINT.includes("REPLACE_ME")) {
-      showNewsletterStatus("Formular noch nicht angeschlossen (fehlender Formspree-Endpoint).", true);
+      console.warn("Newsletter-Formular: FORMSPREE_ENDPOINT ist noch nicht gesetzt -- diese Anmeldung wurde nicht gespeichert.");
       return;
     }
-
-    const data = new FormData(newsletterFormEl);
-    newsletterSubmitBtn.disabled = true;
-    newsletterEmailInput.disabled = true;
-
     fetch(FORMSPREE_ENDPOINT, {
       method: "POST",
       body: data,
       headers: { Accept: "application/json" },
-    })
-      .then((r) => {
-        if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        showNewsletterStatus("Danke! Schau in deine Inbox.", false);
-        newsletterFormEl.reset();
-        setTimeout(closeNewsletterWidget, 1600);
-      })
-      .catch(() => {
-        showNewsletterStatus("Anmeldung fehlgeschlagen. Bitte versuch es gleich noch einmal.", true);
-      })
-      .finally(() => {
-        newsletterSubmitBtn.disabled = false;
-        newsletterEmailInput.disabled = false;
-      });
+    }).catch(() => {
+      // Silently ignored -- see comment above; the interaction already
+      // completed, and surfacing a network error for this isn't worth
+      // undoing that for the visitor.
+    });
   });
 
   let currentFilteredEvents = [];

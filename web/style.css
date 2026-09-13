@@ -579,23 +579,6 @@ main {
 .newsletter-submit:hover { background: var(--accent-dark); }
 .newsletter-close:hover { color: var(--accent); }
 
-.newsletter-status {
-  position: fixed;
-  left: 50%;
-  bottom: calc(max(20px, env(safe-area-inset-bottom)) + 56px);
-  transform: translateX(-50%);
-  z-index: 45;
-  max-width: min(92vw, 340px);
-  background: var(--ink);
-  color: var(--bg);
-  font-size: 0.82rem;
-  font-family: var(--font-sans);
-  text-align: center;
-  padding: 0.5rem 1rem;
-  border-radius: 16px;
-}
-.newsletter-status--error { background: var(--accent); }
-
 .suggest-intro {
   font-size: 0.9rem;
   color: var(--ink-soft);
