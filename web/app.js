@@ -594,7 +594,7 @@
     })
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
-        showNewsletterStatus("Danke! Du bist jetzt angemeldet.", false);
+        showNewsletterStatus("Danke! Schau in deine Inbox.", false);
         newsletterFormEl.reset();
         setTimeout(closeNewsletterWidget, 1600);
       })
