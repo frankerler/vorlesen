@@ -21,10 +21,20 @@
   const suggestStatusEl = document.getElementById("suggest-status");
   const suggestSubmitBtn = suggestFormEl ? suggestFormEl.querySelector(".suggest-submit") : null;
 
+  const newsletterBtn = document.getElementById("newsletter-btn");
+  const newsletterOverlayEl = document.getElementById("newsletter-overlay");
+  const closeNewsletterBtn = document.getElementById("close-newsletter");
+  const newsletterFormEl = document.getElementById("newsletter-form");
+  const newsletterStatusEl = document.getElementById("newsletter-status");
+  const newsletterSubmitBtn = newsletterFormEl ? newsletterFormEl.querySelector(".suggest-submit") : null;
+
   // TODO: replace with your real Formspree form endpoint (formspree.io ->
   // create a form -> copy the URL it gives you, looks like
   // "https://formspree.io/f/xxxxxxxx"). Submissions won't go anywhere until
-  // this is set.
+  // this is set. Reused for both the reading-suggestion form and the
+  // newsletter form -- each sets its own hidden "_subject" field so
+  // submissions are distinguishable in the Formspree inbox/dashboard even
+  // though they share one form (most Formspree plans only allow one).
   const FORMSPREE_ENDPOINT = "https://formspree.io/f/REPLACE_ME";
 
   const WEEKDAYS = ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"];
@@ -461,6 +471,7 @@
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
     if (!suggestOverlayEl.hidden) closeSuggest();
+    else if (!newsletterOverlayEl.hidden) closeNewsletter();
     else if (!overlayEl.hidden) closeDetail();
   });
 
@@ -499,6 +510,69 @@
       .finally(() => {
         suggestSubmitBtn.disabled = false;
         suggestSubmitBtn.textContent = "Vorschlag absenden →";
+      });
+  });
+
+  // --- Newsletter signup form ---------------------------------------------
+  //
+  // Same no-backend approach as the suggestion form above: POSTs straight to
+  // Formspree. For now, subscriber addresses just accumulate in the
+  // Formspree dashboard -- export them as CSV and run
+  // scripts/import_newsletter_subscribers.py to fold new ones into
+  // data/subscribers.json, which web/admin.html lists.
+
+  function openNewsletter() {
+    newsletterStatusEl.hidden = true;
+    newsletterOverlayEl.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeNewsletter() {
+    newsletterOverlayEl.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  newsletterBtn.addEventListener("click", openNewsletter);
+  closeNewsletterBtn.addEventListener("click", closeNewsletter);
+  newsletterOverlayEl.addEventListener("click", (e) => {
+    if (e.target === newsletterOverlayEl) closeNewsletter();
+  });
+
+  function showNewsletterStatus(message, isError) {
+    newsletterStatusEl.textContent = message;
+    newsletterStatusEl.className = "suggest-status" + (isError ? " suggest-status--error" : " suggest-status--ok");
+    newsletterStatusEl.hidden = false;
+  }
+
+  newsletterFormEl.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    if (FORMSPREE_ENDPOINT.includes("REPLACE_ME")) {
+      showNewsletterStatus("Das Formular ist noch nicht angeschlossen (fehlender Formspree-Endpoint).", true);
+      return;
+    }
+
+    const data = new FormData(newsletterFormEl);
+    newsletterSubmitBtn.disabled = true;
+    newsletterSubmitBtn.textContent = "Wird gesendet …";
+
+    fetch(FORMSPREE_ENDPOINT, {
+      method: "POST",
+      body: data,
+      headers: { Accept: "application/json" },
+    })
+      .then((r) => {
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        showNewsletterStatus("Danke! Du bist jetzt angemeldet.", false);
+        newsletterFormEl.reset();
+        setTimeout(closeNewsletter, 1800);
+      })
+      .catch(() => {
+        showNewsletterStatus("Anmeldung fehlgeschlagen. Bitte versuch es gleich noch einmal.", true);
+      })
+      .finally(() => {
+        newsletterSubmitBtn.disabled = false;
+        newsletterSubmitBtn.textContent = "Abonnieren →";
       });
   });
 
