@@ -320,8 +320,9 @@ main {
 
 .detail-overlay .detail-panel {
   background: transparent;
-  max-width: none;
+  max-width: 800px;
   width: 100%;
+  margin: 0 auto;
   min-height: 100%;
   border-radius: 0;
   box-shadow: none;
@@ -343,7 +344,7 @@ main {
 .back-btn {
   position: fixed;
   top: max(16px, env(safe-area-inset-top));
-  left: 16px;
+  left: max(16px, calc((100vw - 800px) / 2 + 16px));
   border: none;
   background: none;
   color: var(--ink);
@@ -360,7 +361,7 @@ main {
 .share-btn {
   position: fixed;
   top: max(16px, env(safe-area-inset-top));
-  right: 16px;
+  right: max(16px, calc((100vw - 800px) / 2 + 16px));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,7 +379,7 @@ main {
 .share-feedback {
   position: fixed;
   top: max(58px, calc(env(safe-area-inset-top) + 42px));
-  right: 16px;
+  right: max(16px, calc((100vw - 800px) / 2 + 16px));
   z-index: 2;
   background: var(--ink);
   color: var(--bg);
