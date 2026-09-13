@@ -535,6 +535,16 @@
   // that label changes (the normal "Newsletter" vs. a temporary success
   // message), since those aren't the same width.
   function syncNewsletterWidgetWidthToToggle() {
+    // .newsletter-toggle is flex:1, so as long as the widget still has its
+    // previous explicit width (e.g. the wide "open" size), the button
+    // stretches to fill it and reports that same wide measurement instead
+    // of its own natural text width -- the widget would never actually
+    // shrink back down. Clearing the width first forces the button back to
+    // its intrinsic size for this measurement (getBoundingClientRect()
+    // forces a synchronous layout, so this reads correctly), then the real
+    // target is reapplied; both happen before the next paint, so the CSS
+    // transition still animates smoothly from the old width to the new one.
+    newsletterWidgetEl.style.width = "";
     const width = newsletterToggleBtn.getBoundingClientRect().width;
     if (width > 0) newsletterWidgetEl.style.width = `${width}px`;
   }
