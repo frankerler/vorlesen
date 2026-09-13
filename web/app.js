@@ -21,12 +21,13 @@
   const suggestStatusEl = document.getElementById("suggest-status");
   const suggestSubmitBtn = suggestFormEl ? suggestFormEl.querySelector(".suggest-submit") : null;
 
-  const newsletterBtn = document.getElementById("newsletter-btn");
-  const newsletterOverlayEl = document.getElementById("newsletter-overlay");
-  const closeNewsletterBtn = document.getElementById("close-newsletter");
+  const newsletterWidgetEl = document.getElementById("newsletter-widget");
+  const newsletterToggleBtn = document.getElementById("newsletter-toggle");
   const newsletterFormEl = document.getElementById("newsletter-form");
+  const newsletterEmailInput = document.getElementById("newsletter-email");
+  const newsletterCloseBtn = document.getElementById("newsletter-close");
   const newsletterStatusEl = document.getElementById("newsletter-status");
-  const newsletterSubmitBtn = newsletterFormEl ? newsletterFormEl.querySelector(".suggest-submit") : null;
+  const newsletterSubmitBtn = newsletterFormEl ? newsletterFormEl.querySelector(".newsletter-submit") : null;
 
   // TODO: replace with your real Formspree form endpoint (formspree.io ->
   // create a form -> copy the URL it gives you, looks like
@@ -471,7 +472,7 @@
   document.addEventListener("keydown", (e) => {
     if (e.key !== "Escape") return;
     if (!suggestOverlayEl.hidden) closeSuggest();
-    else if (!newsletterOverlayEl.hidden) closeNewsletter();
+    else if (newsletterWidgetEl.classList.contains("is-open")) closeNewsletterWidget();
     else if (!overlayEl.hidden) closeDetail();
   });
 
@@ -513,34 +514,64 @@
       });
   });
 
-  // --- Newsletter signup form ---------------------------------------------
+  // --- Newsletter signup widget --------------------------------------------
   //
-  // Same no-backend approach as the suggestion form above: POSTs straight to
-  // Formspree. For now, subscriber addresses just accumulate in the
-  // Formspree dashboard -- export them as CSV and run
+  // A floating pill (bottom center) that morphs in place into a small email
+  // input tile -- no modal/overlay, it just stays anchored at the bottom.
+  // Same no-backend submission approach as the suggestion form above: POSTs
+  // straight to Formspree. For now, subscriber addresses just accumulate in
+  // the Formspree dashboard -- export them as CSV and run
   // scripts/import_newsletter_subscribers.py to fold new ones into
   // data/subscribers.json, which web/admin.html lists.
 
-  function openNewsletter() {
+  // Cached once so closing can size the widget back to the button's natural
+  // width without measuring a hidden (display:none) element, which would
+  // read 0. The button's label is static, so this never goes stale.
+  let newsletterCollapsedWidth = null;
+
+  function measureNewsletterCollapsedWidth() {
+    const width = newsletterToggleBtn.getBoundingClientRect().width;
+    if (width > 0) {
+      newsletterCollapsedWidth = width;
+      newsletterWidgetEl.style.width = `${width}px`;
+    }
+  }
+
+  function openNewsletterWidget() {
     newsletterStatusEl.hidden = true;
-    newsletterOverlayEl.hidden = false;
-    document.body.style.overflow = "hidden";
+    newsletterWidgetEl.style.width = `${Math.min(window.innerWidth - 40, 340)}px`;
+    newsletterWidgetEl.classList.add("is-open");
+    newsletterToggleBtn.hidden = true;
+    // Wait for the container to mostly finish widening before revealing the
+    // input row -- showing it immediately would cram it into a box that's
+    // still animating open from the button's much narrower starting width.
+    setTimeout(() => {
+      newsletterFormEl.hidden = false;
+      newsletterEmailInput.focus();
+    }, 220);
   }
 
-  function closeNewsletter() {
-    newsletterOverlayEl.hidden = true;
-    document.body.style.overflow = "";
+  function closeNewsletterWidget() {
+    newsletterWidgetEl.classList.remove("is-open");
+    if (newsletterCollapsedWidth) newsletterWidgetEl.style.width = `${newsletterCollapsedWidth}px`;
+    newsletterToggleBtn.hidden = false;
+    newsletterFormEl.hidden = true;
+    newsletterStatusEl.hidden = true;
   }
 
-  newsletterBtn.addEventListener("click", openNewsletter);
-  closeNewsletterBtn.addEventListener("click", closeNewsletter);
-  newsletterOverlayEl.addEventListener("click", (e) => {
-    if (e.target === newsletterOverlayEl) closeNewsletter();
+  measureNewsletterCollapsedWidth();
+  newsletterToggleBtn.addEventListener("click", openNewsletterWidget);
+  newsletterCloseBtn.addEventListener("click", closeNewsletterWidget);
+
+  document.addEventListener("click", (e) => {
+    if (newsletterWidgetEl.classList.contains("is-open") && !newsletterWidgetEl.contains(e.target)) {
+      closeNewsletterWidget();
+    }
   });
 
   function showNewsletterStatus(message, isError) {
     newsletterStatusEl.textContent = message;
-    newsletterStatusEl.className = "suggest-status" + (isError ? " suggest-status--error" : " suggest-status--ok");
+    newsletterStatusEl.className = "newsletter-status" + (isError ? " newsletter-status--error" : "");
     newsletterStatusEl.hidden = false;
   }
 
@@ -548,13 +579,13 @@
     e.preventDefault();
 
     if (FORMSPREE_ENDPOINT.includes("REPLACE_ME")) {
-      showNewsletterStatus("Das Formular ist noch nicht angeschlossen (fehlender Formspree-Endpoint).", true);
+      showNewsletterStatus("Formular noch nicht angeschlossen (fehlender Formspree-Endpoint).", true);
       return;
     }
 
     const data = new FormData(newsletterFormEl);
     newsletterSubmitBtn.disabled = true;
-    newsletterSubmitBtn.textContent = "Wird gesendet …";
+    newsletterEmailInput.disabled = true;
 
     fetch(FORMSPREE_ENDPOINT, {
       method: "POST",
@@ -565,14 +596,14 @@
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         showNewsletterStatus("Danke! Du bist jetzt angemeldet.", false);
         newsletterFormEl.reset();
-        setTimeout(closeNewsletter, 1800);
+        setTimeout(closeNewsletterWidget, 1600);
       })
       .catch(() => {
         showNewsletterStatus("Anmeldung fehlgeschlagen. Bitte versuch es gleich noch einmal.", true);
       })
       .finally(() => {
         newsletterSubmitBtn.disabled = false;
-        newsletterSubmitBtn.textContent = "Abonnieren →";
+        newsletterEmailInput.disabled = false;
       });
   });
 
