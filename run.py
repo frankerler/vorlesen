@@ -105,6 +105,7 @@ def _completeness_score(e: Event) -> tuple:
     """Higher is "more complete" -- used to pick which duplicate record to keep."""
     return (
         bool(e.cover_image),
+        bool(e.image_credit),
         bool(e.address),
         bool(e.time),
         bool(e.url),

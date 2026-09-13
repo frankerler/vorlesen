@@ -120,7 +120,7 @@
 
   const EVENT_FIELDS = [
     "publisher", "author", "title", "date", "time", "venue", "city",
-    "address", "url", "source_url", "raw_text", "cover_image", "book_title", "id",
+    "address", "url", "source_url", "raw_text", "cover_image", "image_credit", "book_title", "id",
   ];
 
   function eventsToCsv(events) {
@@ -421,6 +421,7 @@
       source_url: isNew ? "admin" : undefined,
       raw_text: null,
       cover_image: data.cover_image || null,
+      image_credit: data.image_credit || null,
       id: data.id || newLocalId(),
     };
 

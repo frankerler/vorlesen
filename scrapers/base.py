@@ -63,6 +63,7 @@ class Event:
     source_url: str
     raw_text: Optional[str] = None  # fallback: original snippet, for debugging/manual review
     cover_image: Optional[str] = None  # book cover URL, when the source page exposes one
+    image_credit: Optional[str] = None  # photographer/copyright line for cover_image, when the source exposes one
     book_title: Optional[str] = None  # just the book's title, when it can be isolated from `title`
 
     def id(self) -> str:
@@ -169,6 +170,66 @@ def clean_text(s: Optional[str]) -> Optional[str]:
     if s is None:
         return None
     return re.sub(r"\s+", " ", s).strip() or None
+
+
+# Cover images are mostly product/press shots the publisher itself supplies
+# with the book, which usually carry no per-image photographer credit at all
+# (that's more a news/editorial-photography convention) -- but some sites do
+# note one, typically in the image's own alt/title text as "Foto: ...",
+# "Bild: ...", "© ...", etc. This only ever looks at attributes a scraper
+# already has in hand from the same <img> tag it took cover_image from; it
+# never triggers an extra request, so it's a no-cost opportunistic check
+# per source rather than something verified against each site's actual markup.
+_CREDIT_PATTERN = re.compile(
+    r"(?:^|[|·•,;(])\s*"
+    r"(?:foto|photo|bild|image|credit|copyright|fotograf(?:in)?|photographer)\s*[:©]\s*"
+    r"([^|·•,;()]{2,80})",
+    re.IGNORECASE,
+)
+_CREDIT_COPYRIGHT_SIGN = re.compile(r"©\s*([^|·•,;()]{2,80})")
+
+
+def extract_image_credit(*texts: Optional[str]) -> Optional[str]:
+    """Best-effort photo/image credit line pulled out of alt/title-style text.
+
+    Matches explicit markers ("Foto: ...", "Bild: ...", "Credit: ...",
+    "© ...") rather than treating arbitrary alt text as a credit, since most
+    alt text on these sites is just the book/author name, not a credit.
+    """
+    for text in texts:
+        if not text:
+            continue
+        m = _CREDIT_PATTERN.search(text) or _CREDIT_COPYRIGHT_SIGN.search(text)
+        if m:
+            return clean_text(m.group(1))
+    return None
+
+
+def _person_or_org_name(value) -> Optional[str]:
+    """schema.org Person/Organization/Text properties can be a plain string
+    or an object with a "name" -- this reads either."""
+    if isinstance(value, dict):
+        return clean_text(value.get("name"))
+    if isinstance(value, str):
+        return clean_text(value)
+    return None
+
+
+def image_from_schema_org(image) -> tuple[Optional[str], Optional[str]]:
+    """Splits a schema.org `image` property into (url, credit).
+
+    `image` is commonly just a URL string with no credit available, but the
+    schema.org ImageObject type formally supports `creator`/`copyrightHolder`
+    properties -- when a site's JSON-LD actually uses that richer form
+    instead of a bare string, this picks the credit up for free.
+    """
+    if isinstance(image, str):
+        return (image or None), None
+    if isinstance(image, dict):
+        url = image.get("url") or image.get("contentUrl")
+        credit = _person_or_org_name(image.get("creator")) or _person_or_org_name(image.get("copyrightHolder"))
+        return url, credit
+    return None, None
 
 
 # Sources that don't expose a clean, separate "book title" field usually still

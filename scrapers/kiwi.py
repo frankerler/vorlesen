@@ -77,9 +77,16 @@ def _hit_events(hit: dict) -> list[Event]:
         url = f"https://www.kiwi-verlag.de/veranstaltung/{seo_url}" if seo_url else LISTING_URL
 
         products = ev.get("relatedProducts") or []
-        cover = products[0].get("primaryImageLink") if products else None
+        cover = credit = None
+        if products:
+            cover = products[0].get("primaryImageLink")
+            # Speculative: this API isn't publicly documented, so these are
+            # a guess at plausible credit key names rather than something
+            # confirmed present -- harmless no-op (stays None) if absent.
+            credit = clean_text(products[0].get("imageCredit") or products[0].get("credit"))
         if not cover and contributors:
             cover = contributors[0].get("imageLink")
+            credit = credit or clean_text(contributors[0].get("imageCredit") or contributors[0].get("credit"))
 
         description = clean_text(BeautifulSoup(hit.get("description") or "", "html.parser").get_text(" "))
         book_title = clean_text(products[0].get("title")) if products else None
@@ -98,6 +105,7 @@ def _hit_events(hit: dict) -> list[Event]:
                 source_url=LISTING_URL,
                 raw_text=ev.get("type"),
                 cover_image=cover,
+                image_credit=credit,
                 book_title=book_title,
             )
         )

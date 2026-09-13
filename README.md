@@ -238,6 +238,17 @@ real cover image, address, etc.) instead of listing both.
   Ullstein, and Lettrétage. Suhrkamp, LCB, and Literaturhaus Berlin don't
   expose real book covers, so those events show a 📖 placeholder in the UI
   instead.
+- Photographer/image credit (`image_credit`): shown as a small caption under
+  the cover image on the detail page, and editable per-event in the admin
+  form. It's only ever populated from a credit that's actually present in
+  the source data (schema.org `ImageObject.creator`/`copyrightHolder` for
+  Rowohlt, S. Fischer, and Lettrétage; alt/title/figcaption text containing
+  a "Foto:"/"©"-style marker for dtv and Piper) — nothing is invented or
+  guessed. In practice, most publisher sites don't attach a credit to their
+  book covers at all, so `image_credit` is `null` for the majority of
+  events even where a cover image exists; KiWi, Hanser, and Ullstein look
+  for a credit field in their internal search APIs, but those APIs are
+  undocumented and may not expose one, so coverage there is unverified.
 - LCB and Lettrétage often don't have a clean single "author" field on their
   own (a venue lists all participants/moderators, not just the book's
   author) — author is best-effort there and sometimes `null`.

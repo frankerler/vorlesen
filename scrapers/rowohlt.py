@@ -19,7 +19,7 @@ import time
 
 from bs4 import BeautifulSoup
 
-from .base import Event, clean_text, extract_quoted_title, fetch
+from .base import Event, clean_text, extract_quoted_title, fetch, image_from_schema_org
 
 SITEMAP_URL = "https://www.rowohlt.de/sitemap-events.xml"
 LISTING_URL = "https://www.rowohlt.de/veranstaltung"
@@ -81,6 +81,7 @@ def _parse_detail(url: str) -> Event | None:
             # the free-text description (title itself is usually just the
             # author's name, e.g. "Waslat Hasrat-Nazimi").
             book_title = extract_quoted_title(item.get("description"))
+            cover, credit = image_from_schema_org(item.get("image"))
 
             return Event(
                 publisher=PUBLISHER,
@@ -97,7 +98,8 @@ def _parse_detail(url: str) -> Event | None:
                 # useful description on its own; the free-text blurb is much
                 # more informative for the detail view.
                 raw_text=clean_text(item.get("description")) or event_type,
-                cover_image=item.get("image") or None,
+                cover_image=cover,
+                image_credit=credit,
                 book_title=book_title,
             )
     return None
