@@ -217,16 +217,37 @@ Each event record looks like:
 | Kiepenheuer & Witsch | `scrapers/kiwi.py` | Direct query to the site's own public *search-only* Algolia index |
 | Ullstein Verlag | `scrapers/ullstein.py` | `__NEXT_DATA__` JSON blob (full Algolia dataset), paginated |
 
-### Venues (3)
+### Venues (13)
 
 Independent Berlin reading venues that host events for many different
-publishers' authors, rather than just their own:
+publishers' authors, rather than just their own. A few (Urania, Publix,
+taz, Heinrich-Böll-Stiftung) run broad event calendars that aren't
+literary-specific, so those scrapers keep only entries that look like a
+book reading/presentation by keyword; Rosa-Luxemburg-Stiftung's own site
+labels this cleanly ("Lesung/Gespräch", "Buchvorstellung") so that one
+filters on the real category instead of guessing:
 
 | Venue | Module | How it's scraped |
 |---|---|---|
 | Literarisches Colloquium Berlin (LCB) | `scrapers/lcb.py` | Listing page → detail page's labelled sidebar (date/venue/participants) |
 | Literaturhaus Berlin ("Li-Be") | `scrapers/literaturhaus.py` | Server-rendered listing page + a venue-address lookup page |
 | Lettrétage | `scrapers/lettretage.py` | Listing page → per-event JSON-LD + free-text author extraction |
+| Dussmann das KulturKaufhaus | `scrapers/kulturkaufhaus.py` | Listing page → detail page's JSON-LD (`/buchevent` path already isolates book events) |
+| Buchbox! Berlin | `scrapers/buchbox.py` | Paginated listing → detail page's bibliography block for structured author/cover |
+| Pro qm | `scrapers/proqm.py` | Single listing page, date-descending (stop at the first past event) |
+| Buchhandlung Moritzplatz | `scrapers/moritzplatz.py` | JSON blob embedded in the page's `<script>` tag (client-rendered SPA, but data ships server-side) |
+| Rosa-Luxemburg-Stiftung | `scrapers/rosalux.py` | Listing page (own city + category facets) → detail page's schema.org microdata |
+| Heinrich-Böll-Stiftung | `scrapers/boell.py` | Separate `calendar.boell.de` site, city-faceted, paginated |
+| Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL) | `scrapers/zfl.py` | `kaldata` JS array embedded in the listing page (all upcoming events in one blob) |
+| Urania Berlin | `scrapers/urania.py` | Single listing page, keyword-filtered (hosts far more than just book events) |
+| Publix | `scrapers/publix.py` | Paginated listing with schema.org microdata cards, keyword-filtered |
+| taz | `scrapers/taz.py` | Single listing page (all client-side-paginated events already present) → JSON-LD + free-text venue/speaker parsing |
+
+**Not scraped on principle:** Ocelot (bookshop) sits behind an active
+anti-bot wall (Anubis proof-of-work challenge) and its `robots.txt`
+explicitly disallows known scraping tools by name — that's a deliberate
+signal from the site operator, not just a technical hurdle, so it's left
+disabled in `sources.json` rather than worked around.
 
 Every scraper returns a list of `Event` objects (see `scrapers/base.py`); `run.py`
 merges them all, filters for Berlin, de-duplicates, sorts by date, and writes
@@ -259,8 +280,6 @@ real cover image, address, etc.) instead of listing both.
   exact — it can occasionally miss a real duplicate (if the venue/author
   strings differ too much) or, in theory, merge two different events that
   happen to share a date, similar venue, and an overlapping name.
-- Not scheduled/automated yet — re-run `run.py` manually (or add a cron job /
-  GitHub Action) to refresh.
 - Cover images: available for Piper, dtv, Rowohlt, S. Fischer, Hanser, KiWi,
   Ullstein, and Lettrétage. Suhrkamp, LCB, and Literaturhaus Berlin don't
   expose real book covers, so those events show a 📖 placeholder in the UI
@@ -279,6 +298,25 @@ real cover image, address, etc.) instead of listing both.
 - LCB and Lettrétage often don't have a clean single "author" field on their
   own (a venue lists all participants/moderators, not just the book's
   author) — author is best-effort there and sometimes `null`.
+- Keyword-filtered venues (Urania, Publix, taz, Heinrich-Böll-Stiftung) can
+  in theory miss a real book event whose title/subtitle happens not to
+  contain any of the matched keywords, or (less likely) keep something
+  that isn't really a reading. Rosa-Luxemburg-Stiftung avoids this by
+  filtering on the site's own category label instead.
+- "Leibniz Center" was ambiguous when requested — resolved to the
+  Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL), the one
+  literature-focused Berlin institution with "Leibniz" in the name that
+  runs its own public readings; the "Leibniz-Saal" some other venues use
+  is just a room inside the BBAW, not an independent host with its own
+  events page.
+- "Literatur Haus Berlin" wasn't added as a separate source since it's the
+  same institution as Literaturhaus Berlin ("Li-Be"), already covered by
+  `scrapers/literaturhaus.py`.
+- Buchbox! Berlin's bibliography-block author field is occasionally
+  malformed for multi-author entries (e.g. "Angela/Baumann, Beate Merkel"
+  instead of two clean names) — a source-data quirk on their book-club
+  style listings, not something worth a bespoke parser for a handful of
+  events.
 - `book_title` (used as the headline in the UI instead of the full event
   description) is populated directly from clean source data where available
   (Hanser, KiWi, Ullstein, Literaturhaus: 100% coverage), and by best-effort

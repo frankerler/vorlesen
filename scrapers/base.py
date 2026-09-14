@@ -286,11 +286,19 @@ def _fold(s: str) -> str:
 
 
 def normalize_venue(venue: Optional[str]) -> str:
-    """Lowercased, accent-folded, punctuation-stripped venue name for fuzzy matching."""
+    """Lowercased, accent-folded, punctuation-stripped venue name for fuzzy matching.
+
+    Strips "berlin" itself along with the usual legal-form/generic-word
+    noise -- since this whole project is Berlin-only, nearly every venue
+    name contains that word, which would otherwise count as a "significant"
+    (>=4 char) shared word in venues_match()'s word-overlap fallback and
+    cause unrelated venues to look alike (e.g. "Urania Berlin" vs.
+    "Heinrich-Böll-Stiftung - Bundesstiftung Berlin").
+    """
     if not venue:
         return ""
     s = _fold(venue)
-    s = re.sub(r"\b(e\.?\s?v\.?|gmbh|theater|buchhandlung)\b", "", s)
+    s = re.sub(r"\b(e\.?\s?v\.?|gmbh|theater|buchhandlung|berlin)\b", "", s)
     s = re.sub(r"[^a-z0-9]+", " ", s).strip()
     return s
 

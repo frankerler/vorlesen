@@ -53,6 +53,16 @@ SCRAPERS = {
     "lcb": "Literarisches Colloquium Berlin",
     "literaturhaus": "Literaturhaus Berlin",
     "lettretage": "Lettrétage",
+    "kulturkaufhaus": "Dussmann das KulturKaufhaus",
+    "buchbox": "Buchbox! Berlin",
+    "proqm": "Pro qm",
+    "moritzplatz": "Buchhandlung Moritzplatz",
+    "rosalux": "Rosa-Luxemburg-Stiftung",
+    "boell": "Heinrich-Böll-Stiftung",
+    "zfl": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
+    "urania": "Urania Berlin",
+    "publix": "Publix",
+    "taz": "taz",
 }
 
 

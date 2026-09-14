@@ -10,6 +10,17 @@
     { "id": "ullstein", "label": "Ullstein Verlag", "type": "publisher", "enabled": true, "implemented": true },
     { "id": "lcb", "label": "Literarisches Colloquium Berlin", "type": "venue", "enabled": true, "implemented": true },
     { "id": "literaturhaus", "label": "Literaturhaus Berlin", "type": "venue", "enabled": true, "implemented": true },
-    { "id": "lettretage", "label": "Lettrétage", "type": "venue", "enabled": true, "implemented": true }
+    { "id": "lettretage", "label": "Lettrétage", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "kulturkaufhaus", "label": "Dussmann das KulturKaufhaus", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "buchbox", "label": "Buchbox! Berlin", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "proqm", "label": "Pro qm", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "moritzplatz", "label": "Buchhandlung Moritzplatz", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "ocelot", "label": "Ocelot", "type": "venue", "enabled": false, "implemented": false, "note": "Site sits behind an active anti-bot wall (Anubis proof-of-work) and its robots.txt explicitly disallows known scraping tools -- not scraped on principle, not just difficulty." },
+    { "id": "rosalux", "label": "Rosa-Luxemburg-Stiftung", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "boell", "label": "Heinrich-Böll-Stiftung", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "zfl", "label": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "urania", "label": "Urania Berlin", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "publix", "label": "Publix", "type": "venue", "enabled": true, "implemented": true },
+    { "id": "taz", "label": "taz", "type": "venue", "enabled": true, "implemented": true }
   ]
 }
