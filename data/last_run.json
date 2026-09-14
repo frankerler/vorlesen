@@ -1,24 +1,304 @@
 {
-  "ran_at": "2026-09-13T07:03:37+00:00",
-  "total_events": 173,
-  "new_count": 2,
-  "removed_count": 43,
+  "ran_at": "2026-09-14T07:26:11+00:00",
+  "total_events": 205,
+  "new_count": 37,
+  "removed_count": 5,
   "new_events": [
     {
-      "id": "db6bacdc180308e3",
-      "author": "Lutz Seiler, Sandra Kegel, Peter Richter, Maike Albath",
+      "id": "885427755d942774",
+      "author": "Svenja Leiber",
+      "book_title": "Svenja Leiber liest aus Nelka",
+      "date": "2026-09-17",
+      "venue": "Mittelpunktbibliothek Köpenick",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "e9f2bf6d86c8d0e2",
+      "author": "Claire Beyer",
+      "book_title": "Und plötzlich Weihnachten",
+      "date": "2026-09-18",
+      "venue": "Beginenhof Kreuzberg",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "d6d6617f8c33ce4f",
+      "author": "Lutz Seiler",
       "book_title": "Das tickende Herz",
       "date": "2026-09-22",
       "venue": "Literarisches Colloquium Berlin",
-      "publisher": "Literarisches Colloquium Berlin"
+      "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "8ad92d2f16b46ecf",
-      "author": "Clemens J. Setz, Sophia Merwald, Wolfseule (Dorothea Studthoff)",
-      "book_title": "Sophia Merwald",
+      "id": "e0ce65fb19bbd505",
+      "author": "Dana Vowinckel",
+      "book_title": "Anton und Alma",
+      "date": "2026-09-23",
+      "venue": "Urania Berlin",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "cb191734b728dd8d",
+      "author": "Gabriela Jaskulla",
+      "book_title": "Artemisia Gentileschi und Der Zorn der Frauen",
+      "date": "2026-09-27",
+      "venue": "BEGINE - Treffpunkt und Kultur für Frauen e.V.",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "e8017abe34410884",
+      "author": "Clemens J. Setz",
+      "book_title": "Mein Leben als Noiseband",
       "date": "2026-09-29",
-      "venue": "Literarisches Colloquium Berlin",
-      "publisher": "Literarisches Colloquium Berlin"
+      "venue": "Literarisches Colloquium",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "15fa7a57e1e69cfa",
+      "author": "Jens-Christian Rabe und Oliver Polak",
+      "book_title": "Komisch",
+      "date": "2026-09-29",
+      "venue": "Urania Berlin Kleistsaal",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "a20f898ea4f767aa",
+      "author": "Dana Vowinckel",
+      "book_title": "Anton und Alma",
+      "date": "2026-10-01",
+      "venue": "Buchhandlung Marga Schoeller",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "03676066aed976c1",
+      "author": "Svenja Leiber",
+      "book_title": "Svenja Leiber liest aus Nelka Moderation: Norbert Peters (Historiker, AG Gleis1) Musik: Maria (Akkordeon), Joachim (Klarinette)",
+      "date": "2026-10-04",
+      "venue": "Forum Möckernkiez",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "18c375fb64e9a664",
+      "author": "Isabella M. Weber",
+      "book_title": "Antifaschistische Wirtschaftspolitik",
+      "date": "2026-10-05",
+      "venue": "Urania Berlin Humboldt-Saal",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "42a02af2d0eadb30",
+      "author": "Martin Saar und Frieder Vogelmann über Michel Foucault",
+      "book_title": "Bedingungen unserer Existenz. Zur Aktualität Michel Foucaults",
+      "date": "2026-10-06",
+      "venue": "Buchhandlung Walther König an der Museumsinsel",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "02f4bae966a388c5",
+      "author": "Adrian Pabst über Veith Selk und Julian Nicolai Hofmann",
+      "book_title": "Postliberalismus? – Eine transatlantische Debatte",
+      "date": "2026-10-12",
+      "venue": "Katholische Akademie in Berlin",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "02e5bfcee8ac1d0f",
+      "author": "Mandy Mangler",
+      "book_title": "Don't miss the Clitoris",
+      "date": "2026-10-13",
+      "venue": "Haus des HUMANISMUS",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "daabb4631e850779",
+      "author": "Jan-Werner Müller, Charlotte Klonk und Olaf Scholz",
+      "book_title": "Straße, Platz, Palast",
+      "date": "2026-10-14",
+      "venue": "Urania Berlin",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "da6957f6418b2cc8",
+      "author": "Lutz Seiler",
+      "book_title": "Das tickende Herz",
+      "date": "2026-10-14",
+      "venue": "Pfefferberg Theater",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "fcd6c79400d91133",
+      "author": "Stephan Thome",
+      "book_title": "Besser als nie",
+      "date": "2026-10-15",
+      "venue": "Buchhandlung Ferlemann & Schatzer",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "3254d8df59eae522",
+      "author": "»Die Sage von Sleepy Hollow«",
+      "book_title": "Die Sage von Sleepy Hollow",
+      "date": "2026-10-15",
+      "venue": "Modern Graphics",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "7c8577a2697d982e",
+      "author": "Katja Oskamp",
+      "book_title": "Marzahn, mon amour",
+      "date": "2026-10-16",
+      "venue": "Gärten der Welt Besucherzentrum",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "711319e4a0104a00",
+      "author": "Berliner Religionsgespräche",
+      "book_title": "Schuld und Sühne. Moral, Recht, Religion",
+      "date": "2026-10-20",
+      "venue": "Berlin Brandenburgische Akademie der Wissenschaften Leibniz-Saal",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "e6c4464aefc930a9",
+      "author": "Constantin Lieb",
+      "book_title": "Wildboden",
+      "date": "2026-10-22",
+      "venue": "Buchhändlerkeller",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "e1c3a8f694826c00",
+      "author": "Axel Schock und Thomas Sparr",
+      "book_title": "Aids. Chronik einer Pandemie",
+      "date": "2026-10-26",
+      "venue": "Prinz Eisenherz Buchladen",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "082078e35de9d6f7",
+      "author": "Julia Ebner",
+      "book_title": "Von Fitness zu Faschismus",
+      "date": "2026-10-27",
+      "venue": "Pfefferberg Theater",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "6388af83b7e55729",
+      "author": "Ilija Matusko",
+      "book_title": "Jugo",
+      "date": "2026-10-28",
+      "venue": "Volksbühne am Rosa-Luxemburg-Platz Roter Salon",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "85b28c8a9a73c223",
+      "author": "Robert Menasse",
+      "book_title": "Legacies of Occupation. Nationalsozialismus und europäische Gegenwart",
+      "date": "2026-10-28",
+      "venue": "Deutsches Historisches Museum Pei-Bau, 2. OG",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "7833b2b0eb3baa87",
+      "author": "Robert Menasse",
+      "book_title": "Die Lebensentscheidung",
+      "date": "2026-10-29",
+      "venue": "Buchhändlerkeller",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "ded2ef1402d613b4",
+      "author": "Stephanie Sy-Quia",
+      "book_title": "Den Himmel bewegen",
+      "date": "2026-10-29",
+      "venue": "Katholische Akademie in Berlin e.V.",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "1a8b69d81da7d99e",
+      "author": "Dana Vowinckel",
+      "book_title": "Anton und Alma",
+      "date": "2026-11-04",
+      "venue": "Georg Büchner Buchladen",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "6dc81165905ebc76",
+      "author": "Jáchym Topol",
+      "book_title": "Die Hölle gibt es nicht",
+      "date": "2026-11-05",
+      "venue": "Georg Büchner Buchladen",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "02e62bf8cc7756cd",
+      "author": "Tobias Becker",
+      "book_title": "Heimweh nach gestern",
+      "date": "2026-11-05",
+      "venue": "Werkbundarchiv – Museum der Dinge",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "cf2ba507800154c6",
+      "author": "Candice Fox",
+      "book_title": "Outback Killers",
+      "date": "2026-11-10",
+      "venue": "Marga Schoeller Bücher",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "54666a5bd86f323b",
+      "author": "Dana Vowinckel",
+      "book_title": "Anton und Alma",
+      "date": "2026-11-17",
+      "venue": "Neue Synagoge Vortragssaal",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "3c86d4cd876dae05",
+      "author": "Eric Wrede und Fee Vogel",
+      "book_title": "Jeder Mensch kann trauern",
+      "date": "2026-11-17",
+      "venue": "Filmtheater Colosseum",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "a407b4510fa3cb0c",
+      "author": "Ozan Zakariya Keskinkılıç",
+      "book_title": "Hundesohn",
+      "date": "2026-11-19",
+      "venue": "Bezirkszentralbibliothek Pablo Neruda",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "61f7216f29b0215a",
+      "author": "Verschoben - Svenja Leiber",
+      "book_title": "Die Veranstaltung wurde auf den 30. November 2026 verschoben Svenja Leiber liest aus Nelka Moderation: Matthias Hassenpflug",
+      "date": "2026-11-23",
+      "venue": "Buchhandlung Braun & Hassenpflug",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "6d363fa659db1c57",
+      "author": "Lutz Seiler",
+      "book_title": "Das tickende Herz",
+      "date": "2026-11-24",
+      "venue": "Georg Büchner Buchladen",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "578b851dcf1ecea9",
+      "author": "Stephan Lohse",
+      "book_title": "Das Knistern im All",
+      "date": "2026-11-24",
+      "venue": "Philipp-Schaeffer-Bibliothek",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "96a53b598775cd4c",
+      "author": "Svenja Leiber",
+      "book_title": "Svenja Leiber liest aus Nelka Moderation: Matthias Hassenpflug",
+      "date": "2026-11-30",
+      "venue": "Buchhandlung Braun & Hassenpflug",
+      "publisher": "Suhrkamp Verlag"
     }
   ]
 }
