@@ -1,307 +1,43 @@
 {
-  "ran_at": "2026-09-14T20:38:34+00:00",
-  "total_events": 241,
-  "new_count": 40,
-  "removed_count": 4,
+  "ran_at": "2026-09-15T07:03:36+00:00",
+  "total_events": 224,
+  "new_count": 6,
+  "removed_count": 23,
   "new_events": [
     {
-      "id": "6f210878b25a37ae",
-      "author": "Edith Löhle",
-      "book_title": "Kurzer Prozess",
-      "date": "2026-09-14",
-      "venue": "Clärchens Ballhaus, Auguststraße 24/25, 10117 Berlin",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "f0389407110e5afd",
-      "author": "Sven Regener",
-      "book_title": "Buchvorstellung mit Sven Regener",
-      "date": "2026-09-14",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "6bdbc864c8c70292",
-      "author": "Ahmad Mansour",
-      "book_title": "Haltung ohne Hass",
-      "date": "2026-09-15",
-      "venue": "FOLGT",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "76d19e1d7939b471",
-      "author": "Gunnar Decker",
-      "book_title": "Franz von Assisi: Frieden, Zuwendung und neue Bescheidenheit",
-      "date": "2026-09-15",
-      "venue": "Rosa-Luxemburg-Stiftung",
-      "publisher": "Rosa-Luxemburg-Stiftung"
-    },
-    {
-      "id": "1a49a73d4943308f",
-      "author": null,
-      "book_title": "Knit & Lit - Handarbeiten im Buchladen",
-      "date": "2026-09-16",
-      "venue": "BUCHBOX! in der Kastanienallee 97",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "06e97ccdc5033881",
-      "author": "Eva Geulen (ZfL), Carolyn Iselt (University of Wuppertal), Britta Lange (HU Berlin), Sarah Schmidt (BBAW/HU Berlin)",
-      "book_title": "Marmor, Quecksilber, Nebel – von der Kreislaufwirtschaft zwischen Schreiben, Material und Materie",
+      "id": "ab93fb70924501a9",
+      "author": "Judith Schalansky",
+      "book_title": "Marmor, Quecksilber, Nebel",
       "date": "2026-09-17",
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
-      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
+      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung Eberhard-Lämmert-Saal",
+      "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "1d7a0e3365f592bc",
-      "author": "Kathinka Engel",
-      "book_title": "Buchvorstellung mit Kathinka Engel",
-      "date": "2026-09-18",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "94e4a82bc83b0a2e",
-      "author": null,
-      "book_title": "Buchklub: Armut und soziale Abstiegsängste",
-      "date": "2026-09-21",
-      "venue": "Helle Panke e.V. – Rosa-Luxemburg-Stiftung Berlin",
-      "publisher": "Rosa-Luxemburg-Stiftung"
-    },
-    {
-      "id": "ab9b0b653a36afb1",
-      "author": null,
-      "book_title": "Shortlist Deutscher Buchpreis 2026",
-      "date": "2026-09-23",
-      "venue": "Urania Berlin",
-      "publisher": "Urania Berlin"
-    },
-    {
-      "id": "b648bde5e2204386",
-      "author": "Alice Oseman",
-      "book_title": "Talk & Live-Zeichnen mit Alice Oseman",
-      "date": "2026-09-23",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "f526f03da5dce652",
-      "author": "Anne-Sophie Balzer",
-      "book_title": "Die Gletscher schmelzen, während wir uns verlieben",
-      "date": "2026-09-24",
-      "venue": "Buchhandlung Moritzplatz",
-      "publisher": "Buchhandlung Moritzplatz"
-    },
-    {
-      "id": "de836f83b7d7b6df",
-      "author": "Yotam Ottolenghi",
-      "book_title": "Buchvorstellung mit Yotam Ottolenghi",
-      "date": "2026-09-24",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "cd19c7f892dd4a79",
-      "author": "Christoph Chwatal, Alexander Karschnia und Heimo Lattner",
-      "book_title": "Teslokratie",
-      "date": "2026-09-25",
-      "venue": "Pro qm",
-      "publisher": "Pro qm"
-    },
-    {
-      "id": "d214259c45555ed7",
+      "id": "36f3547ad5604fd1",
       "author": "Sebastian Becker",
-      "book_title": "Und es wird trotzdem wieder Sommer werden",
+      "book_title": "Sebastian Becker",
       "date": "2026-09-25",
-      "venue": "Colosseum, Gleimstraße 33, 10437 Berlin | Einlass: 18:30 Uhr",
-      "publisher": "Buchbox! Berlin"
+      "venue": "Colosseum",
+      "publisher": "Rowohlt Verlag"
     },
     {
-      "id": "905bc062820d288a",
-      "author": null,
-      "book_title": "Grüffelo-Party",
-      "date": "2026-09-26",
-      "venue": "2. OG, Kinderbuchabteilung",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "id": "9f2438163ae65c60",
+      "author": "Susan Neiman",
+      "book_title": "Nennen wir es böse",
+      "date": "2026-10-14",
+      "venue": "Literaturhaus Berlin e. V.",
+      "publisher": "Carl Hanser Verlag"
     },
     {
-      "id": "ec479e204ab630db",
-      "author": "Irine Beridze (University of Potsdam), Nina Weller (ZfL)",
-      "book_title": "Commemorating the 85th anniversary of the Babyn Yar massacre. Presentation of the new translation of Anatoly Kuznetsov’s “Babyn Jar. Roman eines Augenzeugen”",
-      "date": "2026-09-29",
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
-      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
-    },
-    {
-      "id": "6d1f69d467f5377e",
-      "author": "Sophia Hoffmann",
-      "book_title": "Mein Tisch ist groß genug",
-      "date": "2026-09-29",
-      "venue": "BUCHBOX! in der Kastanienallee 97, 10435 Berlin",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "4019a81d61636edf",
-      "author": "Juliane Marie Schreiber",
-      "book_title": "Buchvorstellung mit Juliane Marie Schreiber",
-      "date": "2026-09-30",
-      "venue": "3. OG",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "33a16129dd0a6b66",
-      "author": "Manuel Bittorf aka \"Betterov\"",
-      "book_title": "Betterov",
-      "date": "2026-09-30",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "783a57a23e044f97",
-      "author": "Daniel Haaksman",
-      "book_title": "It began in Ipanema. Rio de Janeiro in 50 Songs",
-      "date": "2026-10-02",
-      "venue": "Pro qm",
-      "publisher": "Pro qm"
-    },
-    {
-      "id": "07ba8d983c6e0ff0",
-      "author": null,
-      "book_title": "Können wir jetzt endlich eine ernsthafte Diskussion über eine antifaschistische Wirtschaftspolitik führen?",
-      "date": "2026-10-05",
-      "venue": "Heinrich-Böll-Stiftung - Bundesstiftung Berlin",
-      "publisher": "Heinrich-Böll-Stiftung"
-    },
-    {
-      "id": "fca4b2a578b32ac6",
-      "author": "Christoph Kramer",
-      "book_title": "Wolkenberührpunkt",
-      "date": "2026-10-05",
-      "venue": "Colosseum, Gleimstraße 33, 10437 Berlin | Einlass: 18:30 Uhr",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "019132c9b51ee91f",
-      "author": "Sissi Chen",
-      "book_title": "Eating in Taiwan",
-      "date": "2026-10-06",
-      "venue": "Pfefferberg Haus 13, Schönhauser Allee 176, 10119 Berlin",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "3137c2868e2eed73",
-      "author": "Renatus Deckert",
-      "book_title": "Victor Klemperer: Tagebuch",
-      "date": "2026-10-07",
-      "venue": "Urania Berlin",
-      "publisher": "Urania Berlin"
-    },
-    {
-      "id": "cc0ced1e6ab3be71",
-      "author": "Lisa Vollmer, Andrej Holm, Matthias Bernt, Susanna Raab und Niklas Schenker",
-      "book_title": "Zwischen Verwertung und Vergesellschaftung. Wie weiter mit der Berliner Wohnungspolitik?",
-      "date": "2026-10-09",
-      "venue": "Pro qm",
-      "publisher": "Pro qm"
-    },
-    {
-      "id": "3ca90238d8836d19",
-      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
-      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
-      "date": "2026-10-13",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "6d162f5713baeea9",
-      "author": "Jens Nordalm, Joachim Gauck, Christian Dunker",
-      "book_title": "Deutschland – Das unterschätzte Land",
-      "date": "2026-10-13",
-      "venue": "Urania Berlin",
-      "publisher": "Urania Berlin"
-    },
-    {
-      "id": "d960630aeeb035d3",
-      "author": "Anette Dowideit, Cansel Kiziltepe, Ahmad Mansour, Hakan Demir, Elena Kountidou, Anette Dowideit Autorin, Cansel Kiziltepe Speaker, Ahmad Mansour, Hakan Demir MdB, SPD, Elena Kountidou Geschäftsführerin der Neuen deutschen Medienmacher*innen",
-      "book_title": "Ich bin doch kein Rassist, aber ...",
-      "date": "2026-10-15",
-      "venue": "Publix",
-      "publisher": "Publix"
-    },
-    {
-      "id": "b1fde7b312a03409",
-      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "date": "2026-10-15",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "7eeb075900b17ca3",
-      "author": "Julia Loibl in der BUCHBOX",
-      "book_title": "Bookclub and friends",
-      "date": "2026-10-15",
-      "venue": "BUCHBOX! in der Kastanienallee 97, 10435 Berlin",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "5c811383a7ea9698",
-      "author": "Miriam Stein und Susanne Liedtke",
-      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
-      "date": "2026-10-20",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "3ef49c92b4c2e5f0",
-      "author": "Martina Hefter",
-      "book_title": "Nach der Sonne schauen",
-      "date": "2026-10-22",
-      "venue": "Pfefferberg Haus 13, Schönhauser Allee 176, 10119 Berlin",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "4dc8c8471a89d622",
-      "author": null,
-      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
-      "date": "2026-10-27",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "af9e8dba48486e38",
-      "author": "Hendrik Herr Reff/Heisterberg",
-      "book_title": "Der Stärkere hört zu",
-      "date": "2026-10-28",
-      "venue": "Anna Spree",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "747a8fe57257747f",
-      "author": "Joachim/Dorau, Franziska Sophie Meyerhoff",
-      "book_title": "Josse",
-      "date": "2026-11-07",
-      "venue": "Colosseum, Gleimstraße 33, 10437 Berlin",
-      "publisher": "Buchbox! Berlin"
-    },
-    {
-      "id": "dee402aa061389ff",
-      "author": "Angela/Baumann, Beate Merkel",
+      "id": "91e8d8c01d0dad50",
+      "author": "Angela Merkel",
       "book_title": "Freiheit",
       "date": "2026-11-10",
-      "venue": "HKW | Haus der Kulturen der Welt, John-Foster-Dulles-Allee 10, 10557 Berlin",
-      "publisher": "Buchbox! Berlin"
+      "venue": "Haus der Kulturen der Welt",
+      "publisher": "Kiepenheuer & Witsch"
     },
     {
-      "id": "78eab468d573ce1c",
-      "author": "Dirk Naguschewski",
-      "book_title": "Poetry and Correspondence: A German-Hebrew Network",
-      "date": "2026-11-10",
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
-      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
-    },
-    {
-      "id": "977c984813c6fbe2",
+      "id": "091adb8c3f6bcaf9",
       "author": "Julius Arth",
       "book_title": "Die Spionin von London",
       "date": "2026-11-13",
@@ -309,20 +45,12 @@
       "publisher": "dtv Verlag"
     },
     {
-      "id": "7fd25f9f83a01aa0",
+      "id": "7ef637c2c065b957",
       "author": "Julius Arth",
       "book_title": "Julius Arth präsentiert das Frostmarkt-Modell",
       "date": "2026-12-12",
       "venue": "Buchhandlung Wollschläger",
       "publisher": "dtv Verlag"
-    },
-    {
-      "id": "9097351b4c274a11",
-      "author": "Judith Schalansky",
-      "book_title": "Marmor, Quecksilber, Nebel",
-      "date": null,
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung Eberhard-Lämmert-Saal",
-      "publisher": "Suhrkamp Verlag"
     }
   ]
 }
