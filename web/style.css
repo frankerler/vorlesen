@@ -57,17 +57,6 @@ body {
   text-align: center;
 }
 
-/* Small illustration sitting above the title -- see web/index.html for the
-   actual artwork (three flat-style characters: glasses / a book / no
-   glasses), kept intentionally small so it reads as a little flourish
-   rather than a hero image. */
-.header-illustration {
-  display: block;
-  width: 150px;
-  height: 75px;
-  margin: 0 auto 0.75rem;
-}
-
 /* Sticky search + quick filters: slides out of view while scrolling down
    the list, and slides back in as soon as the user scrolls up even a
    little, without needing to scroll all the way back to the top. */
