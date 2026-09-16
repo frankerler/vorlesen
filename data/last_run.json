@@ -1,56 +1,304 @@
 {
-  "ran_at": "2026-09-15T07:03:36+00:00",
-  "total_events": 224,
-  "new_count": 6,
-  "removed_count": 23,
+  "ran_at": "2026-09-16T07:04:45+00:00",
+  "total_events": 250,
+  "new_count": 37,
+  "removed_count": 11,
   "new_events": [
     {
-      "id": "ab93fb70924501a9",
-      "author": "Judith Schalansky",
-      "book_title": "Marmor, Quecksilber, Nebel",
+      "id": "3bdf46cbc94d2573",
+      "author": "Ingo Schulze",
+      "book_title": "Das Wasser im August",
       "date": "2026-09-17",
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung Eberhard-Lämmert-Saal",
-      "publisher": "Suhrkamp Verlag"
+      "venue": "Buchhandlung Ferlemann & Schatzer",
+      "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "36f3547ad5604fd1",
-      "author": "Sebastian Becker",
-      "book_title": "Sebastian Becker",
-      "date": "2026-09-25",
-      "venue": "Colosseum",
-      "publisher": "Rowohlt Verlag"
+      "id": "53be2ee5cdcf1ab4",
+      "author": null,
+      "book_title": "Das Traumschiff: Literarische Lesung über Träume und Kopfkino",
+      "date": "2026-09-24",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
     },
     {
-      "id": "9f2438163ae65c60",
-      "author": "Susan Neiman",
-      "book_title": "Nennen wir es böse",
-      "date": "2026-10-14",
-      "venue": "Literaturhaus Berlin e. V.",
+      "id": "63a825accbf09e50",
+      "author": null,
+      "book_title": "Silent Writing - Die offene Schreibgruppe",
+      "date": "2026-09-26",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
+    },
+    {
+      "id": "0fa74101006359ec",
+      "author": null,
+      "book_title": "Führung durch das Archiv des Literaturhaus Berlin in der AdK Berlin",
+      "date": "2026-10-01",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "37a0085d4cd28625",
+      "author": "Lisa Jaspers",
+      "book_title": "Unlearn Leadership",
+      "date": "2026-10-01",
+      "venue": "Genezarethkirche",
+      "publisher": "Ullstein Verlag"
+    },
+    {
+      "id": "c1251a3af0e5b0c9",
+      "author": "Wieder Zuhause! 40 Jahre Literaturhaus Berlin",
+      "book_title": "Homecoming & Jubiläum",
+      "date": "2026-10-01",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "98f7c90d1026e8ca",
+      "author": null,
+      "book_title": "Symposium zur lateinamerikanischen Literatur in Europa |",
+      "date": "2026-10-02",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "e2643d664320e91d",
+      "author": null,
+      "book_title": "Dahlia de la Cerda",
+      "date": "2026-10-02",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "790642554f5ff9e9",
+      "author": null,
+      "book_title": "»I would prefer not to«: Mut & Ungehorsam",
+      "date": "2026-10-02",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "ef09c92a0aaf33e9",
+      "author": null,
+      "book_title": "»Ich war’s. Ich hab die Berliner Mauer umgeschmissen«: Einheit & Uneinigkeit",
+      "date": "2026-10-03",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "bbf09ea319616528",
+      "author": null,
+      "book_title": "Rosa Luxemburg zum Gedenken",
+      "date": "2026-10-04",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "92adf4576c598f48",
+      "author": "Christina Clemm",
+      "book_title": "Gegen Frauenhass",
+      "date": "2026-10-11",
+      "venue": "Kino International",
       "publisher": "Carl Hanser Verlag"
     },
     {
-      "id": "91e8d8c01d0dad50",
-      "author": "Angela Merkel",
-      "book_title": "Freiheit",
+      "id": "f5e43c9ddc61058d",
+      "author": "Tereza Semotamová",
+      "book_title": "Radikale Bedürfnisse",
+      "date": "2026-10-12",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "b6386fb18e6ce98f",
+      "author": null,
+      "book_title": "Literatur und Wissenschaft im LCB",
+      "date": "2026-10-13",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "0e3bac7e4f7b4f28",
+      "author": null,
+      "book_title": "Eröffnung: Hausparty",
+      "date": "2026-10-15",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "b6e1a68033f264e6",
+      "author": "Juliane Schiemenz",
+      "book_title": "Juliane Schiemenz",
+      "date": "2026-10-15",
+      "venue": "Dussmann Das KulturKaufhaus GmbH",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "f1e8b99f7676d3c7",
+      "author": "Stefan Roloff",
+      "book_title": "Stefan Roloff",
+      "date": "2026-10-15",
+      "venue": "Marga Schöller",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "fa2ad3cd4a865a73",
+      "author": null,
+      "book_title": "Die Geschichte der Fasanenstraße 23 in 9½ Objekten",
+      "date": "2026-10-21",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "bc5d5ee5cc7e4c1c",
+      "author": "Christian Buckard",
+      "book_title": "Café Babylon",
+      "date": "2026-10-21",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "1793d3acc1c205b5",
+      "author": null,
+      "book_title": "Gedichtbände des Jahres 2026",
+      "date": "2026-10-22",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "e5ae7b71980f559d",
+      "author": null,
+      "book_title": "Into The Good Living",
+      "date": "2026-10-22",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "807a5d6ff44a217a",
+      "author": null,
+      "book_title": "Licht ins Dunkel",
+      "date": "2026-10-27",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "0fa8979ce82bdea8",
+      "author": null,
+      "book_title": "No Prose",
+      "date": "2026-10-29",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "a683086f7030f144",
+      "author": null,
+      "book_title": "Hex, Hex – Ein Fest zwischen Zauber- und Widerspruch",
+      "date": "2026-10-31",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "0df3948baf6203e5",
+      "author": "Tobias Lehmkuhl",
+      "book_title": "Keine von uns: Das Leben der Irmgard Keun",
+      "date": "2026-11-03",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "6a884251112b0849",
+      "author": "Olivia Laing",
+      "book_title": "Buch der Träume",
+      "date": "2026-11-04",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "2f727fbfd7f7a06d",
+      "author": null,
+      "book_title": "Nikesh Shukla and Gesa Stedman",
+      "date": "2026-11-05",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "5d752e69ab4fb24f",
+      "author": null,
+      "book_title": "Stechschritt des Friedens. Texte zur Kriegsertüchtigung",
+      "date": "2026-11-05",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "c42ceebefd590cd5",
+      "author": null,
+      "book_title": "Creative Writing & Translation Workshops",
+      "date": "2026-11-06",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "17f502de5927af59",
+      "author": null,
+      "book_title": "Sheila Armstrong and Gesa Stedman",
+      "date": "2026-11-06",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "4c28ac44a9e4cc25",
+      "author": null,
+      "book_title": "Berlin Babel. Stories of the city by Berliners old and new",
+      "date": "2026-11-06",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "2b78f838c021ceb2",
+      "author": null,
+      "book_title": "Indie Pop, Northern Soul & Psychedelic",
+      "date": "2026-11-06",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "fc6a01af4b28c9eb",
+      "author": "Alice Hasters",
+      "book_title": "Wie man in verrückten Zeiten nicht den Verstand verliert",
       "date": "2026-11-10",
-      "venue": "Haus der Kulturen der Welt",
-      "publisher": "Kiepenheuer & Witsch"
+      "venue": "Bibliothek am Luisenbad",
+      "publisher": "Ullstein Verlag"
     },
     {
-      "id": "091adb8c3f6bcaf9",
-      "author": "Julius Arth",
-      "book_title": "Die Spionin von London",
-      "date": "2026-11-13",
-      "venue": "Buchhandlung am Fellbacher Platz",
-      "publisher": "dtv Verlag"
+      "id": "ddf4c6c901dc81ba",
+      "author": "Tash Aw",
+      "book_title": "Der Süden",
+      "date": "2026-11-10",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
     },
     {
-      "id": "7ef637c2c065b957",
-      "author": "Julius Arth",
-      "book_title": "Julius Arth präsentiert das Frostmarkt-Modell",
-      "date": "2026-12-12",
-      "venue": "Buchhandlung Wollschläger",
-      "publisher": "dtv Verlag"
+      "id": "2d12961a6dac5ac3",
+      "author": null,
+      "book_title": "Julya Rabinowich liest aus ihrem Jugendbuch",
+      "date": "2026-11-23",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "2526fb218af57155",
+      "author": "Gabriela Jaskulla",
+      "book_title": "Tamara de Lempicka und Der Glamour der Frauen",
+      "date": "2026-12-13",
+      "venue": "BEGINE - Treffpunkt und Kultur für Frauen e.V.",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "968078713fd57611",
+      "author": null,
+      "book_title": "Workshop SIMULTAN(POESIE",
+      "date": "2027-03-13",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
     }
   ]
 }
