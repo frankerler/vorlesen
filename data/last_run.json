@@ -1,88 +1,176 @@
 {
-  "ran_at": "2026-09-17T07:00:24+00:00",
-  "total_events": 241,
-  "new_count": 10,
-  "removed_count": 19,
+  "ran_at": "2026-09-18T06:58:15+00:00",
+  "total_events": 253,
+  "new_count": 21,
+  "removed_count": 9,
   "new_events": [
     {
-      "id": "65b807a16e891bad",
-      "author": "Sebastian Becker",
-      "book_title": "Sebastian Becker",
-      "date": "2026-09-25",
-      "venue": "Pfefferberg Theater",
-      "publisher": "Rowohlt Verlag"
+      "id": "1d7a0e3365f592bc",
+      "author": "Kathinka Engel",
+      "book_title": "Buchvorstellung mit Kathinka Engel",
+      "date": "2026-09-18",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "a45ed38f07ba8e16",
-      "author": "Elle Kennedy",
-      "book_title": "The Legacy",
-      "date": "2026-10-02",
-      "venue": "Thalia Deutschland GmbH & Co.KG",
-      "publisher": "Piper Verlag"
+      "id": "26e39deb96ab0bc9",
+      "author": "Ursula K. Le Guin",
+      "book_title": "Ökotopien zwischen Sci-Fi und Realität - Science-Fiction von Ursula K. Le Guin",
+      "date": "2026-09-20",
+      "venue": "AGB Amerika-Gedenkbibliothek | PopUP Saal",
+      "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "901341ea73b6af08",
+      "id": "b648bde5e2204386",
+      "author": "Alice Oseman",
+      "book_title": "Talk & Live-Zeichnen mit Alice Oseman",
+      "date": "2026-09-23",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "de836f83b7d7b6df",
+      "author": "Yotam Ottolenghi",
+      "book_title": "Buchvorstellung mit Yotam Ottolenghi",
+      "date": "2026-09-24",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "905bc062820d288a",
       "author": null,
-      "book_title": "Chiou Charng-Ting",
-      "date": "2026-10-22",
-      "venue": "Außer Haus: Taiwan Kultursaal, Markgrafenstraße 35, 10117 Berlin",
-      "publisher": "Literarisches Colloquium Berlin"
+      "book_title": "Grüffelo-Party",
+      "date": "2026-09-26",
+      "venue": "2. OG, Kinderbuchabteilung",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "582587e55808979e",
-      "author": "Roger de Weck, Julia Reuschenbach, Roger de Weck journalist, Julia Reuschenbach Politikwissenschaftlerin | Freie Universität Berlin",
-      "book_title": "Book Presentation: “The Splendor and Misery of Conservatives”",
-      "date": "2026-10-27",
-      "venue": "Publix",
-      "publisher": "Publix"
-    },
-    {
-      "id": "5f0cd9d7d396c49a",
-      "author": "Olivia Laing",
-      "book_title": "Buch der Träume",
-      "date": "2026-11-04",
-      "venue": "Literaturhaus Berlin",
+      "id": "c398f8a5d7374399",
+      "author": "Enis Maci",
+      "book_title": "Freiheit und Benzin",
+      "date": "2026-09-26",
+      "venue": "Berlinische Galerie",
       "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "7f6868131a63a9c8",
+      "id": "4019a81d61636edf",
+      "author": "Juliane Marie Schreiber",
+      "book_title": "Buchvorstellung mit Juliane Marie Schreiber",
+      "date": "2026-09-30",
+      "venue": "3. OG",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "33a16129dd0a6b66",
+      "author": "Manuel Bittorf aka \"Betterov\"",
+      "book_title": "Betterov",
+      "date": "2026-09-30",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "d416c330c2131fd0",
       "author": null,
-      "book_title": "CONVERGENCE 14",
-      "date": "2026-11-07",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
+      "book_title": "Daybreak in Gaza",
+      "date": "2026-10-05",
+      "venue": "Heinrich-Böll-Stiftung - Bundesstiftung Berlin",
+      "publisher": "Heinrich-Böll-Stiftung"
     },
     {
-      "id": "b64110216af94aa9",
-      "author": "Ahmad Mansour",
-      "book_title": "Haltung ohne Hass",
-      "date": "2026-11-12",
-      "venue": "Museum für Kommunikation Berlin",
-      "publisher": "Piper Verlag"
-    },
-    {
-      "id": "0f85942fd4ba4d7b",
-      "author": "Florentine Anders",
-      "book_title": "Die Allee",
-      "date": "2026-11-14",
-      "venue": "PlaceOne - Die PanoramaBar",
+      "id": "cdfee14ca199c9e4",
+      "author": "Christoph Kramer",
+      "book_title": "Wolkenberührpunkt",
+      "date": "2026-10-05",
+      "venue": "Colosseum",
       "publisher": "Kiepenheuer & Witsch"
     },
     {
-      "id": "c2772765c0eb1968",
-      "author": "Ruth-Maria Thomas",
-      "book_title": "Die zweitgrößte Liebe",
-      "date": "2026-11-17",
-      "venue": "Buchhandlung am Fellbacher Platz",
-      "publisher": "dtv Verlag"
+      "id": "3ca90238d8836d19",
+      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
+      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
+      "date": "2026-10-13",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "2a08162b0e4aef45",
-      "author": "Bernardo Bianchi (Centre Marc Bloch), Oliver Precht (Leuphana University Lüneburg)",
-      "book_title": "Composing Worlds: Anthropology, Ontology, and the Decolonization of Being",
-      "date": "2027-02-03",
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
-      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
+      "id": "b1fde7b312a03409",
+      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "date": "2026-10-15",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "5c811383a7ea9698",
+      "author": "Miriam Stein und Susanne Liedtke",
+      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
+      "date": "2026-10-20",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "f186cc98e1b788c8",
+      "author": null,
+      "book_title": "Josefine Berkholz",
+      "date": "2026-10-21",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "b8f6ec87fde24fb6",
+      "author": null,
+      "book_title": "Das Museum der Indizien",
+      "date": "2026-10-23",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "4dc8c8471a89d622",
+      "author": null,
+      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
+      "date": "2026-10-27",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "e0a728388c1bfd08",
+      "author": "Alexandra Klobouk",
+      "book_title": "We Are Family",
+      "date": "2026-10-28",
+      "venue": "Buchbox!",
+      "publisher": "Kiepenheuer & Witsch"
+    },
+    {
+      "id": "c871249c548b2cb5",
+      "author": null,
+      "book_title": "Alena Aharelysheva",
+      "date": "2026-10-29",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "ebae906dea297b48",
+      "author": null,
+      "book_title": "Juliane Liebert",
+      "date": "2026-10-30",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "b8cfffdbe3c79f4c",
+      "author": "Ahmad Mansour",
+      "book_title": "Haltung ohne Hass",
+      "date": "2026-11-24",
+      "venue": "Humboldt-Bibliothek in Tegel",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "6bbe98dec8906da5",
+      "author": "Max Goldt",
+      "book_title": "Aber?",
+      "date": "2027-02-09",
+      "venue": "Kabarett-Theater DISTEL",
+      "publisher": "dtv Verlag"
     }
   ]
 }
