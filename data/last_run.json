@@ -1,176 +1,120 @@
 {
-  "ran_at": "2026-09-18T06:58:15+00:00",
-  "total_events": 253,
-  "new_count": 21,
-  "removed_count": 9,
+  "ran_at": "2026-09-19T06:56:12+00:00",
+  "total_events": 252,
+  "new_count": 14,
+  "removed_count": 15,
   "new_events": [
     {
-      "id": "1d7a0e3365f592bc",
-      "author": "Kathinka Engel",
-      "book_title": "Buchvorstellung mit Kathinka Engel",
-      "date": "2026-09-18",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "26e39deb96ab0bc9",
-      "author": "Ursula K. Le Guin",
-      "book_title": "Ökotopien zwischen Sci-Fi und Realität - Science-Fiction von Ursula K. Le Guin",
-      "date": "2026-09-20",
-      "venue": "AGB Amerika-Gedenkbibliothek | PopUP Saal",
+      "id": "42b25723b10d0b80",
+      "author": "Sabine Rennefanz",
+      "book_title": "Ein Unbehagen, eine tiefe Verunsicherung , eine stille, unterschwellige Wut",
+      "date": "2026-09-21",
+      "venue": "Pfefferberg Theater",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "b648bde5e2204386",
-      "author": "Alice Oseman",
-      "book_title": "Talk & Live-Zeichnen mit Alice Oseman",
-      "date": "2026-09-23",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "de836f83b7d7b6df",
-      "author": "Yotam Ottolenghi",
-      "book_title": "Buchvorstellung mit Yotam Ottolenghi",
-      "date": "2026-09-24",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "905bc062820d288a",
-      "author": null,
-      "book_title": "Grüffelo-Party",
-      "date": "2026-09-26",
-      "venue": "2. OG, Kinderbuchabteilung",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "c398f8a5d7374399",
-      "author": "Enis Maci",
-      "book_title": "Freiheit und Benzin",
-      "date": "2026-09-26",
-      "venue": "Berlinische Galerie",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "4019a81d61636edf",
-      "author": "Juliane Marie Schreiber",
-      "book_title": "Buchvorstellung mit Juliane Marie Schreiber",
-      "date": "2026-09-30",
-      "venue": "3. OG",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "33a16129dd0a6b66",
-      "author": "Manuel Bittorf aka \"Betterov\"",
-      "book_title": "Betterov",
-      "date": "2026-09-30",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "d416c330c2131fd0",
-      "author": null,
-      "book_title": "Daybreak in Gaza",
-      "date": "2026-10-05",
-      "venue": "Heinrich-Böll-Stiftung - Bundesstiftung Berlin",
-      "publisher": "Heinrich-Böll-Stiftung"
-    },
-    {
-      "id": "cdfee14ca199c9e4",
-      "author": "Christoph Kramer",
-      "book_title": "Wolkenberührpunkt",
-      "date": "2026-10-05",
-      "venue": "Colosseum",
-      "publisher": "Kiepenheuer & Witsch"
-    },
-    {
-      "id": "3ca90238d8836d19",
-      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
-      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
-      "date": "2026-10-13",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "b1fde7b312a03409",
-      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "date": "2026-10-15",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "5c811383a7ea9698",
-      "author": "Miriam Stein und Susanne Liedtke",
-      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
-      "date": "2026-10-20",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "f186cc98e1b788c8",
-      "author": null,
-      "book_title": "Josefine Berkholz",
-      "date": "2026-10-21",
+      "id": "0a6052ce4f773974",
+      "author": "Dahlia de la Cerda, José F.A. Oliver, Luisa Futoransky, Ariel Maceo Téllez, Claudia Ulloa Donoso",
+      "book_title": "Dahlia de la Cerda",
+      "date": "2026-10-02",
       "venue": "Literarisches Colloquium Berlin",
       "publisher": "Literarisches Colloquium Berlin"
     },
     {
-      "id": "b8f6ec87fde24fb6",
-      "author": null,
+      "id": "31bc4486d6a3ae22",
+      "author": "Adrian Pabst über Postliberalismus",
+      "book_title": "Postliberalismus?",
+      "date": "2026-10-12",
+      "venue": "Katholische Akademie in Berlin",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "212ed66b3fc1a994",
+      "author": "Matthias Nawrat",
+      "book_title": "Matthias Nawrat und Kornelia Kończal",
+      "date": "2026-10-13",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "b0713549446cd6df",
+      "author": "Ulrike Sterblich, Klaus Lederer, Cornelius Reiber, Katharina Teutsch",
       "book_title": "Das Museum der Indizien",
       "date": "2026-10-23",
       "venue": "Literarisches Colloquium Berlin",
       "publisher": "Literarisches Colloquium Berlin"
     },
     {
-      "id": "4dc8c8471a89d622",
-      "author": null,
-      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
-      "date": "2026-10-27",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "e0a728388c1bfd08",
-      "author": "Alexandra Klobouk",
-      "book_title": "We Are Family",
-      "date": "2026-10-28",
-      "venue": "Buchbox!",
-      "publisher": "Kiepenheuer & Witsch"
-    },
-    {
-      "id": "c871249c548b2cb5",
-      "author": null,
-      "book_title": "Alena Aharelysheva",
-      "date": "2026-10-29",
+      "id": "fdc330114595f547",
+      "author": "Ayşe Klinge",
+      "book_title": "Interaktive Kinder-Lesung und Live-Zeichnen mit Ayşe Klinge, Kranichsteiner Kinderliteratur-Stipendiatin 2026",
+      "date": "2026-10-25",
       "venue": "Literarisches Colloquium Berlin",
       "publisher": "Literarisches Colloquium Berlin"
     },
     {
-      "id": "ebae906dea297b48",
-      "author": null,
+      "id": "18dbb05002f67a70",
+      "author": "Jonas Eika, Juliane Liebert",
       "book_title": "Juliane Liebert",
       "date": "2026-10-30",
       "venue": "Literarisches Colloquium Berlin",
       "publisher": "Literarisches Colloquium Berlin"
     },
     {
-      "id": "b8cfffdbe3c79f4c",
-      "author": "Ahmad Mansour",
-      "book_title": "Haltung ohne Hass",
-      "date": "2026-11-24",
-      "venue": "Humboldt-Bibliothek in Tegel",
-      "publisher": "Piper Verlag"
+      "id": "670429b4c0d6f116",
+      "author": "Emmanuel Carrère, Claudia Hamm",
+      "book_title": "Claudia Hamm",
+      "date": "2026-11-09",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
     },
     {
-      "id": "6bbe98dec8906da5",
-      "author": "Max Goldt",
-      "book_title": "Aber?",
-      "date": "2027-02-09",
-      "venue": "Kabarett-Theater DISTEL",
-      "publisher": "dtv Verlag"
+      "id": "d87588603ac3c906",
+      "author": "Anne-Dore Krohn, Eli Makuth, I. V. Nuss, Louis Krüger",
+      "book_title": "Die neuen Leute",
+      "date": "2026-11-13",
+      "venue": "PopUp-Gebäude der Amerika-Gedenkbibliothek",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "5f5da3d466a51bdc",
+      "author": null,
+      "book_title": "Cyprus Inherited: Making Memory in the Work of Maria Anastassiou, Anna Kannava, Katerina Vassiliou",
+      "date": "2026-11-15",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
+    },
+    {
+      "id": "23cf871864dd56a8",
+      "author": "Tia Morgen, Lea Schneider, Maria Liebl, Rebekka Endler, Annika Brockschmidt, Linus Giese, Christine Koschmieder",
+      "book_title": "Annika Brockschmidt",
+      "date": "2026-11-20",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "f867a94125eedbe1",
+      "author": null,
+      "book_title": "Armen Ohanyan",
+      "date": "2026-11-24",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "5badb031a4b6d508",
+      "author": "Radka Denemarková, Tomasz Różycki, Basil Kerski",
+      "book_title": "Radka Denemarková",
+      "date": "2026-11-30",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "8b054a14a32e7c7d",
+      "author": "Elisabeth Pape",
+      "book_title": "Elisabeth Pape liest aus Halbe Portion Durch den Abend führt Stefanie Hirsbrunner Eine Veranstaltung der Buchhandlung Interkontinental",
+      "date": "2026-12-02",
+      "venue": "interkosmos - café. bar. utopie",
+      "publisher": "Suhrkamp Verlag"
     }
   ]
 }
