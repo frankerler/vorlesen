@@ -1,16 +1,128 @@
 {
-  "ran_at": "2026-09-20T07:21:12+00:00",
-  "total_events": 241,
-  "new_count": 1,
-  "removed_count": 12,
+  "ran_at": "2026-09-21T07:31:17+00:00",
+  "total_events": 216,
+  "new_count": 15,
+  "removed_count": 40,
   "new_events": [
     {
-      "id": "b4919ae616e81135",
-      "author": "Valeria Gordeev",
-      "book_title": "DBP Lesung mit den Shortlist-Autor*innen in der Urania Berlin mit Valeria Gordeev u.a.",
+      "id": "db6bacdc180308e3",
+      "author": "Lutz Seiler, Sandra Kegel, Peter Richter, Maike Albath",
+      "book_title": "Das tickende Herz",
+      "date": "2026-09-22",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "b648bde5e2204386",
+      "author": "Alice Oseman",
+      "book_title": "Talk & Live-Zeichnen mit Alice Oseman",
       "date": "2026-09-23",
-      "venue": "Urania Berlin e.V.",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "7df32c071920a83e",
+      "author": "Carolin Emcke",
+      "book_title": "AUSVERKAUFT - Buchpremiere: Carolin Emcke im Gespräch mit Mirjam Zadoff",
+      "date": "2026-09-23",
+      "venue": "Schaubühne am Lehniner Platz",
       "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "de836f83b7d7b6df",
+      "author": "Yotam Ottolenghi",
+      "book_title": "Buchvorstellung mit Yotam Ottolenghi",
+      "date": "2026-09-24",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "905bc062820d288a",
+      "author": null,
+      "book_title": "Grüffelo-Party",
+      "date": "2026-09-26",
+      "venue": "2. OG, Kinderbuchabteilung",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "8ad92d2f16b46ecf",
+      "author": "Clemens J. Setz, Sophia Merwald, Wolfseule (Dorothea Studthoff)",
+      "book_title": "Sophia Merwald",
+      "date": "2026-09-29",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
+    },
+    {
+      "id": "4019a81d61636edf",
+      "author": "Juliane Marie Schreiber",
+      "book_title": "Buchvorstellung mit Juliane Marie Schreiber",
+      "date": "2026-09-30",
+      "venue": "3. OG",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "33a16129dd0a6b66",
+      "author": "Manuel Bittorf aka \"Betterov\"",
+      "book_title": "Betterov",
+      "date": "2026-09-30",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "6467268ca58fdd94",
+      "author": "Isabella M. Weber, Natascha Freundel, Ines Schwerdtner, Andreas Audretsch, Tim Klüssendorf",
+      "book_title": "Antifaschistische Wirtschaftspolitik",
+      "date": "2026-10-05",
+      "venue": "Urania Berlin",
+      "publisher": "Urania Berlin"
+    },
+    {
+      "id": "3ca90238d8836d19",
+      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
+      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
+      "date": "2026-10-13",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "663ac595a6f439e9",
+      "author": "Jan-Werner Müller, Charlotte Klonk, Olaf Scholz",
+      "book_title": "Straße, Platz, Palast",
+      "date": "2026-10-14",
+      "venue": "Urania Berlin",
+      "publisher": "Urania Berlin"
+    },
+    {
+      "id": "b1fde7b312a03409",
+      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "date": "2026-10-15",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "5c811383a7ea9698",
+      "author": "Miriam Stein und Susanne Liedtke",
+      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
+      "date": "2026-10-20",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "4dc8c8471a89d622",
+      "author": null,
+      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
+      "date": "2026-10-27",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "6a884251112b0849",
+      "author": "Olivia Laing",
+      "book_title": "Buch der Träume",
+      "date": "2026-11-04",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
     }
   ]
 }
