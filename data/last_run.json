@@ -1,104 +1,48 @@
 {
-  "ran_at": "2026-09-23T07:07:57+00:00",
-  "total_events": 251,
-  "new_count": 12,
-  "removed_count": 10,
+  "ran_at": "2026-09-24T07:02:55+00:00",
+  "total_events": 239,
+  "new_count": 5,
+  "removed_count": 17,
   "new_events": [
     {
-      "id": "d85251f6c1870f9b",
-      "author": "Heike Geißler",
-      "book_title": "Heike Geißler im Gespräch mit Annette Schuhmann und Sarah Blaßkiewitz über das Werk von Gabriele Stötzer Moderation: Carolin Würfel Eine Veranstaltung der Berliner Festspiele",
-      "date": "2026-10-01",
-      "venue": "Gropius Bau",
-      "publisher": "Suhrkamp Verlag"
+      "id": "07c81380e6ec619f",
+      "author": "Geraldine Oetken",
+      "book_title": "Wer war Frieda? Sie hat verdient, dass wir uns an sie erinnern.",
+      "date": "2026-09-24",
+      "venue": "Georg-Büchner-Buchladen",
+      "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "a38590834d4049a1",
-      "author": "Unlearn Business Lab",
-      "book_title": "Unlearn Leadership",
-      "date": "2026-10-01",
-      "venue": "Genezarethkirche",
-      "publisher": "Ullstein Verlag"
+      "id": "84e0a5e5686bbc8c",
+      "author": "Judith Hermann",
+      "book_title": "Was hinterlasse ich, fragt mich meine Mutter.",
+      "date": "2026-09-25",
+      "venue": "Kelterhalle des Rheingau Musik Festivals",
+      "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "db351b0e623ae2da",
-      "author": "Julian Nicolai Hofmann und Adrian Pabst",
-      "book_title": "Postliberalismus? – Eine transatlantische Debatte",
-      "date": "2026-10-12",
-      "venue": "Katholische Akademie in Berlin",
-      "publisher": "Suhrkamp Verlag"
+      "id": "4557e11f7ab90a53",
+      "author": "Karel Čapek",
+      "book_title": "beißend komische Parabel über entfesselten Fortschritt, Ausbeutung und den allmählichen Untergang der Menschheit",
+      "date": "2026-09-25",
+      "venue": "Collegium Hungaricum Berlin",
+      "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "cc54f237f09f0e38",
-      "author": null,
-      "book_title": "Dieses verfluchte wundervolle Land",
-      "date": "2026-10-13",
-      "venue": "Heinrich-Böll-Stiftung - Bundesstiftung Berlin Schumannstr. 8 10117 Berlin",
-      "publisher": "Heinrich-Böll-Stiftung"
+      "id": "72ea82713db257e3",
+      "author": "Lea Schneider",
+      "book_title": "Von Tieren und anderen Menschen",
+      "date": "2026-09-25",
+      "venue": "Spore",
+      "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "70e61a9455220e95",
-      "author": "Juliane Schiemenz",
-      "book_title": "oder",
-      "date": "2026-10-14",
-      "venue": "Uslar & Rai GbR",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "7c90f74b4b4890d4",
-      "author": "Susan Neiman",
-      "book_title": "Nennen wir es böse",
-      "date": "2026-10-14",
-      "venue": "Literaturhaus Berlin e. V.",
+      "id": "ac43d9bca0e76732",
+      "author": "Fikri Anıl Altıntaş",
+      "book_title": "30 Real Boys - mutig, gefühlvoll und ganz sie selbst",
+      "date": "2026-10-02",
+      "venue": "MOA Berlin",
       "publisher": "Carl Hanser Verlag"
-    },
-    {
-      "id": "5af460dc97e13294",
-      "author": "Ulrike Sterblich",
-      "book_title": "Ulrike Sterblich",
-      "date": "2026-10-23",
-      "venue": "Studio LCB",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "fde34f660bd2ada8",
-      "author": "Lea Ypi",
-      "book_title": "Beyond The Trauma Script - How Can the Left Start Winning Again?",
-      "date": "2026-10-27",
-      "venue": "Volksbühne am Rosa-Luxemburg-Platz Vorbühne",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "2b1f61f59276f1fc",
-      "author": "Roger de Weck",
-      "book_title": "Glanz und Elend der Konservativen",
-      "date": "2026-10-27",
-      "venue": "Publix",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "4eaff10e65e61e8e",
-      "author": "Jonas Eika",
-      "book_title": "Offener Himmel",
-      "date": "2026-10-30",
-      "venue": "Literarisches Colloquium Berlin",
-      "publisher": "Carl Hanser Verlag"
-    },
-    {
-      "id": "b5d0695ee3bf2e08",
-      "author": null,
-      "book_title": "Fäden, Stoffe, Schnitte",
-      "date": "2026-11-03",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "97951512b3e00fd2",
-      "author": "Tobias Lehmkuhl",
-      "book_title": "oder",
-      "date": "2026-11-03",
-      "venue": "Literaturhaus Berlin",
-      "publisher": "Rowohlt Verlag"
     }
   ]
 }
