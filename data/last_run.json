@@ -1,48 +1,112 @@
 {
-  "ran_at": "2026-09-24T07:02:55+00:00",
-  "total_events": 239,
-  "new_count": 5,
-  "removed_count": 17,
+  "ran_at": "2026-09-25T06:58:28+00:00",
+  "total_events": 241,
+  "new_count": 13,
+  "removed_count": 11,
   "new_events": [
     {
-      "id": "07c81380e6ec619f",
-      "author": "Geraldine Oetken",
-      "book_title": "Wer war Frieda? Sie hat verdient, dass wir uns an sie erinnern.",
-      "date": "2026-09-24",
-      "venue": "Georg-Büchner-Buchladen",
+      "id": "905bc062820d288a",
+      "author": null,
+      "book_title": "Grüffelo-Party",
+      "date": "2026-09-26",
+      "venue": "2. OG, Kinderbuchabteilung",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "27db5664c36e64bc",
+      "author": "Valeria Gordeev",
+      "book_title": "AUSVERKAUFT DBP Die Autorinnen und Autoren der Shortlist mit Valeria Gordeev u.a.",
+      "date": "2026-09-27",
+      "venue": "Schauspiel Frankfurt",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "84e0a5e5686bbc8c",
-      "author": "Judith Hermann",
-      "book_title": "Was hinterlasse ich, fragt mich meine Mutter.",
-      "date": "2026-09-25",
-      "venue": "Kelterhalle des Rheingau Musik Festivals",
-      "publisher": "S. Fischer Verlage"
+      "id": "4019a81d61636edf",
+      "author": "Juliane Marie Schreiber",
+      "book_title": "Buchvorstellung mit Juliane Marie Schreiber",
+      "date": "2026-09-30",
+      "venue": "3. OG",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "4557e11f7ab90a53",
-      "author": "Karel Čapek",
-      "book_title": "beißend komische Parabel über entfesselten Fortschritt, Ausbeutung und den allmählichen Untergang der Menschheit",
-      "date": "2026-09-25",
-      "venue": "Collegium Hungaricum Berlin",
-      "publisher": "S. Fischer Verlage"
+      "id": "33a16129dd0a6b66",
+      "author": "Manuel Bittorf aka \"Betterov\"",
+      "book_title": "Betterov",
+      "date": "2026-09-30",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "72ea82713db257e3",
-      "author": "Lea Schneider",
-      "book_title": "Von Tieren und anderen Menschen",
-      "date": "2026-09-25",
-      "venue": "Spore",
-      "publisher": "S. Fischer Verlage"
+      "id": "6b56c39578f83388",
+      "author": null,
+      "book_title": "Erika Stürmer-Alex",
+      "date": "2026-10-04",
+      "venue": "Außer Haus: Annemirl Bauer Haus, Dorfstrasse 10, 14822 Niederwerbig",
+      "publisher": "Literarisches Colloquium Berlin"
     },
     {
-      "id": "ac43d9bca0e76732",
-      "author": "Fikri Anıl Altıntaş",
-      "book_title": "30 Real Boys - mutig, gefühlvoll und ganz sie selbst",
-      "date": "2026-10-02",
-      "venue": "MOA Berlin",
-      "publisher": "Carl Hanser Verlag"
+      "id": "47ad2b606b430049",
+      "author": "Alexander Smoltczyk",
+      "book_title": "Lissabon 1941. Stadt der Spione, Hafen der Hoffnung",
+      "date": "2026-10-08",
+      "venue": "Stadtbibliothek Reinickendorf - Bibliothek am Schäfersee",
+      "publisher": "dtv Verlag"
+    },
+    {
+      "id": "449f1bf15faf41bd",
+      "author": "Jacinta Nandi",
+      "book_title": "Jacinta Nandi (geschlossene Veranstaltung)",
+      "date": "2026-10-09",
+      "venue": "Mitosis Lab",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "3ca90238d8836d19",
+      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
+      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
+      "date": "2026-10-13",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "b1fde7b312a03409",
+      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "date": "2026-10-15",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "5c811383a7ea9698",
+      "author": "Miriam Stein und Susanne Liedtke",
+      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
+      "date": "2026-10-20",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "4dc8c8471a89d622",
+      "author": null,
+      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
+      "date": "2026-10-27",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "0d3b08e6a7254969",
+      "author": "Jennifer V. Evans",
+      "book_title": "Eine queere Art der Geschichte",
+      "date": "2026-11-05",
+      "venue": "Schwules Museum Raum 2",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "bcd941661ec93efc",
+      "author": "Benjamin Moser",
+      "book_title": "Der Letzte seiner Art",
+      "date": "2026-11-29",
+      "venue": "Volksbühne, Roter Salon",
+      "publisher": "Ullstein Verlag"
     }
   ]
 }
