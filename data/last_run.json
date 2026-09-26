@@ -1,112 +1,64 @@
 {
-  "ran_at": "2026-09-25T06:58:28+00:00",
-  "total_events": 241,
-  "new_count": 13,
-  "removed_count": 11,
+  "ran_at": "2026-09-26T06:57:18+00:00",
+  "total_events": 230,
+  "new_count": 7,
+  "removed_count": 18,
   "new_events": [
     {
-      "id": "905bc062820d288a",
-      "author": null,
-      "book_title": "Grüffelo-Party",
-      "date": "2026-09-26",
-      "venue": "2. OG, Kinderbuchabteilung",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "27db5664c36e64bc",
-      "author": "Valeria Gordeev",
-      "book_title": "AUSVERKAUFT DBP Die Autorinnen und Autoren der Shortlist mit Valeria Gordeev u.a.",
-      "date": "2026-09-27",
-      "venue": "Schauspiel Frankfurt",
+      "id": "9e8334ae48a36fe8",
+      "author": "Judith Hermann",
+      "book_title": "Ich möchte zurückgehen in der Zeit",
+      "date": "2026-09-28",
+      "venue": "Literaturhaus Stuttgart",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "4019a81d61636edf",
-      "author": "Juliane Marie Schreiber",
-      "book_title": "Buchvorstellung mit Juliane Marie Schreiber",
-      "date": "2026-09-30",
-      "venue": "3. OG",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "id": "ec479e204ab630db",
+      "author": "Irine Beridze (University of Potsdam), Nina Weller (ZfL)",
+      "book_title": "Commemorating the 85th anniversary of the Babyn Yar massacre. Presentation of the new translation of Anatoly Kuznetsov’s “Babyn Jar. Roman eines Augenzeugen”",
+      "date": "2026-09-29",
+      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
+      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
     },
     {
-      "id": "33a16129dd0a6b66",
-      "author": "Manuel Bittorf aka \"Betterov\"",
-      "book_title": "Betterov",
-      "date": "2026-09-30",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "id": "78eab468d573ce1c",
+      "author": "Dirk Naguschewski",
+      "book_title": "Poetry and Correspondence: A German-Hebrew Network",
+      "date": "2026-11-10",
+      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
+      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
     },
     {
-      "id": "6b56c39578f83388",
+      "id": "cbc5e1dde5c0a64e",
+      "author": "Nele Pollatschek",
+      "book_title": "Wie ich so glücklich wurde",
+      "date": "2026-11-21",
+      "venue": "Silent Green",
+      "publisher": "Kiepenheuer & Witsch"
+    },
+    {
+      "id": "05a126f5917c3721",
       "author": null,
-      "book_title": "Erika Stürmer-Alex",
-      "date": "2026-10-04",
-      "venue": "Außer Haus: Annemirl Bauer Haus, Dorfstrasse 10, 14822 Niederwerbig",
-      "publisher": "Literarisches Colloquium Berlin"
+      "book_title": "unscharfe Bilder",
+      "date": "2026-11-26",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
     },
     {
-      "id": "47ad2b606b430049",
-      "author": "Alexander Smoltczyk",
-      "book_title": "Lissabon 1941. Stadt der Spione, Hafen der Hoffnung",
-      "date": "2026-10-08",
-      "venue": "Stadtbibliothek Reinickendorf - Bibliothek am Schäfersee",
-      "publisher": "dtv Verlag"
+      "id": "370a489800bc01c6",
+      "author": "Nele Pollatschek",
+      "book_title": "Wie ich so glücklich wurde",
+      "date": "2026-11-26",
+      "venue": "Georg Büchner Buchladen",
+      "publisher": "Kiepenheuer & Witsch"
     },
     {
-      "id": "449f1bf15faf41bd",
-      "author": "Jacinta Nandi",
-      "book_title": "Jacinta Nandi (geschlossene Veranstaltung)",
-      "date": "2026-10-09",
-      "venue": "Mitosis Lab",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "3ca90238d8836d19",
-      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
-      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
-      "date": "2026-10-13",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "b1fde7b312a03409",
-      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "date": "2026-10-15",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "5c811383a7ea9698",
-      "author": "Miriam Stein und Susanne Liedtke",
-      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
-      "date": "2026-10-20",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "4dc8c8471a89d622",
-      "author": null,
-      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
-      "date": "2026-10-27",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "0d3b08e6a7254969",
-      "author": "Jennifer V. Evans",
-      "book_title": "Eine queere Art der Geschichte",
-      "date": "2026-11-05",
-      "venue": "Schwules Museum Raum 2",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "bcd941661ec93efc",
-      "author": "Benjamin Moser",
-      "book_title": "Der Letzte seiner Art",
-      "date": "2026-11-29",
-      "venue": "Volksbühne, Roter Salon",
-      "publisher": "Ullstein Verlag"
+      "id": "2a08162b0e4aef45",
+      "author": "Bernardo Bianchi (Centre Marc Bloch), Oliver Precht (Leuphana University Lüneburg)",
+      "book_title": "Composing Worlds: Anthropology, Ontology, and the Decolonization of Being",
+      "date": "2027-02-03",
+      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
+      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
     }
   ]
 }
