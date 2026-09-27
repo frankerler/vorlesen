@@ -1,64 +1,72 @@
 {
-  "ran_at": "2026-09-26T06:57:18+00:00",
-  "total_events": 230,
-  "new_count": 7,
-  "removed_count": 18,
+  "ran_at": "2026-09-27T07:26:53+00:00",
+  "total_events": 236,
+  "new_count": 8,
+  "removed_count": 2,
   "new_events": [
     {
-      "id": "9e8334ae48a36fe8",
-      "author": "Judith Hermann",
-      "book_title": "Ich möchte zurückgehen in der Zeit",
-      "date": "2026-09-28",
-      "venue": "Literaturhaus Stuttgart",
+      "id": "1bdef065d9d52c96",
+      "author": "Valeria Gordeev",
+      "book_title": "Frankfurter Buchpremiere mit Valeria Gordeev",
+      "date": "2026-09-29",
+      "venue": "Hessisches Literaturforum im Mousonturm",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "ec479e204ab630db",
-      "author": "Irine Beridze (University of Potsdam), Nina Weller (ZfL)",
-      "book_title": "Commemorating the 85th anniversary of the Babyn Yar massacre. Presentation of the new translation of Anatoly Kuznetsov’s “Babyn Jar. Roman eines Augenzeugen”",
-      "date": "2026-09-29",
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
-      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
+      "id": "4019a81d61636edf",
+      "author": "Juliane Marie Schreiber",
+      "book_title": "Buchvorstellung mit Juliane Marie Schreiber",
+      "date": "2026-09-30",
+      "venue": "3. OG",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "78eab468d573ce1c",
-      "author": "Dirk Naguschewski",
-      "book_title": "Poetry and Correspondence: A German-Hebrew Network",
-      "date": "2026-11-10",
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
-      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
+      "id": "33a16129dd0a6b66",
+      "author": "Manuel Bittorf aka \"Betterov\"",
+      "book_title": "Betterov",
+      "date": "2026-09-30",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "cbc5e1dde5c0a64e",
-      "author": "Nele Pollatschek",
-      "book_title": "Wie ich so glücklich wurde",
-      "date": "2026-11-21",
-      "venue": "Silent Green",
-      "publisher": "Kiepenheuer & Witsch"
+      "id": "3ca90238d8836d19",
+      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
+      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
+      "date": "2026-10-13",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "05a126f5917c3721",
+      "id": "b1fde7b312a03409",
+      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "date": "2026-10-15",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "c3b57fb9a12d8f8d",
+      "author": "Frieder Bohaumilitzky und Anke Haarmann",
+      "book_title": "Metapolitik der Dinge. Materielle Kultur und rechtes Denken",
+      "date": "2026-10-16",
+      "venue": "Pro qm",
+      "publisher": "Pro qm"
+    },
+    {
+      "id": "5c811383a7ea9698",
+      "author": "Miriam Stein und Susanne Liedtke",
+      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
+      "date": "2026-10-20",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "4dc8c8471a89d622",
       "author": null,
-      "book_title": "unscharfe Bilder",
-      "date": "2026-11-26",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "370a489800bc01c6",
-      "author": "Nele Pollatschek",
-      "book_title": "Wie ich so glücklich wurde",
-      "date": "2026-11-26",
-      "venue": "Georg Büchner Buchladen",
-      "publisher": "Kiepenheuer & Witsch"
-    },
-    {
-      "id": "2a08162b0e4aef45",
-      "author": "Bernardo Bianchi (Centre Marc Bloch), Oliver Precht (Leuphana University Lüneburg)",
-      "book_title": "Composing Worlds: Anthropology, Ontology, and the Decolonization of Being",
-      "date": "2027-02-03",
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
-      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
+      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
+      "date": "2026-10-27",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     }
   ]
 }
