@@ -1,72 +1,24 @@
 {
-  "ran_at": "2026-09-27T07:26:53+00:00",
-  "total_events": 236,
-  "new_count": 8,
-  "removed_count": 2,
+  "ran_at": "2026-09-28T08:05:46+00:00",
+  "total_events": 230,
+  "new_count": 2,
+  "removed_count": 8,
   "new_events": [
     {
-      "id": "1bdef065d9d52c96",
-      "author": "Valeria Gordeev",
-      "book_title": "Frankfurter Buchpremiere mit Valeria Gordeev",
-      "date": "2026-09-29",
-      "venue": "Hessisches Literaturforum im Mousonturm",
+      "id": "0fcac247bd3fd3cf",
+      "author": "Judith Hermann",
+      "book_title": "Ich möchte zurückgehen in der Zeit",
+      "date": "2026-09-30",
+      "venue": "Literaturhaus im Prinz-Max-Palais",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "4019a81d61636edf",
-      "author": "Juliane Marie Schreiber",
-      "book_title": "Buchvorstellung mit Juliane Marie Schreiber",
-      "date": "2026-09-30",
-      "venue": "3. OG",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "33a16129dd0a6b66",
-      "author": "Manuel Bittorf aka \"Betterov\"",
-      "book_title": "Betterov",
-      "date": "2026-09-30",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "3ca90238d8836d19",
-      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
-      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
-      "date": "2026-10-13",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "b1fde7b312a03409",
-      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "date": "2026-10-15",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "c3b57fb9a12d8f8d",
-      "author": "Frieder Bohaumilitzky und Anke Haarmann",
-      "book_title": "Metapolitik der Dinge. Materielle Kultur und rechtes Denken",
-      "date": "2026-10-16",
-      "venue": "Pro qm",
-      "publisher": "Pro qm"
-    },
-    {
-      "id": "5c811383a7ea9698",
-      "author": "Miriam Stein und Susanne Liedtke",
-      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
-      "date": "2026-10-20",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "4dc8c8471a89d622",
+      "id": "655746ad0a8388c9",
       "author": null,
-      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
-      "date": "2026-10-27",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "book_title": "Wie krank schreiben?",
+      "date": "2026-11-06",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
     }
   ]
 }
