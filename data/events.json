@@ -1,56 +1,5 @@
 [
   {
-    "publisher": "S. Fischer Verlage",
-    "author": "Judith Hermann",
-    "title": "Lesung und Gespräch mit Judith Hermann",
-    "date": "2026-09-28",
-    "time": "19:30",
-    "venue": "Literaturhaus Stuttgart",
-    "city": "Stuttgart",
-    "address": "Breitscheidstr. 4, 70174 Stuttgart",
-    "url": "https://www.literaturhaus-stuttgart.de/event/6779.html",
-    "source_url": "https://www.fischerverlage.de/veranstaltung/lesung-und-gespraech-judith-hermann-stuttgart-1046395-260928",
-    "raw_text": "»Ich möchte zurückgehen in der Zeit« – so lautet der Titel des neuen Buchs von Judith Hermann, in dem sie den Spuren ihres Großvaters folgt, der während des Zweiten Weltkriegs für die SS im polnischen Radom stationiert war. Sie verknüpft ihr Schreiben mit einer lange verleugneten Geschichte, reist von Polen aus weiter zu ihrer Schwester nach Neapel und geht Erinnern und Vergessender folgenden Generationen nach. In Zwischen- und Untertönen taucht das Verdrängte, die Leerstellen unserer Gesellschaft auf. Es zeigt sich, wie fragil unser Leben und der Versuch, sich in diesem einzurichten, ist, aber auch, welche Schönheit sich darin verbergen kann. Judith Hermann wurde 1970 in Berlin geboren. Ihr Debüt »Sommerhaus, später« (1998) machte sie international bekannt. Es folgten in Teilen auch verfilmte Erzählungsbände und Romane.",
-    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/fischer/public/CY41eXZI5CYCGnr0gVSWBRskuZPIuODGFgn1nFQJCVO/AF_Judith%20Hermann_259.png",
-    "image_credit": null,
-    "book_title": "Ich möchte zurückgehen in der Zeit",
-    "id": "9e8334ae48a36fe8"
-  },
-  {
-    "publisher": "Rowohlt Verlag",
-    "author": "Lars Becker",
-    "title": "Lars Becker",
-    "date": "2026-09-28",
-    "time": "20:00",
-    "venue": "Cinema Paris",
-    "city": "Berlin",
-    "address": "Kurfürstendamm 211, 10719 Berlin",
-    "url": "https://www.yorck.de/specials/literatur-live-lars-becker-natalia-worner-and-benita-bailey",
-    "source_url": "https://www.rowohlt.de/veranstaltung/premiere-lars-becker-berlin-18815-260928",
-    "raw_text": "Eine Veranstaltung von Literatur LIVE in Kooperation mit der Thalia Buchhandlung und dem Cinema Paris",
-    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/rowohlt/public/P27zK0XvdeYVhHbB9fyM6Bcd2m9AWpxoQcDavwMzF5j/AF_Lars%20Becker_Website.png",
-    "image_credit": null,
-    "book_title": null,
-    "id": "e2163c615c8c815f"
-  },
-  {
-    "publisher": "Carl Hanser Verlag",
-    "author": "Olga Grjasnowa",
-    "title": "Konflikte lesen: Lesung und Gespräch mit Olga Grjasnowa (\"Juli, August, September\")",
-    "date": "2026-09-28",
-    "time": "19:00",
-    "venue": "Akademiegebäude am Gendarmenmarkt, Einstein-Saal",
-    "city": "Berlin",
-    "address": "Jägerstraße 22/23, 10117 Berlin",
-    "url": "https://jahresthema.bbaw.de/programm/",
-    "source_url": "https://www.hanser-literaturverlage.de/veranstaltungen-c-34",
-    "raw_text": "Lesung und Gespräch",
-    "cover_image": "https://res.cloudinary.com/literaturverlage/image/upload/v1759953821/MAM/Image/ARTK_CT0_9783446286160_0001.jpg",
-    "image_credit": null,
-    "book_title": "Juli, August, September",
-    "id": "0e74687fa42aef2a"
-  },
-  {
     "publisher": "Rowohlt Verlag",
     "author": "Christiane Rösinger",
     "title": "Christiane Rösinger",
@@ -204,6 +153,23 @@
     "id": "0fcac247bd3fd3cf"
   },
   {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": "Juliane Marie Schreiber",
+    "title": "Buchvorstellung mit Juliane Marie Schreiber",
+    "date": "2026-09-30",
+    "time": "18:00",
+    "venue": "3. OG",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/Buchvorstellung-mit-Juliane-Marie-Schreiber/ABGESAGT--Buchvorstellung-mit-Juliane-Marie-Schreiber",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "ABGESAGT. Wir sind Dynamit - Ein Manifest für Introvertierte in einer Welt der Selbstdarstellung Juliane Marie Schreiber zeigt mit Witz und Verstand, warum im Zeitalter der Extroversion Auftritt mehr zählt als Kompetenz. Zu oft werden die Lauten belohnt und die Nachdenklichen und Innenmenschen erfahren überall Nachteile. Dabei ist ein extrovertiertes Temperament keine Qualifikation. Es ist eher das Lautstärkeideal unserer Zeit, das aus der Spur geraten ist. Doch Zivilisation lebt nicht nur von denen, die die Bühne füllen, sondern auch von denen, die ihre Ideen so lange aufbauen, bis sie Form gewinnen. Das Innenleben der Introvertierten ist die Sprengkraft für den Fortschritt.",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/4QIDAD3ALKK/detail - juliane marie schreiber.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "4019a81d61636edf"
+  },
+  {
     "publisher": "Literarisches Colloquium Berlin",
     "author": "Liv Thastum, José F.A. Oliver",
     "title": "Zwischen deinen Wörtern",
@@ -219,6 +185,23 @@
     "image_credit": null,
     "book_title": "Liv Thastum",
     "id": "233f7a3462d254c1"
+  },
+  {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": "Manuel Bittorf aka \"Betterov\"",
+    "title": "Buchvorstellung mit Manuel Bittorf aka \"Betterov\"",
+    "date": "2026-09-30",
+    "time": "19:00",
+    "venue": "KulturBühne",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/Buchvorstellung-mit-Manuel-Bittorf-aka-Betterov/AUSVERKAUFT--Buchvorstellung-mit-Manuel-Bittorf-aka-Betterov",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "AUSVERKAUFT. Vom Mut, das Leben in die Hand zu nehmen Mitten auf der Straße kommt Max wieder zu sich. Um ihn herum Blaulicht. Was zum Teufel ist passiert? Er ist doch gerade erst mit seinem besten Freund Chau hier angekommen, in ihrem neuen Leben. Nach einer letzten wilden Party in der Provinz sind sie in den ICE – raus aus dem Osten, rein nach Westberlin. Im noblen Stadtteil Grunewald wohnen sie im einzigen Plattenbau weit und breit, völlig verloren zwischen Prunkvillen und Ferraris. Und dann ist da noch Kiki, Max' erste große Liebe, die jetzt in München lebt. Ein nächtlicher Zufall bringt Max und Chau auf eine Geschäftsidee, die ihr frisch begonnenes Studium schnell in den Hintergrund rücken lässt. Ihr Plan funktioniert – bis er zum Staatsakt wird. In seinem Debütroman „Goldener Retriever“ erzählt Manuel Bittorf mit ungeheurer Schreiblust und viel Tempo eine sehnsuchtsvolle Geschichte über das Erwachsenwerden, die große Liebe und das unbändige Gefühl, seinen eigenen Platz in der Welt zu suchen. Mit feinem Gespür für das Zwischenmenschliche, warmherzig und oft verdammt komisch. Manuel Bittorf , geboren 1994 in der Nähe von Eisenach, arbeitete mehrere Jahre am Theater und studierte später Schauspiel an der Universität der Künste Berlin. Unter seinem Künstlernamen Betterov ist er einer der erfolgreichsten Künstler der deutschen Musikszene. Nach seinem gefeierten Top-10-Album „Große Kunst“ und einer großen Tournee legt er nun mit „Goldener Retriever“ sein literarisches Debüt vor. Bittorf lebt in Berlin. Tickets gibt es hier ! Schon gewusst? Mit unserer Kund:innenKarte gibt’s 20 % Rabatt auf Veranstaltungen und Workshops!",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/EQQKXYMRLE9/Vorschau - Manuel Bittorf.png",
+    "image_credit": null,
+    "book_title": "Betterov",
+    "id": "33a16129dd0a6b66"
   },
   {
     "publisher": "dtv Verlag",
@@ -272,6 +255,23 @@
     "id": "0fa74101006359ec"
   },
   {
+    "publisher": "S. Fischer Verlage",
+    "author": "Asal Dardan",
+    "title": "ABGESAGT: Gegenwehr im Jetzt: Asal Dardan & Lena Gorelik",
+    "date": "2026-10-01",
+    "time": "18:00",
+    "venue": "Amnesty International",
+    "city": "Berlin",
+    "address": "Sonnenallee 221 C, 12059 Berlin",
+    "url": "https://forms.cloud.microsoft/pages/responsepage.aspx?id=I7WA5FjiEU24gyWXaLdQiLzYMk-eMiREu525AoBtlKdUM0cwQldIUzVXVFY3UTdDQllMWjVFOTg0Ti4u&origin=lprLink&route=shorturl",
+    "source_url": "https://www.fischerverlage.de/veranstaltung/podiumsdiskussion-asal-dardan-lena-gorelik-berlin-1048809-261001",
+    "raw_text": "DIE VERANSTALTUNG FÄLLT LEIDER AUS",
+    "cover_image": "/images/placeholder/placeholder-contributor.jpg",
+    "image_credit": null,
+    "book_title": null,
+    "id": "fc1b41a5ab86a1ae"
+  },
+  {
     "publisher": "Piper Verlag",
     "author": "Christian Dittloff",
     "title": "Christian Dittloff mit \"Das Leichteste der Welt\" in Berlin",
@@ -304,6 +304,23 @@
     "image_credit": null,
     "book_title": "Anton und Alma",
     "id": "a20f898ea4f767aa"
+  },
+  {
+    "publisher": "S. Fischer Verlage",
+    "author": "Eva Horn",
+    "title": "40. Jubiläum & Homecoming des Literaturhaus Berlin mit Eva Horn, Johannes Franzen, Nora Haddada, u.a.",
+    "date": "2026-10-01",
+    "time": "18:30",
+    "venue": "Literaturhaus Berlin",
+    "city": "Berlin",
+    "address": "Fasanenstraße 23, 10719 Berlin",
+    "url": "https://li-be.de/programm/veranstaltungen/homecoming-jubilaeum-2/",
+    "source_url": "https://www.fischerverlage.de/veranstaltung/podiumsdiskussion-eva-horn-nora-haddada-berlin-1048199-261001",
+    "raw_text": "Die Literatur- und Kulturwissenschaftlerin Eva Horn nimmt das Klima in ihrer Imaginations- und Wissensgeschichte aus einer sinnlichen, kulturellen und historischen Perspektive in den Blick. Was ist Klima? Wenn wir heutzutage über das Klima sprechen, tun wir dies vor allem aus einer naturwissenschaftlichen Perspektive. Wir können Klima messen und berechnen, aber nicht unmittelbar erfahren. Bevor Klima als »durchschnittliches Wetter« definiert wurde, war das jedoch einmal ganz anders. Eva Horn knüpft an ein scheinbar ad acta gelegtes Wissen über das Klima an und zeigt, welche enge Verbindung zwischen Kulturen und ihrem Klima einmal bestanden hat. Von Theorien über den Einfluss von Luft und Temperatur auf Körper und Seele über das Bild des »Luftmeers« bis zu den Phantasien »kontrollierter« Klimata: Unter Rückgriff auf Medizingeschichte, Philosophie, Kunst und Literatur entwirft Eva Horn eine große Imaginationsgeschichte des Klimas, die die Debatte um die Klimakrise neu begründen und unser atmosphärisches Sensorium schulen kann. »All ihre Essays verbinden Wissenschaftsgeschichte mit Literatur und Kunst. Die politische Perspektive verliert sie dabei nie aus dem Blick. Ihr Schreiben ist politische Publizistik« aus der Begründung der Jury des Heinrich-Mann-Preises 2020",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/fischer/public/9guNoZaXrIg2TnfmeF5mpZrM33WNJ52ZvkuYOoVn8b7/AF_Eva%20Horn_379.png",
+    "image_credit": null,
+    "book_title": "durchschnittliches Wetter",
+    "id": "0884f338aa6af7bf"
   },
   {
     "publisher": "Suhrkamp Verlag",
@@ -1139,6 +1156,23 @@
     "id": "cc54f237f09f0e38"
   },
   {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
+    "title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
+    "date": "2026-10-13",
+    "time": "14:00",
+    "venue": "KulturBühne",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/Die-Gr%C3%BCffelo-Show/Die-Gr%C3%BCffeloShow-mit-Axel-Scheffler-Neues-Monster-neue-Abenteuer-",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "Neues Monster, neue Abenteuer Alles war still im tiefen, dunklen Wald, bis … jetzt! Mehr als zwei Jahrzehnte nach dem weltweiten Erfolg von Der Grüffelo und Das Grüffelokind kehrt das wohl beliebteste Monster der Kinderliteratur zurück. Autorin Julia Donaldson und Erfolgsillustrator Axel Scheffler lassen die Kult-Familie wieder aufleben – und stellen uns ein ganz neues Mitglied vor: Die Grüffelo-Oma! Dass es überhaupt zu dieser Fortsetzung kam, war selbst für Axel Scheffler eine riesige Überraschung: „Nachdem ich Jahrzehnte lang sagte, es würde bestimmt keine weitere Grüffelo-Geschichte geben, kam plötzlich unangekündigt ein wunderschöner Text von Julia per E-Mail.“ Das Ergebnis ist eine herzerwärmende Geschichte über Generationen, Sprachfreude und das wunderbare Gefühl des gemeinsamen Lesens. Erfahre bei der Buchvorstellung, wie Scheffler die neue Monster-Großmutter zum Leben erweckte, wie die Grüffelos zeichnerisch den nächsten Evolutionsschritt machen und lass dir deine Ausgabe direkt vor Ort signieren. Axel Scheffler , geboren 1957 in Hamburg, lebt heute als einer der weltweit erfolgreichsten Kinderbuchillustratoren in London. Seine charakteristischen, rätselhaft-charmanten Figuren und tierischen Held:innen prägen seit Generationen die Kinderzimmer. Mit den Grüffelo-Büchern schuf er gemeinsam mit Julia Donaldson einen Welterfolg, der in über 115 Sprachen übersetzt wurde. Wenn er nicht gerade neue Monster zeichnet, widmet er sich auf seine ganz eigene Art der Tierbeobachtung – mit Stift, Humor und unverwechselbarem Strich. Tickets gibt es hier! Schon gewusst? Mit unserer Kund:innenKarte gibt’s 20 % Rabatt auf Veranstaltungen und Workshops!",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/GF64YV36NE6/vorschau-grÃ¼ffelo.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "3ca90238d8836d19"
+  },
+  {
     "publisher": "Kiepenheuer & Witsch",
     "author": "Hanns Zischler",
     "title": "Wir feiern Buchpremiere im wiedereröffneten Literaturhaus! Hanns Zischler stellt seinen neuen Roman \"Yumikos Paravent\" vor. Moderation: Lisa Zeitz",
@@ -1428,6 +1462,23 @@
     "id": "d960630aeeb035d3"
   },
   {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+    "title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+    "date": "2026-10-15",
+    "time": "19:00",
+    "venue": "KulturBühne",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/KulturAbend-mit-Elisa-von-Hof-Juliane-Schiemenz-Laura-Melina-Berling/KulturAbend-mit-Elisa-von-Hof-Juliane-Schiemenz-und-Laura-Melina-Berling-",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "Gespräche über Frauen, Macht und alte Mythen Ob als gefürchtete Hexe, im Hintergrund gehaltene Muse oder mächtige und als bedrohlich inszenierte Göttin: Die Art und Weise, wie Frauen in Geschichte, Mythologie und Literatur dargestellt wurden, prägt unser Frauenbild bis in die Gegenwart. Aber wie beeinflussen diese alten Erzählungen unseren heutigen Blick auf Geschlechterrollen, und was braucht es, um überkommene Strukturen endlich aufzubrechen? An diesem KulturAbend widmen sich drei inspirierende Autorinnen dem Thema aus völlig unterschiedlichen Perspektiven: Während Juliane Schiemenz in \"Meine Ahnin, die Hexe, und ich\" (Rowohlt Berlin) der Geschichte ihrer als Hexe verurteilten Vorfahrin nachgeht und fragt, was es als Frau bis heute bedeutet, für die eigene Unabhängigkeit einzustehen, rückt Kulturjournalistin Elisa von Hof mit ihrem Buch \"Unsichtbare Musen\" die oft verschwiegenen Macherinnen unserer Kulturgeschichte ins Scheinwerferlicht. Komplettiert wird die Runde durch Laura Melina Berling, die in ihrem Roman \"Medusa in Paradise\" die unheilvolle Strahlkraft mythologischer Figuren wie Medusa mit einer scharfsinnigen Debatte über das moderne Patriarchat verwebt. Freu dich auf einen vielschichtigen Talk über Historie, Macht und Unsichtbarkeit – und auf ein gemeinsames Nachdenken darüber, wie wir Frauenbilder neu verhandeln können. Elisa von Hof , geboren 1991, studierte Geschichtswissenschaft und Deutsche Literatur in Berlin. Sie wurde unter anderem mit dem Deutschen Reporter:innenpreis ausgezeichnet und zählte zu den „Top 30 bis 30“ im Journalismus. Seit 2021 arbeitet sie im Kulturressort des SPIEGEL, dessen stellvertretende Leiterin sie heute ist. In ihrem Buch Unsichtbare Musen rückt sie die oft verschwiegenen Macherinnen und Gestalterinnen unserer Kulturgeschichte ins Scheinwerferlicht und setzt ihnen ein längst überfälliges Denkmal. Juliane Schiemenz , geboren 1981, studierte Germanistik und Kommunikationswissenschaft und absolvierte die Deutsche Journalistenschule. Sie lebt in Dresden und arbeitete lange als Redakteurin beim Magazin Reportagen. Heute ist sie u.a. für Deutschlandfunk Kultur, Die Zeit und die Neue Zürcher Zeitung tätig. Ihre Reportagen wurden unter anderem für den Henri-Nannen-Preis und den Deutschen Reporterpreis nominiert. Laura Melina Berling war im Internet lange als feministische Bloggerin unterwegs. Zudem postete sie unter @ber._.ling, ehemals @littlefeministblog eine Menge ihrer Gedanken auf Instagram. Mittlerweile schreibt sie lieber Bücher und berät zudem hauptberuflich als Sozialpädagogin junge Menschen in schwierigen Lebenssituationen. Zuletzt erschienen ihr Sachbuch »Modern Heartbreak« (2023) und das Kinderbuch »Kuscheln, Wut und Schabernack« (2025), beide bei Leykam. »Medusa in Paradise« ist ihr erster Roman. Tickets gibt es hier! Schon gewusst? Mit unserer Kund:innenKarte gibt’s 20 % Rabatt auf Veranstaltungen und Workshops!",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/8IBKN4KZ93N/Vorschau - kulturabend elisa von hof.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "b1fde7b312a03409"
+  },
+  {
     "publisher": "Rowohlt Verlag",
     "author": "Juliane Schiemenz",
     "title": "Juliane Schiemenz",
@@ -1583,6 +1634,23 @@
   {
     "publisher": "Lettrétage",
     "author": null,
+    "title": "minor incident 2026",
+    "date": "2026-10-17",
+    "time": "18:45",
+    "venue": "Lettrétage",
+    "city": "Berlin",
+    "address": "Veteranenstr. 21, 10119 Berlin",
+    "url": "https://www.lettretage.de/programm/minor-incident-2026",
+    "source_url": "https://www.lettretage.de/programm",
+    "raw_text": "ATTENTION: This event takes place at K26 – Raum für Ideen, Kolonnenstr. 26, 10829 Berlin! ‍ A night of readings and discussion from minor literature[s] readers: Gabriel Flynn ‘s debut novel, Poor Ghost! is out now with Sceptre Books. His writing has appeared in Five Dials , Best British Short Stories , Review 31 , and Lighthouse Journal , and he was shortlisted for the White Review Short Story Prize in 2020. Martin Lechner was born in 1974, and studied philosophy and literature at the University of Potsdam. He lives in Berlin. His debut novel Kleine Kassa was longlisted for the 2014 German Book Prize and his collection of stories Nach fünfhundertzwanzig Weltmeertagen was shortlisted for the 2017 Clemens Brentano Prize. Der Irrweg (2021) was funded by the Berlin Senate. Die Verwilderung (2025) is his third novel. Donna Stonecipher is the author of six books of poetry, most recently The Ruins of Nostalgia , which was named a best book of 2023 by NPR, and Transaction Histories , which was listed by The New York Times as one of the 10 best poetry books of 2018. She has also published one book of criticism, Prose Poetry and the City . Her poems have been translated into seven languages. She translates from German, and her translation of Austrian poet Friederike Mayröcker’s trilogy études , cahier , and fleurs , for which she received a National Endowment for the Arts fellowship, is being published by Seagull Books. Forthcoming in 2027 is a narrated nonfiction book, The Secret Life and Death of Ornament in Berlin (MIT Press). May-Lan Tan is the author of the short story collection Things to Make and Break and the chapbook Girly . She has been awarded the Berlin Senate grant for non-German literature and a fellowship at Yaddo. Her fiction has appeared in Zoetrope: All-Story , the Atlas Review , the Reader , and Areté . photography: Alex Cocotas is a writer and artist in Berlin. panel: James Conway was born in Sydney and now lives in Berlin where he is a translator from German to English, both commercial and literary. In the latter capacity he has translated and published eight books for Rixdorf Editions , most recently Three Prose Works by Else Lasker-Schüler. He has written for publications such as the Times Literary Supplement and the Los Angeles Review of Books , as well as his own repository of alternative cultural history, Strange Flowers . Ann Cotten is a writer and translator from Vienna, Austria, based in Berlin and Possegg, writing in German and English. Recent translations include books by J. Wenderoth, I. Waidner, R. Waldrop, L. Russell, A. Green, articles by K. Sasaki, M. Ishida and M. Shinohara, poetry by Hachikai Mimi, Julian Brolaski, Margaret Atwood and others. “Rotten Kinck Schow” with M. Rinck and Sabine Scho 2007-2014. Cotten’s English language work is published by Broken Dimanche Press (I, Coleoptile, 2013; Lather In Heaven, 2016). Susan Finlay is the author of the novels The Ultraviolet Catastrophe , The Jacques Lacan Foundation, My Other Spruce & Maple Self , Objektophila , and Arriviste , and the anti-memoir, The Lives of the Artists . ​Susan was an associate editor at JOAN; founded the Coelacanth Press with Phoebe Blatton, where she co-edited four editions of the biannual journal; and founded the independent publisher MOIST, with her father, Paul Finlay, which she co-ran until Summer 2025. She lives in Berlin. moderator: Ben Libman ‘s first book, The Third Solitude: A Memoir Against History , came out last year with Dundurn Press. His next, Voyeur , will be out with Coach House Books in 2027. His essays, reviews, and creative work have been featured in places like The New York Times , Poetry Magazine , The Yale Review , New Left Review , The London Magazine , and The Guardian .",
+    "cover_image": "https://cdn.prod.website-files.com/69207413650d0ca9c10ee1d7/6aba5f00fb8744b612fce09a_minor%20incident%20Berlin%202026%20K26%20L.webp",
+    "image_credit": null,
+    "book_title": null,
+    "id": "260f1fd1865875c6"
+  },
+  {
+    "publisher": "Lettrétage",
+    "author": null,
     "title": "Literatur im Plural. Herbstlesung des Autorenforums Berlin",
     "date": "2026-10-17",
     "time": "19:00",
@@ -1647,6 +1715,23 @@
     "image_credit": null,
     "book_title": "Schwestern. Trotz allem",
     "id": "fe11e3bbab91e61e"
+  },
+  {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": "Miriam Stein und Susanne Liedtke",
+    "title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
+    "date": "2026-10-20",
+    "time": "19:00",
+    "venue": "KulturBühne",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/KulturAbend-mit-Miriam-Stein-und-Susanne-Liedtke-/KulturAbend-mit-Miriam-Stein-und-Susanne-Liedtke",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "Gespräche über Frauengesundheit, Scham und ein neues Körpergefühl Warum ist der weibliche Körper noch immer von so vielen Tabus, Rechtfertigungen und falscher Scham umgeben? Ob hormonelle Veränderungen, die Menopause oder gesellschaftliche Erwartungen: Viel zu oft leisten Frauen im Stillen Reorganisation, statt sich die Unterstützung und Aufmerksamkeit zu holen, die ihnen zusteht. Damit ist jetzt Schluss – denn Frauengesundheit geht uns alle an, ganz unabhängig vom Alter. An diesem KulturAbend beleuchten renommierte Expertinnen das Thema Frauengesundheit aus gesellschaftlicher, medizinischer und ganz praktischer Perspektive: Während Bestseller-Autorin Miriam Stein mit Büchern wie „Die gereizte Frau“ und „Die unverschämte Frau“ aufzeigt, wie wir gesellschaftliche Tabus entlarven und uns endlich von lähmenden Schamerzählungen befreien, bringt Ernährungsexpertin Susanne Liedtke, die Erfolgsautorin von @_nobodytoldme_, ihr geballtes Wissen ein. Mit ihrem aktuellen Werk „Nobody Told Me – Das Wohlfühl-Kochbuch“ (gemeinsam mit der Gynäkologin Dr. Christina Enzmann) zeigt sie, wie wir unseren Körper durch antientzündliche Ernährung und hormonelle Balance von innen heraus stärken können. Ein empowernder Abend über echten Support unter Frauen, wissenschaftliche Erkenntnisse und den Mut, die eigene Gesundheit selbstbestimmt und schamlos in die Hand zu nehmen. Miriam Stein , geboren 1977 in Südkorea, ist Journalistin, Bestseller-Autorin und eine der wichtigsten Stimmen zum Thema Sichtbarkeit von Frauen. Sie schrieb u. a. für die Süddeutsche Zeitung und war Kulturchefin von Harper’s Bazaar. In ihren Büchern „Die gereizte Frau“ und „Die unverschämte Frau“ entlarvt sie gesellschaftliche Tabus rund um Scham, Älterwerden und die Menopause. Susanne Liedtke ist Diplom-Oecotrophologin, Digitalexpertin und Gründerin von NOBODYTOLDME. Nachdem sie ihren Job bei Google an den Nagel hängte, um über das tabuisierte Thema Wechseljahre aufzuklären, begleitet sie heute Frauen mit klaren Fakten und Ernährungstipps dabei, besser durch die Menopause zu kommen. Tickets gibt es hier! Schon gewusst? Mit unserer Kund:innenKarte gibt’s 20 % Rabatt auf Veranstaltungen und Workshops!",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/34EDHV43U9L/Vorschau - kulturabend miriam stein.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "5c811383a7ea9698"
   },
   {
     "publisher": "Literaturhaus Berlin",
@@ -2004,6 +2089,23 @@
     "image_credit": null,
     "book_title": null,
     "id": "807a5d6ff44a217a"
+  },
+  {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": null,
+    "title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
+    "date": "2026-10-27",
+    "time": "19:00",
+    "venue": "KulturBühne",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/Live-Podcast--Talk-Dora-Heldt--T%C3%BClin-Sezgin/LivePodcast--Talk-Dora-Heldt-und-T%C3%BClin-Sezgin",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "Bücher-Podcast auf der Bühne Bestseller-Autorin, Vielleserin und Branchenkennerin Dora Heldt nimmt dich mit hinter die Kulissen der Buchwelt – und das diesmal hautnah vor Publikum! Seit 2020 geht sie in ihrem beliebten dtv Bücher-Podcast „Dora Heldt trifft…“ ihrer großen Leidenschaft nach, spricht mit faszinierenden Autor:innen und entlockt ihren Gästen immer wieder Überraschendes, Skurriles und vor allem wunderbar Unterhaltsames. Bei dieser exklusiven Live-Aufzeichnung empfängt Dora Heldt die Comedienne, Bestseller-Autorin und Ex-Beamtin Tülin Sezgin (Conny from the Block). Freu dich auf ein sympathisches und humorvolles Gespräch über Schreibprozesse, Bürokratie-Wahnsinn und Tülins autobiografisches Buch „Almancı-Mädchen. Wie ich mir Deutschsein beigebracht habe“ – inklusive tiefgründiger Anekdoten über Herkunft, Identität und das Leben zwischen zwei Kulturen. Dora Heldt , geboren 1961 auf Sylt, ist gelernte Buchhändlerin, langjährige Verlagsvertreterin und gehört zu den erfolgreichsten Bestseller-Autorinnen Deutschlands. Mit Romanen wie „Urlaub mit Papa“, „Bei Hitze ist es wenigstens nicht kalt“ oder „Drei Frauen am See“ eroberte sie regelmäßig Platz 1 der Spiegel-Bestsellerliste, viele ihrer Bücher wurden erfolgreich fürs ZDF verfilmt. Seit 2020 fühlt sie in ihrem beliebten dtv-Bücherpodcast „Dora Heldt trifft…“ Autor:innen und Branchen-Insidern auf wunderbar nahbare und unterhaltsame Weise auf den Zahn. Mit den beliebten Buchempfehlungen von Florian Valerius. Florian Valerius , 1982 in Trier geboren, ist seit über 20 Jahren Buchhändler mit Leib und Seele. Seit 2016 bloggt und moderiert er unter dem Namen @literarischernerd auf Instagram über Literatur und den Alltag als Buchhändler. Dafür wurde er mit dem ersten Buchblog-Award ausgezeichnet und zählt heute zu den bekanntesten und erfolgreichsten Buchbloggern Deutschlands. Von 2019 bis 2021 war er in der Jury des Deutschen Verlagspreises und 2023 in der Jury für den Deutschen Buchpreis. Tülin Sezgin , geboren 1988 in Berlin-Neukölln, ist Comedienne, Autorin und ehemalige Beamtin. Deutschlandweite Bekanntheit erlangte sie als „Amtsfluencerin“ unter ihrem Pseudonym Conny from the Block. Nach ihrem Bestseller „Da bin ick nicht zuständig, Mausi“ erschien 2026 ihr erstes autobiografisches Buch „Almancı-Mädchen. Wie ich mir Deutschsein beigebracht habe“, in dem sie mit gewohntem Witz, aber auch berührender Ehrlichkeit über Herkunft, Identität und das Leben zwischen den Kulturen schreibt. Tickets gibt es hier! Schon gewusst? Mit unserer Kund:innenKarte gibt’s 20 % Rabatt auf Veranstaltungen und Workshops!",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/HPKRMZFREJ/Vorschau - live podcast.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "4dc8c8471a89d622"
   },
   {
     "publisher": "Carl Hanser Verlag",
@@ -3672,6 +3774,23 @@
     "id": "e7126a0f8e2686c0"
   },
   {
+    "publisher": "Lettrétage",
+    "author": null,
+    "title": "Ωrt des Schreibens - Der Hunger",
+    "date": "2026-12-05",
+    "time": "18:00",
+    "venue": "Lettrétage",
+    "city": "Berlin",
+    "address": "Veteranenstr. 21, 10119 Berlin",
+    "url": "https://www.lettretage.de/programm/ort-des-schreibens",
+    "source_url": "https://www.lettretage.de/programm",
+    "raw_text": "Einer hat kein Brot. Der andere keinen Frieden. Der Dritte alles und doch zu wenig. Mangel und Überfüllung gehen umher; sie geben sich in unserem Dasein die Klinke. Beschreibt einen Hunger; euren, den der Welt, oder den der Armen. Am 5.Dezember ist es soweit - der Literatur wird wieder eine Bühne gegeben. Das Spiel ist einfach: 6 Geschichten werden vorgetragen, eine gewinnt. Das Publikum darf bitten, nur die Jury entscheidet. Verlage sind anwesend und schweigen. Es ist der Ort des Schreibens. Teilnahme : Einsendungen auf Deutsch mit maximal 1.800 Wörtern bis zum 27.9.2026 an ortdesschreibens@gmail.com. Die vom Kurator gewählten 6 Texte werden am Veranstaltungsabend von den Autoren vorgelesen. Die Jury kennt sie nicht und beurteilt frei ihrem ästhetischem Ermessen. Die Teilnahme ist kostenlos. Gewinn : Für den ersten Platz gibt es eine Schatulle mit drei von den Juroren ausgewählten Gegenständen, sowie einen Platz auf unserer Website. Es lebe die Literatur. \"Bis auf diese Stunde leiden wir Hunger und Durst, sind nackt und werden geschlagen und haben keine sichere Stätte\" - 1.Korinther 4:11",
+    "cover_image": "https://cdn.prod.website-files.com/69207413650d0ca9c10ee1d7/6aba3f124c9e3aa832b17076_%CE%A9rt%20des%20Schreibens%20-%20Der%20Hunger.webp",
+    "image_credit": null,
+    "book_title": "Bis auf diese Stunde leiden wir Hunger und Durst, sind nackt und werden geschlagen und haben keine sichere Stätte",
+    "id": "40b105051c57cfd9"
+  },
+  {
     "publisher": "dtv Verlag",
     "author": "Ina Hattenhauer",
     "title": "Veranstaltung zu ›Frittenfrettchenfete‹",
@@ -3721,6 +3840,23 @@
     "image_credit": null,
     "book_title": "Wann wusstest du, dass es gut wird?",
     "id": "5529c392bcdcc70c"
+  },
+  {
+    "publisher": "Lettrétage",
+    "author": null,
+    "title": "„Erste Seiten” – Buchpremiere mit Lesung",
+    "date": "2026-12-11",
+    "time": "20:00",
+    "venue": "Lettrétage",
+    "city": "Berlin",
+    "address": "Veteranenstr. 21, 10119 Berlin",
+    "url": "https://www.lettretage.de/programm/erste-seiten",
+    "source_url": "https://www.lettretage.de/programm",
+    "raw_text": "Sieben Autorinnen und Autoren nehmen Sie mit hinter die Kulissen des Schreibens. Von frühen Träumen, Ideen und Momenten der Inspiration über den Schreiballtag mit seinen Krisen und Rückschlägen bis zum Glück der ersten Veröffentlichung und der Frage, was vom Schreiben am Ende bleibt. Persönlich, ehrlich und ungefiltert erzählen sie, warum sie schreiben, welche Hürden sie überwinden mussten und was sie auf ihrem Weg gelernt haben. Sieben Menschen. Sieben Wege. Sieben einzigartige Antworten auf die Frage: Wie wird man eigentlich Autor? - Zur Premiere lesen vier der Autorinnen und Autoren aus ihren Beiträgen. Im Anschluss ist Zeit für Fragen und Gespräche in entspannter Atmosphäre. Gerne signieren die Autorinnen und Autoren auch Ihre Exemplare. Der Abend richtet sich an alle, die gerne lesen, selbst schreiben oder schon immer wissen wollten, wie aus einer Idee ein Buch wird. Sarah Niklowitz · Daniel Klaus · Anna Hellmich · Charlotte Kunstmann · Manuel Wanser · Sandra Michalski · Lotte Leiser ‍",
+    "cover_image": "https://cdn.prod.website-files.com/69207413650d0ca9c10ee1d7/6aba3959dfc9b07617f9e2f8_Erste%20Seiten%20Struktur.webp",
+    "image_credit": null,
+    "book_title": null,
+    "id": "3223fd6900e667d4"
   },
   {
     "publisher": "dtv Verlag",
@@ -3908,5 +4044,22 @@
     "image_credit": null,
     "book_title": null,
     "id": "fbc909c8c7aaa3b7"
+  },
+  {
+    "publisher": "Suhrkamp Verlag",
+    "author": "Sophie Calle",
+    "title": "Sophie Calle präsentiert ihr neues Buch Erinnerungen an Ostberlin Moderation: Felix von Boehm Übersetzung: Kerstin Elsner",
+    "date": null,
+    "time": null,
+    "venue": "Literaturhaus Berlin",
+    "city": "Berlin",
+    "address": "Fasanenstraße 23, 10719 Berlin",
+    "url": "https://www.suhrkamp.de/buchpraesentation/sophie-calle-v-50787",
+    "source_url": "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113",
+    "raw_text": "Buchpräsentation",
+    "cover_image": null,
+    "image_credit": null,
+    "book_title": "Erinnerungen an Ostberlin",
+    "id": "bd8ae8afee105b6b"
   }
 ]
