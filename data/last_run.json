@@ -1,104 +1,56 @@
 {
-  "ran_at": "2026-09-29T07:46:08+00:00",
-  "total_events": 239,
-  "new_count": 12,
-  "removed_count": 3,
+  "ran_at": "2026-09-30T07:49:00+00:00",
+  "total_events": 231,
+  "new_count": 6,
+  "removed_count": 14,
   "new_events": [
     {
-      "id": "4019a81d61636edf",
-      "author": "Juliane Marie Schreiber",
-      "book_title": "Buchvorstellung mit Juliane Marie Schreiber",
-      "date": "2026-09-30",
-      "venue": "3. OG",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "33a16129dd0a6b66",
-      "author": "Manuel Bittorf aka \"Betterov\"",
-      "book_title": "Betterov",
-      "date": "2026-09-30",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "fc1b41a5ab86a1ae",
-      "author": "Asal Dardan",
-      "book_title": "ABGESAGT: Gegenwehr im Jetzt: Asal Dardan & Lena Gorelik",
-      "date": "2026-10-01",
-      "venue": "Amnesty International",
-      "publisher": "S. Fischer Verlage"
-    },
-    {
-      "id": "0884f338aa6af7bf",
-      "author": "Eva Horn",
-      "book_title": "durchschnittliches Wetter",
-      "date": "2026-10-01",
-      "venue": "Literaturhaus Berlin",
-      "publisher": "S. Fischer Verlage"
-    },
-    {
-      "id": "3ca90238d8836d19",
-      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
-      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
-      "date": "2026-10-13",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "b1fde7b312a03409",
-      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
-      "date": "2026-10-15",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "260f1fd1865875c6",
-      "author": null,
-      "book_title": "minor incident 2026",
+      "id": "0387b8d4dfe60dea",
+      "author": "Sonja Sophie Kreis",
+      "book_title": "Sonja Sophie Kreis",
       "date": "2026-10-17",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
+      "venue": "Buchhandlung Knesebeck Elf",
+      "publisher": "Rowohlt Verlag"
     },
     {
-      "id": "5c811383a7ea9698",
-      "author": "Miriam Stein und Susanne Liedtke",
-      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
-      "date": "2026-10-20",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "4dc8c8471a89d622",
-      "author": null,
-      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
-      "date": "2026-10-27",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "40b105051c57cfd9",
-      "author": null,
-      "book_title": "Bis auf diese Stunde leiden wir Hunger und Durst, sind nackt und werden geschlagen und haben keine sichere Stätte",
-      "date": "2026-12-05",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "3223fd6900e667d4",
-      "author": null,
-      "book_title": "„Erste Seiten” – Buchpremiere mit Lesung",
-      "date": "2026-12-11",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "bd8ae8afee105b6b",
+      "id": "8031a6b93299b690",
       "author": "Sophie Calle",
       "book_title": "Erinnerungen an Ostberlin",
-      "date": null,
+      "date": "2026-11-11",
       "venue": "Literaturhaus Berlin",
       "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "f82f8990f91dc113",
+      "author": "Hartmut Rosa",
+      "book_title": "Situation und Konstellation",
+      "date": "2026-11-20",
+      "venue": "silent green Betonhalle",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "4d6f419cc2088fb0",
+      "author": "Heike Geißler und Dieter Thomä",
+      "book_title": "Jetzt reicht`s. Über individuelle Rebellion",
+      "date": "2026-11-21",
+      "venue": "silent green Betonhalle",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "41471bb1ecbb91af",
+      "author": "Ahmad Mansour",
+      "book_title": "Haltung ohne Hass",
+      "date": "2026-11-24",
+      "venue": "Humboldt-Bibliothek in Tegel",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "513b0c976018c429",
+      "author": "Kira Jarmysch",
+      "book_title": "Kira Jarmysch",
+      "date": "2026-12-07",
+      "venue": "Maschinenhaus in der Kulturbrauerei",
+      "publisher": "Rowohlt Verlag"
     }
   ]
 }
