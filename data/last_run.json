@@ -1,72 +1,56 @@
 {
-  "ran_at": "2026-10-01T08:08:26+00:00",
-  "total_events": 231,
-  "new_count": 8,
-  "removed_count": 8,
+  "ran_at": "2026-10-02T07:50:19+00:00",
+  "total_events": 225,
+  "new_count": 6,
+  "removed_count": 12,
   "new_events": [
     {
-      "id": "aa2673e04625cf2d",
-      "author": "Lea Schneider",
-      "book_title": "Von Tieren und anderen Menschen",
-      "date": "2026-10-03",
-      "venue": "Brücke-Museum",
-      "publisher": "S. Fischer Verlage"
+      "id": "52eefcd000b1738f",
+      "author": "Helga Schubert",
+      "book_title": "Die Woche danach",
+      "date": "2026-10-18",
+      "venue": "Berliner Ensemble",
+      "publisher": "dtv Verlag"
     },
     {
-      "id": "ee177c7a4b901a29",
-      "author": "Roland Schimmelpfennig",
-      "book_title": "Wo sind wir hier, sind wir hier schon einmal gewesen?",
-      "date": "2026-10-03",
-      "venue": "Usedomer Kunstverein e.V. im Kunstpavillon",
-      "publisher": "S. Fischer Verlage"
+      "id": "f28d856c0616db2a",
+      "author": "Sandra Lüpkes",
+      "book_title": "Sandra Lüpkes",
+      "date": "2026-10-21",
+      "venue": "Heinrich-von-Kleist-Bibliothek",
+      "publisher": "Rowohlt Verlag"
     },
     {
-      "id": "aa07413ec0bb539f",
-      "author": "Isabella M. Weber, Ines Schwerdtner, Andreas Audretsch, Tim Klüssendorf, Natascha Freundel",
-      "book_title": "Können wir endlich eine ernsthafte Diskussion über eine antifaschistische Wirtschaftspolitik führen?",
-      "date": "2026-10-05",
-      "venue": "Urania",
-      "publisher": "Rosa-Luxemburg-Stiftung"
-    },
-    {
-      "id": "0901f626a7f4f802",
-      "author": "Tobias Lambert, Dr. Luiz Ramalho, Eva Grotenhuis",
-      "book_title": "Zurück in den Hinterhof. Die USA und Lateinamerika",
-      "date": "2026-10-07",
-      "venue": "Rosa-Luxemburg-Stiftung",
-      "publisher": "Rosa-Luxemburg-Stiftung"
-    },
-    {
-      "id": "28f33c74b7be3c02",
-      "author": "Jörn Schütrumpf, Ines Schwerdtner",
-      "book_title": "Clara Zetkin – Die Briefe 1914 bis 1933",
-      "date": "2026-10-19",
-      "venue": "Rosa-Luxemburg-Stiftung",
-      "publisher": "Rosa-Luxemburg-Stiftung"
-    },
-    {
-      "id": "f8a196672cc2854d",
-      "author": "Dieter Klein, Ines Schwerdtner, Lea Fauth",
-      "book_title": "Make America Great Again",
-      "date": "2026-10-20",
-      "venue": "Rosa-Luxemburg-Stiftung",
-      "publisher": "Rosa-Luxemburg-Stiftung"
-    },
-    {
-      "id": "6c74eb21fcc4f8f5",
-      "author": "the editors, Regine Ehleiter and Friederike Schäfer, joined by several contributing authors, including Linn Burchert, Matéo Chacón Pino, Lena Fließbach, Elisabeth Heyne, Michael Klipphahn-Karge, and Anna-Sophie Springer",
-      "book_title": "Exhibition Ecologies",
-      "date": "2026-11-27",
-      "venue": "Pro qm",
-      "publisher": "Pro qm"
-    },
-    {
-      "id": "f759c37a69c754e6",
-      "author": "Svenja Leiber",
-      "book_title": "Lesezeichen - Literatur live in Tegel",
-      "date": "2026-12-02",
-      "venue": "Stadtbibliothek Reinickendorf - Humboldt-Bibliothek",
+      "id": "3d04d2c1c8ee8691",
+      "author": "Lorraine Daston",
+      "book_title": "The Value of Diversity",
+      "date": "2026-10-27",
+      "venue": "Bard College Berlin",
       "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "2cc95d59ceaf46c7",
+      "author": "Axel Schock",
+      "book_title": "Aids. Chronik einer Epidemie",
+      "date": "2026-10-29",
+      "venue": "Humboldt-Universität zu Berlin Jacob-und-Wilhelm-Grimm-Zentrum Auditorium",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "dfebbf06e3c31f58",
+      "author": "Katja Lange-Müller",
+      "book_title": "Unser Ole",
+      "date": "2026-10-29",
+      "venue": "MBK Alte Feuerwache",
+      "publisher": "Kiepenheuer & Witsch"
+    },
+    {
+      "id": "a3a22dc63e5b2cff",
+      "author": "Augusto Paim, Maria Victoria Rodriguez, Nadia Hafid, Jonas Fischer, Ula Rugevičiūtė Rugytė, Coline Eberhard",
+      "book_title": "Comicmarathon:",
+      "date": "2026-11-07",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
     }
   ]
 }
