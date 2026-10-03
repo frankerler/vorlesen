@@ -1,56 +1,72 @@
 {
-  "ran_at": "2026-10-02T07:50:19+00:00",
-  "total_events": 225,
-  "new_count": 6,
-  "removed_count": 12,
+  "ran_at": "2026-10-03T07:24:37+00:00",
+  "total_events": 223,
+  "new_count": 8,
+  "removed_count": 10,
   "new_events": [
     {
-      "id": "52eefcd000b1738f",
-      "author": "Helga Schubert",
-      "book_title": "Die Woche danach",
-      "date": "2026-10-18",
-      "venue": "Berliner Ensemble",
-      "publisher": "dtv Verlag"
+      "id": "6ec7bc4daca48596",
+      "author": "Yael Inokai",
+      "book_title": "Die Auster",
+      "date": "2026-10-17",
+      "venue": "Knesebeck Elf",
+      "publisher": "Carl Hanser Verlag"
     },
     {
-      "id": "f28d856c0616db2a",
-      "author": "Sandra Lüpkes",
-      "book_title": "Sandra Lüpkes",
-      "date": "2026-10-21",
-      "venue": "Heinrich-von-Kleist-Bibliothek",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "3d04d2c1c8ee8691",
-      "author": "Lorraine Daston",
-      "book_title": "The Value of Diversity",
-      "date": "2026-10-27",
-      "venue": "Bard College Berlin",
+      "id": "3e40430de16d7877",
+      "author": "Melanie Levensohn",
+      "book_title": "Deutsches Kind",
+      "date": "2026-10-29",
+      "venue": "BuchKantine",
       "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "2cc95d59ceaf46c7",
-      "author": "Axel Schock",
-      "book_title": "Aids. Chronik einer Epidemie",
-      "date": "2026-10-29",
-      "venue": "Humboldt-Universität zu Berlin Jacob-und-Wilhelm-Grimm-Zentrum Auditorium",
-      "publisher": "Suhrkamp Verlag"
+      "id": "2e81f290043238fd",
+      "author": "Özge İNan",
+      "book_title": "Die Dichterin",
+      "date": "2026-11-19",
+      "venue": null,
+      "publisher": "Piper Verlag"
     },
     {
-      "id": "dfebbf06e3c31f58",
-      "author": "Katja Lange-Müller",
-      "book_title": "Unser Ole",
-      "date": "2026-10-29",
-      "venue": "MBK Alte Feuerwache",
+      "id": "d2f6481989068e8f",
+      "author": null,
+      "book_title": "Dead Ladies Show #44",
+      "date": "2026-12-08",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
+    },
+    {
+      "id": "90e221d58e21f5bc",
+      "author": null,
+      "book_title": "Schluss! Aus! Sense!",
+      "date": "2026-12-09",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
+    },
+    {
+      "id": "77dd8bd281bf97dd",
+      "author": null,
+      "book_title": "Bodies Carry Borders",
+      "date": "2026-12-10",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
+    },
+    {
+      "id": "7ffd2b1b0ef1bedd",
+      "author": null,
+      "book_title": "Niewiedervereinigung – 100 Zwischenrufe zur deutschen Einheit",
+      "date": "2026-12-17",
+      "venue": "Lettrétage",
+      "publisher": "Lettrétage"
+    },
+    {
+      "id": "8e72da918399b22e",
+      "author": "Hendrik Bolz",
+      "book_title": "Aus Ruinen",
+      "date": "2027-09-14",
+      "venue": "Festsaal Kreuzberg",
       "publisher": "Kiepenheuer & Witsch"
-    },
-    {
-      "id": "a3a22dc63e5b2cff",
-      "author": "Augusto Paim, Maria Victoria Rodriguez, Nadia Hafid, Jonas Fischer, Ula Rugevičiūtė Rugytė, Coline Eberhard",
-      "book_title": "Comicmarathon:",
-      "date": "2026-11-07",
-      "venue": "Literarisches Colloquium Berlin",
-      "publisher": "Literarisches Colloquium Berlin"
     }
   ]
 }
