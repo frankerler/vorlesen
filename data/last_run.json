@@ -1,72 +1,16 @@
 {
-  "ran_at": "2026-10-03T07:24:37+00:00",
-  "total_events": 223,
-  "new_count": 8,
-  "removed_count": 10,
+  "ran_at": "2026-10-04T07:40:07+00:00",
+  "total_events": 218,
+  "new_count": 1,
+  "removed_count": 6,
   "new_events": [
     {
-      "id": "6ec7bc4daca48596",
-      "author": "Yael Inokai",
-      "book_title": "Die Auster",
-      "date": "2026-10-17",
-      "venue": "Knesebeck Elf",
-      "publisher": "Carl Hanser Verlag"
-    },
-    {
-      "id": "3e40430de16d7877",
-      "author": "Melanie Levensohn",
-      "book_title": "Deutsches Kind",
-      "date": "2026-10-29",
-      "venue": "BuchKantine",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "2e81f290043238fd",
-      "author": "Özge İNan",
-      "book_title": "Die Dichterin",
-      "date": "2026-11-19",
-      "venue": null,
-      "publisher": "Piper Verlag"
-    },
-    {
-      "id": "d2f6481989068e8f",
-      "author": null,
-      "book_title": "Dead Ladies Show #44",
-      "date": "2026-12-08",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "90e221d58e21f5bc",
-      "author": null,
-      "book_title": "Schluss! Aus! Sense!",
-      "date": "2026-12-09",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "77dd8bd281bf97dd",
-      "author": null,
-      "book_title": "Bodies Carry Borders",
-      "date": "2026-12-10",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "7ffd2b1b0ef1bedd",
-      "author": null,
-      "book_title": "Niewiedervereinigung – 100 Zwischenrufe zur deutschen Einheit",
-      "date": "2026-12-17",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "8e72da918399b22e",
-      "author": "Hendrik Bolz",
-      "book_title": "Aus Ruinen",
-      "date": "2027-09-14",
-      "venue": "Festsaal Kreuzberg",
-      "publisher": "Kiepenheuer & Witsch"
+      "id": "fe57e0884f8c0c72",
+      "author": "Valeria Gordeev",
+      "book_title": "FBM | Literatur im Römer: Lesung und Gespräch mit Valeria Gordeev",
+      "date": "2026-10-07",
+      "venue": "Römerhallen",
+      "publisher": "S. Fischer Verlage"
     }
   ]
 }
