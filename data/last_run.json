@@ -1,16 +1,64 @@
 {
-  "ran_at": "2026-10-04T07:40:07+00:00",
-  "total_events": 218,
-  "new_count": 1,
+  "ran_at": "2026-10-05T08:03:28+00:00",
+  "total_events": 219,
+  "new_count": 7,
   "removed_count": 6,
   "new_events": [
     {
-      "id": "fe57e0884f8c0c72",
+      "id": "77aaaa6e92ac85aa",
       "author": "Valeria Gordeev",
-      "book_title": "FBM | Literatur im Römer: Lesung und Gespräch mit Valeria Gordeev",
-      "date": "2026-10-07",
-      "venue": "Römerhallen",
+      "book_title": "FBM Valeria Gordeev im Gespräch am ZEIT-Stand",
+      "date": "2026-10-08",
+      "venue": "Frankfurter Buchmesse | Am Stand der ZEIT Halle 5.0 / Stand E67",
       "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "3ca90238d8836d19",
+      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
+      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
+      "date": "2026-10-13",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "b1fde7b312a03409",
+      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "date": "2026-10-15",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "5c811383a7ea9698",
+      "author": "Miriam Stein und Susanne Liedtke",
+      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
+      "date": "2026-10-20",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "4dc8c8471a89d622",
+      "author": null,
+      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
+      "date": "2026-10-27",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "e42df5c4dc570744",
+      "author": null,
+      "book_title": "Internationale Strahlkraft aus Berlin: Der Hauptstadtkulturfonds",
+      "date": "2026-11-12",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "a369955444a5b70c",
+      "author": "Bonnie Garmus",
+      "book_title": "Peck & Peck",
+      "date": "2026-12-02",
+      "venue": "rbb / Historischer Sendesaal, Berlin",
+      "publisher": "Piper Verlag"
     }
   ]
 }
