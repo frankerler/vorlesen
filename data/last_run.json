@@ -1,16 +1,104 @@
 {
-  "ran_at": "2026-10-06T08:25:16+00:00",
-  "total_events": 211,
-  "new_count": 1,
-  "removed_count": 9,
+  "ran_at": "2026-10-07T08:01:57+00:00",
+  "total_events": 217,
+  "new_count": 12,
+  "removed_count": 6,
   "new_events": [
     {
-      "id": "1f777691b69196ca",
-      "author": "Laura Wiesböck",
-      "book_title": "Digitale Diagnosen",
-      "date": "2026-11-28",
-      "venue": "Citycube Berlin",
+      "id": "67dcede95f0343be",
+      "author": "Valeria Gordeev",
+      "book_title": "FBM: Verleihung des aspekte-Literaturpreises an Valeria Gordeev",
+      "date": "2026-10-08",
+      "venue": "Frankfurter Buchmesse | Literaturbühne von ARD, ZDF und 3sat",
+      "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "24a49d31122b2b8d",
+      "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
+      "book_title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
+      "date": "2026-10-13",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "74af117b49820098",
+      "author": "Juliane Schiemenz",
+      "book_title": "oder",
+      "date": "2026-10-14",
+      "venue": "Uslar & Rai GbR",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "b1fde7b312a03409",
+      "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "book_title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+      "date": "2026-10-15",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "5c811383a7ea9698",
+      "author": "Miriam Stein und Susanne Liedtke",
+      "book_title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
+      "date": "2026-10-20",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "4dc8c8471a89d622",
+      "author": null,
+      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
+      "date": "2026-10-27",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "37089e1493a1e16b",
+      "author": "Karen Köhler",
+      "book_title": "Himmelwärts",
+      "date": "2026-11-03",
+      "venue": "Bibliothek am Luisenbad",
       "publisher": "Carl Hanser Verlag"
+    },
+    {
+      "id": "2bcca745784a2a67",
+      "author": null,
+      "book_title": "Die neuen Leute",
+      "date": "2026-11-13",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "b17d27ef17d4d229",
+      "author": "Gunda Windmüller",
+      "book_title": "Gunda Windmüller",
+      "date": "2026-11-13",
+      "venue": "Theater Expedition Metropolis",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "024af91c0cdba4a7",
+      "author": "Alexander Peters",
+      "book_title": "Richtig atmen - gesünder leben",
+      "date": "2026-11-17",
+      "venue": "Gesundheitszentrum Sonne & Mond Seminarraum (4.OG)",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "f5ecd7c4bd72627b",
+      "author": "Frank Schäfer",
+      "book_title": "Motörhead - die lauteste Band der Welt",
+      "date": "2026-11-17",
+      "venue": "POSH TECKEL",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "0a0be4d073b60e8f",
+      "author": "Anne Stern",
+      "book_title": "Anne Stern",
+      "date": "2026-11-18",
+      "venue": "Hugendubel Berlin Steglitz",
+      "publisher": "Rowohlt Verlag"
     }
   ]
 }

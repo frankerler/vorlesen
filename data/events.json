@@ -1,56 +1,5 @@
 [
   {
-    "publisher": "Kiepenheuer & Witsch",
-    "author": "Eva Menasse",
-    "title": "Eva Menasse",
-    "date": "2026-10-06",
-    "time": "19:00",
-    "venue": "Literaturhaus Berlin",
-    "city": "Berlin",
-    "address": "Fasanenstr. 23, 10719 Berlin",
-    "url": "https://www.kiwi-verlag.de/veranstaltung/buchpraesentation-eva-menasse-berlin-4030053-261006",
-    "source_url": "https://www.kiwi-verlag.de/veranstaltung",
-    "raw_text": "Buchpräsentation",
-    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/kiwi/public/AWyrxF8WO331oAi9KDdymgpC9c1LOu6d64rvL12nK4O/U1_978-3-462-00262-1.png",
-    "image_credit": null,
-    "book_title": "Alleinruhelage",
-    "id": "2693832782ba5c01"
-  },
-  {
-    "publisher": "Kiepenheuer & Witsch",
-    "author": "Jacqueline Kornmüller",
-    "title": "Wir feiern Berlinpremiere! Jacqueline Kornmüller stellt ihren neuen Roman \"Die Frau im Schrank\" vor.",
-    "date": "2026-10-06",
-    "time": "20:00",
-    "venue": "Schloss Niederschönhausen",
-    "city": "Berlin",
-    "address": "Tschaikowskistr. 1, 13156 Berlin",
-    "url": "https://www.kiwi-verlag.de/veranstaltung/premiere-jacqueline-kornmueller-berlin-4030254-261006",
-    "source_url": "https://www.kiwi-verlag.de/veranstaltung",
-    "raw_text": "Premiere",
-    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/kiwi/public/y0MFBugR5MR81ZVZ7ggoMN1J4TxTIYZ5YSq88rZlm8f/U1_978-3-86971-341-0.png",
-    "image_credit": null,
-    "book_title": "Die Frau im Schrank",
-    "id": "a2f1228e6ff98ead"
-  },
-  {
-    "publisher": "Suhrkamp Verlag",
-    "author": "Martin Saar und Frieder Vogelmann über Michel Foucault",
-    "title": "Martin Saar und Frieder Vogelmann präsentieren ihr neues Buch Bedingungen unserer Existenz. Zur Aktualität Michel Foucaults Einführung: Philipp Hölzing (Suhrkamp Verlag)",
-    "date": "2026-10-06",
-    "time": "18:30",
-    "venue": "Buchhandlung Walther König an der Museumsinsel",
-    "city": "Berlin",
-    "address": "Burgstraße 27, 10178 Berlin",
-    "url": "https://www.suhrkamp.de/buchpremiere/martin-saar-und-frieder-vogelmann-ueber-michel-foucault-v-50430",
-    "source_url": "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113",
-    "raw_text": "Buchpremiere",
-    "cover_image": null,
-    "image_credit": null,
-    "book_title": "Bedingungen unserer Existenz. Zur Aktualität Michel Foucaults",
-    "id": "42a02af2d0eadb30"
-  },
-  {
     "publisher": "Rowohlt Verlag",
     "author": "Jacinta Nandi",
     "title": "Jacinta Nandi",
@@ -155,19 +104,19 @@
   {
     "publisher": "S. Fischer Verlage",
     "author": "Valeria Gordeev",
-    "title": "FBM Valeria Gordeev im Gespräch am ZEIT-Stand",
+    "title": "FBM: Verleihung des aspekte-Literaturpreises an Valeria Gordeev",
     "date": "2026-10-08",
-    "time": "13:30",
-    "venue": "Frankfurter Buchmesse | Am Stand der ZEIT Halle 5.0 / Stand E67",
+    "time": "11:30",
+    "venue": "Frankfurter Buchmesse | Literaturbühne von ARD, ZDF und 3sat",
     "city": "Frankfurt",
     "address": "Ludwig-Erhard-Anlage 1, 60327 Frankfurt",
-    "url": "https://event.buchmesse.de/de/sessions/66142",
-    "source_url": "https://www.fischerverlage.de/veranstaltung/moderiertes-gespraech-valeria-gordeev-frankfurt-1048458-261008",
+    "url": "Ticket zur Messe erforderlich.",
+    "source_url": "https://www.fischerverlage.de/veranstaltung/preisverleihung-valeria-gordeev-frankfurt-1048621-261008",
     "raw_text": "Der Debütroman der Bachmann-Preisträgerin Valeria Gordeev<br /> Eine Familie zwischen Kyjiw, Moskau und Berlin und eine Welt, die aus den Fugen geraten ist <br />Sprachgewaltig, lustvoll und berauschend: Konstantin und Lada haben den Kontakt verloren. Während Konstantin in einem unterirdischen Forschungslabor festsitzt, das Lenins Leichnam konserviert, kämpft seine Schwester Lada in Berlin mit einer Sanierung, die ihr Wohnhaus unbewohnbar macht. Auch versteht sie nicht, warum ihr Bruder nach Kriegsbeginn in Moskau geblieben ist, doch steckt Konstantin bis zum Hals in Schwierigkeiten, an denen sein Patenonkel nicht unschuldig ist, ein Oligarch mit transhumanistischen Ambitionen, der auch Lada in Bedrängnis bringt. Eine Wunderkammer und ein Höllenritt.<br /><br /> Mit Zeichnungen der Autorin, farbigem Vorsatzpapier und Lesebändchen <br />",
     "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/fischer/public/qsvmu6WQZM1z0tc2RNdqQ2tB8V4QlZZWtt94XLBScLJ/AF_Valeria%20Gordeev_Vorschau.png",
     "image_credit": null,
     "book_title": null,
-    "id": "77aaaa6e92ac85aa"
+    "id": "67dcede95f0343be"
   },
   {
     "publisher": "Lettrétage",
@@ -357,6 +306,23 @@
     "id": "cc54f237f09f0e38"
   },
   {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": "Axel Scheffler: Neues Monster, neue Abenteuer",
+    "title": "Die Grüffelo-Show mit Axel Scheffler: Neues Monster, neue Abenteuer",
+    "date": "2026-10-13",
+    "time": "14:00",
+    "venue": "KulturBühne",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/Die-Gr%C3%BCffelo-Show/AUSVERKAUFT--Die-Gr%C3%BCffeloShow-mit-Axel-Scheffler-Neues-Monster-neue-Abenteuer-",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "AUSVERKAUFT. Neues Monster, neue Abenteuer Alles war still im tiefen, dunklen Wald, bis … jetzt! Mehr als zwei Jahrzehnte nach dem weltweiten Erfolg von Der Grüffelo und Das Grüffelokind kehrt das wohl beliebteste Monster der Kinderliteratur zurück. Autorin Julia Donaldson und Erfolgsillustrator Axel Scheffler lassen die Kult-Familie wieder aufleben – und stellen uns ein ganz neues Mitglied vor: Die Grüffelo-Oma! Dass es überhaupt zu dieser Fortsetzung kam, war selbst für Axel Scheffler eine riesige Überraschung: „Nachdem ich Jahrzehnte lang sagte, es würde bestimmt keine weitere Grüffelo-Geschichte geben, kam plötzlich unangekündigt ein wunderschöner Text von Julia per E-Mail.“ Das Ergebnis ist eine herzerwärmende Geschichte über Generationen, Sprachfreude und das wunderbare Gefühl des gemeinsamen Lesens. Erfahre bei der Buchvorstellung, wie Scheffler die neue Monster-Großmutter zum Leben erweckte, wie die Grüffelos zeichnerisch den nächsten Evolutionsschritt machen und lass dir deine Ausgabe direkt vor Ort signieren. Axel Scheffler , geboren 1957 in Hamburg, lebt heute als einer der weltweit erfolgreichsten Kinderbuchillustratoren in London. Seine charakteristischen, rätselhaft-charmanten Figuren und tierischen Held:innen prägen seit Generationen die Kinderzimmer. Mit den Grüffelo-Büchern schuf er gemeinsam mit Julia Donaldson einen Welterfolg, der in über 115 Sprachen übersetzt wurde. Wenn er nicht gerade neue Monster zeichnet, widmet er sich auf seine ganz eigene Art der Tierbeobachtung – mit Stift, Humor und unverwechselbarem Strich. Tickets gibt es hier! Schon gewusst? Mit unserer Kund:innenKarte gibt’s 20 % Rabatt auf Veranstaltungen und Workshops!",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/GF64YV36NE6/vorschau-grÃ¼ffelo.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "24a49d31122b2b8d"
+  },
+  {
     "publisher": "Kiepenheuer & Witsch",
     "author": "Hanns Zischler",
     "title": "Wir feiern Buchpremiere im wiedereröffneten Literaturhaus! Hanns Zischler stellt seinen neuen Roman \"Yumikos Paravent\" vor. Moderation: Lisa Zeitz",
@@ -535,13 +501,13 @@
     "venue": "Uslar & Rai GbR",
     "city": "Berlin",
     "address": "Schönhauser Allee 43, 10435 Berlin",
-    "url": "https://www.rowohlt.de/veranstaltung/premiere-juliane-schiemenz-berlin-19190-261014",
+    "url": "https://uslarundrai.de/veranstaltungen/2186/",
     "source_url": "https://www.rowohlt.de/veranstaltung/premiere-juliane-schiemenz-berlin-19190-261014",
     "raw_text": "Schön, stolz, nervig – diese Attribute brachten Frauen wie Sidonia von Borcke einst auf den Scheiterhaufen. Und heute? Ernten sie Shitstorms, Belehrungen oder Häme. Warum ist die Angst vor der unangepassten Frau noch immer so lebendig? Juliane Schiemenz, eine Verwandte von Sidonia, folgt den Spuren ihrer legendär gewordenen Ahnin, die 1620 als Hexe verurteilt wurde. Zänkisch und unersättlich soll diese gewesen sein. Kein Wunder! Weder heiratete sie, noch bekam sie Kinder, stattdessen stritt sie vor Gericht um ihr Erbe. Die Männer waren genervt. Auch heute keine unbekannte Konstellation: Wer keine Ruhe gibt, auf dem eigenen Standpunkt beharrt, gilt als «zickig» oder «angry». Frauen – ob alleinerziehend, geschieden, mit oder ohne Job – stehen für ihre Lebensentscheidungen oft in der Kritik.<br />In einer packenden Mischung aus historischer Spurensuche und autobiografischer Erkundung legt Juliane Schiemenz damalige und heutige Erwartungen an Frauenleben frei. Sie zeigt, wie tief die Vorbehalte gegen unangepasste Frauen wurzeln. Ein mutiges, persönliches Plädoyer, dem Druck der Norm etwas Eigenes entgegenzusetzen.",
     "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/rowohlt/public/uwudRWPMz7WIEmy4GfEDmw0jm9sivJCfoocRXB5rL1k/AF_Juliane%20Schiemenz_Website.png",
     "image_credit": null,
     "book_title": "oder",
-    "id": "70e61a9455220e95"
+    "id": "74af117b49820098"
   },
   {
     "publisher": "Suhrkamp Verlag",
@@ -559,23 +525,6 @@
     "image_credit": null,
     "book_title": "Das tickende Herz",
     "id": "da6957f6418b2cc8"
-  },
-  {
-    "publisher": "Ullstein Verlag",
-    "author": "Ruby Braun",
-    "title": "Ruby Braun Buchpremiere in Berlin",
-    "date": "2026-10-14",
-    "time": "20:00",
-    "venue": "Thalia Buchhandlung Alexa Berlin",
-    "city": "Berlin",
-    "address": "Gruner Str. 20ALEXA, 10179 Berlin",
-    "url": "https://www.ullstein.de/veranstaltungen/ruby-braun-buchpremiere-in-berlin",
-    "source_url": "https://www.ullstein.de/veranstaltungen",
-    "raw_text": "14.10.2026 20:00",
-    "cover_image": "https://content.ullstein.de/assets/ww/produkt-cvr/62/5c0a2d4da2750caa4532bda48fbe74f7c9ec8a.jpg?v=1760563430%2C0.5553%2C0.6146",
-    "image_credit": null,
-    "book_title": "Achtsam Herzen stehlen",
-    "id": "f627d934c24936ac"
   },
   {
     "publisher": "Carl Hanser Verlag",
@@ -644,6 +593,23 @@
     "image_credit": null,
     "book_title": "Ich bin doch kein Rassist, aber ...",
     "id": "d960630aeeb035d3"
+  },
+  {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": "Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+    "title": "KulturAbend mit Elisa von Hof, Juliane Schiemenz und Laura Melina Berling",
+    "date": "2026-10-15",
+    "time": "19:00",
+    "venue": "KulturBühne",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/KulturAbend-mit-Elisa-von-Hof-Juliane-Schiemenz-Laura-Melina-Berling/KulturAbend-mit-Elisa-von-Hof-Juliane-Schiemenz-und-Laura-Melina-Berling-",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "Gespräche über Frauen, Macht und alte Mythen Ob als gefürchtete Hexe, im Hintergrund gehaltene Muse oder mächtige und als bedrohlich inszenierte Göttin: Die Art und Weise, wie Frauen in Geschichte, Mythologie und Literatur dargestellt wurden, prägt unser Frauenbild bis in die Gegenwart. Aber wie beeinflussen diese alten Erzählungen unseren heutigen Blick auf Geschlechterrollen, und was braucht es, um überkommene Strukturen endlich aufzubrechen? An diesem KulturAbend widmen sich drei inspirierende Autorinnen dem Thema aus völlig unterschiedlichen Perspektiven: Während Juliane Schiemenz in \"Meine Ahnin, die Hexe, und ich\" (Rowohlt Berlin) der Geschichte ihrer als Hexe verurteilten Vorfahrin nachgeht und fragt, was es als Frau bis heute bedeutet, für die eigene Unabhängigkeit einzustehen, rückt Kulturjournalistin Elisa von Hof mit ihrem Buch \"Unsichtbare Musen\" die oft verschwiegenen Macherinnen unserer Kulturgeschichte ins Scheinwerferlicht. Komplettiert wird die Runde durch Laura Melina Berling, die in ihrem Roman \"Medusa in Paradise\" die unheilvolle Strahlkraft mythologischer Figuren wie Medusa mit einer scharfsinnigen Debatte über das moderne Patriarchat verwebt. Freu dich auf einen vielschichtigen Talk über Historie, Macht und Unsichtbarkeit – und auf ein gemeinsames Nachdenken darüber, wie wir Frauenbilder neu verhandeln können. Elisa von Hof , geboren 1991, studierte Geschichtswissenschaft und Deutsche Literatur in Berlin. Sie wurde unter anderem mit dem Deutschen Reporter:innenpreis ausgezeichnet und zählte zu den „Top 30 bis 30“ im Journalismus. Seit 2021 arbeitet sie im Kulturressort des SPIEGEL, dessen stellvertretende Leiterin sie heute ist. In ihrem Buch Unsichtbare Musen rückt sie die oft verschwiegenen Macherinnen und Gestalterinnen unserer Kulturgeschichte ins Scheinwerferlicht und setzt ihnen ein längst überfälliges Denkmal. Juliane Schiemenz , geboren 1981, studierte Germanistik und Kommunikationswissenschaft und absolvierte die Deutsche Journalistenschule. Sie lebt in Dresden und arbeitete lange als Redakteurin beim Magazin Reportagen. Heute ist sie u.a. für Deutschlandfunk Kultur, Die Zeit und die Neue Zürcher Zeitung tätig. Ihre Reportagen wurden unter anderem für den Henri-Nannen-Preis und den Deutschen Reporterpreis nominiert. Laura Melina Berling war im Internet lange als feministische Bloggerin unterwegs. Zudem postete sie unter @ber._.ling, ehemals @littlefeministblog eine Menge ihrer Gedanken auf Instagram. Mittlerweile schreibt sie lieber Bücher und berät zudem hauptberuflich als Sozialpädagogin junge Menschen in schwierigen Lebenssituationen. Zuletzt erschienen ihr Sachbuch »Modern Heartbreak« (2023) und das Kinderbuch »Kuscheln, Wut und Schabernack« (2025), beide bei Leykam. »Medusa in Paradise« ist ihr erster Roman. Tickets gibt es hier! Schon gewusst? Mit unserer Kund:innenKarte gibt’s 20 % Rabatt auf Veranstaltungen und Workshops!",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/8IBKN4KZ93N/Vorschau - kulturabend elisa von hof.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "b1fde7b312a03409"
   },
   {
     "publisher": "Rowohlt Verlag",
@@ -793,7 +759,7 @@
     "url": "http://www.literaturhaus-berlin.de",
     "source_url": "https://www.hanser-literaturverlage.de/veranstaltungen-c-34",
     "raw_text": "Lesung und Gespräch",
-    "cover_image": "https://res.cloudinary.com/literaturverlage/image/upload/v1773954306/MAM/Image/ARTK_CT0_9783446290037_0001.jpg",
+    "cover_image": "https://res.cloudinary.com/literaturverlage/image/upload/v1773781318/MAM/Image/ARTK_CT0_9783446288331_0001.jpg",
     "image_credit": null,
     "book_title": "Die Tochter",
     "id": "b1f9e65424fb8036"
@@ -929,7 +895,7 @@
     "url": "https://www.buchboxberlin.de/event-calendar/buchpremiere-mit-sophia-fritz-und-daniel-schreiber",
     "source_url": "https://www.hanser-literaturverlage.de/veranstaltungen-c-34",
     "raw_text": "Buchpremiere",
-    "cover_image": "https://res.cloudinary.com/literaturverlage/image/upload/v1789761616/MAM/Image/ARTK_CT0_9783446289802_0001.jpg",
+    "cover_image": "https://res.cloudinary.com/literaturverlage/image/upload/v1789761609/MAM/Image/ARTK_CT0_9783446288645_0001.jpg",
     "image_credit": null,
     "book_title": "Der Mann, das Opfer",
     "id": "8dcba04db63ce6d2"
@@ -967,6 +933,23 @@
     "image_credit": null,
     "book_title": "Schwestern. Trotz allem",
     "id": "fe11e3bbab91e61e"
+  },
+  {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": "Miriam Stein und Susanne Liedtke",
+    "title": "KulturAbend mit Miriam Stein und Susanne Liedtke",
+    "date": "2026-10-20",
+    "time": "19:00",
+    "venue": "KulturBühne",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/KulturAbend-mit-Miriam-Stein-und-Susanne-Liedtke-/KulturAbend-mit-Miriam-Stein-und-Susanne-Liedtke",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "Gespräche über Frauengesundheit, Scham und ein neues Körpergefühl Warum ist der weibliche Körper noch immer von so vielen Tabus, Rechtfertigungen und falscher Scham umgeben? Ob hormonelle Veränderungen, die Menopause oder gesellschaftliche Erwartungen: Viel zu oft leisten Frauen im Stillen Reorganisation, statt sich die Unterstützung und Aufmerksamkeit zu holen, die ihnen zusteht. Damit ist jetzt Schluss – denn Frauengesundheit geht uns alle an, ganz unabhängig vom Alter. An diesem KulturAbend beleuchten renommierte Expertinnen das Thema Frauengesundheit aus gesellschaftlicher, medizinischer und ganz praktischer Perspektive: Während Bestseller-Autorin Miriam Stein mit Büchern wie „Die gereizte Frau“ und „Die unverschämte Frau“ aufzeigt, wie wir gesellschaftliche Tabus entlarven und uns endlich von lähmenden Schamerzählungen befreien, bringt Ernährungsexpertin Susanne Liedtke, die Erfolgsautorin von @_nobodytoldme_, ihr geballtes Wissen ein. Mit ihrem aktuellen Werk „Nobody Told Me – Das Wohlfühl-Kochbuch“ (gemeinsam mit der Gynäkologin Dr. Christina Enzmann) zeigt sie, wie wir unseren Körper durch antientzündliche Ernährung und hormonelle Balance von innen heraus stärken können. Ein empowernder Abend über echten Support unter Frauen, wissenschaftliche Erkenntnisse und den Mut, die eigene Gesundheit selbstbestimmt und schamlos in die Hand zu nehmen. Miriam Stein , geboren 1977 in Südkorea, ist Journalistin, Bestseller-Autorin und eine der wichtigsten Stimmen zum Thema Sichtbarkeit von Frauen. Sie schrieb u. a. für die Süddeutsche Zeitung und war Kulturchefin von Harper’s Bazaar. In ihren Büchern „Die gereizte Frau“ und „Die unverschämte Frau“ entlarvt sie gesellschaftliche Tabus rund um Scham, Älterwerden und die Menopause. Susanne Liedtke ist Diplom-Oecotrophologin, Digitalexpertin und Gründerin von NOBODYTOLDME. Nachdem sie ihren Job bei Google an den Nagel hängte, um über das tabuisierte Thema Wechseljahre aufzuklären, begleitet sie heute Frauen mit klaren Fakten und Ernährungstipps dabei, besser durch die Menopause zu kommen. Tickets gibt es hier! Schon gewusst? Mit unserer Kund:innenKarte gibt’s 20 % Rabatt auf Veranstaltungen und Workshops!",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/34EDHV43U9L/Vorschau - kulturabend miriam stein.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "5c811383a7ea9698"
   },
   {
     "publisher": "Literaturhaus Berlin",
@@ -1341,6 +1324,23 @@
     "image_credit": null,
     "book_title": null,
     "id": "807a5d6ff44a217a"
+  },
+  {
+    "publisher": "Dussmann das KulturKaufhaus",
+    "author": null,
+    "title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
+    "date": "2026-10-27",
+    "time": "19:00",
+    "venue": "KulturBühne",
+    "city": "Berlin",
+    "address": "Friedrichstr. 90, 10117 Berlin",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/Live-Podcast--Talk-Dora-Heldt--T%C3%BClin-Sezgin/LivePodcast--Talk-Dora-Heldt-und-T%C3%BClin-Sezgin",
+    "source_url": "https://www.kulturkaufhaus.de/de/veranstaltungen/buchevent",
+    "raw_text": "Bücher-Podcast auf der Bühne Bestseller-Autorin, Vielleserin und Branchenkennerin Dora Heldt nimmt dich mit hinter die Kulissen der Buchwelt – und das diesmal hautnah vor Publikum! Seit 2020 geht sie in ihrem beliebten dtv Bücher-Podcast „Dora Heldt trifft…“ ihrer großen Leidenschaft nach, spricht mit faszinierenden Autor:innen und entlockt ihren Gästen immer wieder Überraschendes, Skurriles und vor allem wunderbar Unterhaltsames. Bei dieser exklusiven Live-Aufzeichnung empfängt Dora Heldt die Comedienne, Bestseller-Autorin und Ex-Beamtin Tülin Sezgin (Conny from the Block). Freu dich auf ein sympathisches und humorvolles Gespräch über Schreibprozesse, Bürokratie-Wahnsinn und Tülins autobiografisches Buch „Almancı-Mädchen. Wie ich mir Deutschsein beigebracht habe“ – inklusive tiefgründiger Anekdoten über Herkunft, Identität und das Leben zwischen zwei Kulturen. Dora Heldt , geboren 1961 auf Sylt, ist gelernte Buchhändlerin, langjährige Verlagsvertreterin und gehört zu den erfolgreichsten Bestseller-Autorinnen Deutschlands. Mit Romanen wie „Urlaub mit Papa“, „Bei Hitze ist es wenigstens nicht kalt“ oder „Drei Frauen am See“ eroberte sie regelmäßig Platz 1 der Spiegel-Bestsellerliste, viele ihrer Bücher wurden erfolgreich fürs ZDF verfilmt. Seit 2020 fühlt sie in ihrem beliebten dtv-Bücherpodcast „Dora Heldt trifft…“ Autor:innen und Branchen-Insidern auf wunderbar nahbare und unterhaltsame Weise auf den Zahn. Mit den beliebten Buchempfehlungen von Florian Valerius. Florian Valerius , 1982 in Trier geboren, ist seit über 20 Jahren Buchhändler mit Leib und Seele. Seit 2016 bloggt und moderiert er unter dem Namen @literarischernerd auf Instagram über Literatur und den Alltag als Buchhändler. Dafür wurde er mit dem ersten Buchblog-Award ausgezeichnet und zählt heute zu den bekanntesten und erfolgreichsten Buchbloggern Deutschlands. Von 2019 bis 2021 war er in der Jury des Deutschen Verlagspreises und 2023 in der Jury für den Deutschen Buchpreis. Tülin Sezgin , geboren 1988 in Berlin-Neukölln, ist Comedienne, Autorin und ehemalige Beamtin. Deutschlandweite Bekanntheit erlangte sie als „Amtsfluencerin“ unter ihrem Pseudonym Conny from the Block. Nach ihrem Bestseller „Da bin ick nicht zuständig, Mausi“ erschien 2026 ihr erstes autobiografisches Buch „Almancı-Mädchen. Wie ich mir Deutschsein beigebracht habe“, in dem sie mit gewohntem Witz, aber auch berührender Ehrlichkeit über Herkunft, Identität und das Leben zwischen den Kulturen schreibt. Tickets gibt es hier! Schon gewusst? Mit unserer Kund:innenKarte gibt’s 20 % Rabatt auf Veranstaltungen und Workshops!",
+    "cover_image": "https://www.kulturkaufhaus.de/htdyn/HPKRMZFREJ/Vorschau - live podcast.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "4dc8c8471a89d622"
   },
   {
     "publisher": "Carl Hanser Verlag",
@@ -1766,6 +1766,23 @@
     "image_credit": null,
     "book_title": "Fäden, Stoffe, Schnitte",
     "id": "b5d0695ee3bf2e08"
+  },
+  {
+    "publisher": "Carl Hanser Verlag",
+    "author": "Karen Köhler",
+    "title": "Karen Köhler: \"Himmelwärts\"",
+    "date": "2026-11-03",
+    "time": null,
+    "venue": "Bibliothek am Luisenbad",
+    "city": "Berlin",
+    "address": "Badstraße 39, 13357 Berlin",
+    "url": "https://www.hanser-literaturverlage.de/buch/karen-koehler-himmelwaerts-9783446279223-t-5197",
+    "source_url": "https://www.hanser-literaturverlage.de/veranstaltungen-c-34",
+    "raw_text": "Lesung und Gespräch",
+    "cover_image": "https://res.cloudinary.com/literaturverlage/image/upload/v1761076806/MAM/Image/ARTK_CT0_9783446279223_0001.jpg",
+    "image_credit": null,
+    "book_title": "Himmelwärts",
+    "id": "37089e1493a1e16b"
   },
   {
     "publisher": "Rowohlt Verlag",
@@ -2397,6 +2414,23 @@
     "id": "918378f015369d91"
   },
   {
+    "publisher": "Literaturhaus Berlin",
+    "author": null,
+    "title": "Die neuen Leute",
+    "date": "2026-11-13",
+    "time": null,
+    "venue": "Literaturhaus Berlin",
+    "city": "Berlin",
+    "address": "Fasanenstraße 23, 10719 Berlin",
+    "url": "https://li-be.de/programm/veranstaltungen/die-neuen-leute/",
+    "source_url": "https://li-be.de/programm/",
+    "raw_text": "Literaturstadt #8 Perspektiven für den schreibenden, lesenden und kuratierenden Nachwuchs. Mit Louis Krüger, Eli Makuth, I.V. Nuss, Miryam Schellbach (tbc) und einem kulturpolitischen Resümee von Annette Wostrak. Es moderieren Anne-Dore Krohn und Katja Weber (radio3).",
+    "cover_image": null,
+    "image_credit": null,
+    "book_title": null,
+    "id": "2bcca745784a2a67"
+  },
+  {
     "publisher": "Literarisches Colloquium Berlin",
     "author": "Anne-Dore Krohn, Eli Makuth, I. V. Nuss, Louis Krüger",
     "title": "Literaturstadt Berlin #8",
@@ -2412,6 +2446,23 @@
     "image_credit": null,
     "book_title": "Die neuen Leute",
     "id": "d87588603ac3c906"
+  },
+  {
+    "publisher": "Rowohlt Verlag",
+    "author": "Gunda Windmüller",
+    "title": "Gunda Windmüller",
+    "date": "2026-11-13",
+    "time": "19:30",
+    "venue": "Theater Expedition Metropolis",
+    "city": "Berlin",
+    "address": "Ohlauer Strasse 41, 10999 Berlin",
+    "url": "https://expedition-metropolis.de/produktion/buchhandlung-leseglueck-die-erfindung-der-tochter/",
+    "source_url": "https://www.rowohlt.de/veranstaltung/premiere-gunda-windmueller-berlin-20259-261113",
+    "raw_text": "«Wir reden über Mütter und über Familie. Aber was macht das Tochtersein mit uns? Gunda Windmüller zeigt, wie viel Macht in dieser scheinbar selbstverständlichen Rolle steckt – und nimmt sie auseinander.» Mareike Fallwickl Jede Frau ist eine Tochter – ein Leben lang. Und doch gilt das Tochtersein bis heute als Privatsache. Während wir über Mutterschaft und Gleichberechtigung diskutieren, bleibt die Figur der Tochter erstaunlich unsichtbar. Dabei wurde sie über Jahrtausende geformt: in Mythen und Religionen, in Erbordnungen und Familien, auf Shakespeares Bühne ebenso wie in unseren Vorstellungen von Liebe, Gehorsam und Fürsorge. Die Tochter ist keine bloße Verwandtschaftsbezeichnung, sondern eine kulturelle Erfindung – und eine der wirkmächtigsten Figuren patriarchaler Ordnung. Mit erzählerischer Kraft und überraschenden historischen Funden zeigt Gunda Windmüller, wie das Tochtersein unser Verständnis von Familie, Weiblichkeit und Freiheit bis heute prägt. Ein kluges Buch, das sichtbar macht, was uns so selbstverständlich erscheint, dass wir es kaum noch sehen.",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/rowohlt/public/vKeF9ak5YMgt1tNitWll35MAIZSXRQ6BCRpIE7YfcdF/AF_Gunda%20Windm%C3%BCller_Website.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "b17d27ef17d4d229"
   },
   {
     "publisher": "dtv Verlag",
@@ -2534,6 +2585,23 @@
   },
   {
     "publisher": "Suhrkamp Verlag",
+    "author": "Alexander Peters",
+    "title": "Alexander Peters präsentiert sein neues Buch Richtig atmen - gesünder leben",
+    "date": "2026-11-17",
+    "time": "18:30",
+    "venue": "Gesundheitszentrum Sonne & Mond Seminarraum (4.OG)",
+    "city": "Berlin",
+    "address": "Schwedter Straße 1, 10119 Berlin",
+    "url": "https://www.suhrkamp.de/buchpraesentation/alexander-peters-v-51197",
+    "source_url": "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113",
+    "raw_text": "Buchpräsentation",
+    "cover_image": null,
+    "image_credit": null,
+    "book_title": "Richtig atmen - gesünder leben",
+    "id": "024af91c0cdba4a7"
+  },
+  {
+    "publisher": "Suhrkamp Verlag",
     "author": "Dana Vowinckel",
     "title": "Im Rahmen der »Jüdischen Kulturtage Berlin« und dem »Blauen Sofa« Dana Vowinckel im Gespräch über ihr neues Buch Anton und Alma Es sprechen außerdem Shelly Kupferberg und Assaf Gavron",
     "date": "2026-11-17",
@@ -2601,6 +2669,23 @@
     "id": "cef5567f0e5a1285"
   },
   {
+    "publisher": "Suhrkamp Verlag",
+    "author": "Frank Schäfer",
+    "title": "Frank Schäfer präsentiert Motörhead - die lauteste Band der Welt",
+    "date": "2026-11-17",
+    "time": "19:00",
+    "venue": "POSH TECKEL",
+    "city": "Berlin",
+    "address": "Plügerstraße 4, 12047 Berlin",
+    "url": "https://www.suhrkamp.de/buchpraesentation/frank-schaefer-v-51321",
+    "source_url": "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113",
+    "raw_text": "Buchpräsentation",
+    "cover_image": null,
+    "image_credit": null,
+    "book_title": "Motörhead - die lauteste Band der Welt",
+    "id": "f5ecd7c4bd72627b"
+  },
+  {
     "publisher": "dtv Verlag",
     "author": "Ruth-Maria Thomas",
     "title": "Ruth-Maria Thomas liest aus \"Die zweitgrößte Liebe\"",
@@ -2616,6 +2701,23 @@
     "image_credit": null,
     "book_title": "Die zweitgrößte Liebe",
     "id": "c2772765c0eb1968"
+  },
+  {
+    "publisher": "Rowohlt Verlag",
+    "author": "Anne Stern",
+    "title": "Anne Stern",
+    "date": "2026-11-18",
+    "time": "20:15",
+    "venue": "Hugendubel Berlin Steglitz",
+    "city": "Berlin",
+    "address": "Schloßstraße 110, 12163 Berlin",
+    "url": "https://hugendubel.reservix.de/tickets-lesung-fraeulein-gold--zwischen-himmel-und-erde-in-berlin-hugendubel-berlin-steglitz-am-18-11-2026/e2619824",
+    "source_url": "https://www.rowohlt.de/veranstaltung/premiere-anne-stern-berlin-19714-261118",
+    "raw_text": "Berlin, 1933. Nach der Machtübernahme der Nationalsozialisten gerät das Leben von Hebamme Hulda Gold ins Wanken, denn die Anfeindungen nehmen allerorts zu. Immer öfter wird Hulda bei der Betreuung von schwangeren Frauen abgewiesen, sogar der Hebammenverband verweigert ihr jegliche Unterstützung. Und nun sitzt auch noch ihr Ehemann Max, ein jüdischer Akademiker, im schwedischen Ausland fest – er wird per Haftbefehl gesucht. Eine Rückkehr wäre viel zu gefährlich. Die Stadt, die Hulda so sehr liebt, verändert im Rekordtempo ihr Gesicht, und die Gefahr, die vielen Menschen in ihrem Umfeld von den neuen Machthabern droht, nimmt zu. Aber Hulda beschließt zu kämpfen. Auch wenn sie nicht mehr weiß, wem sie noch trauen kann – und wie weit sie gehen muss, um ihre Familie und ihre Freiheit zu verteidigen …",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/rowohlt/public/RMYnNdjFSUwzGWhoS8kPGcD63K5YsT44Iy15eE69vIw/AF_Anne%20Stern_Website.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "0a0be4d073b60e8f"
   },
   {
     "publisher": "Suhrkamp Verlag",
@@ -3445,7 +3547,7 @@
     "url": "https://www.andrea-jung-entertainment.de/home/hartmann-kopie-kopie",
     "source_url": "https://www.rowohlt.de/veranstaltung/lesung-joerg-hartmann-berlin-16932-270116",
     "raw_text": "Hingebungsvoll ... Ein Buch, das einen umarmt und dankbar macht. WDR In Der Lärm des Lebens erzählt der Schauspieler Jörg Hartmann auf hinreißende Weise seine eigene Geschichte und die seiner Eltern und Großeltern. Es ist eine Liebeserklärung an die Kraft der Familie – und an den Ruhrpott. Ob es um die Situation seiner gehörlosen Großeltern im Nationalsozialismus geht, die Lebensklugheit seiner Mutter, die für kurze Zeit eine Pommesbude betrieb, die Demenzerkrankung seines Vaters, der Dreher und leidenschaftlicher Handballer war, die vielen skurrilen Erlebnisse in der Großfamilie oder um Schlüsselbegegnungen, die er als Schauspieler hatte – immer hält Hartmann die Balance zwischen Tragik und Komik. Kraftvoll, persönlich, berührend und humorvoll erzählt er und fragt sich: Warum kehren wir immer wieder zu unseren Wurzeln zurück? Es geht ihm vor allem darum, den Kreislauf des Lebens zu fassen: Eltern und Kinder, Anfang und Ende, Aufbruch und Ankunft, Werden und Vergehen, eben alles, was zum geliebten Lärm des Lebens gehört. Ein weises, geschichtenpralles Buch über Herkunft und Heimat – und den Wunsch, sich davon zu lösen und in die Welt zu ziehen. Ungemein witzig und hinreißend komisch ... Da hat einer ein Buch geschrieben, der mit dem Herzen durchs Leben geht. Christine Westermann, Stern",
-    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/rowohlt/public/LJkDRE0f4PLukZaNjXKXJZgkYHZDd5t5M7kTVHKQuUv/AF_Jo%CC%88rg%20Hartmann_Website.png",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/rowohlt/public/GbXihUYGXE8pu4qu8RYSkxzCr6dhRzHob6yHckvHd1C/AF_Jo%CC%88rg%20Hartmann_Website.png",
     "image_credit": null,
     "book_title": null,
     "id": "bfc516acbb6e5b31"
