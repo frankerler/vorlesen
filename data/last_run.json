@@ -1,440 +1,48 @@
 {
-  "ran_at": "2026-10-09T08:16:33+00:00",
-  "total_events": 221,
-  "new_count": 54,
-  "removed_count": 8,
+  "ran_at": "2026-10-10T07:59:28+00:00",
+  "total_events": 220,
+  "new_count": 5,
+  "removed_count": 6,
   "new_events": [
     {
-      "id": "dc682f1d72ce52dc",
+      "id": "c120d9eb89616983",
       "author": "Engin Çatık",
       "book_title": "Engin Çatık kämpft für jede und jeden an seiner Schule. Damit sie alle die bestmögliche Zukunft haben. Sehr inspirierend.",
-      "date": "2026-10-09",
-      "venue": "Haus am Dom - Giebelsaal",
+      "date": "2026-10-10",
+      "venue": "Frankfurter Buchmesse | F.A.Z.-Stand Halle 3.0 C123",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "1292053edf39d254",
-      "author": "João Guimarães Rosa",
-      "book_title": "Grande Sertão: Veredas - Querungen",
-      "date": "2026-10-09",
-      "venue": "Buchmesse Frankfurt | Brazilian Book Chamber (CBL) - Halle 3.1 Stand F 123",
-      "publisher": "S. Fischer Verlage"
+      "id": "510c969d45c53dec",
+      "author": "Florian Aigner",
+      "book_title": "Buchvorstellung mit Florian Aigner",
+      "date": "2026-11-09",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "91b4a4a299ae65e2",
-      "author": "Miku Sophie Kühmel",
-      "book_title": "BiB – Berlin in Books",
-      "date": "2026-10-09",
-      "venue": "Amerika-Gedenkbibliothek | PopUp Saal",
-      "publisher": "S. Fischer Verlage"
+      "id": "5be249caf9117757",
+      "author": "Audrey Niffenegger",
+      "book_title": "Buchvorstellung mit Audrey Niffenegger",
+      "date": "2026-11-18",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "db351b0e623ae2da",
-      "author": "Julian Nicolai Hofmann und Adrian Pabst",
-      "book_title": "Postliberalismus? – Eine transatlantische Debatte",
-      "date": "2026-10-12",
-      "venue": "Katholische Akademie in Berlin",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "02e5bfcee8ac1d0f",
-      "author": "Mandy Mangler",
-      "book_title": "Don't miss the Clitoris",
-      "date": "2026-10-13",
-      "venue": "Haus des HUMANISMUS",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "daabb4631e850779",
-      "author": "Jan-Werner Müller, Charlotte Klonk und Olaf Scholz",
-      "book_title": "Straße, Platz, Palast",
-      "date": "2026-10-14",
-      "venue": "Urania Berlin",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "da6957f6418b2cc8",
-      "author": "Lutz Seiler",
-      "book_title": "Das tickende Herz",
-      "date": "2026-10-14",
-      "venue": "Pfefferberg Theater",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "fcd6c79400d91133",
-      "author": "Stephan Thome",
-      "book_title": "Besser als nie",
-      "date": "2026-10-15",
-      "venue": "Buchhandlung Ferlemann & Schatzer",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "3254d8df59eae522",
-      "author": "»Die Sage von Sleepy Hollow«",
-      "book_title": "Die Sage von Sleepy Hollow",
-      "date": "2026-10-15",
-      "venue": "Modern Graphics",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "7c8577a2697d982e",
-      "author": "Katja Oskamp",
-      "book_title": "Marzahn, mon amour",
-      "date": "2026-10-16",
-      "venue": "Gärten der Welt Besucherzentrum",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "f45bd6822da7c2c6",
-      "author": "Hayat Erdoğan",
-      "book_title": "Das Glück liegt am Strand",
-      "date": "2026-10-17",
-      "venue": "Buchhandlung Knesebeck Elf",
-      "publisher": "Ullstein Verlag"
-    },
-    {
-      "id": "fb43f0a039262dfa",
-      "author": null,
-      "book_title": "Die Zukunft ist Frieden",
-      "date": "2026-10-20",
-      "venue": "Heinrich-Böll-Stiftung - Bundesstiftung Berlin",
-      "publisher": "Heinrich-Böll-Stiftung"
-    },
-    {
-      "id": "711319e4a0104a00",
-      "author": "Berliner Religionsgespräche",
-      "book_title": "Schuld und Sühne. Moral, Recht, Religion",
-      "date": "2026-10-20",
-      "venue": "Berlin Brandenburgische Akademie der Wissenschaften Leibniz-Saal",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "e6c4464aefc930a9",
-      "author": "Constantin Lieb",
-      "book_title": "Wildboden",
-      "date": "2026-10-22",
-      "venue": "Buchhändlerkeller",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "e1c3a8f694826c00",
-      "author": "Axel Schock und Thomas Sparr",
-      "book_title": "Aids. Chronik einer Pandemie",
-      "date": "2026-10-26",
-      "venue": "Prinz Eisenherz Buchladen",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "082078e35de9d6f7",
-      "author": "Julia Ebner",
-      "book_title": "Von Fitness zu Faschismus",
-      "date": "2026-10-27",
-      "venue": "Pfefferberg Theater",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "fde34f660bd2ada8",
-      "author": "Lea Ypi",
-      "book_title": "Beyond The Trauma Script - How Can the Left Start Winning Again?",
-      "date": "2026-10-27",
-      "venue": "Volksbühne am Rosa-Luxemburg-Platz Vorbühne",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "3d04d2c1c8ee8691",
-      "author": "Lorraine Daston",
-      "book_title": "The Value of Diversity",
-      "date": "2026-10-27",
-      "venue": "Bard College Berlin",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "2b1f61f59276f1fc",
-      "author": "Roger de Weck",
-      "book_title": "Glanz und Elend der Konservativen",
-      "date": "2026-10-27",
-      "venue": "Publix",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "6388af83b7e55729",
-      "author": "Ilija Matusko",
-      "book_title": "Jugo",
-      "date": "2026-10-28",
-      "venue": "Volksbühne am Rosa-Luxemburg-Platz Roter Salon",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "85b28c8a9a73c223",
-      "author": "Robert Menasse",
-      "book_title": "Legacies of Occupation. Nationalsozialismus und europäische Gegenwart",
-      "date": "2026-10-28",
-      "venue": "Deutsches Historisches Museum Pei-Bau, 2. OG",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "2cc95d59ceaf46c7",
-      "author": "Axel Schock",
-      "book_title": "Aids. Chronik einer Epidemie",
-      "date": "2026-10-29",
-      "venue": "Humboldt-Universität zu Berlin Jacob-und-Wilhelm-Grimm-Zentrum Auditorium",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "3e40430de16d7877",
-      "author": "Melanie Levensohn",
-      "book_title": "Deutsches Kind",
-      "date": "2026-10-29",
-      "venue": "BuchKantine",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "7833b2b0eb3baa87",
-      "author": "Robert Menasse",
-      "book_title": "Die Lebensentscheidung",
-      "date": "2026-10-29",
-      "venue": "Buchhändlerkeller",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "ded2ef1402d613b4",
-      "author": "Stephanie Sy-Quia",
-      "book_title": "Den Himmel bewegen",
-      "date": "2026-10-29",
-      "venue": "Katholische Akademie in Berlin e.V.",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "2b123f2249cb169a",
-      "author": null,
-      "book_title": "illiberalen Demokratie",
-      "date": "2026-11-04",
-      "venue": "▶ Heinrich-Böll-Stiftung",
-      "publisher": "Heinrich-Böll-Stiftung"
-    },
-    {
-      "id": "1a8b69d81da7d99e",
-      "author": "Dana Vowinckel",
-      "book_title": "Anton und Alma",
-      "date": "2026-11-04",
-      "venue": "Georg Büchner Buchladen",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "5f0cd9d7d396c49a",
-      "author": "Olivia Laing",
-      "book_title": "Buch der Träume",
-      "date": "2026-11-04",
-      "venue": "Literaturhaus Berlin",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "0d3b08e6a7254969",
-      "author": "Jennifer V. Evans",
-      "book_title": "Eine queere Art der Geschichte",
-      "date": "2026-11-05",
-      "venue": "Schwules Museum Raum 2",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "6dc81165905ebc76",
-      "author": "Jáchym Topol",
-      "book_title": "Die Hölle gibt es nicht",
-      "date": "2026-11-05",
-      "venue": "Georg Büchner Buchladen",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "8a4032208fd4efe3",
-      "author": "Stefan Gosepath und Michael Zürn",
-      "book_title": "Das habe ich mir verdient! Wie gerecht ist das Leistungsprinzip?",
-      "date": "2026-11-05",
-      "venue": "Urania Berlin Kleistsaal",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "02e62bf8cc7756cd",
-      "author": "Tobias Becker",
-      "book_title": "Heimweh nach gestern",
-      "date": "2026-11-05",
-      "venue": "Werkbundarchiv – Museum der Dinge",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "cf2ba507800154c6",
-      "author": "Candice Fox",
-      "book_title": "Outback Killers",
-      "date": "2026-11-10",
-      "venue": "Marga Schoeller Bücher",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "8031a6b93299b690",
-      "author": "Sophie Calle",
-      "book_title": "Erinnerungen an Ostberlin",
-      "date": "2026-11-11",
-      "venue": "Literaturhaus Berlin",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "471398147e6d41ce",
-      "author": null,
-      "book_title": "THERE IS NO PAST IN BERLIN: Ioana Cristina Casapu in conversation with Alexander Wells",
-      "date": "2026-11-12",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "918378f015369d91",
-      "author": "»Margot Friedländer. Eine Stimme für das Leben«",
-      "book_title": "Margot Friedländer. Eine Stimme für das Leben",
-      "date": "2026-11-12",
-      "venue": "BBBank Filiale Berlin Friedenau",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "024af91c0cdba4a7",
-      "author": "Alexander Peters",
-      "book_title": "Richtig atmen - gesünder leben",
-      "date": "2026-11-17",
-      "venue": "Gesundheitszentrum Sonne & Mond Seminarraum (4.OG)",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "54666a5bd86f323b",
-      "author": "Dana Vowinckel",
-      "book_title": "Anton und Alma",
-      "date": "2026-11-17",
-      "venue": "Neue Synagoge Vortragssaal",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "3c86d4cd876dae05",
-      "author": "Eric Wrede und Fee Vogel",
-      "book_title": "Jeder Mensch kann trauern",
-      "date": "2026-11-17",
-      "venue": "Filmtheater Colosseum",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "f5ecd7c4bd72627b",
-      "author": "Frank Schäfer",
-      "book_title": "Motörhead - die lauteste Band der Welt",
-      "date": "2026-11-17",
-      "venue": "POSH TECKEL",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "a407b4510fa3cb0c",
-      "author": "Ozan Zakariya Keskinkılıç",
-      "book_title": "Hundesohn",
-      "date": "2026-11-19",
-      "venue": "Bezirkszentralbibliothek Pablo Neruda",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "f82f8990f91dc113",
-      "author": "Hartmut Rosa",
-      "book_title": "Situation und Konstellation",
+      "id": "da35c1c2c4f07cac",
+      "author": "Stella Schultner",
+      "book_title": "Buchvorstellung mit Stella Schultner",
       "date": "2026-11-20",
-      "venue": "silent green Betonhalle",
-      "publisher": "Suhrkamp Verlag"
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "4d6f419cc2088fb0",
-      "author": "Heike Geißler und Dieter Thomä",
-      "book_title": "Jetzt reicht`s. Über individuelle Rebellion",
-      "date": "2026-11-21",
-      "venue": "silent green Betonhalle",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "61f7216f29b0215a",
-      "author": "Verschoben - Svenja Leiber",
-      "book_title": "Die Veranstaltung wurde auf den 30. November 2026 verschoben Svenja Leiber liest aus Nelka Moderation: Matthias Hassenpflug",
-      "date": "2026-11-23",
-      "venue": "Buchhandlung Braun & Hassenpflug",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "6d363fa659db1c57",
-      "author": "Lutz Seiler",
-      "book_title": "Das tickende Herz",
+      "id": "12723e1c7b05cf5b",
+      "author": "Katja Eichinger",
+      "book_title": "Buchpremiere mit Katja Eichinger",
       "date": "2026-11-24",
-      "venue": "Georg Büchner Buchladen",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "578b851dcf1ecea9",
-      "author": "Stephan Lohse",
-      "book_title": "Das Knistern im All",
-      "date": "2026-11-24",
-      "venue": "Philipp-Schaeffer-Bibliothek",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "7a11ca16d43867a3",
-      "author": null,
-      "book_title": "Tugendterror",
-      "date": "2026-11-30",
-      "venue": "▶ Heinrich-Böll-Stiftung",
-      "publisher": "Heinrich-Böll-Stiftung"
-    },
-    {
-      "id": "96a53b598775cd4c",
-      "author": "Svenja Leiber",
-      "book_title": "Svenja Leiber liest aus Nelka Moderation: Matthias Hassenpflug",
-      "date": "2026-11-30",
-      "venue": "Buchhandlung Braun & Hassenpflug",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "13bf50c2c985b3df",
-      "author": "Stefanie de Velasco",
-      "book_title": "Heiss",
-      "date": "2026-12-01",
-      "venue": "Buchhandlung am Schäfersee in Kooperation mit M5 & Bibliothek am Schäfersee",
-      "publisher": "Carl Hanser Verlag"
-    },
-    {
-      "id": "8b054a14a32e7c7d",
-      "author": "Elisabeth Pape",
-      "book_title": "Elisabeth Pape liest aus Halbe Portion Durch den Abend führt Stefanie Hirsbrunner Eine Veranstaltung der Buchhandlung Interkontinental",
-      "date": "2026-12-02",
-      "venue": "interkosmos - café. bar. utopie",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "f759c37a69c754e6",
-      "author": "Svenja Leiber",
-      "book_title": "Lesezeichen - Literatur live in Tegel",
-      "date": "2026-12-02",
-      "venue": "Stadtbibliothek Reinickendorf - Humboldt-Bibliothek",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "8860ea417184afb8",
-      "author": null,
-      "book_title": "Ferner",
-      "date": "2026-12-04",
-      "venue": "Lettrétage",
-      "publisher": "Lettrétage"
-    },
-    {
-      "id": "2526fb218af57155",
-      "author": "Gabriela Jaskulla",
-      "book_title": "Tamara de Lempicka und Der Glamour der Frauen",
-      "date": "2026-12-13",
-      "venue": "BEGINE - Treffpunkt und Kultur für Frauen e.V.",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "681addcdfbb77612",
-      "author": "Daniela Dröscher",
-      "book_title": "Schulklassen gesucht – jetzt anmelden!",
-      "date": "2027-01-26",
-      "venue": "Literarisches Colloquium Berlin",
-      "publisher": "Literarisches Colloquium Berlin"
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     }
   ]
 }
