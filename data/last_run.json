@@ -1,48 +1,16 @@
 {
-  "ran_at": "2026-10-10T07:59:28+00:00",
-  "total_events": 220,
-  "new_count": 5,
-  "removed_count": 6,
+  "ran_at": "2026-10-11T08:08:01+00:00",
+  "total_events": 218,
+  "new_count": 1,
+  "removed_count": 3,
   "new_events": [
     {
-      "id": "c120d9eb89616983",
-      "author": "Engin Çatık",
-      "book_title": "Engin Çatık kämpft für jede und jeden an seiner Schule. Damit sie alle die bestmögliche Zukunft haben. Sehr inspirierend.",
-      "date": "2026-10-10",
-      "venue": "Frankfurter Buchmesse | F.A.Z.-Stand Halle 3.0 C123",
+      "id": "e8f71547ae0562ea",
+      "author": "Lena Schätte",
+      "book_title": "Wie wir so schön wurden. Eine Biografie des Gesichts",
+      "date": "2026-10-12",
+      "venue": "Urania Berlin e.V.",
       "publisher": "S. Fischer Verlage"
-    },
-    {
-      "id": "510c969d45c53dec",
-      "author": "Florian Aigner",
-      "book_title": "Buchvorstellung mit Florian Aigner",
-      "date": "2026-11-09",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "5be249caf9117757",
-      "author": "Audrey Niffenegger",
-      "book_title": "Buchvorstellung mit Audrey Niffenegger",
-      "date": "2026-11-18",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "da35c1c2c4f07cac",
-      "author": "Stella Schultner",
-      "book_title": "Buchvorstellung mit Stella Schultner",
-      "date": "2026-11-20",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "12723e1c7b05cf5b",
-      "author": "Katja Eichinger",
-      "book_title": "Buchpremiere mit Katja Eichinger",
-      "date": "2026-11-24",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
     }
   ]
 }
