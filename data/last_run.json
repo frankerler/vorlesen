@@ -1,16 +1,40 @@
 {
-  "ran_at": "2026-10-11T08:08:01+00:00",
-  "total_events": 218,
-  "new_count": 1,
+  "ran_at": "2026-10-12T08:23:36+00:00",
+  "total_events": 219,
+  "new_count": 4,
   "removed_count": 3,
   "new_events": [
     {
-      "id": "e8f71547ae0562ea",
-      "author": "Lena Schätte",
-      "book_title": "Wie wir so schön wurden. Eine Biografie des Gesichts",
-      "date": "2026-10-12",
-      "venue": "Urania Berlin e.V.",
+      "id": "37a61eea7a120063",
+      "author": "Valeria Gordeev",
+      "book_title": "Beste erste Bücher: Lesung und Gespräch mit Valeria Gordeev u.a.",
+      "date": "2026-10-13",
+      "venue": "Ost Passage Theater",
       "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "8766b3d189f99aac",
+      "author": "Ingo Schulze",
+      "book_title": "Das Wasser im August",
+      "date": "2026-10-14",
+      "venue": "Humboldt-Bibliothek / Stadtbibliothek Reinickendorf",
+      "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "0fa17cf87fa62962",
+      "author": "Valeria Gordeev",
+      "book_title": "Lesung und Gespräch mit Valeria Gordeev",
+      "date": "2026-10-14",
+      "venue": "Seidlvilla",
+      "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "2700572af9f731c6",
+      "author": "Stefanie Velasco",
+      "book_title": "Heiss",
+      "date": "2026-12-01",
+      "venue": "Buchhandlung am Schäfersee in Kooperation mit M5 & Bibliothek am Schäfersee",
+      "publisher": "Carl Hanser Verlag"
     }
   ]
 }

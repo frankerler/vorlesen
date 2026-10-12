@@ -1,22 +1,5 @@
 [
   {
-    "publisher": "Carl Hanser Verlag",
-    "author": "Christina Clemm",
-    "title": "Christina Clemm: \"Ein ungehaltenes Plädoyer\"",
-    "date": "2026-10-11",
-    "time": "12:00",
-    "venue": "Kino International",
-    "city": "Berlin",
-    "address": "Karl-Marx-Allee 33, 10178 Berlin",
-    "url": "https://www.yorck.de/specials/literatur-live-christina-clemm-and-luisa-neubauer",
-    "source_url": "https://www.hanser-literaturverlage.de/veranstaltungen-c-34",
-    "raw_text": "Matinee",
-    "cover_image": "https://res.cloudinary.com/literaturverlage/image/upload/v1711329196/MAM/Image/ARTK_CT0_9783446277311_0001.jpg",
-    "image_credit": null,
-    "book_title": "Gegen Frauenhass",
-    "id": "92adf4576c598f48"
-  },
-  {
     "publisher": "dtv Verlag",
     "author": "Cindy Adriana Speich",
     "title": "Cindy-Adriana Speich präsentiert: ›Ich bau mir 'ne Welt, die Männern nicht gefällt. Eine Frau. Eine Baustelle. Ein brennendes Patriarchat.‹",
@@ -221,21 +204,21 @@
     "id": "376fb338604de149"
   },
   {
-    "publisher": "Lettrétage",
-    "author": null,
-    "title": "An der inneren Grenze: Gespräch über minorisierte Sprachen mit Elicura Chihuailaf, Juana Adcock, Mário Gomes",
-    "date": "2026-10-14",
-    "time": "19:00",
-    "venue": "Lettrétage",
-    "city": "Berlin",
-    "address": "Veteranenstr. 21, 10119 Berlin",
-    "url": "https://www.lettretage.de/programm/an-der-inneren-grenze-gespraech-ueber-minorisierte-sprachen",
-    "source_url": "https://www.lettretage.de/programm",
-    "raw_text": "Welche Autor*innen und aus welchen Gründen entscheiden sich, in welcher Sprache zu schreiben (die der Herkunft, der neuen Heimat, eine dritte?) oder verbinden sie mehrere Sprachen? Zu einer Hybridsprache? Welche Stellung nehmen Autor*innen in Bezug auf die Nationalliteratur ein? Sind sie Outsider oder schaffen sie es, sich direkt ins Herz der Literatur hineinzuschreiben? Juana Adcock ist eine in Schottland lebende mexikanische Autorin, die in ihren Texten die poetischen Möglichkeiten von Spanglish auslotet. Elicura Chihuailaf ist ein chilenischer Dichter, der in seinen Werken Mythen und Lieder aus der indigenen Kultur verarbeitet. Mário Gomes schreibt quer durch große und minorisierte Sprachen wie Deutsch, Portugiesisch und Galicisch. Moderation: Manuela Barney Seidel",
-    "cover_image": "https://cdn.prod.website-files.com/69207413650d0ca9c10ee1d7/6a85992e9f67507e3f66a01c_Plakat%20Barrio%20Bairro%20Berlin-1.avif",
+    "publisher": "S. Fischer Verlage",
+    "author": "Valeria Gordeev",
+    "title": "Beste erste Bücher: Lesung und Gespräch mit Valeria Gordeev u.a.",
+    "date": "2026-10-13",
+    "time": "20:00",
+    "venue": "Ost Passage Theater",
+    "city": "Leipzig",
+    "address": "Konradstraße 27, 04315 Leipzig",
+    "url": "https://literarischer-herbst.com/programm/beste-erste-buecher-1/",
+    "source_url": "https://www.fischerverlage.de/veranstaltung/lesung-und-gespraech-valeria-gordeev-leipzig-1047908-261013",
+    "raw_text": "Der Debütroman der Bachmann-Preisträgerin Valeria Gordeev<br /> Eine Familie zwischen Kyjiw, Moskau und Berlin und eine Welt, die aus den Fugen geraten ist <br />Sprachgewaltig, lustvoll und berauschend: Konstantin und Lada haben den Kontakt verloren. Während Konstantin in einem unterirdischen Forschungslabor festsitzt, das Lenins Leichnam konserviert, kämpft seine Schwester Lada in Berlin mit einer Sanierung, die ihr Wohnhaus unbewohnbar macht. Auch versteht sie nicht, warum ihr Bruder nach Kriegsbeginn in Moskau geblieben ist, doch steckt Konstantin bis zum Hals in Schwierigkeiten, an denen sein Patenonkel nicht unschuldig ist, ein Oligarch mit transhumanistischen Ambitionen, der auch Lada in Bedrängnis bringt. Eine Wunderkammer und ein Höllenritt.<br /><br /> Mit Zeichnungen der Autorin, farbigem Vorsatzpapier und Lesebändchen <br />",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/fischer/public/qsvmu6WQZM1z0tc2RNdqQ2tB8V4QlZZWtt94XLBScLJ/AF_Valeria%20Gordeev_Vorschau.png",
     "image_credit": null,
     "book_title": null,
-    "id": "d2e2df68c305f38b"
+    "id": "37a61eea7a120063"
   },
   {
     "publisher": "Kiepenheuer & Witsch",
@@ -270,6 +253,23 @@
     "image_credit": null,
     "book_title": "30 Real Boys - mutig, gefühlvoll und ganz sie selbst",
     "id": "87d562491cb3b31f"
+  },
+  {
+    "publisher": "S. Fischer Verlage",
+    "author": "Ingo Schulze",
+    "title": "Lesung und Gespräch mit Ingo Schulze",
+    "date": "2026-10-14",
+    "time": "19:30",
+    "venue": "Humboldt-Bibliothek / Stadtbibliothek Reinickendorf",
+    "city": "Berlin",
+    "address": "Karolinenstraße 19, 13507 Berlin",
+    "url": "https://www.berlin.de/vhs/volkshochschulen/reinickendorf/aktuelles/lesezeichen----literatur-live-in-tegel--884308.php",
+    "source_url": "https://www.fischerverlage.de/veranstaltung/lesung-und-gespraech-ingo-schulze-berlin-1047470-261014",
+    "raw_text": "Der neue Roman von Ingo Schulze: ausgezeichnet mit dem Uwe-Johnson-Preis 2026 Ein raffiniertes erzählerisches Spiel über Hoffnung und Erwartung Eingeladen zu einer Lesung aus seinem unfertigen Manuskript, fährt der Erzähler im Juni 2025 nach Mecklenburg, in jene seenreiche Landschaft, die er im Sommer 1979, von dem sein Lesungstext handelt, den »Norden« genannt hat. Eine unerwartete Begegnung scheint seine Novelle lebendig werden zu lassen, und wirft damit die Frage auf, was war und was wirklich ist. War er damals zu jung und zu unbeschwert für die große Liebe, und ist sie heute zu alt? Sind nur Illusionen und Utopien verloren gegangen oder auch Ansprüche und Hoffnungen, die einer Gegenwart fehlen, in der die alte Angst vor einem Krieg wieder real erscheint? Vielleicht ist die Liebesgeschichte in »Das Wasser im August« auch eine Schule des Sehens, des Erkennens und Schreibens, und der Versuch, sich der Welt, der Menschen und der eigenen Geschichte so genau und so lebendig wie möglich zu versichern. <br /> Eine Rückkehr zu den Ursprüngen des eigenen Schreibens – die Erinnerung an einen Sommer des Jahres 1979, in dem das Leben noch offenstand Ingo Schulze, vielfach preisgekrönt und eine der prägnantesten literarischen Stimmen der Gegenwart",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/fischer/public/rsoLW4Jx8rMOG6Bi7yqnSrmdYtGHiDN5mxqSceDanSD/AF_Ingo%20Schulze_Vorschau.png",
+    "image_credit": null,
+    "book_title": "Das Wasser im August",
+    "id": "8766b3d189f99aac"
   },
   {
     "publisher": "Suhrkamp Verlag",
@@ -338,6 +338,23 @@
     "image_credit": null,
     "book_title": "Nennen wir es böse",
     "id": "7c90f74b4b4890d4"
+  },
+  {
+    "publisher": "S. Fischer Verlage",
+    "author": "Valeria Gordeev",
+    "title": "Lesung und Gespräch mit Valeria Gordeev",
+    "date": "2026-10-14",
+    "time": "19:30",
+    "venue": "Seidlvilla",
+    "city": "München",
+    "address": "Nikolaiplatz 1b, 80802 München",
+    "url": "https://tukan-kreis.de/",
+    "source_url": "https://www.fischerverlage.de/veranstaltung/lesung-valeria-gordeev-muenchen-1047909-261014",
+    "raw_text": "Der Debütroman der Bachmann-Preisträgerin Valeria Gordeev<br /> Eine Familie zwischen Kyjiw, Moskau und Berlin und eine Welt, die aus den Fugen geraten ist <br />Sprachgewaltig, lustvoll und berauschend: Konstantin und Lada haben den Kontakt verloren. Während Konstantin in einem unterirdischen Forschungslabor festsitzt, das Lenins Leichnam konserviert, kämpft seine Schwester Lada in Berlin mit einer Sanierung, die ihr Wohnhaus unbewohnbar macht. Auch versteht sie nicht, warum ihr Bruder nach Kriegsbeginn in Moskau geblieben ist, doch steckt Konstantin bis zum Hals in Schwierigkeiten, an denen sein Patenonkel nicht unschuldig ist, ein Oligarch mit transhumanistischen Ambitionen, der auch Lada in Bedrängnis bringt. Eine Wunderkammer und ein Höllenritt.<br /><br /> Mit Zeichnungen der Autorin, farbigem Vorsatzpapier und Lesebändchen <br />",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/fischer/public/qsvmu6WQZM1z0tc2RNdqQ2tB8V4QlZZWtt94XLBScLJ/AF_Valeria%20Gordeev_Vorschau.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "0fa17cf87fa62962"
   },
   {
     "publisher": "Literaturhaus Berlin",
@@ -1676,7 +1693,7 @@
     "address": "▶ Heinrich-Böll-Stiftung, Bundesstiftung Berlin sowie Online Schumannstr. 8 10117 Berlin",
     "url": "https://calendar.boell.de/de/event/prof-dr-felix-heidenreich-demokratie-unter-druck-ein-republikanismus-der-nachhaltigkeit",
     "source_url": "https://calendar.boell.de/de/calendar/frontpage?f[0]=ort_slide_in:2445",
-    "raw_text": "Nicht jede Politik, die nicht im klassischen Sinne liberal ist, muss deshalb schon illiberal seinIlliberalität ist vielmehr eine falsche, undemokratische und autoritäre Antwort auf reale Probleme unserer Zeit. Wo der Individualismus zum alleinigen Maßstab erhoben wird, fehlt es an Zusammenhalt und die Handlungsfähigkeit des demokratischen Gemeinwesens gerät in Gefahr. Felix Heidenreich plädiert in seinem neuen Buch für einen anderen Weg, den er den „Republikanismus der Nachhaltigkeit“ nennt. Er lädt uns ein, die Tradition republikanischer Demokratievorstellungen zu entdecken, die ihre Stärken gerade in Krisenzeiten ausspielen können. Mit: Prof. Dr. Felix Heidenreich , Philosoph, Politikwissenschaftler, Autor, Universität Stuttgart Dr. Ole Meinefeld , Referent Zeitdiagnose und Diskursanalyse, Heinrich-Böll-Stiftung Zeitdiagnostische Interventionen Diese Reihe von Veranstaltungen und Beiträgen widmet sich wichtigen politischen Büchern unserer Zeit. Im Blickpunkt stehen aktuelle Diagnosen zu Politik, Gesellschaft und Kultur, vom Bestseller bis zur Neuentdeckung. In Vorträgen, Bühnengesprächen, Rezensionen und Essays eröffnen wir einen Raum zur Diskussion. Fachkontakt Ole Meinefeld E meinefeld@boell.de Information Katrin Zehetmaier E zehetmaier@boell.de",
+    "raw_text": "Nicht jede Politik, die nicht im klassischen Sinne liberal ist, muss deshalb schon illiberal seinIlliberalität ist vielmehr eine falsche, undemokratische und autoritäre Antwort auf reale Probleme unserer Zeit. Wo der Individualismus zum alleinigen Maßstab erhoben wird, fehlt es an Zusammenhalt und die Handlungsfähigkeit des demokratischen Gemeinwesens gerät in Gefahr. Felix Heidenreich plädiert in seinem neuen Buch für einen anderen Weg, den er den „Republikanismus der Nachhaltigkeit“ nennt. Er lädt uns ein, die Tradition republikanischer Demokratievorstellungen zu entdecken, die ihre Stärken gerade in Krisenzeiten ausspielen können. Mit: Prof. Dr. Felix Heidenreich , Philosoph, Politikwissenschaftler, Autor, Universität Stuttgart Jan Philipp Albrecht , Vorstand, Heinrich-Böll-Stiftung Dr. Ole Meinefeld , Referent Zeitdiagnose und Diskursanalyse, Heinrich-Böll-Stiftung Zeitdiagnostische Interventionen Diese Reihe von Veranstaltungen und Beiträgen widmet sich wichtigen politischen Büchern unserer Zeit. Im Blickpunkt stehen aktuelle Diagnosen zu Politik, Gesellschaft und Kultur, vom Bestseller bis zur Neuentdeckung. In Vorträgen, Bühnengesprächen, Rezensionen und Essays eröffnen wir einen Raum zur Diskussion. Fachkontakt Ole Meinefeld E meinefeld@boell.de Information Katrin Zehetmaier E zehetmaier@boell.de",
     "cover_image": null,
     "image_credit": null,
     "book_title": "Republikanismus der Nachhaltigkeit",
@@ -2129,7 +2146,7 @@
     "author": "Dirk Naguschewski",
     "title": "Poetry and Correspondence: A German-Hebrew Network",
     "date": "2026-11-10",
-    "time": null,
+    "time": "18:30",
     "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
     "city": "Berlin",
     "address": "Leibniz-Zentrum für Literatur- und Kulturforschung, Eberhard-Lämmert-Saal, entrance Meierottostr. 8, 10719 Berlin",
@@ -3214,7 +3231,7 @@
   },
   {
     "publisher": "Carl Hanser Verlag",
-    "author": "Stefanie de Velasco",
+    "author": "Stefanie Velasco",
     "title": "Stefanie de Velasco: \"Heiß. Liebeserklärung an die Wechseljahre\"",
     "date": "2026-12-01",
     "time": "19:30",
@@ -3227,7 +3244,7 @@
     "cover_image": "https://res.cloudinary.com/literaturverlage/image/upload/v1743710596/MAM/Image/ARTK_CT0_9783446283800_0001.jpg",
     "image_credit": null,
     "book_title": "Heiss",
-    "id": "13bf50c2c985b3df"
+    "id": "2700572af9f731c6"
   },
   {
     "publisher": "Piper Verlag",
