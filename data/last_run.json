@@ -1,40 +1,40 @@
 {
-  "ran_at": "2026-10-12T08:23:36+00:00",
-  "total_events": 219,
+  "ran_at": "2026-10-13T08:48:49+00:00",
+  "total_events": 189,
   "new_count": 4,
-  "removed_count": 3,
+  "removed_count": 34,
   "new_events": [
     {
-      "id": "37a61eea7a120063",
-      "author": "Valeria Gordeev",
-      "book_title": "Beste erste Bücher: Lesung und Gespräch mit Valeria Gordeev u.a.",
-      "date": "2026-10-13",
-      "venue": "Ost Passage Theater",
+      "id": "7e4a88254ba474f9",
+      "author": "Nora Haddada",
+      "book_title": "Blaue Romanze",
+      "date": "2026-10-15",
+      "venue": "Kulturzentrum Pavillon",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "8766b3d189f99aac",
-      "author": "Ingo Schulze",
-      "book_title": "Das Wasser im August",
-      "date": "2026-10-14",
-      "venue": "Humboldt-Bibliothek / Stadtbibliothek Reinickendorf",
-      "publisher": "S. Fischer Verlage"
+      "id": "0c7dba9443d256b9",
+      "author": "Christiane Rösinger",
+      "book_title": "Christiane Rösinger",
+      "date": "2026-10-18",
+      "venue": "Buchhändlerkeller Berlin",
+      "publisher": "Rowohlt Verlag"
     },
     {
-      "id": "0fa17cf87fa62962",
-      "author": "Valeria Gordeev",
-      "book_title": "Lesung und Gespräch mit Valeria Gordeev",
-      "date": "2026-10-14",
-      "venue": "Seidlvilla",
-      "publisher": "S. Fischer Verlage"
+      "id": "90e0c9d660b12288",
+      "author": "Augusto Paim, Maria Victoria Rodriguez, Jonas Fischer, Ula Rugevičiūtė Rugytė, Coline Eberhard",
+      "book_title": "Comicmarathon:",
+      "date": "2026-11-07",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
     },
     {
-      "id": "2700572af9f731c6",
-      "author": "Stefanie Velasco",
-      "book_title": "Heiss",
-      "date": "2026-12-01",
-      "venue": "Buchhandlung am Schäfersee in Kooperation mit M5 & Bibliothek am Schäfersee",
-      "publisher": "Carl Hanser Verlag"
+      "id": "19dd9ce577ec0e68",
+      "author": "Dora Kaprálová",
+      "book_title": "Die Mariborhypnose",
+      "date": "2026-11-18",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
     }
   ]
 }
