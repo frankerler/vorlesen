@@ -1,40 +1,80 @@
 {
-  "ran_at": "2026-10-13T08:48:49+00:00",
-  "total_events": 189,
-  "new_count": 4,
-  "removed_count": 34,
+  "ran_at": "2026-10-14T06:58:27+00:00",
+  "total_events": 188,
+  "new_count": 9,
+  "removed_count": 10,
   "new_events": [
     {
-      "id": "7e4a88254ba474f9",
-      "author": "Nora Haddada",
-      "book_title": "Blaue Romanze",
+      "id": "aeb2daef21a4e0c4",
+      "author": "Kerstin Hoppenhaus",
+      "book_title": "Die Salze der Erde",
       "date": "2026-10-15",
-      "venue": "Kulturzentrum Pavillon",
-      "publisher": "S. Fischer Verlage"
+      "venue": "Heinrich-Böll-Stiftung / Konferenzzentrum und online",
+      "publisher": "Carl Hanser Verlag"
     },
     {
-      "id": "0c7dba9443d256b9",
-      "author": "Christiane Rösinger",
-      "book_title": "Christiane Rösinger",
-      "date": "2026-10-18",
-      "venue": "Buchhändlerkeller Berlin",
+      "id": "c5e380056905235a",
+      "author": "Lukas Bärfuss",
+      "book_title": "Vaters Kiste",
+      "date": "2026-10-17",
+      "venue": "Buchhandlung Knesebeck Elf",
       "publisher": "Rowohlt Verlag"
     },
     {
-      "id": "90e0c9d660b12288",
-      "author": "Augusto Paim, Maria Victoria Rodriguez, Jonas Fischer, Ula Rugevičiūtė Rugytė, Coline Eberhard",
-      "book_title": "Comicmarathon:",
-      "date": "2026-11-07",
-      "venue": "Literarisches Colloquium Berlin",
-      "publisher": "Literarisches Colloquium Berlin"
+      "id": "c4f732bae44d8c56",
+      "author": "Richard Hemmer|Daniel Meßner",
+      "book_title": "Richard Hemmer und Daniel Meßner sprechen über «Mehr Geschichten aus der Geschichte» in Berlin",
+      "date": "2026-11-08",
+      "venue": "Haus der Kulturen der Welt",
+      "publisher": "Piper Verlag"
     },
     {
-      "id": "19dd9ce577ec0e68",
-      "author": "Dora Kaprálová",
-      "book_title": "Die Mariborhypnose",
-      "date": "2026-11-18",
+      "id": "7d4f3a5b6500ded3",
+      "author": null,
+      "book_title": "Ich wurde niemals schwankend",
+      "date": "2026-11-19",
       "venue": "Literaturhaus Berlin",
       "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "adad47f330272740",
+      "author": "Sven Stricker",
+      "book_title": "Sven Stricker",
+      "date": "2026-11-21",
+      "venue": "Ernst-Reuter-Saal",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "b3dcfefd44942559",
+      "author": "Cord Schmelzle",
+      "book_title": "Die Moralisierung der Politik",
+      "date": "2026-11-30",
+      "venue": "Heinrich-Böll-Stiftung",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "677f97087fbb234b",
+      "author": "Ties Rabe",
+      "book_title": "Ties Rabe",
+      "date": "2026-11-30",
+      "venue": "Bertelsmann Stiftung I Haus Berlin",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "901fde80779b64b7",
+      "author": "Gabriel Zuchtriegel",
+      "book_title": "Wie in Griechenland die Gegenwart begann. Eine Liebeserklärung an die Archäologie",
+      "date": "2026-12-01",
+      "venue": "Pfefferberg Theater",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "a3a90c97a2b118b7",
+      "author": "Ina Bhatter",
+      "book_title": "Rauhnachttage",
+      "date": "2026-12-16",
+      "venue": "Buchhandlung am Schäfersee",
+      "publisher": "Kiepenheuer & Witsch"
     }
   ]
 }
