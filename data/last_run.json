@@ -1,80 +1,96 @@
 {
-  "ran_at": "2026-10-14T06:58:27+00:00",
-  "total_events": 188,
-  "new_count": 9,
-  "removed_count": 10,
+  "ran_at": "2026-10-15T06:49:56+00:00",
+  "total_events": 191,
+  "new_count": 11,
+  "removed_count": 8,
   "new_events": [
     {
-      "id": "aeb2daef21a4e0c4",
-      "author": "Kerstin Hoppenhaus",
-      "book_title": "Die Salze der Erde",
-      "date": "2026-10-15",
-      "venue": "Heinrich-Böll-Stiftung / Konferenzzentrum und online",
+      "id": "3bb13af05999c5f9",
+      "author": "Miku Sophie Kühmel",
+      "book_title": "Hannah",
+      "date": "2026-10-19",
+      "venue": "KZ-Gedenkstätte Oberer Kuhberg",
+      "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "843f6b656e0f1f3a",
+      "author": "Kathrin Röggla",
+      "book_title": "Nichts sagen. Nichts hören. Nichts sehen.",
+      "date": "2026-10-20",
+      "venue": "Österreichische Gesellschaft für Literatur",
+      "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "ffea81ec0c323089",
+      "author": "Lisa Federle",
+      "book_title": "Gut gegen Angst",
+      "date": "2026-10-20",
+      "venue": "Kino Museum",
+      "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "cd4d4423db1198c5",
+      "author": "Jutta Rosenkranz",
+      "book_title": "Mascha Kaléko",
+      "date": "2026-10-27",
+      "venue": "„Das Romanische Café“",
+      "publisher": "dtv Verlag"
+    },
+    {
+      "id": "c7256776b3421e3c",
+      "author": "Zümrüt Gülbay-Peischard, Lutz Kinkel, Zümrüt Gülbay-Peischard Author, Lutz Kinkel Journalist, Moderator",
+      "book_title": "Saudämlich. Wie Dummheit unsere Gesellschaft gefährdet",
+      "date": "2026-10-28",
+      "venue": "Publix",
+      "publisher": "Publix"
+    },
+    {
+      "id": "cd3d0b39546242c9",
+      "author": "Philipp Blom",
+      "book_title": "Die strauchelnde Welt",
+      "date": "2026-11-04",
+      "venue": "Deutsches Theater Berlin / Kammer",
       "publisher": "Carl Hanser Verlag"
     },
     {
-      "id": "c5e380056905235a",
-      "author": "Lukas Bärfuss",
-      "book_title": "Vaters Kiste",
-      "date": "2026-10-17",
-      "venue": "Buchhandlung Knesebeck Elf",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "c4f732bae44d8c56",
-      "author": "Richard Hemmer|Daniel Meßner",
-      "book_title": "Richard Hemmer und Daniel Meßner sprechen über «Mehr Geschichten aus der Geschichte» in Berlin",
-      "date": "2026-11-08",
-      "venue": "Haus der Kulturen der Welt",
-      "publisher": "Piper Verlag"
-    },
-    {
-      "id": "7d4f3a5b6500ded3",
+      "id": "62607afa0247202d",
       "author": null,
-      "book_title": "Ich wurde niemals schwankend",
-      "date": "2026-11-19",
+      "book_title": "Thomas Melle im Gespräch",
+      "date": "2026-11-21",
       "venue": "Literaturhaus Berlin",
       "publisher": "Literaturhaus Berlin"
     },
     {
-      "id": "adad47f330272740",
-      "author": "Sven Stricker",
-      "book_title": "Sven Stricker",
-      "date": "2026-11-21",
-      "venue": "Ernst-Reuter-Saal",
-      "publisher": "Rowohlt Verlag"
+      "id": "a6a6dfe6dff3ad23",
+      "author": null,
+      "book_title": "Das System Netanjahu?",
+      "date": "2026-11-24",
+      "venue": "▶ Heinrich-Böll-Stiftung",
+      "publisher": "Heinrich-Böll-Stiftung"
     },
     {
-      "id": "b3dcfefd44942559",
-      "author": "Cord Schmelzle",
-      "book_title": "Die Moralisierung der Politik",
-      "date": "2026-11-30",
-      "venue": "Heinrich-Böll-Stiftung",
-      "publisher": "Suhrkamp Verlag"
+      "id": "b9cb502618ef9343",
+      "author": "Katie Kitamura",
+      "book_title": "Die Probe",
+      "date": "2026-12-02",
+      "venue": "Chapters Bookshop",
+      "publisher": "Carl Hanser Verlag"
     },
     {
-      "id": "677f97087fbb234b",
-      "author": "Ties Rabe",
-      "book_title": "Ties Rabe",
-      "date": "2026-11-30",
-      "venue": "Bertelsmann Stiftung I Haus Berlin",
-      "publisher": "Rowohlt Verlag"
+      "id": "7d65588b83299c87",
+      "author": "Liola Mattheis",
+      "book_title": "Liberalism and Demonology",
+      "date": "2026-12-17",
+      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
+      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
     },
     {
-      "id": "901fde80779b64b7",
-      "author": "Gabriel Zuchtriegel",
-      "book_title": "Wie in Griechenland die Gegenwart begann. Eine Liebeserklärung an die Archäologie",
-      "date": "2026-12-01",
-      "venue": "Pfefferberg Theater",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "a3a90c97a2b118b7",
-      "author": "Ina Bhatter",
-      "book_title": "Rauhnachttage",
-      "date": "2026-12-16",
-      "venue": "Buchhandlung am Schäfersee",
-      "publisher": "Kiepenheuer & Witsch"
+      "id": "85b4c4d470441f6c",
+      "author": "Science Busters",
+      "book_title": "Aus! Die Wissenschaft vom Ende",
+      "date": "2027-03-08",
+      "venue": "Wühlmäuse",
+      "publisher": "Carl Hanser Verlag"
     }
   ]
 }
