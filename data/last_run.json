@@ -1,96 +1,96 @@
 {
-  "ran_at": "2026-10-15T06:49:56+00:00",
-  "total_events": 191,
+  "ran_at": "2026-10-16T06:38:37+00:00",
+  "total_events": 190,
   "new_count": 11,
-  "removed_count": 8,
+  "removed_count": 12,
   "new_events": [
     {
-      "id": "3bb13af05999c5f9",
-      "author": "Miku Sophie Kühmel",
-      "book_title": "Hannah",
-      "date": "2026-10-19",
-      "venue": "KZ-Gedenkstätte Oberer Kuhberg",
-      "publisher": "S. Fischer Verlage"
-    },
-    {
-      "id": "843f6b656e0f1f3a",
-      "author": "Kathrin Röggla",
-      "book_title": "Nichts sagen. Nichts hören. Nichts sehen.",
+      "id": "058e296ff7215a26",
+      "author": "H. G. Adler",
+      "book_title": "Der verwaltete Mensch",
       "date": "2026-10-20",
-      "venue": "Österreichische Gesellschaft für Literatur",
+      "venue": "Buchhandlung \"Der Zauberberg\"",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "ffea81ec0c323089",
-      "author": "Lisa Federle",
-      "book_title": "Gut gegen Angst",
-      "date": "2026-10-20",
-      "venue": "Kino Museum",
-      "publisher": "S. Fischer Verlage"
+      "id": "fdcb344f4d84412d",
+      "author": "Paula Fürstenberg",
+      "book_title": "Niewiedervereinigung",
+      "date": "2026-11-01",
+      "venue": "Berliner Ensemble",
+      "publisher": "Kiepenheuer & Witsch"
     },
     {
-      "id": "cd4d4423db1198c5",
-      "author": "Jutta Rosenkranz",
-      "book_title": "Mascha Kaléko",
-      "date": "2026-10-27",
-      "venue": "„Das Romanische Café“",
+      "id": "0f094a8dc1aa6abd",
+      "author": "Robert Misik",
+      "book_title": "Erziehung zur Grausamkeit",
+      "date": "2026-11-04",
+      "venue": "taz Kantine",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "d192d5d82d9156f6",
+      "author": "Misha Schoeneberg",
+      "book_title": "Vielleicht wollte er gar nicht schweigen, er fand bloß die Worte nicht",
+      "date": "2026-11-05",
+      "venue": "Buchladen Bayerischer Platz",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "06e257524cb4d698",
+      "author": "Nele Pollatschek",
+      "book_title": "Wie ich so glücklich wurde",
+      "date": "2026-11-11",
+      "venue": "RBB",
+      "publisher": "Kiepenheuer & Witsch"
+    },
+    {
+      "id": "50a2935e2f3ad875",
+      "author": "Florian Schroeder",
+      "book_title": "Missverstehen Sie mich richtig - Florian Schroeder trifft Maja Göpel",
+      "date": "2026-11-15",
+      "venue": "Ernst-Reuter-Saal",
       "publisher": "dtv Verlag"
     },
     {
-      "id": "c7256776b3421e3c",
-      "author": "Zümrüt Gülbay-Peischard, Lutz Kinkel, Zümrüt Gülbay-Peischard Author, Lutz Kinkel Journalist, Moderator",
-      "book_title": "Saudämlich. Wie Dummheit unsere Gesellschaft gefährdet",
-      "date": "2026-10-28",
-      "venue": "Publix",
-      "publisher": "Publix"
-    },
-    {
-      "id": "cd3d0b39546242c9",
-      "author": "Philipp Blom",
-      "book_title": "Die strauchelnde Welt",
-      "date": "2026-11-04",
-      "venue": "Deutsches Theater Berlin / Kammer",
-      "publisher": "Carl Hanser Verlag"
-    },
-    {
-      "id": "62607afa0247202d",
+      "id": "e6f9859a4d16b53c",
       "author": null,
-      "book_title": "Thomas Melle im Gespräch",
-      "date": "2026-11-21",
+      "book_title": "Die Jugend ist auch nicht in Würde jung",
+      "date": "2026-11-23",
       "venue": "Literaturhaus Berlin",
       "publisher": "Literaturhaus Berlin"
     },
     {
-      "id": "a6a6dfe6dff3ad23",
-      "author": null,
-      "book_title": "Das System Netanjahu?",
+      "id": "c73e7d2352c34703",
+      "author": "Christiane Rösinger",
+      "book_title": "Christiane Rösinger",
+      "date": "2026-11-23",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "3c2b0ba38a9b2c32",
+      "author": "Paula Fürstenberg",
+      "book_title": "Niewiedervereinigung",
       "date": "2026-11-24",
-      "venue": "▶ Heinrich-Böll-Stiftung",
-      "publisher": "Heinrich-Böll-Stiftung"
+      "venue": "Amerika Gedenkbibliothek",
+      "publisher": "Kiepenheuer & Witsch"
     },
     {
-      "id": "b9cb502618ef9343",
-      "author": "Katie Kitamura",
-      "book_title": "Die Probe",
-      "date": "2026-12-02",
-      "venue": "Chapters Bookshop",
-      "publisher": "Carl Hanser Verlag"
-    },
-    {
-      "id": "7d65588b83299c87",
-      "author": "Liola Mattheis",
-      "book_title": "Liberalism and Demonology",
-      "date": "2026-12-17",
+      "id": "2c741c5bf96aea26",
+      "author": "Bernardo Bianchi (Centre Marc Bloch), Oliver Precht (Leuphana University of Lüneburg)",
+      "book_title": "Composing Worlds: Anthropology, Ontology, and the Decolonization of Being",
+      "date": "2027-02-03",
       "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
       "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
     },
     {
-      "id": "85b4c4d470441f6c",
-      "author": "Science Busters",
-      "book_title": "Aus! Die Wissenschaft vom Ende",
-      "date": "2027-03-08",
-      "venue": "Wühlmäuse",
-      "publisher": "Carl Hanser Verlag"
+      "id": "1455a52f49495ec5",
+      "author": "Helene Bockhorst",
+      "book_title": "Pferde stehlen",
+      "date": "2027-05-30",
+      "venue": "Mehringhof-Theater",
+      "publisher": "Ullstein Verlag"
     }
   ]
 }
