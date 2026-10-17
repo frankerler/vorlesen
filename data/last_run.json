@@ -1,96 +1,72 @@
 {
-  "ran_at": "2026-10-16T06:38:37+00:00",
-  "total_events": 190,
-  "new_count": 11,
-  "removed_count": 12,
+  "ran_at": "2026-10-17T06:27:58+00:00",
+  "total_events": 194,
+  "new_count": 8,
+  "removed_count": 4,
   "new_events": [
     {
-      "id": "058e296ff7215a26",
-      "author": "H. G. Adler",
-      "book_title": "Der verwaltete Mensch",
-      "date": "2026-10-20",
-      "venue": "Buchhandlung \"Der Zauberberg\"",
+      "id": "3452b3764117b541",
+      "author": "A. T. Emerald",
+      "book_title": "Under the Iron Sky",
+      "date": "2026-10-19",
+      "venue": "Thalia Berlin - Tauentzienstraße",
+      "publisher": "Ullstein Verlag"
+    },
+    {
+      "id": "125bad752f287265",
+      "author": "Heba Al-Wasity",
+      "book_title": "Stars In Your Eyes",
+      "date": "2026-10-19",
+      "venue": "Thalia Berlin - Tauentzienstraße",
+      "publisher": "Ullstein Verlag"
+    },
+    {
+      "id": "bc20913eac3f0040",
+      "author": "Valeria Gordeev",
+      "book_title": "AUSVERKAUFT: Lesung und Gespräch mit Valeria Gordeev, Ilija Matusko und Christian Dittloff",
+      "date": "2026-10-21",
+      "venue": "mare-Künstlerhaus",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "fdcb344f4d84412d",
-      "author": "Paula Fürstenberg",
-      "book_title": "Niewiedervereinigung",
+      "id": "de9a4afdc4537351",
+      "author": "Christina Clemm",
+      "book_title": "Gegen Frauenhass",
       "date": "2026-11-01",
-      "venue": "Berliner Ensemble",
+      "venue": "Volksbühne am Rosa-Luxemburg-Platz, Roter Salon",
+      "publisher": "Carl Hanser Verlag"
+    },
+    {
+      "id": "9abe554c5fd892b8",
+      "author": "Angela Merkel",
+      "book_title": "Freiheit",
+      "date": "2026-11-10",
+      "venue": "BUCHBOX!",
       "publisher": "Kiepenheuer & Witsch"
     },
     {
-      "id": "0f094a8dc1aa6abd",
-      "author": "Robert Misik",
-      "book_title": "Erziehung zur Grausamkeit",
-      "date": "2026-11-04",
-      "venue": "taz Kantine",
-      "publisher": "Suhrkamp Verlag"
+      "id": "1b9bb2f6e7785838",
+      "author": "Tia Morgen, Lea Schneider, Maria Liebl, Rebekka Endler, Linus Giese, Christine Koschmieder",
+      "book_title": "Rebekka Endler",
+      "date": "2026-11-20",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Literarisches Colloquium Berlin"
     },
     {
-      "id": "d192d5d82d9156f6",
-      "author": "Misha Schoeneberg",
-      "book_title": "Vielleicht wollte er gar nicht schweigen, er fand bloß die Worte nicht",
-      "date": "2026-11-05",
-      "venue": "Buchladen Bayerischer Platz",
-      "publisher": "Piper Verlag"
-    },
-    {
-      "id": "06e257524cb4d698",
-      "author": "Nele Pollatschek",
-      "book_title": "Wie ich so glücklich wurde",
-      "date": "2026-11-11",
-      "venue": "RBB",
-      "publisher": "Kiepenheuer & Witsch"
-    },
-    {
-      "id": "50a2935e2f3ad875",
-      "author": "Florian Schroeder",
-      "book_title": "Missverstehen Sie mich richtig - Florian Schroeder trifft Maja Göpel",
-      "date": "2026-11-15",
-      "venue": "Ernst-Reuter-Saal",
-      "publisher": "dtv Verlag"
-    },
-    {
-      "id": "e6f9859a4d16b53c",
+      "id": "d1fbd2320ee9bbeb",
       "author": null,
-      "book_title": "Die Jugend ist auch nicht in Würde jung",
-      "date": "2026-11-23",
+      "book_title": "Mo & Moritz",
+      "date": "2026-11-24",
       "venue": "Literaturhaus Berlin",
       "publisher": "Literaturhaus Berlin"
     },
     {
-      "id": "c73e7d2352c34703",
-      "author": "Christiane Rösinger",
-      "book_title": "Christiane Rösinger",
-      "date": "2026-11-23",
-      "venue": "Literaturhaus Berlin",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "3c2b0ba38a9b2c32",
-      "author": "Paula Fürstenberg",
-      "book_title": "Niewiedervereinigung",
-      "date": "2026-11-24",
-      "venue": "Amerika Gedenkbibliothek",
-      "publisher": "Kiepenheuer & Witsch"
-    },
-    {
-      "id": "2c741c5bf96aea26",
-      "author": "Bernardo Bianchi (Centre Marc Bloch), Oliver Precht (Leuphana University of Lüneburg)",
-      "book_title": "Composing Worlds: Anthropology, Ontology, and the Decolonization of Being",
-      "date": "2027-02-03",
-      "venue": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)",
-      "publisher": "Leibniz-Zentrum für Literatur- und Kulturforschung (ZfL)"
-    },
-    {
-      "id": "1455a52f49495ec5",
-      "author": "Helene Bockhorst",
-      "book_title": "Pferde stehlen",
-      "date": "2027-05-30",
-      "venue": "Mehringhof-Theater",
-      "publisher": "Ullstein Verlag"
+      "id": "d12c75aeb95d3269",
+      "author": null,
+      "book_title": "4.-5. Dezember 2026 in München",
+      "date": "2026-12-04",
+      "venue": "Literaturhaus München",
+      "publisher": "Literarisches Colloquium Berlin"
     }
   ]
 }
