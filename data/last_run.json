@@ -1,72 +1,24 @@
 {
-  "ran_at": "2026-10-17T06:27:58+00:00",
-  "total_events": 194,
-  "new_count": 8,
-  "removed_count": 4,
+  "ran_at": "2026-10-18T06:53:30+00:00",
+  "total_events": 191,
+  "new_count": 2,
+  "removed_count": 5,
   "new_events": [
     {
-      "id": "3452b3764117b541",
-      "author": "A. T. Emerald",
-      "book_title": "Under the Iron Sky",
-      "date": "2026-10-19",
-      "venue": "Thalia Berlin - Tauentzienstraße",
-      "publisher": "Ullstein Verlag"
-    },
-    {
-      "id": "125bad752f287265",
-      "author": "Heba Al-Wasity",
-      "book_title": "Stars In Your Eyes",
-      "date": "2026-10-19",
-      "venue": "Thalia Berlin - Tauentzienstraße",
-      "publisher": "Ullstein Verlag"
-    },
-    {
-      "id": "bc20913eac3f0040",
-      "author": "Valeria Gordeev",
-      "book_title": "AUSVERKAUFT: Lesung und Gespräch mit Valeria Gordeev, Ilija Matusko und Christian Dittloff",
-      "date": "2026-10-21",
-      "venue": "mare-Künstlerhaus",
+      "id": "33a7bb4d5080b531",
+      "author": "Sharon Dodua Otoo",
+      "book_title": "Adas Raum",
+      "date": "2026-10-22",
+      "venue": "Fachhochschule Erfurt",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "de9a4afdc4537351",
-      "author": "Christina Clemm",
-      "book_title": "Gegen Frauenhass",
-      "date": "2026-11-01",
-      "venue": "Volksbühne am Rosa-Luxemburg-Platz, Roter Salon",
+      "id": "13bf50c2c985b3df",
+      "author": "Stefanie de Velasco",
+      "book_title": "Heiss",
+      "date": "2026-12-01",
+      "venue": "Buchhandlung am Schäfersee in Kooperation mit M5 & Bibliothek am Schäfersee",
       "publisher": "Carl Hanser Verlag"
-    },
-    {
-      "id": "9abe554c5fd892b8",
-      "author": "Angela Merkel",
-      "book_title": "Freiheit",
-      "date": "2026-11-10",
-      "venue": "BUCHBOX!",
-      "publisher": "Kiepenheuer & Witsch"
-    },
-    {
-      "id": "1b9bb2f6e7785838",
-      "author": "Tia Morgen, Lea Schneider, Maria Liebl, Rebekka Endler, Linus Giese, Christine Koschmieder",
-      "book_title": "Rebekka Endler",
-      "date": "2026-11-20",
-      "venue": "Literarisches Colloquium Berlin",
-      "publisher": "Literarisches Colloquium Berlin"
-    },
-    {
-      "id": "d1fbd2320ee9bbeb",
-      "author": null,
-      "book_title": "Mo & Moritz",
-      "date": "2026-11-24",
-      "venue": "Literaturhaus Berlin",
-      "publisher": "Literaturhaus Berlin"
-    },
-    {
-      "id": "d12c75aeb95d3269",
-      "author": null,
-      "book_title": "4.-5. Dezember 2026 in München",
-      "date": "2026-12-04",
-      "venue": "Literaturhaus München",
-      "publisher": "Literarisches Colloquium Berlin"
     }
   ]
 }
