@@ -1,39 +1,5 @@
 [
   {
-    "publisher": "Rowohlt Verlag",
-    "author": "Christiane Rösinger",
-    "title": "Christiane Rösinger",
-    "date": "2026-10-18",
-    "time": "17:00",
-    "venue": "Buchhändlerkeller Berlin",
-    "city": "Berlin",
-    "address": "Alt-Lietzow 12, 10587 Berlin",
-    "url": "https://www.buchhaendlerkeller-berlin.de/index.php/eventreader/events/erzaehlbar-christiane-roesinger.html",
-    "source_url": "https://www.rowohlt.de/veranstaltung/lesung-und-gespraech-christiane-roesinger-berlin-20304-261018",
-    "raw_text": "Ein komisches, schonungsloses, tröstliches Buch über Altwerden und Jungbleiben. Christiane Rösinger ist Musikerin, Kreuzbergerin und Großmutter. Von ihr aus könnte das immer so weitergehen, wären da nicht das Älterwerden und die Geldsorgen. Das Altern lässt sich nicht aufhalten, aber um ein bisschen was zu verdienen, beschließt Christiane, einen Altersratgeber zu schreiben. Ohne Illusionen, dafür mit Power. Ein energischer Aufruf, sich nicht länger gefallen zu lassen, wie die Gesellschaft mit Frauen umgeht, die nicht mehr jung sind. Dabei ist es gar nicht so einfach, selbst eine entspannte Haltung zum Altwerden zu finden. Das zeigen schon die Gespräche mit den Freundinnen, deren unterschiedliche Erfahrungen und Meinungen: Da sind die Hundefrau, die Selbstoptimiererin, die Aufs-Land-Zieherin. Weit und breit kein positives Role Model. Wo sind die Vorbilder? Und vor allem: Was hilft alles, wenn man sich plötzlich in der Stroke Unit im Krankenhaus wiederfindet? Kein Ratgeber, sondern ein bissig-komisches Buch voller Erinnerungen, Gedanken und Geschichten, das am Ende einen ernsthaften Rat bereithält: weniger klagen, mehr leben. Denn alt sein heißt frei sein. «Ein realistisch-lustiger Anti-Altersratgeber für Frauen, die schon mit 40 verzweifeln – und ebenso für alle, die keine 70 mehr sind. Christiane Rösinger ist die begabteste Quereinsteigerin beim Thema Altern!» Maren Kroymann",
-    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/rowohlt/public/KNareH80bojBgGwv9ZpXa36jVEfz9HhlHNNJgaPDnNT/AF_Christiane%20R%C3%B6singer_Website.png",
-    "image_credit": null,
-    "book_title": null,
-    "id": "0c7dba9443d256b9"
-  },
-  {
-    "publisher": "dtv Verlag",
-    "author": "Helga Schubert",
-    "title": "Helga Schubert präsentiert ›Die Woche danach‹",
-    "date": "2026-10-18",
-    "time": "13:00",
-    "venue": "Berliner Ensemble",
-    "city": "Berlin",
-    "address": "Bertold-Brecht-Platz 1, 10117 Berlin",
-    "url": "https://www.berliner-ensemble.de/inszenierung/helga-schubert-die-woche-danach",
-    "source_url": "https://www.dtv.de/events?city=Berlin&p=1",
-    "raw_text": "18.10.2026 / 13:00 Uhr (CEST)",
-    "cover_image": "https://www.dtv.de/media/2a/3d/c1/1776067554/9783423285759__COVER_2D%20%28Produktcover%20Web%20klein%29.jpg?ts=1776067554",
-    "image_credit": null,
-    "book_title": "Die Woche danach",
-    "id": "52eefcd000b1738f"
-  },
-  {
     "publisher": "Ullstein Verlag",
     "author": "A. T. Emerald",
     "title": "Book-Talk mit A.T. Emerald und Heba Al-Wasity in Berlin",
@@ -950,23 +916,6 @@
     "image_credit": null,
     "book_title": "Die Lebensentscheidung",
     "id": "7833b2b0eb3baa87"
-  },
-  {
-    "publisher": "Suhrkamp Verlag",
-    "author": "Stephanie Sy-Quia",
-    "title": "Stephanie Sy-Quia liest aus ihrem neuen Roman Den Himmel bewegen Eine Veranstaltung in englischer Sprache",
-    "date": "2026-10-29",
-    "time": "19:00",
-    "venue": "Katholische Akademie in Berlin e.V.",
-    "city": "Berlin",
-    "address": "Hannoversche Str. 5, 10115 Berlin",
-    "url": "https://www.suhrkamp.de/buchpremiere/stephanie-sy-quia-v-50820",
-    "source_url": "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113",
-    "raw_text": "Buchpremiere",
-    "cover_image": null,
-    "image_credit": null,
-    "book_title": "Den Himmel bewegen",
-    "id": "ded2ef1402d613b4"
   },
   {
     "publisher": "Piper Verlag",
@@ -3245,5 +3194,22 @@
     "image_credit": null,
     "book_title": "Aus Ruinen",
     "id": "8e72da918399b22e"
+  },
+  {
+    "publisher": "Suhrkamp Verlag",
+    "author": "Stephanie Sy-Quia",
+    "title": "Stephanie Sy-Quia liest aus ihrem neuen Roman Den Himmel bewegen Eine Veranstaltung in englischer Sprache",
+    "date": null,
+    "time": null,
+    "venue": "Katholische Akademie in Berlin e.V.",
+    "city": "Berlin",
+    "address": "Hannoversche Str. 5, 10115 Berlin",
+    "url": "https://www.suhrkamp.de/buchpremiere/stephanie-sy-quia-v-50820",
+    "source_url": "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113",
+    "raw_text": "Buchpremiere",
+    "cover_image": null,
+    "image_credit": null,
+    "book_title": "Den Himmel bewegen",
+    "id": "c48963bc21263f24"
   }
 ]
