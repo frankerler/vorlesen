@@ -1,15 +1,71 @@
 {
-  "ran_at": "2026-10-19T07:12:04+00:00",
-  "total_events": 189,
-  "new_count": 1,
-  "removed_count": 3,
+  "ran_at": "2026-10-20T06:58:09+00:00",
+  "total_events": 190,
+  "new_count": 8,
+  "removed_count": 7,
   "new_events": [
     {
-      "id": "c48963bc21263f24",
+      "id": "bd34cf49d12a03ca",
+      "author": "Gilda Sahebi",
+      "book_title": "Verbinden statt spalten: Eine Antwort auf die Politik der Polarisierung",
+      "date": "2026-10-23",
+      "venue": "MOC | Authors-MeetUp C.06 | Halle / hall 2",
+      "publisher": "S. Fischer Verlage"
+    },
+    {
+      "id": "ded2ef1402d613b4",
       "author": "Stephanie Sy-Quia",
       "book_title": "Den Himmel bewegen",
-      "date": null,
+      "date": "2026-10-29",
       "venue": "Katholische Akademie in Berlin e.V.",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "f8e3de534538596c",
+      "author": "Karen Köhler",
+      "book_title": "Himmelwärts",
+      "date": "2026-11-03",
+      "venue": "Bibliothek am Luisenbad",
+      "publisher": "Carl Hanser Verlag"
+    },
+    {
+      "id": "fef8f5996f7ee497",
+      "author": "Clara Leinemann",
+      "book_title": "Rage Girl. Zur Literatur der Wut",
+      "date": "2026-11-11",
+      "venue": "Literaturforum im Brecht-Haus",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "48fa2e3b3bb25552",
+      "author": "Heike Geißler",
+      "book_title": "Michaela Kohlhaas",
+      "date": "2026-11-13",
+      "venue": "Freie Universität Berlin",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "ded0afd771948245",
+      "author": "Hendrik Bolz",
+      "book_title": "Aus Ruinen",
+      "date": "2026-11-22",
+      "venue": "Silent Green Kulturquartier, Betonhalle",
+      "publisher": "Kiepenheuer & Witsch"
+    },
+    {
+      "id": "11f9b15f9ccefde6",
+      "author": "Bianca Praetorius",
+      "book_title": "Fallen Gods (Fallen Gods 1)",
+      "date": "2026-12-03",
+      "venue": "*BUCHBOX! Kiezbuchhandlung",
+      "publisher": "Ullstein Verlag"
+    },
+    {
+      "id": "bf4431e919f721c3",
+      "author": "Isabella M. Weber und Simon Strick",
+      "book_title": "Towards a Social Theory of Fascization",
+      "date": "2026-12-03",
+      "venue": "Humboldt-Universität zu Berlin",
       "publisher": "Suhrkamp Verlag"
     }
   ]
