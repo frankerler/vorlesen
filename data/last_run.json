@@ -1,72 +1,112 @@
 {
-  "ran_at": "2026-10-20T06:58:09+00:00",
-  "total_events": 190,
-  "new_count": 8,
-  "removed_count": 7,
+  "ran_at": "2026-10-21T06:53:19+00:00",
+  "total_events": 188,
+  "new_count": 13,
+  "removed_count": 15,
   "new_events": [
     {
-      "id": "bd34cf49d12a03ca",
-      "author": "Gilda Sahebi",
-      "book_title": "Verbinden statt spalten: Eine Antwort auf die Politik der Polarisierung",
-      "date": "2026-10-23",
-      "venue": "MOC | Authors-MeetUp C.06 | Halle / hall 2",
-      "publisher": "S. Fischer Verlage"
-    },
-    {
-      "id": "ded2ef1402d613b4",
-      "author": "Stephanie Sy-Quia",
-      "book_title": "Den Himmel bewegen",
+      "id": "6979ca7eff0f48b6",
+      "author": "Shila Behjat",
+      "book_title": "Tahirih – die Dichterin und der Preis der Freiheit",
       "date": "2026-10-29",
-      "venue": "Katholische Akademie in Berlin e.V.",
+      "venue": "THF Tower am Flughafen Tempelhof",
       "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "f8e3de534538596c",
-      "author": "Karen Köhler",
-      "book_title": "Himmelwärts",
-      "date": "2026-11-03",
-      "venue": "Bibliothek am Luisenbad",
+      "id": "a4e51616ad14ce8b",
+      "author": "Stefan Roloff",
+      "book_title": "Stefan Roloff",
+      "date": "2026-10-31",
+      "venue": "Golda Books",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "d506774b4d3804c1",
+      "author": "Özge İNan",
+      "book_title": "Die Dichterin",
+      "date": "2026-11-04",
+      "venue": "Bezirksbibliothek Pablo Neruda",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "47f18f5c80a45ff1",
+      "author": "Niklas Maak",
+      "book_title": "Die letzten Tage der Schönheit. Die Plünderung Roms 1527 und das Ende der Renaissance",
+      "date": "2026-11-05",
+      "venue": "Buchhandlung Ferlemann & Schatzer",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "de1d2ec6a5b8a380",
+      "author": "Karen Hagemann",
+      "book_title": "Vergessene Soldatinnen. Frauen im Militär und in den Kriegen Europas seit 1600",
+      "date": "2026-11-16",
+      "venue": "Humboldt-Universität zu Berlin Institut für Geschichtswissenschaften",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "411ca3a57c7e5492",
+      "author": "Simon Strick",
+      "book_title": "Faschisierung",
+      "date": "2026-11-19",
+      "venue": "Weizenbaum-Institut",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "1ca0c6ef9f1d7bbf",
+      "author": "Ulrike Sterblich",
+      "book_title": "Ulrike Sterblich",
+      "date": "2026-11-19",
+      "venue": "autorenbuchhandlungberlin",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "5160bd037de12f17",
+      "author": "Tia Morgen",
+      "book_title": "Scham?",
+      "date": "2026-11-20",
+      "venue": "Literarisches Colloquium Berlin",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "cb5f82f493be3635",
+      "author": "Asha Hedayati",
+      "book_title": "Teresa Bücker",
+      "date": "2026-11-25",
+      "venue": "Berlin Global Village",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "4245fcef1f03dce9",
+      "author": "sinthujan varatharajah",
+      "book_title": "wo zeit stehen bleibt",
+      "date": "2026-11-27",
+      "venue": "Betonhalle / silent green Kulturquartier",
       "publisher": "Carl Hanser Verlag"
     },
     {
-      "id": "fef8f5996f7ee497",
-      "author": "Clara Leinemann",
-      "book_title": "Rage Girl. Zur Literatur der Wut",
-      "date": "2026-11-11",
-      "venue": "Literaturforum im Brecht-Haus",
-      "publisher": "Suhrkamp Verlag"
+      "id": "f5bf732c772e2bdc",
+      "author": "Asha Hedayati",
+      "book_title": "Teresa Bücker",
+      "date": "2026-12-02",
+      "venue": "Café Köpenick",
+      "publisher": "Rowohlt Verlag"
     },
     {
-      "id": "48fa2e3b3bb25552",
-      "author": "Heike Geißler",
-      "book_title": "Michaela Kohlhaas",
-      "date": "2026-11-13",
-      "venue": "Freie Universität Berlin",
-      "publisher": "Suhrkamp Verlag"
+      "id": "8c4fa9b377109918",
+      "author": "Ronen Steinke",
+      "book_title": "Meinungsfreiheit",
+      "date": "2027-01-05",
+      "venue": "Evangelische Hochschule Berlin",
+      "publisher": "Piper Verlag"
     },
     {
-      "id": "ded0afd771948245",
-      "author": "Hendrik Bolz",
-      "book_title": "Aus Ruinen",
-      "date": "2026-11-22",
-      "venue": "Silent Green Kulturquartier, Betonhalle",
-      "publisher": "Kiepenheuer & Witsch"
-    },
-    {
-      "id": "11f9b15f9ccefde6",
-      "author": "Bianca Praetorius",
-      "book_title": "Fallen Gods (Fallen Gods 1)",
-      "date": "2026-12-03",
-      "venue": "*BUCHBOX! Kiezbuchhandlung",
-      "publisher": "Ullstein Verlag"
-    },
-    {
-      "id": "bf4431e919f721c3",
-      "author": "Isabella M. Weber und Simon Strick",
-      "book_title": "Towards a Social Theory of Fascization",
-      "date": "2026-12-03",
-      "venue": "Humboldt-Universität zu Berlin",
-      "publisher": "Suhrkamp Verlag"
+      "id": "3a0d89e85051f4ab",
+      "author": "Nicholas Potter",
+      "book_title": "Die neue autoritäre Linke. Eine akute Bedrohung für die demokratische Gesellschaft",
+      "date": "2027-03-17",
+      "venue": "Gedenkstätte Berlin-Hohenschönhausen",
+      "publisher": "dtv Verlag"
     }
   ]
 }
