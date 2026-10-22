@@ -1,112 +1,80 @@
 {
-  "ran_at": "2026-10-21T06:53:19+00:00",
-  "total_events": 188,
-  "new_count": 13,
-  "removed_count": 15,
+  "ran_at": "2026-10-22T06:55:47+00:00",
+  "total_events": 172,
+  "new_count": 9,
+  "removed_count": 25,
   "new_events": [
     {
-      "id": "6979ca7eff0f48b6",
+      "id": "4dc8c8471a89d622",
+      "author": null,
+      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
+      "date": "2026-10-27",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "d9ad2dfbae492fa3",
       "author": "Shila Behjat",
-      "book_title": "Tahirih – die Dichterin und der Preis der Freiheit",
-      "date": "2026-10-29",
-      "venue": "THF Tower am Flughafen Tempelhof",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "a4e51616ad14ce8b",
-      "author": "Stefan Roloff",
-      "book_title": "Stefan Roloff",
-      "date": "2026-10-31",
-      "venue": "Golda Books",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "d506774b4d3804c1",
-      "author": "Özge İNan",
-      "book_title": "Die Dichterin",
-      "date": "2026-11-04",
-      "venue": "Bezirksbibliothek Pablo Neruda",
-      "publisher": "Piper Verlag"
-    },
-    {
-      "id": "47f18f5c80a45ff1",
-      "author": "Niklas Maak",
-      "book_title": "Die letzten Tage der Schönheit. Die Plünderung Roms 1527 und das Ende der Renaissance",
+      "book_title": "Tahirih",
       "date": "2026-11-05",
-      "venue": "Buchhandlung Ferlemann & Schatzer",
+      "venue": "Landeszentrale für politische Bildung",
       "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "de1d2ec6a5b8a380",
-      "author": "Karen Hagemann",
-      "book_title": "Vergessene Soldatinnen. Frauen im Militär und in den Kriegen Europas seit 1600",
-      "date": "2026-11-16",
-      "venue": "Humboldt-Universität zu Berlin Institut für Geschichtswissenschaften",
-      "publisher": "Suhrkamp Verlag"
+      "id": "510c969d45c53dec",
+      "author": "Florian Aigner",
+      "book_title": "Buchvorstellung mit Florian Aigner",
+      "date": "2026-11-09",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "411ca3a57c7e5492",
-      "author": "Simon Strick",
-      "book_title": "Faschisierung",
-      "date": "2026-11-19",
-      "venue": "Weizenbaum-Institut",
-      "publisher": "Suhrkamp Verlag"
+      "id": "7b2056b2eb5e1e81",
+      "author": "Audrey Niffenegger",
+      "book_title": "Buchvorstellung mit Audrey Niffenegger",
+      "date": "2026-11-18",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "1ca0c6ef9f1d7bbf",
-      "author": "Ulrike Sterblich",
-      "book_title": "Ulrike Sterblich",
-      "date": "2026-11-19",
-      "venue": "autorenbuchhandlungberlin",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "5160bd037de12f17",
-      "author": "Tia Morgen",
-      "book_title": "Scham?",
+      "id": "da35c1c2c4f07cac",
+      "author": "Stella Schultner",
+      "book_title": "Buchvorstellung mit Stella Schultner",
       "date": "2026-11-20",
-      "venue": "Literarisches Colloquium Berlin",
-      "publisher": "Suhrkamp Verlag"
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
     },
     {
-      "id": "cb5f82f493be3635",
-      "author": "Asha Hedayati",
-      "book_title": "Teresa Bücker",
+      "id": "12723e1c7b05cf5b",
+      "author": "Katja Eichinger",
+      "book_title": "Buchpremiere mit Katja Eichinger",
+      "date": "2026-11-24",
+      "venue": "KulturBühne",
+      "publisher": "Dussmann das KulturKaufhaus"
+    },
+    {
+      "id": "321ee42842b82071",
+      "author": null,
+      "book_title": "Die Geschichte der Fasanenstraße 23 in 9½ Objekten",
       "date": "2026-11-25",
-      "venue": "Berlin Global Village",
-      "publisher": "Rowohlt Verlag"
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
     },
     {
-      "id": "4245fcef1f03dce9",
-      "author": "sinthujan varatharajah",
-      "book_title": "wo zeit stehen bleibt",
-      "date": "2026-11-27",
-      "venue": "Betonhalle / silent green Kulturquartier",
+      "id": "ac36c1edb0bc05df",
+      "author": "Mirjam Zadoff, Mithu Sanyal, Christina Clemm",
+      "book_title": "Wie wir überwintern",
+      "date": "2026-11-28",
+      "venue": "silent green Kulturquartier, Betonbar",
       "publisher": "Carl Hanser Verlag"
     },
     {
-      "id": "f5bf732c772e2bdc",
-      "author": "Asha Hedayati",
-      "book_title": "Teresa Bücker",
-      "date": "2026-12-02",
-      "venue": "Café Köpenick",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "8c4fa9b377109918",
-      "author": "Ronen Steinke",
-      "book_title": "Meinungsfreiheit",
-      "date": "2027-01-05",
-      "venue": "Evangelische Hochschule Berlin",
-      "publisher": "Piper Verlag"
-    },
-    {
-      "id": "3a0d89e85051f4ab",
-      "author": "Nicholas Potter",
-      "book_title": "Die neue autoritäre Linke. Eine akute Bedrohung für die demokratische Gesellschaft",
-      "date": "2027-03-17",
-      "venue": "Gedenkstätte Berlin-Hohenschönhausen",
-      "publisher": "dtv Verlag"
+      "id": "d391bcdc6b30d89a",
+      "author": "Karina Urbach",
+      "book_title": "Mythos Fremdenlegion",
+      "date": "2026-12-01",
+      "venue": "Berlin - Charlottenburg (wird nach der Anmeldung mitgeteilt)",
+      "publisher": "Ullstein Verlag"
     }
   ]
 }
