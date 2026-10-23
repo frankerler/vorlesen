@@ -1,80 +1,248 @@
 {
-  "ran_at": "2026-10-22T06:55:47+00:00",
-  "total_events": 172,
-  "new_count": 9,
-  "removed_count": 25,
+  "ran_at": "2026-10-23T06:49:58+00:00",
+  "total_events": 194,
+  "new_count": 30,
+  "removed_count": 8,
   "new_events": [
     {
-      "id": "4dc8c8471a89d622",
-      "author": null,
-      "book_title": "Live-Podcast & Talk: Dora Heldt und Tülin Sezgin",
-      "date": "2026-10-27",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "id": "e62d6deb94ae6bf4",
+      "author": "Misha Schoeneberg",
+      "book_title": "Vielleicht wollte er gar nicht schweigen, er fand bloß die Worte nicht",
+      "date": "2026-10-25",
+      "venue": null,
+      "publisher": "Piper Verlag"
     },
     {
-      "id": "d9ad2dfbae492fa3",
-      "author": "Shila Behjat",
-      "book_title": "Tahirih",
-      "date": "2026-11-05",
-      "venue": "Landeszentrale für politische Bildung",
+      "id": "a6f29beabd363286",
+      "author": "Erica Fischer|Simone Ladwig-Winters",
+      "book_title": "Sie verlieh dem Augenblick Dauer",
+      "date": "2026-10-28",
+      "venue": "Ephraim Palais",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "f591d391722a95d1",
+      "author": "Anna-Verena Nosthoff",
+      "book_title": "Kybernetik und Kritik",
+      "date": "2026-10-29",
+      "venue": "Humboldt-Universität zu Berlin Medientheater",
       "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "510c969d45c53dec",
-      "author": "Florian Aigner",
-      "book_title": "Buchvorstellung mit Florian Aigner",
-      "date": "2026-11-09",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "id": "c3f1c0fbb1e15fce",
+      "author": "Özge İNan",
+      "book_title": "Die Dichterin",
+      "date": "2026-10-29",
+      "venue": "Literaturforum im Brecht Haus",
+      "publisher": "Piper Verlag"
     },
     {
-      "id": "7b2056b2eb5e1e81",
-      "author": "Audrey Niffenegger",
-      "book_title": "Buchvorstellung mit Audrey Niffenegger",
-      "date": "2026-11-18",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "id": "4fb35c6e6b465919",
+      "author": "Ruth Ware",
+      "book_title": "The Woman in Suite 11",
+      "date": "2026-10-30",
+      "venue": "Mörderische Schwestern e.V.",
+      "publisher": "dtv Verlag"
     },
     {
-      "id": "da35c1c2c4f07cac",
-      "author": "Stella Schultner",
-      "book_title": "Buchvorstellung mit Stella Schultner",
-      "date": "2026-11-20",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "id": "099efcbd9f35d4a6",
+      "author": "Olivia Laing",
+      "book_title": "Buch der Träume",
+      "date": "2026-11-04",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "12723e1c7b05cf5b",
-      "author": "Katja Eichinger",
-      "book_title": "Buchpremiere mit Katja Eichinger",
+      "id": "d506774b4d3804c1",
+      "author": "Özge İNan",
+      "book_title": "Die Dichterin",
+      "date": "2026-11-04",
+      "venue": "Bezirksbibliothek Pablo Neruda",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "d192d5d82d9156f6",
+      "author": "Misha Schoeneberg",
+      "book_title": "Vielleicht wollte er gar nicht schweigen, er fand bloß die Worte nicht",
+      "date": "2026-11-05",
+      "venue": "Buchladen Bayerischer Platz",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "10ec4b3b07975c5f",
+      "author": "Misha Schoeneberg",
+      "book_title": "Vielleicht wollte er gar nicht schweigen, er fand bloß die Worte nicht",
+      "date": "2026-11-06",
+      "venue": "Ausweichquartier der Bibliothek am Schäfersee",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "8fc225f511eaa999",
+      "author": "Ronen Steinke",
+      "book_title": "Ronen Steinke beim Bundeskongress Compliance 2026",
+      "date": "2026-11-06",
+      "venue": "Hilton Berlin Hotel",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "c4f732bae44d8c56",
+      "author": "Richard Hemmer|Daniel Meßner",
+      "book_title": "Richard Hemmer und Daniel Meßner sprechen über «Mehr Geschichten aus der Geschichte» in Berlin",
+      "date": "2026-11-08",
+      "venue": "Haus der Kulturen der Welt",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "6c11ee7aa52e121f",
+      "author": "Ilja Leonard Pfeijffer",
+      "book_title": "Alkibiades",
+      "date": "2026-11-10",
+      "venue": "Buchhandlung Uslar & Rai, Berlin",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "b91738d1359c70cb",
+      "author": "Sophie Calle",
+      "book_title": "Erinnerungen an Ostberlin",
+      "date": "2026-11-11",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "b64110216af94aa9",
+      "author": "Ahmad Mansour",
+      "book_title": "Haltung ohne Hass",
+      "date": "2026-11-12",
+      "venue": "Museum für Kommunikation Berlin",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "a020e087b564d551",
+      "author": "Oliver Lubrich, Hans-Peter Müller, Jan-Werner Müller, Karl Schlögel u.a.",
+      "book_title": "Deutschland – Russland – USA",
+      "date": "2026-11-12",
+      "venue": "Deutsches Historisches Museum Pei-Bau",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "0110db9a7c0db9c1",
+      "author": "Judith Hoersch",
+      "book_title": "Niemands Töchter",
+      "date": "2026-11-16",
+      "venue": "Hotel Zoo Berlin",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "2b1c2e7c63b46d9c",
+      "author": "Eva Zu Beck",
+      "book_title": "The Wilder Way",
+      "date": "2026-11-17",
+      "venue": "Pfefferberg Theater",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "7fe366443d7bdad9",
+      "author": "Rey Mani et al.",
+      "book_title": "Ich bin deine Tochter, nicht deine Ehre",
+      "date": "2026-11-17",
+      "venue": "Urania Berlin",
+      "publisher": "Urania Berlin"
+    },
+    {
+      "id": "2e81f290043238fd",
+      "author": "Özge İNan",
+      "book_title": "Die Dichterin",
+      "date": "2026-11-19",
+      "venue": null,
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "41471bb1ecbb91af",
+      "author": "Ahmad Mansour",
+      "book_title": "Haltung ohne Hass",
       "date": "2026-11-24",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "venue": "Humboldt-Bibliothek in Tegel",
+      "publisher": "Piper Verlag"
     },
     {
-      "id": "321ee42842b82071",
+      "id": "719c88b1068711e0",
       "author": null,
-      "book_title": "Die Geschichte der Fasanenstraße 23 in 9½ Objekten",
-      "date": "2026-11-25",
+      "book_title": "In den Laken",
+      "date": "2026-11-26",
       "venue": "Literaturhaus Berlin",
       "publisher": "Literaturhaus Berlin"
     },
     {
-      "id": "ac36c1edb0bc05df",
-      "author": "Mirjam Zadoff, Mithu Sanyal, Christina Clemm",
-      "book_title": "Wie wir überwintern",
-      "date": "2026-11-28",
-      "venue": "silent green Kulturquartier, Betonbar",
-      "publisher": "Carl Hanser Verlag"
+      "id": "e75812e47a8e08f8",
+      "author": "Thomas R. Hoffmann",
+      "book_title": "Die großen Landschaftsmaler von der Romantik bis zur Moderne",
+      "date": "2026-11-26",
+      "venue": "Urania Berlin",
+      "publisher": "Urania Berlin"
     },
     {
-      "id": "d391bcdc6b30d89a",
-      "author": "Karina Urbach",
-      "book_title": "Mythos Fremdenlegion",
-      "date": "2026-12-01",
-      "venue": "Berlin - Charlottenburg (wird nach der Anmeldung mitgeteilt)",
-      "publisher": "Ullstein Verlag"
+      "id": "46ef46b91d4a78f1",
+      "author": null,
+      "book_title": "In den Laken",
+      "date": "2026-11-27",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "cbc1980fc72a1268",
+      "author": "Heike Geißler",
+      "book_title": "Michaela Kohlhaas",
+      "date": "2026-11-27",
+      "venue": "silent green Kulturquartier Kino",
+      "publisher": "Suhrkamp Verlag"
+    },
+    {
+      "id": "a369955444a5b70c",
+      "author": "Bonnie Garmus",
+      "book_title": "Peck & Peck",
+      "date": "2026-12-02",
+      "venue": "rbb / Historischer Sendesaal, Berlin",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "84552e608b473eac",
+      "author": "Franca Cerutti",
+      "book_title": "Psychologie to go! – LIVE in Berlin",
+      "date": "2026-12-06",
+      "venue": "Colosseum Berlin",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "8c4fa9b377109918",
+      "author": "Ronen Steinke",
+      "book_title": "Meinungsfreiheit",
+      "date": "2027-01-05",
+      "venue": "Evangelische Hochschule Berlin",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "52599b0fbbebfc8b",
+      "author": "Liane Mars",
+      "book_title": "Crowned by Shadows",
+      "date": "2027-01-08",
+      "venue": "Thalia Berlin - Tauentzienstraße",
+      "publisher": "Piper Verlag"
+    },
+    {
+      "id": "7ce5951fac49ec34",
+      "author": "Wolfgang Buescher",
+      "book_title": "Das stille Deutschland. Eine Wanderung",
+      "date": "2027-03-09",
+      "venue": "Knesebeck Elf Buchhandlung",
+      "publisher": "dtv Verlag"
+    },
+    {
+      "id": "fbd23263347bf477",
+      "author": "Susanne Siegert",
+      "book_title": "Gedenken neu denken",
+      "date": "2027-04-06",
+      "venue": "Zitadelle Spandau",
+      "publisher": "Piper Verlag"
     }
   ]
 }
