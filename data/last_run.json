@@ -1,56 +1,7 @@
 {
-  "ran_at": "2026-10-24T06:45:33+00:00",
+  "ran_at": "2026-10-25T07:14:11+00:00",
   "total_events": 194,
-  "new_count": 6,
-  "removed_count": 6,
-  "new_events": [
-    {
-      "id": "2ff995cccc7da490",
-      "author": "Peter Prange",
-      "book_title": "Lebendig erzähltes Stück Zeitgeschichte",
-      "date": "2026-10-28",
-      "venue": "Bürgerhaus Neustadt",
-      "publisher": "S. Fischer Verlage"
-    },
-    {
-      "id": "f281ea21d3700dd5",
-      "author": "Katja Petrowskaja",
-      "book_title": "Das Foto schaute mich an",
-      "date": "2026-11-10",
-      "venue": "PANDA platforma e.V.",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "4e15982ac6069192",
-      "author": null,
-      "book_title": "Methode zur Zerstörung der Demokratie durch Gefühle",
-      "date": "2026-11-18",
-      "venue": "Heinrich-Böll-Stiftung - Bundesstiftung Berlin Schumannstr. 8 10117 Berlin",
-      "publisher": "Heinrich-Böll-Stiftung"
-    },
-    {
-      "id": "27a6e0b4d5231920",
-      "author": "Mirjam Zadoff, Mithu Sanyal, Christina Clemm",
-      "book_title": "Wie wir überwintern",
-      "date": "2026-11-28",
-      "venue": "Betonbar / silent green Kulturquartier",
-      "publisher": "Carl Hanser Verlag"
-    },
-    {
-      "id": "385556f3d2d466ec",
-      "author": "Robert Habeck",
-      "book_title": "Arctic Meltdown",
-      "date": "2026-11-30",
-      "venue": "Tempodrom",
-      "publisher": "Kiepenheuer & Witsch"
-    },
-    {
-      "id": "bb67b8d7dcf4675f",
-      "author": "Isabella M. Weber, Dagmar Herzog und Simon Strick",
-      "book_title": "Towards a Social Theory of Fascization",
-      "date": "2026-12-03",
-      "venue": "Humboldt-Universität zu Berlin",
-      "publisher": "Suhrkamp Verlag"
-    }
-  ]
+  "new_count": 0,
+  "removed_count": 0,
+  "new_events": []
 }
