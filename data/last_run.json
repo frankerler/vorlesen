@@ -1,7 +1,24 @@
 {
-  "ran_at": "2026-10-25T07:14:11+00:00",
-  "total_events": 194,
-  "new_count": 0,
-  "removed_count": 0,
-  "new_events": []
+  "ran_at": "2026-10-26T07:18:16+00:00",
+  "total_events": 193,
+  "new_count": 2,
+  "removed_count": 3,
+  "new_events": [
+    {
+      "id": "8986076537f08aa8",
+      "author": "Kyra Groh",
+      "book_title": "The Peppermint Hot Chocolate Dilemma",
+      "date": "2026-11-13",
+      "venue": "Thalia Berlin Alexa",
+      "publisher": "Ullstein Verlag"
+    },
+    {
+      "id": "4dd1342effa2c901",
+      "author": "Kyra Groh",
+      "book_title": "The Peppermint Hot Chocolate Dilemma",
+      "date": null,
+      "venue": "Ullstein Buchverlage GmbH",
+      "publisher": "Ullstein Verlag"
+    }
+  ]
 }

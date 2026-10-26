@@ -1,56 +1,5 @@
 [
   {
-    "publisher": "Kiepenheuer & Witsch",
-    "author": "Angelina Boerger",
-    "title": "Angelina Boerger: Kirmes im Kopf - Neurolution",
-    "date": "2026-10-25",
-    "time": "20:00",
-    "venue": "Anna Spree",
-    "city": "Berlin",
-    "address": "Franklinstraße 10, 10587 Berlin",
-    "url": "https://www.kiwi-verlag.de/veranstaltung/buehnenprogramm-angelina-boerger-berlin-4030710-261025",
-    "source_url": "https://www.kiwi-verlag.de/veranstaltung",
-    "raw_text": "Bühnenprogramm",
-    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/kiwi/public/4w5eS33djMaAI4ncpUE4qRy0sbft5shuwBOFmX8O37y/U1_978-3-462-00905-7.png",
-    "image_credit": null,
-    "book_title": "Normal war nie der Plan",
-    "id": "ef4f46f9406e3cfb"
-  },
-  {
-    "publisher": "Literarisches Colloquium Berlin",
-    "author": "Ayşe Klinge",
-    "title": "ENTFÄLLT: Ayşe Klinge: Der Zahn",
-    "date": "2026-10-25",
-    "time": "15:00",
-    "venue": "Literarisches Colloquium Berlin",
-    "city": "Berlin",
-    "address": "Am Sandwerder 5, 14109 Berlin",
-    "url": "https://lcb.de/programm/kinderlesung-ayse-klinge/",
-    "source_url": "https://lcb.de/category/veranstaltungen/",
-    "raw_text": null,
-    "cover_image": null,
-    "image_credit": null,
-    "book_title": "Interaktive Kinder-Lesung und Live-Zeichnen mit Ayşe Klinge, Kranichsteiner Kinderliteratur-Stipendiatin 2026",
-    "id": "fdc330114595f547"
-  },
-  {
-    "publisher": "Piper Verlag",
-    "author": "Misha Schoeneberg",
-    "title": "Misha Schoeneberg liest aus „Vielleicht wollte er gar nicht schweigen, er fand bloß die Worte nicht“ in Berlin",
-    "date": "2026-10-25",
-    "time": null,
-    "venue": null,
-    "city": "Berlin-Kreuzberg",
-    "address": "Möckernkiez 2 10963 Berlin-Kreuzberg",
-    "url": "https://www.piper.de/autoren/veranstaltungen/detail/misha-schoeneberg-liest-aus-vielleicht-wollte-er-gar-nicht-schweigen-er-fand-bloss-die-worte-nicht-in-berlin-ort-berlin-kreuzberg-lokalitaet-moeckernkiez-cafe-plz-10963-datum-2026-10-25-uhrzeit-1900",
-    "source_url": "https://www.piper.de/autoren/veranstaltungen",
-    "raw_text": "Am Sonntag, 25. Oktober 2026 in Berlin-Kreuzberg",
-    "cover_image": null,
-    "image_credit": null,
-    "book_title": "Vielleicht wollte er gar nicht schweigen, er fand bloß die Worte nicht",
-    "id": "e62d6deb94ae6bf4"
-  },
-  {
     "publisher": "Suhrkamp Verlag",
     "author": "Axel Schock und Thomas Sparr",
     "title": "Axel Schock präsentiert sein neues Buch Aids. Chronik einer Pandemie Moderation: Thomas Sparr",
@@ -1494,6 +1443,23 @@
     "image_credit": null,
     "book_title": "Die Spionin von London",
     "id": "091adb8c3f6bcaf9"
+  },
+  {
+    "publisher": "Ullstein Verlag",
+    "author": "Kyra Groh",
+    "title": "Kyra Groh in Berlin",
+    "date": "2026-11-13",
+    "time": "19:00",
+    "venue": "Thalia Berlin Alexa",
+    "city": "Berlin",
+    "address": "Grunerstraße 20, 10179 Berlin",
+    "url": "https://www.ullstein.de/veranstaltungen/kyra-groh-in-berlin-2",
+    "source_url": "https://www.ullstein.de/veranstaltungen",
+    "raw_text": "13.11.2026 19:00",
+    "cover_image": "https://content.ullstein.de/assets/ww/produkt-cvr/eb/2e3ddced0c644c8f4ef2cfe58470cb60fa5261.jpg?v=1792485853%2C0.4827%2C0.5746",
+    "image_credit": null,
+    "book_title": "The Peppermint Hot Chocolate Dilemma",
+    "id": "8986076537f08aa8"
   },
   {
     "publisher": "Kiepenheuer & Witsch",
@@ -3296,5 +3262,22 @@
     "image_credit": null,
     "book_title": "Aus Ruinen",
     "id": "8e72da918399b22e"
+  },
+  {
+    "publisher": "Ullstein Verlag",
+    "author": "Kyra Groh",
+    "title": "Kyra Groh in Berlin beim Ullstein Wintermarkt",
+    "date": null,
+    "time": "14:00",
+    "venue": "Ullstein Buchverlage GmbH",
+    "city": "Berlin",
+    "address": "Friedrichstr. 126, 10117 Berlin",
+    "url": "https://www.ullstein.de/veranstaltungen/kyra-groh-in-berlin-beim-ullstein-wintermarkt",
+    "source_url": "https://www.ullstein.de/veranstaltungen",
+    "raw_text": "21.–21.11.2026 14:00",
+    "cover_image": "https://content.ullstein.de/assets/ww/produkt-cvr/eb/2e3ddced0c644c8f4ef2cfe58470cb60fa5261.jpg?v=1792485853%2C0.4827%2C0.5746",
+    "image_credit": null,
+    "book_title": "The Peppermint Hot Chocolate Dilemma",
+    "id": "4dd1342effa2c901"
   }
 ]
