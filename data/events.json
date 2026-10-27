@@ -1,22 +1,5 @@
 [
   {
-    "publisher": "Suhrkamp Verlag",
-    "author": "Axel Schock und Thomas Sparr",
-    "title": "Axel Schock präsentiert sein neues Buch Aids. Chronik einer Pandemie Moderation: Thomas Sparr",
-    "date": "2026-10-26",
-    "time": "20:30",
-    "venue": "Prinz Eisenherz Buchladen",
-    "city": "Berlin",
-    "address": "Motzstraße 23, 10777 Berlin",
-    "url": "https://www.suhrkamp.de/buchpremiere/axel-schock-und-thomas-sparr-v-51112",
-    "source_url": "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113",
-    "raw_text": "Buchpremiere",
-    "cover_image": null,
-    "image_credit": null,
-    "book_title": "Aids. Chronik einer Pandemie",
-    "id": "e1c3a8f694826c00"
-  },
-  {
     "publisher": "Literaturhaus Berlin",
     "author": null,
     "title": "Licht ins Dunkel",
@@ -204,6 +187,23 @@
     "id": "a6f29beabd363286"
   },
   {
+    "publisher": "S. Fischer Verlage",
+    "author": "Gilda Sahebi",
+    "title": "Lesung mit Gilda Sahebi",
+    "date": "2026-10-28",
+    "time": "20:30",
+    "venue": "Die genaue Location wird nach der Buchung mitgeteilt.",
+    "city": "Berlin",
+    "address": "10551 Berlin",
+    "url": "https://eveeno.com/230477037",
+    "source_url": "https://www.fischerverlage.de/veranstaltung/lesung-gilda-sahebi-berlin-1049223-261028",
+    "raw_text": "Spaltet die Spaltung unser Land – oder spaltet vor allem die Erzählung davon? Die Journalistin und Autorin Gilda Sahebi behauptet Letzteres: Die tatsächliche Polarisierung unserer Gesellschaft ist oft weit weniger tief, als wir glauben. Aber es gibt Kräfte, die gezielt davon profitieren, wenn der Eindruck entsteht, die Welt bestehe nur noch aus unversöhnlichen Lagern. In ihrem Buch „Verbinden statt spalten. Eine Antwort auf die Politik der Polarisierung\" räumt die mehrfach ausgezeichnete Journalistin mit Mythen und Fake Facts über die deutsche Gesellschaft auf. Sie zeigt, wie Spaltungserzählungen entstehen, medial verstärkt und als Herrschaftsinstrument genutzt werden – denn autoritäre Kräfte von Trump bis zur AfD inszenieren sich so erfolgreich als „Retter in der Not\". Anhand von Debatten über Migration, Gendern, Corona und Krieg dechiffriert Sahebi die Mechanismen hinter dem, was sie das „Polarisierungsgeschäft\" nennt und lädt uns ein, den Blick zu wechseln: weg von getrübten Narrativen, hin zu der Erkenntnis, dass uns weit mehr verbindet als trennt. Im Anschluss an die Lesung besteht Gelegenheit zur Diskussion mit der Autorin und damit genau zu dem, wovon ihr Buch handelt: dem produktiven Umgang mit Dissens. Kommt vorbei, hört zu und kommt mit uns ins Gespräch. Einlass: 20:00 Uhr, Beginn: 20:30 Uhr",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/fischer/public/UqqEy490mUTt8N2YJJEN6OAdcpHcAGN9Pj5rTQGez3Q/AF_Gilda%20Sahebi_510.png",
+    "image_credit": null,
+    "book_title": null,
+    "id": "4b807286f0e3e30f"
+  },
+  {
     "publisher": "Suhrkamp Verlag",
     "author": "Ilija Matusko",
     "title": "Ilija Matusko liest aus seinem Debütroman Jugo Moderation: Emily Grunert Eine Veranstaltung in Kooperation mit dem Suhrkamp Verlag",
@@ -340,12 +340,29 @@
     "id": "2cc95d59ceaf46c7"
   },
   {
+    "publisher": "S. Fischer Verlage",
+    "author": "Günter de Bruyn",
+    "title": "Buchpräsentation zu Ehren des 100. Geburtstag Günter de Bruyns",
+    "date": "2026-10-29",
+    "time": "17:00",
+    "venue": "Vertretung des Landes Brandenburg beim Bund",
+    "city": "Berlin",
+    "address": "In den Ministergärten 3, 10117 Berlin",
+    "url": "Um Anmeldung per E-Mail wird gebeten: kontakt@gdb-s.de",
+    "source_url": "https://www.fischerverlage.de/veranstaltung/premiere-guenter-de-bruyn-berlin-1048569-261029",
+    "raw_text": "Zum 100. Geburtstag von Günter de Bruyn laden der Landkreis Oder-Spree und die Günter-de-Bruyn-Stiftung in Zusammenarbeit mit dem S. Fischer Verlag zu einem literarischen Abend in die Landesvertretung Brandenburg in Berlin ein. Im Mittelpunkt stehen zwei Neuerscheinungen aus dem S. Fischer Verlag: Die Neue Rundschau versammelt nachgelassene Texte von Günter de Bruyn. Außerdem erscheint Die neue Mittagsgöttin mit einem Nachwort von Dr. Peter Walther.",
+    "cover_image": "/images/placeholder/placeholder-contributor.jpg",
+    "image_credit": null,
+    "book_title": null,
+    "id": "abeaa42ba36535a1"
+  },
+  {
     "publisher": "Kiepenheuer & Witsch",
     "author": "Katja Lange-Müller",
     "title": "Katja Lange-Müller",
     "date": "2026-10-29",
     "time": "19:00",
-    "venue": "MBK Alte Feuerwache",
+    "venue": "Stadtbibliothek Treptow-Köpenick, Mittelpunktbibliothek Alte Feuerwache Treptow",
     "city": "Berlin",
     "address": "Michael-Brückner-Str. 9, 12439 Berlin",
     "url": "https://www.kiwi-verlag.de/veranstaltung/lesung-und-gespraech-katja-lange-mueller-berlin-4031827-261029",
@@ -354,7 +371,7 @@
     "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/kiwi/public/LwKNTJEZnlx2Z9NLziykCvNDFMXlW8QlU3lCtcqGtK6/U1_978-3-462-05017-2.png",
     "image_credit": null,
     "book_title": "Unser Ole",
-    "id": "dfebbf06e3c31f58"
+    "id": "db61a2c5a174c6e1"
   },
   {
     "publisher": "Suhrkamp Verlag",
@@ -1173,6 +1190,23 @@
     "id": "f281ea21d3700dd5"
   },
   {
+    "publisher": "Rowohlt Verlag",
+    "author": "Ronya Othmann",
+    "title": "Ronya Othmann",
+    "date": "2026-11-10",
+    "time": "19:00",
+    "venue": "Adarschule Berlin",
+    "city": "Berlin",
+    "address": "Silbersteinstr. 14, 12051 Berlin",
+    "url": "https://www.rowohlt.de/veranstaltung/lesung-ronya-othmann-berlin-20402-261110",
+    "source_url": "https://www.rowohlt.de/veranstaltung/lesung-ronya-othmann-berlin-20402-261110",
+    "raw_text": "«Das könnte das neue Syrien sein.» Eine erhellende Reisereportage, die persönliche Erkundung eines historischen Umbruchsmoments. «Assad ist weg. Das Regime ist gefallen. Das Regime, vor dem mein Vater – ein staatenloser jesidischer Kurde – 1980 aus Syrien floh. Ich kenne das Land von Besuchen bei meinen Großeltern in meiner Kindheit. Ein Land, in dem an jeder Ecke das Porträt des Diktators und seines Vaters hing, ein Land, über das eine Familie herrschte wie ein Mafia-Clan. 54 Jahre lang.» Wenige Wochen nach dem Sturz Assads ist Ronya Othmann mit ihrem Vater nach Syrien gereist: auf den Spuren der jüngsten Ereignisse, durch ein Land, das sich selbst fremd geworden zu sein scheint. Und überall hat sie mit Menschen, gleich, welcher Zugehörigkeit, gesprochen – Menschen, die zwischen Angst und Hoffnung wieder an eine Zukunft glauben wollen.",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/rowohlt/public/voRJ1RJ9imDjZPGf3SzJI6mX0ZlzFQZSju9hkgt6Dcb/AF_Ronya%20Othmann_Website.png",
+    "image_credit": null,
+    "book_title": "Eine erhellende Reisereportage, die persönliche Erkundung eines historischen Umbruchsmoments.",
+    "id": "6fb3161949f10225"
+  },
+  {
     "publisher": "Carl Hanser Verlag",
     "author": "Rüdiger Safranski",
     "title": "Rüdiger Safranski: \"Die vierte Kränkung\" im Gespräch mit Jürgen Kaube (F.A.Z.- Herausgeber / Feuilleton)",
@@ -1929,13 +1963,13 @@
     "venue": "Dussmann KulturKaufhaus GmbH",
     "city": "Berlin",
     "address": "Friedrichstr. 90, 10117 Berlin",
-    "url": "https://www.dtv.de/buch/fall-in-love-with-the-good-guys-26472",
+    "url": "https://www.kulturkaufhaus.de/de/veranstaltungen/detail/Buchvorstellung-mit-Stella-Schultner/Buchvorstellung-mit-Stella-Schultner",
     "source_url": "https://www.dtv.de/events?city=Berlin&p=1",
     "raw_text": "20.11.2026 / 19:00 Uhr (CEST)",
     "cover_image": "https://www.dtv.de/media/0a/7e/8d/1776067553/9783423264723__COVER_2D%20%28Produktcover%20Web%20klein%29.jpg?ts=1776067553",
     "image_credit": null,
     "book_title": "Fall in Love with the Good Guys. Endlich die Liebe finden, nach der du dich sehnst",
-    "id": "b1396dae0dd823ea"
+    "id": "c65cea2ca2594606"
   },
   {
     "publisher": "Dussmann das KulturKaufhaus",
@@ -2788,6 +2822,23 @@
     "id": "b9cb502618ef9343"
   },
   {
+    "publisher": "Kiepenheuer & Witsch",
+    "author": "Shida Bazyar",
+    "title": "Shida Bazyar",
+    "date": "2026-12-02",
+    "time": "19:00",
+    "venue": "Mittelpunktbibliothek Köpenick",
+    "city": "Berlin",
+    "address": "Alter Markt 2, 12555 Berlin",
+    "url": "https://www.kiwi-verlag.de/veranstaltung/lesung-und-gespraech-shida-bazyar-berlin-4031673-261202",
+    "source_url": "https://www.kiwi-verlag.de/veranstaltung",
+    "raw_text": "Lesung und Gespräch",
+    "cover_image": "https://pondus-hpg.s3.eu-central-1.amazonaws.com/kiwi/public/NOS0XBxqfw1zMVGGQikCfcSuluoOVAabwPxIUwcdAf3/U1_978-3-462-00501-1.png",
+    "image_credit": null,
+    "book_title": "Die Lücken",
+    "id": "c416475ba1598591"
+  },
+  {
     "publisher": "Suhrkamp Verlag",
     "author": "Svenja Leiber",
     "title": "Im Rahmen der Reihe »Lesezeichen - Literatur live in Tegel« Svenja Leiber liest aus Nelka Moderation: Claudia Johanna Bauer",
@@ -2922,6 +2973,40 @@
     "image_credit": null,
     "book_title": null,
     "id": "416655c79d2bf36f"
+  },
+  {
+    "publisher": "Suhrkamp Verlag",
+    "author": "Veith Selk und Julian Nicolai Hofmann",
+    "title": "Veith Selk und Julian Nicolai Hofmann präsentieren Postliberalismus? Eine Veranstaltung der Integrative Research Institute Law & Society in Kooperation mit dem Lehrstuhl Theorie der Politik",
+    "date": "2026-12-07",
+    "time": "18:15",
+    "venue": "Humboldt-Universität zu Berlin",
+    "city": "Berlin",
+    "address": "Bebelplatz 2, 10117 Berlin",
+    "url": "https://www.suhrkamp.de/buchpraesentation/veith-selk-und-julian-nicolai-hofmann-v-51410",
+    "source_url": "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113",
+    "raw_text": "Buchpräsentation",
+    "cover_image": null,
+    "image_credit": null,
+    "book_title": "Postliberalismus?",
+    "id": "6cfaa841b27d5207"
+  },
+  {
+    "publisher": "Suhrkamp Verlag",
+    "author": "Walter Benjamin: »Werke und Nachlaß. Kritische Gesamtausgabe«",
+    "title": "Präsentation von Werke und Nachlaß. Kritische Gesamtausgabe - Band 1: Jugendschriften von Walter Benjamin Die Herausgeber Heinrich Kaulen und Volker Mergenthaler im Gespräch mit Thomas Rahn, Astrid Deuber-Mankowsky und Erdmut Wizisla Lesung: Corinna Harfouch Eine Veranstaltung in Kooperation mit der Akademie der Künste und der Hamburger Stiftung zur Förderung von Wissenschaft und Kultur",
+    "date": "2026-12-08",
+    "time": "20:00",
+    "venue": "Literaturforum im Brecht-Haus",
+    "city": "Berlin",
+    "address": "Chausseestraße 125, 10115 Berlin",
+    "url": "https://www.suhrkamp.de/buchpraesentation/walter-benjamin-werke-und-nachlass-kritische-gesamtausgabe-v-51208",
+    "source_url": "https://www.suhrkamp.de/veranstaltungen/alle-veranstaltungen-s-1113",
+    "raw_text": "Buchpräsentation",
+    "cover_image": null,
+    "image_credit": null,
+    "book_title": "Werke und Nachlaß. Kritische Gesamtausgabe - Band 1: Jugendschriften",
+    "id": "0630ab7d20587d62"
   },
   {
     "publisher": "Kiepenheuer & Witsch",
@@ -3109,6 +3194,23 @@
     "image_credit": null,
     "book_title": "Aber?",
     "id": "6bbe98dec8906da5"
+  },
+  {
+    "publisher": "Carl Hanser Verlag",
+    "author": "Betty Boras",
+    "title": "Betty Boras: \"Das schönste aller Leben\". Lesung im Rahmen der Ausstellung \"Schwerer Stoff. Frauen - Trachten - Lebensgeschichten\"",
+    "date": "2027-02-13",
+    "time": "16:00",
+    "venue": "Museum Europäischer Kulturen",
+    "city": "Berlin",
+    "address": "Arnimallee 25, 14195 Berlin",
+    "url": "https://www.smb.museum/veranstaltungen/detail/betty-boras-das-schoenste-aller-leben-2027-02-13-150000-159268/",
+    "source_url": "https://www.hanser-literaturverlage.de/veranstaltungen-c-34",
+    "raw_text": "Lesung und Gespräch",
+    "cover_image": "https://res.cloudinary.com/literaturverlage/image/upload/v1759954512/MAM/Image/ARTK_CT0_9783446284517_0001.jpg",
+    "image_credit": null,
+    "book_title": "Das schönste aller Leben",
+    "id": "508f81bf4c0bc0f2"
   },
   {
     "publisher": "dtv Verlag",
