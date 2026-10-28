@@ -1,80 +1,56 @@
 {
-  "ran_at": "2026-10-27T07:09:30+00:00",
-  "total_events": 199,
-  "new_count": 9,
-  "removed_count": 3,
+  "ran_at": "2026-10-28T07:53:23+00:00",
+  "total_events": 189,
+  "new_count": 6,
+  "removed_count": 16,
   "new_events": [
     {
-      "id": "4b807286f0e3e30f",
-      "author": "Gilda Sahebi",
-      "book_title": "Lesung mit Gilda Sahebi",
-      "date": "2026-10-28",
-      "venue": "Die genaue Location wird nach der Buchung mitgeteilt.",
-      "publisher": "S. Fischer Verlage"
+      "id": "c3c98752442aff72",
+      "author": "Olivia Laing",
+      "book_title": "Buch der Träume",
+      "date": "2026-11-05",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "abeaa42ba36535a1",
-      "author": "Günter de Bruyn",
-      "book_title": "Buchpräsentation zu Ehren des 100. Geburtstag Günter de Bruyns",
-      "date": "2026-10-29",
-      "venue": "Vertretung des Landes Brandenburg beim Bund",
-      "publisher": "S. Fischer Verlage"
+      "id": "349da00e431daca1",
+      "author": "Kathrin Fischer",
+      "book_title": "Achtsam geht die Welt zugrunde",
+      "date": "2026-11-06",
+      "venue": "Bogen 43",
+      "publisher": "Carl Hanser Verlag"
     },
     {
-      "id": "db61a2c5a174c6e1",
-      "author": "Katja Lange-Müller",
-      "book_title": "Unser Ole",
-      "date": "2026-10-29",
-      "venue": "Stadtbibliothek Treptow-Köpenick, Mittelpunktbibliothek Alte Feuerwache Treptow",
-      "publisher": "Kiepenheuer & Witsch"
+      "id": "bb15cf376008c2e9",
+      "author": "its editors, Peter Osborne and Howard Caygill, and one of the contributors to the essay collection, Louis Hartnol",
+      "book_title": "A Centre for Research in Modern European Philosophy? A discussion on the future of independent philosophy education and Gillian Rose",
+      "date": "2026-11-19",
+      "venue": "Pro qm",
+      "publisher": "Pro qm"
     },
     {
-      "id": "6fb3161949f10225",
-      "author": "Ronya Othmann",
-      "book_title": "Eine erhellende Reisereportage, die persönliche Erkundung eines historischen Umbruchsmoments.",
-      "date": "2026-11-10",
-      "venue": "Adarschule Berlin",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "c65cea2ca2594606",
-      "author": "Stella Schultner",
-      "book_title": "Fall in Love with the Good Guys. Endlich die Liebe finden, nach der du dich sehnst",
-      "date": "2026-11-20",
-      "venue": "Dussmann KulturKaufhaus GmbH",
+      "id": "0ecea800d222fc79",
+      "author": "Max Moor",
+      "book_title": "Schwestern. Trotz allem",
+      "date": "2026-11-27",
+      "venue": "Evangelische Paulus-Kirche Lichterfelde",
       "publisher": "dtv Verlag"
     },
     {
-      "id": "c416475ba1598591",
-      "author": "Shida Bazyar",
-      "book_title": "Die Lücken",
-      "date": "2026-12-02",
-      "venue": "Mittelpunktbibliothek Köpenick",
-      "publisher": "Kiepenheuer & Witsch"
+      "id": "a37162054fcc72f0",
+      "author": null,
+      "book_title": "Walter Serner Preis für Kurzgeschichten",
+      "date": "2026-12-01",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
     },
     {
-      "id": "6cfaa841b27d5207",
-      "author": "Veith Selk und Julian Nicolai Hofmann",
-      "book_title": "Postliberalismus?",
-      "date": "2026-12-07",
-      "venue": "Humboldt-Universität zu Berlin",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "0630ab7d20587d62",
-      "author": "Walter Benjamin: »Werke und Nachlaß. Kritische Gesamtausgabe«",
-      "book_title": "Werke und Nachlaß. Kritische Gesamtausgabe - Band 1: Jugendschriften",
-      "date": "2026-12-08",
-      "venue": "Literaturforum im Brecht-Haus",
-      "publisher": "Suhrkamp Verlag"
-    },
-    {
-      "id": "508f81bf4c0bc0f2",
-      "author": "Betty Boras",
-      "book_title": "Das schönste aller Leben",
-      "date": "2027-02-13",
-      "venue": "Museum Europäischer Kulturen",
-      "publisher": "Carl Hanser Verlag"
+      "id": "2ea6961094dc31b5",
+      "author": "Susanne Siegert",
+      "book_title": "Gedenken neu denken",
+      "date": "2027-06-01",
+      "venue": "Bezirksamt Lichtenberg von Berlin",
+      "publisher": "Piper Verlag"
     }
   ]
 }
