@@ -1,112 +1,88 @@
 {
-  "ran_at": "2026-10-29T07:55:04+00:00",
-  "total_events": 195,
-  "new_count": 13,
-  "removed_count": 7,
+  "ran_at": "2026-10-30T07:57:31+00:00",
+  "total_events": 188,
+  "new_count": 10,
+  "removed_count": 17,
   "new_events": [
     {
-      "id": "f84fd32e760d8a87",
-      "author": "Becca S. Hale",
-      "book_title": "Symphony of the Sinner – düsterer Themenabend mit Becca S. Hale",
-      "date": "2026-10-30",
-      "venue": "Thalia Berlin",
-      "publisher": "S. Fischer Verlage"
-    },
-    {
-      "id": "42ab7b12fd004eeb",
-      "author": "Max Czollek",
-      "book_title": "Jalta – Positionen zur jüdischen Gegenwart",
-      "date": "2026-10-30",
-      "venue": "Evangelische Akademie Frankfurt | Großer Saal",
-      "publisher": "S. Fischer Verlage"
-    },
-    {
-      "id": "ebf09fed6996f44a",
-      "author": "Sharon Dodua Otoo",
-      "book_title": "Resonanzen",
+      "id": "f684feeef471d035",
+      "author": "Christoph Ransmayr",
+      "book_title": "Egal wohin, Baby",
       "date": "2026-10-31",
-      "venue": "Evangelische Akademie Frankfurt",
+      "venue": "Alexander und Renata Camaro Stiftung | Hinterhof 3. Etage (mit Aufzug)",
       "publisher": "S. Fischer Verlage"
     },
     {
-      "id": "510c969d45c53dec",
-      "author": "Florian Aigner",
-      "book_title": "Buchvorstellung mit Florian Aigner",
-      "date": "2026-11-09",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "id": "eb783228eacc5ff2",
+      "author": "Celine Leonora",
+      "book_title": "Blackspell",
+      "date": "2026-11-06",
+      "venue": "Lumo Nahbar Berlin",
+      "publisher": "Ullstein Verlag"
     },
     {
-      "id": "7b2056b2eb5e1e81",
-      "author": "Audrey Niffenegger",
-      "book_title": "Buchvorstellung mit Audrey Niffenegger",
-      "date": "2026-11-18",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
+      "id": "a18c8c5b238b94bb",
+      "author": "Bettina Tietjen",
+      "book_title": "Tietjen sucht das Weite",
+      "date": "2026-11-08",
+      "venue": "Schlossparktheater Berlin",
+      "publisher": "Piper Verlag"
     },
     {
-      "id": "da35c1c2c4f07cac",
-      "author": "Stella Schultner",
-      "book_title": "Buchvorstellung mit Stella Schultner",
+      "id": "d557d644c9b7e1e0",
+      "author": "Peter Osborne, Howard Caygill, and Louis Hartnoll",
+      "book_title": "A Centre for Research in Modern European Philosophy? A discussion on the future of independent philosophy education and Gillian Rose",
+      "date": "2026-11-19",
+      "venue": "Pro qm",
+      "publisher": "Pro qm"
+    },
+    {
+      "id": "d1ef09fda5d9cdff",
+      "author": "Ties Rabe",
+      "book_title": "Ties Rabe",
       "date": "2026-11-20",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "c73e7d2352c34703",
-      "author": "Christiane Rösinger",
-      "book_title": "Christiane Rösinger",
-      "date": "2026-11-23",
-      "venue": "Literaturhaus Berlin",
+      "venue": "Studio 14 – die rbb Dachlounge",
       "publisher": "Rowohlt Verlag"
     },
     {
-      "id": "12723e1c7b05cf5b",
-      "author": "Katja Eichinger",
-      "book_title": "Buchpremiere mit Katja Eichinger",
-      "date": "2026-11-24",
-      "venue": "KulturBühne",
-      "publisher": "Dussmann das KulturKaufhaus"
-    },
-    {
-      "id": "b0bd6d0aa0d86f60",
-      "author": "Ronja von Rönne",
-      "book_title": "Alles Liebe",
-      "date": "2026-11-24",
-      "venue": "Bibliothek am Luisenbad",
-      "publisher": "dtv Verlag"
-    },
-    {
-      "id": "1f9ddd4ffc912298",
-      "author": "Niklas Maak",
-      "book_title": "Die letzten Tage der Schönheit. Die Plünderung Roms 1527 und das Ende der Renaissance",
+      "id": "33f6f54f2e965a7e",
+      "author": "Don Pablo Mulemba",
+      "book_title": "Don Pablo Mulemba",
       "date": "2026-11-25",
-      "venue": "Bücherbogen am Savignyplatz",
+      "venue": "Kapelle99",
+      "publisher": "Rowohlt Verlag"
+    },
+    {
+      "id": "ba0dc8cbb3bbfb88",
+      "author": null,
+      "book_title": "Verkrabbung",
+      "date": "2026-12-03",
+      "venue": "Literaturhaus Berlin",
+      "publisher": "Literaturhaus Berlin"
+    },
+    {
+      "id": "bfeb6af7e1187a58",
+      "author": "Ozan Zakariya Keskinkılıç",
+      "book_title": "Hundesohn",
+      "date": "2026-12-11",
+      "venue": "Theater an der Parkaue Studio 2",
       "publisher": "Suhrkamp Verlag"
     },
     {
-      "id": "f5bf732c772e2bdc",
-      "author": "Asha Hedayati",
-      "book_title": "Teresa Bücker",
-      "date": "2026-12-02",
-      "venue": "Café Köpenick",
-      "publisher": "Rowohlt Verlag"
+      "id": "5f566c33032f1ff3",
+      "author": "Claudia Rikl",
+      "book_title": "Die chauvinistische Bedrohung",
+      "date": "2027-01-30",
+      "venue": "Literaturforum im Brechthaus",
+      "publisher": "Ullstein Verlag"
     },
     {
-      "id": "416655c79d2bf36f",
-      "author": "Sebastian Becker",
-      "book_title": "Sebastian Becker",
-      "date": "2026-12-07",
-      "venue": "25hours Hotel Bikini Berlin",
-      "publisher": "Rowohlt Verlag"
-    },
-    {
-      "id": "ee84fcf79ef9379e",
-      "author": "Heinz Strunk",
-      "book_title": "Heinz Strunk",
-      "date": "2027-01-12",
-      "venue": "Volksbühne Berlin",
-      "publisher": "Rowohlt Verlag"
+      "id": "8c72fd4633257c3c",
+      "author": "Susanne Siegert",
+      "book_title": "Gedenken neu denken",
+      "date": "2027-06-01",
+      "venue": "Bezirksamt Lichtenberg von Berlin",
+      "publisher": "Piper Verlag"
     }
   ]
 }
